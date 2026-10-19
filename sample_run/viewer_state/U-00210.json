@@ -1,0 +1,242 @@
+{
+ "viewer_id": "U-00210",
+ "arm": "holdout",
+ "as_of": "2026-10-01T18:31:25.944Z",
+ "facts": {
+  "user_id": "U-00210",
+  "as_of": "2026-10-01T18:31:25.944Z",
+  "profile_present": true,
+  "history_start": "2026-08-31T18:31:55.380Z",
+  "history_covers_lifetime": false,
+  "events_seen": 108,
+  "facts": {
+   "dialect": {
+    "name": "dialect",
+    "value": null,
+    "source": "unknown",
+    "source_ref": null,
+    "source_time": null,
+    "freshness": "unknown",
+    "age_s": null,
+    "rule": "trigger carries no valid app_dialect (raw=None); the page the app will request is unknown, so no alternative is substituted",
+    "conflicts": [
+     {
+      "value": "d4",
+      "source": "profile",
+      "source_ref": "profile:U-00210@2026-09-29T00:24:25.185Z",
+      "resolution": "not used: cannot confirm it is the current app setting"
+     },
+     {
+      "value": "d2",
+      "source": "app_setting_earlier",
+      "source_ref": "event:c07d6e66-a769-43d6-a3ac-4ed87f6dae34",
+      "resolution": "not used: cannot confirm it is the current app setting"
+     }
+    ],
+    "supported": false
+   },
+   "ever_paid": {
+    "name": "ever_paid",
+    "value": true,
+    "source": "event",
+    "source_ref": "event:8f71f336-459d-4b9f-b22f-05bb0ee998c5",
+    "source_time": "2026-09-29T00:24:25.185Z",
+    "freshness": "aging",
+    "age_s": 238020.8,
+    "rule": "any paid purchase/renewal event or a paid status on any profile row",
+    "conflicts": [],
+    "supported": true
+   },
+   "history_covers_lifetime": {
+    "name": "history_covers_lifetime",
+    "value": false,
+    "source": "derived",
+    "source_ref": "profile:U-00210@2026-09-29T00:24:25.185Z",
+    "source_time": "2026-09-29T00:24:25.185Z",
+    "freshness": "unknown",
+    "age_s": null,
+    "rule": "signup_at >= first observable event (2026-08-31T18:31:55.380Z); 'never did X' claims need full coverage",
+    "conflicts": [],
+    "supported": true
+   },
+   "last_app_open_before_trigger": {
+    "name": "last_app_open_before_trigger",
+    "value": "2026-09-30T15:17:29.313Z",
+    "source": "event",
+    "source_ref": "event:921bbfb8-19fa-4af3-b719-447d6fc828d1",
+    "source_time": "2026-09-30T15:17:29.313Z",
+    "freshness": "aging",
+    "age_s": 98036.6,
+    "rule": "latest app_open in another session, ordered by server-anchored occurrence time",
+    "conflicts": [],
+    "supported": true
+   },
+   "profile_present": {
+    "name": "profile_present",
+    "value": true,
+    "source": "profile",
+    "source_ref": "profile:U-00210@2026-09-29T00:24:25.185Z",
+    "source_time": "2026-09-29T00:24:25.185Z",
+    "freshness": "aging",
+    "age_s": 238020.8,
+    "rule": "newest updated_at among snapshot rows",
+    "conflicts": [],
+    "supported": true
+   },
+   "push_consent": {
+    "name": "push_consent",
+    "value": true,
+    "source": "profile",
+    "source_ref": "profile:U-00210@2026-09-29T00:24:25.185Z",
+    "source_time": "2026-09-29T00:24:25.185Z",
+    "freshness": "aging",
+    "age_s": 238020.8,
+    "rule": "newest profile row notifications_opt_in",
+    "conflicts": [],
+    "supported": true
+   },
+   "signup_at": {
+    "name": "signup_at",
+    "value": "2026-06-27T00:06:30.010Z",
+    "source": "profile",
+    "source_ref": "profile:U-00210@2026-09-29T00:24:25.185Z",
+    "source_time": "2026-09-29T00:24:25.185Z",
+    "freshness": "aging",
+    "age_s": 238020.8,
+    "rule": "profile.signup_at (no signup event observed)",
+    "conflicts": [],
+    "supported": true
+   },
+   "subscription_status": {
+    "name": "subscription_status",
+    "value": "active",
+    "source": "profile",
+    "source_ref": "profile:U-00210@2026-09-29T00:24:25.185Z",
+    "source_time": "2026-09-29T00:24:25.185Z",
+    "freshness": "aging",
+    "age_s": 238020.8,
+    "rule": "newest profile row (no newer subscription event)",
+    "conflicts": [],
+    "supported": true
+   },
+   "whatsapp_consent": {
+    "name": "whatsapp_consent",
+    "value": false,
+    "source": "profile",
+    "source_ref": "profile:U-00210@2026-09-29T00:24:25.185Z",
+    "source_time": "2026-09-29T00:24:25.185Z",
+    "freshness": "aging",
+    "age_s": 238020.8,
+    "rule": "newest profile row whatsapp_opt_in",
+    "conflicts": [],
+    "supported": true
+   }
+  },
+  "watch": {
+   "plays": 13,
+   "completions": 4,
+   "watched_slugs": [
+    "bapari-habagu-d2",
+    "chugu-d2",
+    "dhapipa-gini-d2",
+    "gibha-bhalomo-d2",
+    "guka-kosusa-d2"
+   ],
+   "top_genres": [
+    "Family",
+    "Crime",
+    "Romance",
+    "Thriller",
+    "Action"
+   ],
+   "play_days_recent": [
+    "2026-09-18",
+    "2026-09-20",
+    "2026-09-22",
+    "2026-09-23",
+    "2026-09-24",
+    "2026-09-27",
+    "2026-09-29"
+   ],
+   "series": [
+    {
+     "slug": "dhapipa-gini-d2",
+     "furthest": [
+      1,
+      2
+     ],
+     "last_episode": [
+      1,
+      55
+     ],
+     "last_play": "2026-09-27T17:49:24.999Z"
+    },
+    {
+     "slug": "guka-kosusa-d2",
+     "furthest": [
+      1,
+      1
+     ],
+     "last_episode": [
+      1,
+      41
+     ],
+     "last_play": "2026-09-06T16:33:25.548Z"
+    },
+    {
+     "slug": "chugu-d2",
+     "furthest": [
+      1,
+      2
+     ],
+     "last_episode": [
+      2,
+      7
+     ],
+     "last_play": "2026-09-20T07:14:01.408Z"
+    },
+    {
+     "slug": "gibha-bhalomo-d2",
+     "furthest": [
+      1,
+      1
+     ],
+     "last_episode": [
+      1,
+      48
+     ],
+     "last_play": "2026-09-23T16:01:24.830Z"
+    },
+    {
+     "slug": "bapari-habagu-d2",
+     "furthest": [
+      1,
+      2
+     ],
+     "last_episode": [
+      1,
+      50
+     ],
+     "last_play": "2026-09-29T05:39:29.623Z"
+    }
+   ]
+  },
+  "learning": {}
+ },
+ "goals": [],
+ "decisions": [
+  {
+   "decision_id": "D-c4ec2c827c11",
+   "trigger": "55ea3b01-87e1-4a9b-a6da-8f15c6214f07",
+   "deliver_at": "2026-10-01T01:50:37.389Z",
+   "status": "HOLDOUT",
+   "action": "NONE",
+   "goal": null,
+   "reason": "holdout arm: no agent action of any kind (goal tracked only so outcomes can be compared with the agent arm)"
+  }
+ ],
+ "actions": [],
+ "outcomes": [],
+ "learning": {},
+ "audit": []
+}

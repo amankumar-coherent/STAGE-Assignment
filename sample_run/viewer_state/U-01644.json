@@ -1,0 +1,359 @@
+{
+ "viewer_id": "U-01644",
+ "arm": "holdout",
+ "as_of": "2026-10-01T18:31:25.944Z",
+ "facts": {
+  "user_id": "U-01644",
+  "as_of": "2026-10-01T18:31:25.944Z",
+  "profile_present": true,
+  "history_start": "2026-08-31T18:31:55.380Z",
+  "history_covers_lifetime": false,
+  "events_seen": 160,
+  "facts": {
+   "dialect": {
+    "name": "dialect",
+    "value": null,
+    "source": "unknown",
+    "source_ref": null,
+    "source_time": null,
+    "freshness": "unknown",
+    "age_s": null,
+    "rule": "trigger carries no valid app_dialect (raw=None); the page the app will request is unknown, so no alternative is substituted",
+    "conflicts": [
+     {
+      "value": "d5",
+      "source": "profile",
+      "source_ref": "profile:U-01644@2026-09-28T20:44:19.207Z",
+      "resolution": "not used: cannot confirm it is the current app setting"
+     },
+     {
+      "value": "d6",
+      "source": "app_setting_earlier",
+      "source_ref": "event:05a19f1a-cfb1-4cf3-a486-12e93499d2fd",
+      "resolution": "not used: cannot confirm it is the current app setting"
+     }
+    ],
+    "supported": false
+   },
+   "ever_paid": {
+    "name": "ever_paid",
+    "value": true,
+    "source": "event",
+    "source_ref": "event:4767b555-6895-4713-94ae-119f7c355c9b",
+    "source_time": "2026-09-28T20:44:19.207Z",
+    "freshness": "aging",
+    "age_s": 251226.7,
+    "rule": "any paid purchase/renewal event or a paid status on any profile row",
+    "conflicts": [],
+    "supported": true
+   },
+   "history_covers_lifetime": {
+    "name": "history_covers_lifetime",
+    "value": false,
+    "source": "derived",
+    "source_ref": "profile:U-01644@2026-09-28T20:44:19.207Z",
+    "source_time": "2026-09-28T20:44:19.207Z",
+    "freshness": "unknown",
+    "age_s": null,
+    "rule": "signup_at >= first observable event (2026-08-31T18:31:55.380Z); 'never did X' claims need full coverage",
+    "conflicts": [],
+    "supported": true
+   },
+   "last_app_open_before_trigger": {
+    "name": "last_app_open_before_trigger",
+    "value": "2026-10-01T05:35:29.420Z",
+    "source": "event",
+    "source_ref": "event:05a19f1a-cfb1-4cf3-a486-12e93499d2fd",
+    "source_time": "2026-10-01T05:35:29.420Z",
+    "freshness": "fresh",
+    "age_s": 46556.5,
+    "rule": "latest app_open in another session, ordered by server-anchored occurrence time",
+    "conflicts": [],
+    "supported": true
+   },
+   "profile_present": {
+    "name": "profile_present",
+    "value": true,
+    "source": "profile",
+    "source_ref": "profile:U-01644@2026-09-28T20:44:19.207Z",
+    "source_time": "2026-09-28T20:44:19.207Z",
+    "freshness": "aging",
+    "age_s": 251226.7,
+    "rule": "newest updated_at among snapshot rows",
+    "conflicts": [],
+    "supported": true
+   },
+   "push_consent": {
+    "name": "push_consent",
+    "value": true,
+    "source": "profile",
+    "source_ref": "profile:U-01644@2026-09-28T20:44:19.207Z",
+    "source_time": "2026-09-28T20:44:19.207Z",
+    "freshness": "aging",
+    "age_s": 251226.7,
+    "rule": "newest profile row notifications_opt_in",
+    "conflicts": [],
+    "supported": true
+   },
+   "signup_at": {
+    "name": "signup_at",
+    "value": "2026-03-06T01:32:29.837Z",
+    "source": "profile",
+    "source_ref": "profile:U-01644@2026-09-28T20:44:19.207Z",
+    "source_time": "2026-09-28T20:44:19.207Z",
+    "freshness": "aging",
+    "age_s": 251226.7,
+    "rule": "profile.signup_at (no signup event observed)",
+    "conflicts": [],
+    "supported": true
+   },
+   "subscription_status": {
+    "name": "subscription_status",
+    "value": "active",
+    "source": "profile",
+    "source_ref": "profile:U-01644@2026-09-28T20:44:19.207Z",
+    "source_time": "2026-09-28T20:44:19.207Z",
+    "freshness": "aging",
+    "age_s": 251226.7,
+    "rule": "newest profile row (no newer subscription event)",
+    "conflicts": [],
+    "supported": true
+   },
+   "whatsapp_consent": {
+    "name": "whatsapp_consent",
+    "value": false,
+    "source": "profile",
+    "source_ref": "profile:U-01644@2026-09-28T20:44:19.207Z",
+    "source_time": "2026-09-28T20:44:19.207Z",
+    "freshness": "aging",
+    "age_s": 251226.7,
+    "rule": "newest profile row whatsapp_opt_in",
+    "conflicts": [],
+    "supported": true
+   }
+  },
+  "watch": {
+   "plays": 21,
+   "completions": 13,
+   "watched_slugs": [
+    "chupi-gugi-d6",
+    "kapa-lone-d6",
+    "machu-basu-d6",
+    "rasuya-moni-d6",
+    "sajachu-jabha-d6",
+    "vasuka-dhanite-d6"
+   ],
+   "top_genres": [
+    "Thriller",
+    "Action",
+    "Comedy",
+    "Devotional",
+    "Drama"
+   ],
+   "play_days_recent": [
+    "2026-09-18",
+    "2026-09-19",
+    "2026-09-20",
+    "2026-09-21",
+    "2026-09-22",
+    "2026-09-24",
+    "2026-09-25",
+    "2026-09-26",
+    "2026-09-30"
+   ],
+   "series": [
+    {
+     "slug": "rasuya-moni-d6",
+     "furthest": [
+      1,
+      3
+     ],
+     "last_episode": [
+      1,
+      9
+     ],
+     "last_play": "2026-09-30T11:08:44.264Z"
+    },
+    {
+     "slug": "sajachu-jabha-d6",
+     "furthest": [
+      1,
+      1
+     ],
+     "last_episode": [
+      1,
+      1
+     ],
+     "last_play": "2026-09-30T16:51:42.077Z"
+    },
+    {
+     "slug": "vasuka-dhanite-d6",
+     "furthest": [
+      1,
+      1
+     ],
+     "last_episode": [
+      1,
+      1
+     ],
+     "last_play": "2026-09-06T13:54:52.483Z"
+    },
+    {
+     "slug": "kapa-lone-d6",
+     "furthest": [
+      1,
+      3
+     ],
+     "last_episode": [
+      2,
+      9
+     ],
+     "last_play": "2026-09-20T15:00:29.111Z"
+    },
+    {
+     "slug": "chupi-gugi-d6",
+     "furthest": [
+      1,
+      2
+     ],
+     "last_episode": [
+      1,
+      41
+     ],
+     "last_play": "2026-09-25T07:17:41.871Z"
+    },
+    {
+     "slug": "machu-basu-d6",
+     "furthest": [
+      1,
+      1
+     ],
+     "last_episode": [
+      2,
+      10
+     ],
+     "last_play": "2026-09-25T06:46:26.365Z"
+    }
+   ]
+  },
+  "learning": {
+   "actions": {},
+   "goal_results": [
+    {
+     "attribution": "n/a",
+     "goal_id": "G07",
+     "instance_id": "GI-38bb78d9bf36",
+     "result": "failed"
+    }
+   ],
+   "messages": {},
+   "notes": [],
+   "pages": {
+    "published": 0,
+    "shown_personalised": 0
+   }
+  }
+ },
+ "goals": [
+  {
+   "instance_id": "GI-38bb78d9bf36",
+   "user_id": "U-01644",
+   "goal_id": "G07",
+   "rule_version": "G07-r1",
+   "status": "open",
+   "started_at": "2026-10-01T05:35:29.420Z",
+   "deadline": "2026-10-04T05:35:29.420Z",
+   "success_event": "play_started",
+   "success_condition": "same content_slug as the unfinished series",
+   "decision_id": "D-997bc20a5383",
+   "arm": "holdout",
+   "eligibility": {
+    "context": {
+     "furthest": [
+      1,
+      2
+     ],
+     "series_slug": "chupi-gugi-d6"
+    },
+    "evidence": [
+     "goal_rule:G07-r1",
+     "event:7fa5fd86-47ee-4edd-a619-3ab7e894d905",
+     "event:d5b9d1a0-2ae6-4f48-b8ed-83868cb8aed3",
+     "event:d83ca2c0-3640-4fa9-a088-b121cb22a9a8"
+    ],
+    "reason": "series chupi-gugi-d6 reached S1E2 of S1E41, idle 5.9 days"
+   },
+   "closed_at": null,
+   "close_reason": null,
+   "outcome": null,
+   "history": [
+    {
+     "at": "2026-10-01T05:35:29.420Z",
+     "change": "opened",
+     "reason": "series chupi-gugi-d6 reached S1E2 of S1E41, idle 5.9 days"
+    }
+   ]
+  }
+ ],
+ "decisions": [
+  {
+   "decision_id": "D-997bc20a5383",
+   "trigger": "05a19f1a-cfb1-4cf3-a486-12e93499d2fd",
+   "deliver_at": "2026-10-01T05:35:29.420Z",
+   "status": "HOLDOUT",
+   "action": "NONE",
+   "goal": "G07",
+   "reason": "holdout arm: no agent action of any kind (goal tracked only so outcomes can be compared with the agent arm)"
+  }
+ ],
+ "actions": [],
+ "outcomes": [
+  {
+   "arm": "holdout",
+   "attribution": "n/a",
+   "deadline": "2026-10-04T05:35:29.420Z",
+   "decision_id": "D-997bc20a5383",
+   "evidence": [],
+   "exposures_before_success": [],
+   "exposures_window": [],
+   "final": true,
+   "goal_id": "G07",
+   "goal_instance_id": "GI-38bb78d9bf36",
+   "goal_status_in_replay": "open",
+   "judged_at": "2026-10-15T17:58:40.000Z",
+   "observed_until": "2026-10-15T17:58:40.000Z",
+   "reason": "no qualifying play_started between 2026-10-01T05:35:29.420Z and 2026-10-04T05:35:29.420Z",
+   "result": "failed",
+   "rule_history": [
+    {
+     "at": "2026-10-01T05:35:29.420Z",
+     "change": "opened",
+     "reason": "series chupi-gugi-d6 reached S1E2 of S1E41, idle 5.9 days"
+    }
+   ],
+   "rule_version": "G07-r1",
+   "started_at": "2026-10-01T05:35:29.420Z",
+   "success_condition": "same content_slug as the unfinished series",
+   "success_signal": "play_started",
+   "user_id": "U-01644"
+  }
+ ],
+ "learning": {
+  "actions": {},
+  "goal_results": [
+   {
+    "attribution": "n/a",
+    "goal_id": "G07",
+    "instance_id": "GI-38bb78d9bf36",
+    "result": "failed"
+   }
+  ],
+  "messages": {},
+  "notes": [],
+  "pages": {
+   "published": 0,
+   "shown_personalised": 0
+  }
+ },
+ "audit": []
+}

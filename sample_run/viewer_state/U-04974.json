@@ -1,0 +1,361 @@
+{
+ "viewer_id": "U-04974",
+ "arm": "agent",
+ "as_of": "2026-10-01T18:31:25.944Z",
+ "facts": {
+  "user_id": "U-04974",
+  "as_of": "2026-10-01T18:31:25.944Z",
+  "profile_present": true,
+  "history_start": "2026-08-31T18:31:55.380Z",
+  "history_covers_lifetime": false,
+  "events_seen": 26,
+  "facts": {
+   "dialect": {
+    "name": "dialect",
+    "value": null,
+    "source": "unknown",
+    "source_ref": null,
+    "source_time": null,
+    "freshness": "unknown",
+    "age_s": null,
+    "rule": "trigger carries no valid app_dialect (raw=None); the page the app will request is unknown, so no alternative is substituted",
+    "conflicts": [
+     {
+      "value": "d5",
+      "source": "profile",
+      "source_ref": "profile:U-04974@2026-09-29T09:07:40.840Z",
+      "resolution": "not used: cannot confirm it is the current app setting"
+     },
+     {
+      "value": "d5",
+      "source": "app_setting_earlier",
+      "source_ref": "event:6d635ba4-bb3e-4c03-906f-505a7482ceab",
+      "resolution": "not used: cannot confirm it is the current app setting"
+     }
+    ],
+    "supported": false
+   },
+   "ever_paid": {
+    "name": "ever_paid",
+    "value": false,
+    "source": "profile",
+    "source_ref": "profile:U-04974@2026-09-29T09:07:40.840Z",
+    "source_time": "2026-09-29T09:07:40.840Z",
+    "freshness": "aging",
+    "age_s": 206625.1,
+    "rule": "any paid purchase/renewal event or a paid status on any profile row",
+    "conflicts": [],
+    "supported": true
+   },
+   "history_covers_lifetime": {
+    "name": "history_covers_lifetime",
+    "value": false,
+    "source": "derived",
+    "source_ref": "profile:U-04974@2026-09-29T09:07:40.840Z",
+    "source_time": "2026-09-29T09:07:40.840Z",
+    "freshness": "unknown",
+    "age_s": null,
+    "rule": "signup_at >= first observable event (2026-08-31T18:31:55.380Z); 'never did X' claims need full coverage",
+    "conflicts": [],
+    "supported": true
+   },
+   "last_app_open_before_trigger": {
+    "name": "last_app_open_before_trigger",
+    "value": "2026-10-01T10:01:09.419Z",
+    "source": "event",
+    "source_ref": "event:6d635ba4-bb3e-4c03-906f-505a7482ceab",
+    "source_time": "2026-10-01T10:01:09.419Z",
+    "freshness": "fresh",
+    "age_s": 30616.5,
+    "rule": "latest app_open in another session, ordered by server-anchored occurrence time",
+    "conflicts": [],
+    "supported": true
+   },
+   "profile_present": {
+    "name": "profile_present",
+    "value": true,
+    "source": "profile",
+    "source_ref": "profile:U-04974@2026-09-29T09:07:40.840Z",
+    "source_time": "2026-09-29T09:07:40.840Z",
+    "freshness": "aging",
+    "age_s": 206625.1,
+    "rule": "newest updated_at among snapshot rows",
+    "conflicts": [],
+    "supported": true
+   },
+   "push_consent": {
+    "name": "push_consent",
+    "value": true,
+    "source": "profile",
+    "source_ref": "profile:U-04974@2026-09-29T09:07:40.840Z",
+    "source_time": "2026-09-29T09:07:40.840Z",
+    "freshness": "aging",
+    "age_s": 206625.1,
+    "rule": "newest profile row notifications_opt_in",
+    "conflicts": [],
+    "supported": true
+   },
+   "signup_at": {
+    "name": "signup_at",
+    "value": "2026-07-29T09:33:50.409Z",
+    "source": "profile",
+    "source_ref": "profile:U-04974@2026-09-29T09:07:40.840Z",
+    "source_time": "2026-09-29T09:07:40.840Z",
+    "freshness": "aging",
+    "age_s": 206625.1,
+    "rule": "profile.signup_at (no signup event observed)",
+    "conflicts": [],
+    "supported": true
+   },
+   "subscription_status": {
+    "name": "subscription_status",
+    "value": "never",
+    "source": "profile",
+    "source_ref": "profile:U-04974@2026-09-29T09:07:40.840Z",
+    "source_time": "2026-09-29T09:07:40.840Z",
+    "freshness": "aging",
+    "age_s": 206625.1,
+    "rule": "newest profile row (no newer subscription event)",
+    "conflicts": [],
+    "supported": true
+   },
+   "whatsapp_consent": {
+    "name": "whatsapp_consent",
+    "value": true,
+    "source": "profile",
+    "source_ref": "profile:U-04974@2026-09-29T09:07:40.840Z",
+    "source_time": "2026-09-29T09:07:40.840Z",
+    "freshness": "aging",
+    "age_s": 206625.1,
+    "rule": "newest profile row whatsapp_opt_in",
+    "conflicts": [],
+    "supported": true
+   }
+  },
+  "watch": {
+   "plays": 2,
+   "completions": 1,
+   "watched_slugs": [
+    "gubava-gihaya-d5"
+   ],
+   "top_genres": [
+    "Devotional"
+   ],
+   "play_days_recent": [],
+   "series": [
+    {
+     "slug": "gubava-gihaya-d5",
+     "furthest": [
+      1,
+      2
+     ],
+     "last_episode": [
+      1,
+      29
+     ],
+     "last_play": "2026-09-15T06:11:44.061Z"
+    }
+   ]
+  },
+  "learning": {
+   "actions": {
+    "home_page": {
+     "published": 2
+    },
+    "push": {
+     "sent": 1
+    }
+   },
+   "goal_results": [
+    {
+     "attribution": "n/a",
+     "goal_id": "G07",
+     "instance_id": "GI-423e3a2df9cb",
+     "result": "failed"
+    }
+   ],
+   "messages": {
+    "push": {
+     "clicked": 0,
+     "delivered": 1,
+     "failed": {}
+    }
+   },
+   "notes": [],
+   "pages": {
+    "published": 2,
+    "shown_personalised": 1
+   }
+  }
+ },
+ "goals": [
+  {
+   "instance_id": "GI-423e3a2df9cb",
+   "user_id": "U-04974",
+   "goal_id": "G07",
+   "rule_version": "G07-r1",
+   "status": "open",
+   "started_at": "2026-10-01T05:09:13.643Z",
+   "deadline": "2026-10-04T05:09:13.643Z",
+   "success_event": "play_started",
+   "success_condition": "same content_slug as the unfinished series",
+   "decision_id": "D-acfb6a434ae3",
+   "arm": "agent",
+   "eligibility": {
+    "context": {
+     "furthest": [
+      1,
+      2
+     ],
+     "series_slug": "gubava-gihaya-d5"
+    },
+    "evidence": [
+     "goal_rule:G07-r1",
+     "event:c7996162-2534-4dcc-b7ff-4f280332feb7",
+     "event:c08014d6-46c5-457f-b170-0e3fec54abbc",
+     "event:b06b27eb-a4ed-4464-998c-2be7cc0558fb"
+    ],
+    "reason": "series gubava-gihaya-d5 reached S1E2 of S1E29, idle 16.0 days"
+   },
+   "closed_at": null,
+   "close_reason": null,
+   "outcome": null,
+   "history": [
+    {
+     "at": "2026-10-01T05:09:13.643Z",
+     "change": "opened",
+     "reason": "series gubava-gihaya-d5 reached S1E2 of S1E29, idle 16.0 days"
+    }
+   ]
+  }
+ ],
+ "decisions": [
+  {
+   "decision_id": "D-164bf7479441",
+   "trigger": "be1856b0-463f-447c-850a-ea6730e305c1",
+   "deliver_at": "2026-10-01T04:06:52.022Z",
+   "status": "ABSTAINED",
+   "action": "NONE",
+   "goal": null,
+   "reason": "stale trigger: app open buffered offline for 31.2 h (> 600 s); the viewer is not in a live session, so a page or message now would not match their visit. Event kept for history."
+  },
+  {
+   "decision_id": "D-acfb6a434ae3",
+   "trigger": "ed2d6042-40bb-4803-beaf-a00d54da2927",
+   "deliver_at": "2026-10-01T05:09:13.643Z",
+   "status": "PUBLISHED",
+   "action": "HOME_PAGE+PUSH",
+   "goal": "G07",
+   "reason": null
+  },
+  {
+   "decision_id": "D-5f2fe76d4067",
+   "trigger": "168dc359-58fb-4e32-8efe-6764f31f99e8",
+   "deliver_at": "2026-10-01T10:01:09.384Z",
+   "status": "PUBLISHED",
+   "action": "HOME_PAGE",
+   "goal": "G07",
+   "reason": null
+  },
+  {
+   "decision_id": "D-b83571fa8f10",
+   "trigger": "6d635ba4-bb3e-4c03-906f-505a7482ceab",
+   "deliver_at": "2026-10-01T10:01:09.419Z",
+   "status": "ABSTAINED",
+   "action": "NONE",
+   "goal": "G07",
+   "reason": "a personalised page for d5 is already live until 2026-10-01T12:01:09.401Z; not republished; no message: this goal already has one"
+  }
+ ],
+ "actions": [
+  {
+   "action_id": "A-25d9a0ac49a9",
+   "type": "push",
+   "status": "sent",
+   "status_reason": "revalidated at send time",
+   "published_at": "2026-10-01T05:09:14.362Z",
+   "send_at": "2026-10-01T08:09:16.359Z"
+  },
+  {
+   "action_id": "A-61126b9d4036",
+   "type": "home_page",
+   "status": "published",
+   "status_reason": null,
+   "published_at": "2026-10-01T05:09:14.362Z",
+   "send_at": null
+  },
+  {
+   "action_id": "A-92883053da37",
+   "type": "home_page",
+   "status": "published",
+   "status_reason": null,
+   "published_at": "2026-10-01T10:01:09.401Z",
+   "send_at": null
+  }
+ ],
+ "outcomes": [
+  {
+   "arm": "agent",
+   "attribution": "n/a",
+   "deadline": "2026-10-04T05:09:13.643Z",
+   "decision_id": "D-acfb6a434ae3",
+   "evidence": [],
+   "exposures_before_success": [],
+   "exposures_window": [
+    "event:oua-031890",
+    "event:oua-031889"
+   ],
+   "final": true,
+   "goal_id": "G07",
+   "goal_instance_id": "GI-423e3a2df9cb",
+   "goal_status_in_replay": "open",
+   "judged_at": "2026-10-15T17:58:40.000Z",
+   "observed_until": "2026-10-15T17:58:40.000Z",
+   "reason": "no qualifying play_started between 2026-10-01T05:09:13.643Z and 2026-10-04T05:09:13.643Z",
+   "result": "failed",
+   "rule_history": [
+    {
+     "at": "2026-10-01T05:09:13.643Z",
+     "change": "opened",
+     "reason": "series gubava-gihaya-d5 reached S1E2 of S1E29, idle 16.0 days"
+    }
+   ],
+   "rule_version": "G07-r1",
+   "started_at": "2026-10-01T05:09:13.643Z",
+   "success_condition": "same content_slug as the unfinished series",
+   "success_signal": "play_started",
+   "user_id": "U-04974"
+  }
+ ],
+ "learning": {
+  "actions": {
+   "home_page": {
+    "published": 2
+   },
+   "push": {
+    "sent": 1
+   }
+  },
+  "goal_results": [
+   {
+    "attribution": "n/a",
+    "goal_id": "G07",
+    "instance_id": "GI-423e3a2df9cb",
+    "result": "failed"
+   }
+  ],
+  "messages": {
+   "push": {
+    "clicked": 0,
+    "delivered": 1,
+    "failed": {}
+   }
+  },
+  "notes": [],
+  "pages": {
+   "published": 2,
+   "shown_personalised": 1
+  }
+ },
+ "audit": []
+}

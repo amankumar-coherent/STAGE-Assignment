@@ -1,0 +1,295 @@
+{
+ "viewer_id": "U-04391",
+ "arm": "holdout",
+ "as_of": "2026-10-01T18:31:25.944Z",
+ "facts": {
+  "user_id": "U-04391",
+  "as_of": "2026-10-01T18:31:25.944Z",
+  "profile_present": true,
+  "history_start": "2026-08-31T18:31:55.380Z",
+  "history_covers_lifetime": false,
+  "events_seen": 18,
+  "facts": {
+   "dialect": {
+    "name": "dialect",
+    "value": null,
+    "source": "unknown",
+    "source_ref": null,
+    "source_time": null,
+    "freshness": "unknown",
+    "age_s": null,
+    "rule": "trigger carries no valid app_dialect (raw=None); the page the app will request is unknown, so no alternative is substituted",
+    "conflicts": [
+     {
+      "value": "d3",
+      "source": "profile",
+      "source_ref": "profile:U-04391@2026-09-29T05:45:36.013Z",
+      "resolution": "not used: cannot confirm it is the current app setting"
+     },
+     {
+      "value": "d3",
+      "source": "app_setting_earlier",
+      "source_ref": "event:ed63c83b-51cb-4c12-8e2e-779a9e9539e5",
+      "resolution": "not used: cannot confirm it is the current app setting"
+     }
+    ],
+    "supported": false
+   },
+   "ever_paid": {
+    "name": "ever_paid",
+    "value": true,
+    "source": "profile",
+    "source_ref": "profile:U-04391@2026-09-29T05:45:36.013Z",
+    "source_time": "2026-09-29T05:45:36.013Z",
+    "freshness": "aging",
+    "age_s": 218749.9,
+    "rule": "any paid purchase/renewal event or a paid status on any profile row",
+    "conflicts": [],
+    "supported": true
+   },
+   "history_covers_lifetime": {
+    "name": "history_covers_lifetime",
+    "value": false,
+    "source": "derived",
+    "source_ref": "profile:U-04391@2026-09-29T05:45:36.013Z",
+    "source_time": "2026-09-29T05:45:36.013Z",
+    "freshness": "unknown",
+    "age_s": null,
+    "rule": "signup_at >= first observable event (2026-08-31T18:31:55.380Z); 'never did X' claims need full coverage",
+    "conflicts": [],
+    "supported": true
+   },
+   "last_app_open_before_trigger": {
+    "name": "last_app_open_before_trigger",
+    "value": "2026-10-01T14:57:07.953Z",
+    "source": "event",
+    "source_ref": "event:ed63c83b-51cb-4c12-8e2e-779a9e9539e5",
+    "source_time": "2026-10-01T14:57:07.953Z",
+    "freshness": "fresh",
+    "age_s": 12858.0,
+    "rule": "latest app_open in another session, ordered by server-anchored occurrence time",
+    "conflicts": [],
+    "supported": true
+   },
+   "profile_present": {
+    "name": "profile_present",
+    "value": true,
+    "source": "profile",
+    "source_ref": "profile:U-04391@2026-09-29T05:45:36.013Z",
+    "source_time": "2026-09-29T05:45:36.013Z",
+    "freshness": "aging",
+    "age_s": 218749.9,
+    "rule": "newest updated_at among snapshot rows",
+    "conflicts": [],
+    "supported": true
+   },
+   "push_consent": {
+    "name": "push_consent",
+    "value": true,
+    "source": "profile",
+    "source_ref": "profile:U-04391@2026-09-29T05:45:36.013Z",
+    "source_time": "2026-09-29T05:45:36.013Z",
+    "freshness": "aging",
+    "age_s": 218749.9,
+    "rule": "newest profile row notifications_opt_in",
+    "conflicts": [],
+    "supported": true
+   },
+   "signup_at": {
+    "name": "signup_at",
+    "value": "2025-02-05T23:03:00.248Z",
+    "source": "profile",
+    "source_ref": "profile:U-04391@2026-09-29T05:45:36.013Z",
+    "source_time": "2026-09-29T05:45:36.013Z",
+    "freshness": "aging",
+    "age_s": 218749.9,
+    "rule": "profile.signup_at (no signup event observed)",
+    "conflicts": [],
+    "supported": true
+   },
+   "subscription_status": {
+    "name": "subscription_status",
+    "value": "lapsed",
+    "source": "profile",
+    "source_ref": "profile:U-04391@2026-09-29T05:45:36.013Z",
+    "source_time": "2026-09-29T05:45:36.013Z",
+    "freshness": "aging",
+    "age_s": 218749.9,
+    "rule": "newest profile row (no newer subscription event)",
+    "conflicts": [],
+    "supported": true
+   },
+   "whatsapp_consent": {
+    "name": "whatsapp_consent",
+    "value": true,
+    "source": "profile",
+    "source_ref": "profile:U-04391@2026-09-29T05:45:36.013Z",
+    "source_time": "2026-09-29T05:45:36.013Z",
+    "freshness": "aging",
+    "age_s": 218749.9,
+    "rule": "newest profile row whatsapp_opt_in",
+    "conflicts": [],
+    "supported": true
+   }
+  },
+  "watch": {
+   "plays": 3,
+   "completions": 1,
+   "watched_slugs": [
+    "lomobha-moni-d3",
+    "yatite-roloda-d3"
+   ],
+   "top_genres": [
+    "Action",
+    "Thriller",
+    "Romance"
+   ],
+   "play_days_recent": [],
+   "series": [
+    {
+     "slug": "lomobha-moni-d3",
+     "furthest": [
+      1,
+      1
+     ],
+     "last_episode": [
+      1,
+      35
+     ],
+     "last_play": "2026-09-05T18:25:21.326Z"
+    },
+    {
+     "slug": "yatite-roloda-d3",
+     "furthest": [
+      1,
+      1
+     ],
+     "last_episode": [
+      1,
+      23
+     ],
+     "last_play": "2026-09-06T16:14:57.922Z"
+    }
+   ]
+  },
+  "learning": {
+   "actions": {},
+   "goal_results": [
+    {
+     "attribution": "n/a",
+     "goal_id": "G07",
+     "instance_id": "GI-090e03400673",
+     "result": "failed"
+    }
+   ],
+   "messages": {},
+   "notes": [],
+   "pages": {
+    "published": 0,
+    "shown_personalised": 0
+   }
+  }
+ },
+ "goals": [
+  {
+   "instance_id": "GI-090e03400673",
+   "user_id": "U-04391",
+   "goal_id": "G07",
+   "rule_version": "G07-r1",
+   "status": "open",
+   "started_at": "2026-10-01T14:57:07.953Z",
+   "deadline": "2026-10-04T14:57:07.953Z",
+   "success_event": "play_started",
+   "success_condition": "same content_slug as the unfinished series",
+   "decision_id": "D-41bb532915e7",
+   "arm": "holdout",
+   "eligibility": {
+    "context": {
+     "furthest": [
+      1,
+      1
+     ],
+     "series_slug": "yatite-roloda-d3"
+    },
+    "evidence": [
+     "goal_rule:G07-r1",
+     "event:254699f8-d97b-4988-a9f4-27c3c5465dbd",
+     "event:291211a8-3ceb-4351-b875-a4e823ceafbe",
+     "event:9bfbd1c4-578f-4bdc-ba16-da165c343682"
+    ],
+    "reason": "series yatite-roloda-d3 reached S1E1 of S1E23, idle 24.9 days"
+   },
+   "closed_at": null,
+   "close_reason": null,
+   "outcome": null,
+   "history": [
+    {
+     "at": "2026-10-01T14:57:07.953Z",
+     "change": "opened",
+     "reason": "series yatite-roloda-d3 reached S1E1 of S1E23, idle 24.9 days"
+    }
+   ]
+  }
+ ],
+ "decisions": [
+  {
+   "decision_id": "D-41bb532915e7",
+   "trigger": "ed63c83b-51cb-4c12-8e2e-779a9e9539e5",
+   "deliver_at": "2026-10-01T14:57:07.953Z",
+   "status": "HOLDOUT",
+   "action": "NONE",
+   "goal": "G07",
+   "reason": "holdout arm: no agent action of any kind (goal tracked only so outcomes can be compared with the agent arm)"
+  }
+ ],
+ "actions": [],
+ "outcomes": [
+  {
+   "arm": "holdout",
+   "attribution": "n/a",
+   "deadline": "2026-10-04T14:57:07.953Z",
+   "decision_id": "D-41bb532915e7",
+   "evidence": [],
+   "exposures_before_success": [],
+   "exposures_window": [],
+   "final": true,
+   "goal_id": "G07",
+   "goal_instance_id": "GI-090e03400673",
+   "goal_status_in_replay": "open",
+   "judged_at": "2026-10-15T17:58:40.000Z",
+   "observed_until": "2026-10-15T17:58:40.000Z",
+   "reason": "no qualifying play_started between 2026-10-01T14:57:07.953Z and 2026-10-04T14:57:07.953Z",
+   "result": "failed",
+   "rule_history": [
+    {
+     "at": "2026-10-01T14:57:07.953Z",
+     "change": "opened",
+     "reason": "series yatite-roloda-d3 reached S1E1 of S1E23, idle 24.9 days"
+    }
+   ],
+   "rule_version": "G07-r1",
+   "started_at": "2026-10-01T14:57:07.953Z",
+   "success_condition": "same content_slug as the unfinished series",
+   "success_signal": "play_started",
+   "user_id": "U-04391"
+  }
+ ],
+ "learning": {
+  "actions": {},
+  "goal_results": [
+   {
+    "attribution": "n/a",
+    "goal_id": "G07",
+    "instance_id": "GI-090e03400673",
+    "result": "failed"
+   }
+  ],
+  "messages": {},
+  "notes": [],
+  "pages": {
+   "published": 0,
+   "shown_personalised": 0
+  }
+ },
+ "audit": []
+}

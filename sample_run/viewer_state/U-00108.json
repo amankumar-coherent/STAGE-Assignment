@@ -1,0 +1,322 @@
+{
+ "viewer_id": "U-00108",
+ "arm": "holdout",
+ "as_of": "2026-10-01T18:31:25.944Z",
+ "facts": {
+  "user_id": "U-00108",
+  "as_of": "2026-10-01T18:31:25.944Z",
+  "profile_present": true,
+  "history_start": "2026-08-31T18:31:55.380Z",
+  "history_covers_lifetime": false,
+  "events_seen": 94,
+  "facts": {
+   "dialect": {
+    "name": "dialect",
+    "value": null,
+    "source": "unknown",
+    "source_ref": null,
+    "source_time": null,
+    "freshness": "unknown",
+    "age_s": null,
+    "rule": "trigger carries no valid app_dialect (raw=None); the page the app will request is unknown, so no alternative is substituted",
+    "conflicts": [
+     {
+      "value": "d1",
+      "source": "profile",
+      "source_ref": "profile:U-00108@2026-09-29T00:56:51.815Z",
+      "resolution": "not used: cannot confirm it is the current app setting"
+     },
+     {
+      "value": "d1",
+      "source": "app_setting_earlier",
+      "source_ref": "event:fc0f39c9-c7db-486f-b7bf-b12a46349eae",
+      "resolution": "not used: cannot confirm it is the current app setting"
+     }
+    ],
+    "supported": false
+   },
+   "ever_paid": {
+    "name": "ever_paid",
+    "value": true,
+    "source": "event",
+    "source_ref": "event:61608ab0-5f7e-475e-910c-6f36b75dd158",
+    "source_time": "2026-09-29T00:56:51.815Z",
+    "freshness": "aging",
+    "age_s": 236074.1,
+    "rule": "any paid purchase/renewal event or a paid status on any profile row",
+    "conflicts": [],
+    "supported": true
+   },
+   "history_covers_lifetime": {
+    "name": "history_covers_lifetime",
+    "value": false,
+    "source": "derived",
+    "source_ref": "profile:U-00108@2026-09-29T00:56:51.815Z",
+    "source_time": "2026-09-29T00:56:51.815Z",
+    "freshness": "unknown",
+    "age_s": null,
+    "rule": "signup_at >= first observable event (2026-08-31T18:31:55.380Z); 'never did X' claims need full coverage",
+    "conflicts": [],
+    "supported": true
+   },
+   "last_app_open_before_trigger": {
+    "name": "last_app_open_before_trigger",
+    "value": "2026-10-01T18:22:01.471Z",
+    "source": "event",
+    "source_ref": "event:fc0f39c9-c7db-486f-b7bf-b12a46349eae",
+    "source_time": "2026-10-01T18:22:01.471Z",
+    "freshness": "fresh",
+    "age_s": 564.5,
+    "rule": "latest app_open in another session, ordered by server-anchored occurrence time",
+    "conflicts": [],
+    "supported": true
+   },
+   "profile_present": {
+    "name": "profile_present",
+    "value": true,
+    "source": "profile",
+    "source_ref": "profile:U-00108@2026-09-29T00:56:51.815Z",
+    "source_time": "2026-09-29T00:56:51.815Z",
+    "freshness": "aging",
+    "age_s": 236074.1,
+    "rule": "newest updated_at among snapshot rows",
+    "conflicts": [],
+    "supported": true
+   },
+   "push_consent": {
+    "name": "push_consent",
+    "value": true,
+    "source": "profile",
+    "source_ref": "profile:U-00108@2026-09-29T00:56:51.815Z",
+    "source_time": "2026-09-29T00:56:51.815Z",
+    "freshness": "aging",
+    "age_s": 236074.1,
+    "rule": "newest profile row notifications_opt_in",
+    "conflicts": [],
+    "supported": true
+   },
+   "signup_at": {
+    "name": "signup_at",
+    "value": "2026-06-15T19:35:14.730Z",
+    "source": "profile",
+    "source_ref": "profile:U-00108@2026-09-29T00:56:51.815Z",
+    "source_time": "2026-09-29T00:56:51.815Z",
+    "freshness": "aging",
+    "age_s": 236074.1,
+    "rule": "profile.signup_at (no signup event observed)",
+    "conflicts": [],
+    "supported": true
+   },
+   "subscription_status": {
+    "name": "subscription_status",
+    "value": "active",
+    "source": "profile",
+    "source_ref": "profile:U-00108@2026-09-29T00:56:51.815Z",
+    "source_time": "2026-09-29T00:56:51.815Z",
+    "freshness": "aging",
+    "age_s": 236074.1,
+    "rule": "newest profile row (no newer subscription event)",
+    "conflicts": [],
+    "supported": true
+   },
+   "whatsapp_consent": {
+    "name": "whatsapp_consent",
+    "value": false,
+    "source": "profile",
+    "source_ref": "profile:U-00108@2026-09-29T00:56:51.815Z",
+    "source_time": "2026-09-29T00:56:51.815Z",
+    "freshness": "aging",
+    "age_s": 236074.1,
+    "rule": "newest profile row whatsapp_opt_in",
+    "conflicts": [],
+    "supported": true
+   }
+  },
+  "watch": {
+   "plays": 12,
+   "completions": 8,
+   "watched_slugs": [
+    "bagugu-gigupi-d1",
+    "raja-badi-d1",
+    "rava-baya-d1"
+   ],
+   "top_genres": [
+    "Drama",
+    "Romance",
+    "Thriller",
+    "Devotional"
+   ],
+   "play_days_recent": [
+    "2026-09-18",
+    "2026-09-25",
+    "2026-09-26"
+   ],
+   "series": [
+    {
+     "slug": "rava-baya-d1",
+     "furthest": [
+      1,
+      1
+     ],
+     "last_episode": [
+      1,
+      1
+     ],
+     "last_play": "2026-09-12T09:38:17.659Z"
+    },
+    {
+     "slug": "bagugu-gigupi-d1",
+     "furthest": [
+      1,
+      3
+     ],
+     "last_episode": [
+      1,
+      8
+     ],
+     "last_play": "2026-09-25T22:47:38.828Z"
+    },
+    {
+     "slug": "raja-badi-d1",
+     "furthest": [
+      1,
+      1
+     ],
+     "last_episode": [
+      1,
+      1
+     ],
+     "last_play": "2026-09-16T06:46:57.743Z"
+    }
+   ]
+  },
+  "learning": {
+   "actions": {},
+   "goal_results": [
+    {
+     "attribution": "n/a",
+     "goal_id": "G07",
+     "instance_id": "GI-5a3bf6504a85",
+     "result": "failed"
+    }
+   ],
+   "messages": {},
+   "notes": [],
+   "pages": {
+    "published": 0,
+    "shown_personalised": 0
+   }
+  }
+ },
+ "goals": [
+  {
+   "instance_id": "GI-5a3bf6504a85",
+   "user_id": "U-00108",
+   "goal_id": "G07",
+   "rule_version": "G07-r1",
+   "status": "open",
+   "started_at": "2026-10-01T18:22:01.471Z",
+   "deadline": "2026-10-04T18:22:01.471Z",
+   "success_event": "play_started",
+   "success_condition": "same content_slug as the unfinished series",
+   "decision_id": "D-5c4978545b25",
+   "arm": "holdout",
+   "eligibility": {
+    "context": {
+     "furthest": [
+      1,
+      3
+     ],
+     "series_slug": "bagugu-gigupi-d1"
+    },
+    "evidence": [
+     "goal_rule:G07-r1",
+     "event:1ce0d9be-a635-48cf-adbc-2765a6f95977",
+     "event:4def3fa5-8c93-4b23-98c7-48066fdb56d5",
+     "event:10e1f42e-2406-4001-b05c-c85d7da0c991"
+    ],
+    "reason": "series bagugu-gigupi-d1 reached S1E3 of S1E8, idle 5.8 days"
+   },
+   "closed_at": null,
+   "close_reason": null,
+   "outcome": null,
+   "history": [
+    {
+     "at": "2026-10-01T18:22:01.471Z",
+     "change": "opened",
+     "reason": "series bagugu-gigupi-d1 reached S1E3 of S1E8, idle 5.8 days"
+    }
+   ]
+  }
+ ],
+ "decisions": [
+  {
+   "decision_id": "D-b0acbd906bb0",
+   "trigger": "0d8039df-7aa8-4328-98f0-378a0e52bb97",
+   "deliver_at": "2026-10-01T04:46:07.881Z",
+   "status": "HOLDOUT",
+   "action": "NONE",
+   "goal": null,
+   "reason": "holdout arm: no agent action of any kind (goal tracked only so outcomes can be compared with the agent arm)"
+  },
+  {
+   "decision_id": "D-5c4978545b25",
+   "trigger": "fc0f39c9-c7db-486f-b7bf-b12a46349eae",
+   "deliver_at": "2026-10-01T18:22:01.471Z",
+   "status": "HOLDOUT",
+   "action": "NONE",
+   "goal": "G07",
+   "reason": "holdout arm: no agent action of any kind (goal tracked only so outcomes can be compared with the agent arm)"
+  }
+ ],
+ "actions": [],
+ "outcomes": [
+  {
+   "arm": "holdout",
+   "attribution": "n/a",
+   "deadline": "2026-10-04T18:22:01.471Z",
+   "decision_id": "D-5c4978545b25",
+   "evidence": [],
+   "exposures_before_success": [],
+   "exposures_window": [],
+   "final": true,
+   "goal_id": "G07",
+   "goal_instance_id": "GI-5a3bf6504a85",
+   "goal_status_in_replay": "open",
+   "judged_at": "2026-10-15T17:58:40.000Z",
+   "observed_until": "2026-10-15T17:58:40.000Z",
+   "reason": "no qualifying play_started between 2026-10-01T18:22:01.471Z and 2026-10-04T18:22:01.471Z",
+   "result": "failed",
+   "rule_history": [
+    {
+     "at": "2026-10-01T18:22:01.471Z",
+     "change": "opened",
+     "reason": "series bagugu-gigupi-d1 reached S1E3 of S1E8, idle 5.8 days"
+    }
+   ],
+   "rule_version": "G07-r1",
+   "started_at": "2026-10-01T18:22:01.471Z",
+   "success_condition": "same content_slug as the unfinished series",
+   "success_signal": "play_started",
+   "user_id": "U-00108"
+  }
+ ],
+ "learning": {
+  "actions": {},
+  "goal_results": [
+   {
+    "attribution": "n/a",
+    "goal_id": "G07",
+    "instance_id": "GI-5a3bf6504a85",
+    "result": "failed"
+   }
+  ],
+  "messages": {},
+  "notes": [],
+  "pages": {
+   "published": 0,
+   "shown_personalised": 0
+  }
+ },
+ "audit": []
+}

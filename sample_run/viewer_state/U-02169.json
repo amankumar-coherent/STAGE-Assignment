@@ -1,0 +1,337 @@
+{
+ "viewer_id": "U-02169",
+ "arm": "holdout",
+ "as_of": "2026-10-01T18:31:25.944Z",
+ "facts": {
+  "user_id": "U-02169",
+  "as_of": "2026-10-01T18:31:25.944Z",
+  "profile_present": true,
+  "history_start": "2026-08-31T18:31:55.380Z",
+  "history_covers_lifetime": false,
+  "events_seen": 51,
+  "facts": {
+   "dialect": {
+    "name": "dialect",
+    "value": null,
+    "source": "unknown",
+    "source_ref": null,
+    "source_time": null,
+    "freshness": "unknown",
+    "age_s": null,
+    "rule": "trigger carries no valid app_dialect (raw=None); the page the app will request is unknown, so no alternative is substituted",
+    "conflicts": [
+     {
+      "value": "d1",
+      "source": "profile",
+      "source_ref": "profile:U-02169@2026-09-28T21:36:39.618Z",
+      "resolution": "not used: cannot confirm it is the current app setting"
+     },
+     {
+      "value": "d1",
+      "source": "app_setting_earlier",
+      "source_ref": "event:5ade546f-a9a6-4c1d-90c8-28226da87601",
+      "resolution": "not used: cannot confirm it is the current app setting"
+     }
+    ],
+    "supported": false
+   },
+   "ever_paid": {
+    "name": "ever_paid",
+    "value": true,
+    "source": "profile",
+    "source_ref": "profile:U-02169@2026-09-28T21:36:39.618Z",
+    "source_time": "2026-09-28T21:36:39.618Z",
+    "freshness": "aging",
+    "age_s": 248086.3,
+    "rule": "any paid purchase/renewal event or a paid status on any profile row",
+    "conflicts": [],
+    "supported": true
+   },
+   "history_covers_lifetime": {
+    "name": "history_covers_lifetime",
+    "value": false,
+    "source": "derived",
+    "source_ref": "profile:U-02169@2026-09-28T21:36:39.618Z",
+    "source_time": "2026-09-28T21:36:39.618Z",
+    "freshness": "unknown",
+    "age_s": null,
+    "rule": "signup_at >= first observable event (2026-08-31T18:31:55.380Z); 'never did X' claims need full coverage",
+    "conflicts": [],
+    "supported": true
+   },
+   "lapsed_at": {
+    "name": "lapsed_at",
+    "value": "2026-09-03T02:03:01.443Z",
+    "source": "event",
+    "source_ref": "event:a259e6ba-0abb-43a2-8e38-5330a6fbba6a",
+    "source_time": "2026-09-03T02:03:01.443Z",
+    "freshness": "unknown",
+    "age_s": null,
+    "rule": "subscription_lapsed event",
+    "conflicts": [],
+    "supported": true
+   },
+   "last_app_open_before_trigger": {
+    "name": "last_app_open_before_trigger",
+    "value": "2026-10-01T03:33:50.727Z",
+    "source": "event",
+    "source_ref": "event:5ade546f-a9a6-4c1d-90c8-28226da87601",
+    "source_time": "2026-10-01T03:33:50.727Z",
+    "freshness": "fresh",
+    "age_s": 53855.2,
+    "rule": "latest app_open in another session, ordered by server-anchored occurrence time",
+    "conflicts": [],
+    "supported": true
+   },
+   "profile_present": {
+    "name": "profile_present",
+    "value": true,
+    "source": "profile",
+    "source_ref": "profile:U-02169@2026-09-28T21:36:39.618Z",
+    "source_time": "2026-09-28T21:36:39.618Z",
+    "freshness": "aging",
+    "age_s": 248086.3,
+    "rule": "newest updated_at among snapshot rows",
+    "conflicts": [],
+    "supported": true
+   },
+   "push_consent": {
+    "name": "push_consent",
+    "value": true,
+    "source": "profile",
+    "source_ref": "profile:U-02169@2026-09-28T21:36:39.618Z",
+    "source_time": "2026-09-28T21:36:39.618Z",
+    "freshness": "aging",
+    "age_s": 248086.3,
+    "rule": "newest profile row notifications_opt_in",
+    "conflicts": [],
+    "supported": true
+   },
+   "signup_at": {
+    "name": "signup_at",
+    "value": "2025-02-03T19:53:47.778Z",
+    "source": "profile",
+    "source_ref": "profile:U-02169@2026-09-28T21:36:39.618Z",
+    "source_time": "2026-09-28T21:36:39.618Z",
+    "freshness": "aging",
+    "age_s": 248086.3,
+    "rule": "profile.signup_at (no signup event observed)",
+    "conflicts": [],
+    "supported": true
+   },
+   "subscription_status": {
+    "name": "subscription_status",
+    "value": "lapsed",
+    "source": "profile",
+    "source_ref": "profile:U-02169@2026-09-28T21:36:39.618Z",
+    "source_time": "2026-09-28T21:36:39.618Z",
+    "freshness": "aging",
+    "age_s": 248086.3,
+    "rule": "newest profile row (no newer subscription event)",
+    "conflicts": [],
+    "supported": true
+   },
+   "whatsapp_consent": {
+    "name": "whatsapp_consent",
+    "value": false,
+    "source": "profile",
+    "source_ref": "profile:U-02169@2026-09-28T21:36:39.618Z",
+    "source_time": "2026-09-28T21:36:39.618Z",
+    "freshness": "aging",
+    "age_s": 248086.3,
+    "rule": "newest profile row whatsapp_opt_in",
+    "conflicts": [],
+    "supported": true
+   }
+  },
+  "watch": {
+   "plays": 6,
+   "completions": 3,
+   "watched_slugs": [
+    "gima-bhadaba-d1",
+    "raloja-d1",
+    "rava-baya-d1",
+    "yani-rilana-d1"
+   ],
+   "top_genres": [
+    "Devotional",
+    "Comedy",
+    "Action",
+    "Drama",
+    "Thriller"
+   ],
+   "play_days_recent": [
+    "2026-09-28"
+   ],
+   "series": [
+    {
+     "slug": "raloja-d1",
+     "furthest": [
+      1,
+      1
+     ],
+     "last_episode": [
+      1,
+      1
+     ],
+     "last_play": "2026-09-05T16:28:23.890Z"
+    },
+    {
+     "slug": "yani-rilana-d1",
+     "furthest": [
+      1,
+      3
+     ],
+     "last_episode": [
+      1,
+      11
+     ],
+     "last_play": "2026-09-16T15:06:51.214Z"
+    },
+    {
+     "slug": "rava-baya-d1",
+     "furthest": [
+      1,
+      1
+     ],
+     "last_episode": [
+      1,
+      1
+     ],
+     "last_play": "2026-09-17T17:37:16.391Z"
+    },
+    {
+     "slug": "gima-bhadaba-d1",
+     "furthest": [
+      1,
+      1
+     ],
+     "last_episode": [
+      1,
+      44
+     ],
+     "last_play": "2026-09-28T12:59:12.952Z"
+    }
+   ]
+  },
+  "learning": {
+   "actions": {},
+   "goal_results": [
+    {
+     "attribution": "n/a",
+     "goal_id": "G07",
+     "instance_id": "GI-6f6776b91f38",
+     "result": "failed"
+    }
+   ],
+   "messages": {},
+   "notes": [],
+   "pages": {
+    "published": 0,
+    "shown_personalised": 0
+   }
+  }
+ },
+ "goals": [
+  {
+   "instance_id": "GI-6f6776b91f38",
+   "user_id": "U-02169",
+   "goal_id": "G07",
+   "rule_version": "G07-r1",
+   "status": "open",
+   "started_at": "2026-10-01T03:33:50.727Z",
+   "deadline": "2026-10-04T03:33:50.727Z",
+   "success_event": "play_started",
+   "success_condition": "same content_slug as the unfinished series",
+   "decision_id": "D-3d2b96df2fc7",
+   "arm": "holdout",
+   "eligibility": {
+    "context": {
+     "furthest": [
+      1,
+      3
+     ],
+     "series_slug": "yani-rilana-d1"
+    },
+    "evidence": [
+     "goal_rule:G07-r1",
+     "event:7f92330d-2f6c-4b28-bac9-da2a16e85a01",
+     "event:bb3d410d-3ccc-4938-b6b1-d4f256b0e36f",
+     "event:ddbbe02e-0f46-427f-b735-22a2cad57946"
+    ],
+    "reason": "series yani-rilana-d1 reached S1E3 of S1E11, idle 14.5 days"
+   },
+   "closed_at": null,
+   "close_reason": null,
+   "outcome": null,
+   "history": [
+    {
+     "at": "2026-10-01T03:33:50.727Z",
+     "change": "opened",
+     "reason": "series yani-rilana-d1 reached S1E3 of S1E11, idle 14.5 days"
+    }
+   ]
+  }
+ ],
+ "decisions": [
+  {
+   "decision_id": "D-3d2b96df2fc7",
+   "trigger": "5ade546f-a9a6-4c1d-90c8-28226da87601",
+   "deliver_at": "2026-10-01T03:33:50.727Z",
+   "status": "HOLDOUT",
+   "action": "NONE",
+   "goal": "G07",
+   "reason": "holdout arm: no agent action of any kind (goal tracked only so outcomes can be compared with the agent arm)"
+  }
+ ],
+ "actions": [],
+ "outcomes": [
+  {
+   "arm": "holdout",
+   "attribution": "n/a",
+   "deadline": "2026-10-04T03:33:50.727Z",
+   "decision_id": "D-3d2b96df2fc7",
+   "evidence": [],
+   "exposures_before_success": [],
+   "exposures_window": [],
+   "final": true,
+   "goal_id": "G07",
+   "goal_instance_id": "GI-6f6776b91f38",
+   "goal_status_in_replay": "open",
+   "judged_at": "2026-10-15T17:58:40.000Z",
+   "observed_until": "2026-10-15T17:58:40.000Z",
+   "reason": "no qualifying play_started between 2026-10-01T03:33:50.727Z and 2026-10-04T03:33:50.727Z",
+   "result": "failed",
+   "rule_history": [
+    {
+     "at": "2026-10-01T03:33:50.727Z",
+     "change": "opened",
+     "reason": "series yani-rilana-d1 reached S1E3 of S1E11, idle 14.5 days"
+    }
+   ],
+   "rule_version": "G07-r1",
+   "started_at": "2026-10-01T03:33:50.727Z",
+   "success_condition": "same content_slug as the unfinished series",
+   "success_signal": "play_started",
+   "user_id": "U-02169"
+  }
+ ],
+ "learning": {
+  "actions": {},
+  "goal_results": [
+   {
+    "attribution": "n/a",
+    "goal_id": "G07",
+    "instance_id": "GI-6f6776b91f38",
+    "result": "failed"
+   }
+  ],
+  "messages": {},
+  "notes": [],
+  "pages": {
+   "published": 0,
+   "shown_personalised": 0
+  }
+ },
+ "audit": []
+}

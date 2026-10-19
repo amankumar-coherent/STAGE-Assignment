@@ -1,0 +1,342 @@
+{
+ "viewer_id": "U-02479",
+ "arm": "agent",
+ "as_of": "2026-10-01T18:31:25.944Z",
+ "facts": {
+  "user_id": "U-02479",
+  "as_of": "2026-10-01T18:31:25.944Z",
+  "profile_present": true,
+  "history_start": "2026-08-31T18:31:55.380Z",
+  "history_covers_lifetime": false,
+  "events_seen": 35,
+  "facts": {
+   "dialect": {
+    "name": "dialect",
+    "value": null,
+    "source": "unknown",
+    "source_ref": null,
+    "source_time": null,
+    "freshness": "unknown",
+    "age_s": null,
+    "rule": "trigger carries no valid app_dialect (raw=None); the page the app will request is unknown, so no alternative is substituted",
+    "conflicts": [
+     {
+      "value": "d6",
+      "source": "profile",
+      "source_ref": "profile:U-02479@2026-09-28T22:45:32.548Z",
+      "resolution": "not used: cannot confirm it is the current app setting"
+     },
+     {
+      "value": "d6",
+      "source": "app_setting_earlier",
+      "source_ref": "event:8bd816b1-9d05-49b6-9b54-757f84db810a",
+      "resolution": "not used: cannot confirm it is the current app setting"
+     }
+    ],
+    "supported": false
+   },
+   "ever_paid": {
+    "name": "ever_paid",
+    "value": false,
+    "source": "profile",
+    "source_ref": "profile:U-02479@2026-09-28T22:45:32.548Z",
+    "source_time": "2026-09-28T22:45:32.548Z",
+    "freshness": "aging",
+    "age_s": 243953.4,
+    "rule": "any paid purchase/renewal event or a paid status on any profile row",
+    "conflicts": [],
+    "supported": true
+   },
+   "history_covers_lifetime": {
+    "name": "history_covers_lifetime",
+    "value": false,
+    "source": "derived",
+    "source_ref": "profile:U-02479@2026-09-28T22:45:32.548Z",
+    "source_time": "2026-09-28T22:45:32.548Z",
+    "freshness": "unknown",
+    "age_s": null,
+    "rule": "signup_at >= first observable event (2026-08-31T18:31:55.380Z); 'never did X' claims need full coverage",
+    "conflicts": [],
+    "supported": true
+   },
+   "last_app_open_before_trigger": {
+    "name": "last_app_open_before_trigger",
+    "value": "2026-10-01T04:05:11.751Z",
+    "source": "event",
+    "source_ref": "event:8bd816b1-9d05-49b6-9b54-757f84db810a",
+    "source_time": "2026-10-01T04:05:11.751Z",
+    "freshness": "fresh",
+    "age_s": 51974.2,
+    "rule": "latest app_open in another session, ordered by server-anchored occurrence time",
+    "conflicts": [],
+    "supported": true
+   },
+   "profile_present": {
+    "name": "profile_present",
+    "value": true,
+    "source": "profile",
+    "source_ref": "profile:U-02479@2026-09-28T22:45:32.548Z",
+    "source_time": "2026-09-28T22:45:32.548Z",
+    "freshness": "aging",
+    "age_s": 243953.4,
+    "rule": "newest updated_at among snapshot rows",
+    "conflicts": [],
+    "supported": true
+   },
+   "push_consent": {
+    "name": "push_consent",
+    "value": true,
+    "source": "profile",
+    "source_ref": "profile:U-02479@2026-09-28T22:45:32.548Z",
+    "source_time": "2026-09-28T22:45:32.548Z",
+    "freshness": "aging",
+    "age_s": 243953.4,
+    "rule": "newest profile row notifications_opt_in",
+    "conflicts": [],
+    "supported": true
+   },
+   "signup_at": {
+    "name": "signup_at",
+    "value": "2025-03-20T16:37:08.182Z",
+    "source": "profile",
+    "source_ref": "profile:U-02479@2026-09-28T22:45:32.548Z",
+    "source_time": "2026-09-28T22:45:32.548Z",
+    "freshness": "aging",
+    "age_s": 243953.4,
+    "rule": "profile.signup_at (no signup event observed)",
+    "conflicts": [],
+    "supported": true
+   },
+   "subscription_status": {
+    "name": "subscription_status",
+    "value": "never",
+    "source": "profile",
+    "source_ref": "profile:U-02479@2026-09-28T22:45:32.548Z",
+    "source_time": "2026-09-28T22:45:32.548Z",
+    "freshness": "aging",
+    "age_s": 243953.4,
+    "rule": "newest profile row (no newer subscription event)",
+    "conflicts": [],
+    "supported": true
+   },
+   "whatsapp_consent": {
+    "name": "whatsapp_consent",
+    "value": false,
+    "source": "profile",
+    "source_ref": "profile:U-02479@2026-09-28T22:45:32.548Z",
+    "source_time": "2026-09-28T22:45:32.548Z",
+    "freshness": "aging",
+    "age_s": 243953.4,
+    "rule": "newest profile row whatsapp_opt_in",
+    "conflicts": [],
+    "supported": true
+   }
+  },
+  "watch": {
+   "plays": 4,
+   "completions": 2,
+   "watched_slugs": [
+    "rasuya-moni-d6"
+   ],
+   "top_genres": [
+    "Devotional",
+    "Thriller"
+   ],
+   "play_days_recent": [
+    "2026-09-24",
+    "2026-09-26"
+   ],
+   "series": [
+    {
+     "slug": "rasuya-moni-d6",
+     "furthest": [
+      1,
+      3
+     ],
+     "last_episode": [
+      1,
+      9
+     ],
+     "last_play": "2026-09-26T18:34:58.935Z"
+    }
+   ]
+  },
+  "learning": {
+   "actions": {
+    "home_page": {
+     "published": 1
+    },
+    "push": {
+     "sent": 1
+    }
+   },
+   "goal_results": [
+    {
+     "attribution": "n/a",
+     "goal_id": "G07",
+     "instance_id": "GI-2973094caf43",
+     "result": "failed"
+    }
+   ],
+   "messages": {
+    "push": {
+     "clicked": 0,
+     "delivered": 1,
+     "failed": {}
+    }
+   },
+   "notes": [
+    "published page(s) were never shown: viewer did not reach a home page while a page was live"
+   ],
+   "pages": {
+    "published": 1,
+    "shown_personalised": 0
+   }
+  }
+ },
+ "goals": [
+  {
+   "instance_id": "GI-2973094caf43",
+   "user_id": "U-02479",
+   "goal_id": "G07",
+   "rule_version": "G07-r1",
+   "status": "open",
+   "started_at": "2026-10-01T04:05:11.751Z",
+   "deadline": "2026-10-04T04:05:11.751Z",
+   "success_event": "play_started",
+   "success_condition": "same content_slug as the unfinished series",
+   "decision_id": "D-8691d454e5da",
+   "arm": "agent",
+   "eligibility": {
+    "context": {
+     "furthest": [
+      1,
+      3
+     ],
+     "series_slug": "rasuya-moni-d6"
+    },
+    "evidence": [
+     "goal_rule:G07-r1",
+     "event:4988cafd-1957-443a-ab8c-f780a2daf519",
+     "event:03e7db21-40aa-4243-a998-0f57cf443307",
+     "event:37b41548-e36e-4fb8-845b-a49854e12fb2"
+    ],
+    "reason": "series rasuya-moni-d6 reached S1E3 of S1E9, idle 4.4 days"
+   },
+   "closed_at": null,
+   "close_reason": null,
+   "outcome": null,
+   "history": [
+    {
+     "at": "2026-10-01T04:05:11.751Z",
+     "change": "opened",
+     "reason": "series rasuya-moni-d6 reached S1E3 of S1E9, idle 4.4 days"
+    }
+   ]
+  }
+ ],
+ "decisions": [
+  {
+   "decision_id": "D-8691d454e5da",
+   "trigger": "8bd816b1-9d05-49b6-9b54-757f84db810a",
+   "deliver_at": "2026-10-01T04:05:11.751Z",
+   "status": "PUBLISHED",
+   "action": "HOME_PAGE+PUSH",
+   "goal": "G07",
+   "reason": null
+  },
+  {
+   "decision_id": "D-46aa85af7df7",
+   "trigger": "2f5f9684-33f9-4f07-ba76-a161d8298870",
+   "deliver_at": "2026-10-01T04:47:19.876Z",
+   "status": "ABSTAINED",
+   "action": "NONE",
+   "goal": "G07",
+   "reason": "stale trigger: app open buffered offline for 73.8 h (> 600 s); the viewer is not in a live session, so a page or message now would not match their visit. Event kept for history."
+  }
+ ],
+ "actions": [
+  {
+   "action_id": "A-08701a20bfb4",
+   "type": "push",
+   "status": "sent",
+   "status_reason": "revalidated at send time",
+   "published_at": "2026-10-01T04:05:12.469Z",
+   "send_at": "2026-10-01T07:05:14.467Z"
+  },
+  {
+   "action_id": "A-e3ce3dff9cff",
+   "type": "home_page",
+   "status": "published",
+   "status_reason": null,
+   "published_at": "2026-10-01T04:05:12.469Z",
+   "send_at": null
+  }
+ ],
+ "outcomes": [
+  {
+   "arm": "agent",
+   "attribution": "n/a",
+   "deadline": "2026-10-04T04:05:11.751Z",
+   "decision_id": "D-8691d454e5da",
+   "evidence": [],
+   "exposures_before_success": [],
+   "exposures_window": [
+    "event:oua-015915"
+   ],
+   "final": true,
+   "goal_id": "G07",
+   "goal_instance_id": "GI-2973094caf43",
+   "goal_status_in_replay": "open",
+   "judged_at": "2026-10-15T17:58:40.000Z",
+   "observed_until": "2026-10-15T17:58:40.000Z",
+   "reason": "no qualifying play_started between 2026-10-01T04:05:11.751Z and 2026-10-04T04:05:11.751Z",
+   "result": "failed",
+   "rule_history": [
+    {
+     "at": "2026-10-01T04:05:11.751Z",
+     "change": "opened",
+     "reason": "series rasuya-moni-d6 reached S1E3 of S1E9, idle 4.4 days"
+    }
+   ],
+   "rule_version": "G07-r1",
+   "started_at": "2026-10-01T04:05:11.751Z",
+   "success_condition": "same content_slug as the unfinished series",
+   "success_signal": "play_started",
+   "user_id": "U-02479"
+  }
+ ],
+ "learning": {
+  "actions": {
+   "home_page": {
+    "published": 1
+   },
+   "push": {
+    "sent": 1
+   }
+  },
+  "goal_results": [
+   {
+    "attribution": "n/a",
+    "goal_id": "G07",
+    "instance_id": "GI-2973094caf43",
+    "result": "failed"
+   }
+  ],
+  "messages": {
+   "push": {
+    "clicked": 0,
+    "delivered": 1,
+    "failed": {}
+   }
+  },
+  "notes": [
+   "published page(s) were never shown: viewer did not reach a home page while a page was live"
+  ],
+  "pages": {
+   "published": 1,
+   "shown_personalised": 0
+  }
+ },
+ "audit": []
+}

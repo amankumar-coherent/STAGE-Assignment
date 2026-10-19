@@ -1,0 +1,305 @@
+{
+ "viewer_id": "U-01105",
+ "arm": "holdout",
+ "as_of": "2026-10-01T18:31:25.944Z",
+ "facts": {
+  "user_id": "U-01105",
+  "as_of": "2026-10-01T18:31:25.944Z",
+  "profile_present": true,
+  "history_start": "2026-08-31T18:31:55.380Z",
+  "history_covers_lifetime": true,
+  "events_seen": 22,
+  "facts": {
+   "dialect": {
+    "name": "dialect",
+    "value": null,
+    "source": "unknown",
+    "source_ref": null,
+    "source_time": null,
+    "freshness": "unknown",
+    "age_s": null,
+    "rule": "trigger carries no valid app_dialect (raw=None); the page the app will request is unknown, so no alternative is substituted",
+    "conflicts": [
+     {
+      "value": "d5",
+      "source": "profile",
+      "source_ref": "profile:U-01105@2026-09-29T13:56:01.362Z",
+      "resolution": "not used: cannot confirm it is the current app setting"
+     },
+     {
+      "value": "d1",
+      "source": "app_setting_earlier",
+      "source_ref": "event:ef38ae0a-3e50-4b0a-8af5-fec62fcc9b22",
+      "resolution": "not used: cannot confirm it is the current app setting"
+     }
+    ],
+    "supported": false
+   },
+   "ever_paid": {
+    "name": "ever_paid",
+    "value": true,
+    "source": "event",
+    "source_ref": "event:8c3e63fa-f8b9-45ef-8e28-821a8545c129",
+    "source_time": "2026-09-29T13:56:01.362Z",
+    "freshness": "aging",
+    "age_s": 189324.6,
+    "rule": "any paid purchase/renewal event or a paid status on any profile row",
+    "conflicts": [],
+    "supported": true
+   },
+   "history_covers_lifetime": {
+    "name": "history_covers_lifetime",
+    "value": true,
+    "source": "derived",
+    "source_ref": "event:bdf40800-0951-489b-ae72-6f69ea83f7ed",
+    "source_time": "2026-09-24T14:56:00.263Z",
+    "freshness": "unknown",
+    "age_s": null,
+    "rule": "signup_at >= first observable event (2026-08-31T18:31:55.380Z); 'never did X' claims need full coverage",
+    "conflicts": [],
+    "supported": true
+   },
+   "last_app_open_before_trigger": {
+    "name": "last_app_open_before_trigger",
+    "value": "2026-10-01T15:22:57.501Z",
+    "source": "event",
+    "source_ref": "event:ef38ae0a-3e50-4b0a-8af5-fec62fcc9b22",
+    "source_time": "2026-10-01T15:22:57.501Z",
+    "freshness": "fresh",
+    "age_s": 11308.4,
+    "rule": "latest app_open in another session, ordered by server-anchored occurrence time",
+    "conflicts": [],
+    "supported": true
+   },
+   "profile_present": {
+    "name": "profile_present",
+    "value": true,
+    "source": "profile",
+    "source_ref": "profile:U-01105@2026-09-29T13:56:01.362Z",
+    "source_time": "2026-09-29T13:56:01.362Z",
+    "freshness": "aging",
+    "age_s": 189324.6,
+    "rule": "newest updated_at among snapshot rows",
+    "conflicts": [],
+    "supported": true
+   },
+   "push_consent": {
+    "name": "push_consent",
+    "value": false,
+    "source": "profile",
+    "source_ref": "profile:U-01105@2026-09-29T13:56:01.362Z",
+    "source_time": "2026-09-29T13:56:01.362Z",
+    "freshness": "aging",
+    "age_s": 189324.6,
+    "rule": "newest profile row notifications_opt_in",
+    "conflicts": [],
+    "supported": true
+   },
+   "signup_at": {
+    "name": "signup_at",
+    "value": "2026-09-24T14:56:00.263Z",
+    "source": "event",
+    "source_ref": "event:bdf40800-0951-489b-ae72-6f69ea83f7ed",
+    "source_time": "2026-09-24T14:56:00.263Z",
+    "freshness": "stale",
+    "age_s": 617725.7,
+    "rule": "signup_completed event > profile.signup_at",
+    "conflicts": [],
+    "supported": true
+   },
+   "subscription_status": {
+    "name": "subscription_status",
+    "value": "active",
+    "source": "profile",
+    "source_ref": "profile:U-01105@2026-09-29T13:56:01.362Z",
+    "source_time": "2026-09-29T13:56:01.362Z",
+    "freshness": "aging",
+    "age_s": 189324.6,
+    "rule": "newest profile row (no newer subscription event)",
+    "conflicts": [],
+    "supported": true
+   },
+   "whatsapp_consent": {
+    "name": "whatsapp_consent",
+    "value": false,
+    "source": "profile",
+    "source_ref": "profile:U-01105@2026-09-29T13:56:01.362Z",
+    "source_time": "2026-09-29T13:56:01.362Z",
+    "freshness": "aging",
+    "age_s": 189324.6,
+    "rule": "newest profile row whatsapp_opt_in",
+    "conflicts": [],
+    "supported": true
+   }
+  },
+  "watch": {
+   "plays": 1,
+   "completions": 1,
+   "watched_slugs": [
+    "rava-baya-d1"
+   ],
+   "top_genres": [
+    "Drama",
+    "Thriller"
+   ],
+   "play_days_recent": [
+    "2026-09-29"
+   ],
+   "series": [
+    {
+     "slug": "rava-baya-d1",
+     "furthest": [
+      1,
+      1
+     ],
+     "last_episode": [
+      1,
+      1
+     ],
+     "last_play": "2026-09-29T07:40:28.401Z"
+    }
+   ]
+  },
+  "learning": {
+   "actions": {},
+   "goal_results": [
+    {
+     "attribution": "holdout: no agent exposure possible",
+     "goal_id": "G09",
+     "instance_id": "GI-cba322efd605",
+     "result": "succeeded"
+    }
+   ],
+   "messages": {},
+   "notes": [],
+   "pages": {
+    "published": 0,
+    "shown_personalised": 0
+   }
+  }
+ },
+ "goals": [
+  {
+   "instance_id": "GI-cba322efd605",
+   "user_id": "U-01105",
+   "goal_id": "G09",
+   "rule_version": "G09-r1",
+   "status": "open",
+   "started_at": "2026-10-01T06:44:18.506Z",
+   "deadline": "2026-10-15T06:44:18.506Z",
+   "success_event": "play_started",
+   "success_condition": "on 3 distinct IST days",
+   "decision_id": "D-694da3c544a9",
+   "arm": "holdout",
+   "eligibility": {
+    "context": {},
+    "evidence": [
+     "goal_rule:G09-r1",
+     "profile:U-01105@2026-09-29T13:56:01.362Z"
+    ],
+    "reason": "active subscriber with plays on 1 IST day(s) in the last 14 days"
+   },
+   "closed_at": null,
+   "close_reason": null,
+   "outcome": null,
+   "history": [
+    {
+     "at": "2026-10-01T06:44:18.506Z",
+     "change": "opened",
+     "reason": "active subscriber with plays on 1 IST day(s) in the last 14 days"
+    }
+   ]
+  }
+ ],
+ "decisions": [
+  {
+   "decision_id": "D-694da3c544a9",
+   "trigger": "4eaa4196-1ebf-446d-b4df-ea79364b3dae",
+   "deliver_at": "2026-10-01T06:44:18.506Z",
+   "status": "HOLDOUT",
+   "action": "NONE",
+   "goal": "G09",
+   "reason": "holdout arm: no agent action of any kind (goal tracked only so outcomes can be compared with the agent arm)"
+  },
+  {
+   "decision_id": "D-1d7262c87b45",
+   "trigger": "ed2348c3-b1a1-47ce-8bd6-4520c63b3c04",
+   "deliver_at": "2026-10-01T12:08:20.265Z",
+   "status": "HOLDOUT",
+   "action": "NONE",
+   "goal": "G09",
+   "reason": "holdout arm: no agent action of any kind (goal tracked only so outcomes can be compared with the agent arm)"
+  },
+  {
+   "decision_id": "D-1d7262c87b45-dup-cd3823",
+   "trigger": "ed2348c3-b1a1-47ce-8bd6-4520c63b3c04",
+   "deliver_at": "2026-10-01T12:12:42.279Z",
+   "status": "DUPLICATE_IGNORED",
+   "action": "NONE",
+   "goal": null,
+   "reason": "duplicate delivery (#2) of trigger ed2348c3-b1a1-47ce-8bd6-4520c63b3c04; already decided as D-1d7262c87b45"
+  },
+  {
+   "decision_id": "D-5e1365cedff7",
+   "trigger": "ef38ae0a-3e50-4b0a-8af5-fec62fcc9b22",
+   "deliver_at": "2026-10-01T15:22:57.501Z",
+   "status": "HOLDOUT",
+   "action": "NONE",
+   "goal": "G09",
+   "reason": "holdout arm: no agent action of any kind (goal tracked only so outcomes can be compared with the agent arm)"
+  }
+ ],
+ "actions": [],
+ "outcomes": [
+  {
+   "arm": "holdout",
+   "attribution": "holdout: no agent exposure possible",
+   "deadline": "2026-10-15T06:44:18.506Z",
+   "decision_id": "D-694da3c544a9",
+   "evidence": [
+    "event:oua-007574",
+    "event:oua-007580",
+    "event:oua-007586"
+   ],
+   "exposures_before_success": [],
+   "final": true,
+   "goal_id": "G09",
+   "goal_instance_id": "GI-cba322efd605",
+   "goal_status_in_replay": "open",
+   "judged_at": "2026-10-15T17:58:40.000Z",
+   "observed_until": "2026-10-15T17:58:40.000Z",
+   "reason": "play_started at 2026-10-13T17:24:39.000Z (17920 min after goal start) satisfies 'on 3 distinct IST days' under G09-r1",
+   "result": "succeeded",
+   "rule_history": [
+    {
+     "at": "2026-10-01T06:44:18.506Z",
+     "change": "opened",
+     "reason": "active subscriber with plays on 1 IST day(s) in the last 14 days"
+    }
+   ],
+   "rule_version": "G09-r1",
+   "started_at": "2026-10-01T06:44:18.506Z",
+   "success_condition": "on 3 distinct IST days",
+   "success_signal": "play_started",
+   "user_id": "U-01105"
+  }
+ ],
+ "learning": {
+  "actions": {},
+  "goal_results": [
+   {
+    "attribution": "holdout: no agent exposure possible",
+    "goal_id": "G09",
+    "instance_id": "GI-cba322efd605",
+    "result": "succeeded"
+   }
+  ],
+  "messages": {},
+  "notes": [],
+  "pages": {
+   "published": 0,
+   "shown_personalised": 0
+  }
+ },
+ "audit": []
+}

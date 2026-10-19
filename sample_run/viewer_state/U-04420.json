@@ -1,0 +1,387 @@
+{
+ "viewer_id": "U-04420",
+ "arm": "agent",
+ "as_of": "2026-10-01T18:31:25.944Z",
+ "facts": {
+  "user_id": "U-04420",
+  "as_of": "2026-10-01T18:31:25.944Z",
+  "profile_present": true,
+  "history_start": "2026-08-31T18:31:55.380Z",
+  "history_covers_lifetime": false,
+  "events_seen": 73,
+  "facts": {
+   "dialect": {
+    "name": "dialect",
+    "value": null,
+    "source": "unknown",
+    "source_ref": null,
+    "source_time": null,
+    "freshness": "unknown",
+    "age_s": null,
+    "rule": "trigger carries no valid app_dialect (raw=None); the page the app will request is unknown, so no alternative is substituted",
+    "conflicts": [
+     {
+      "value": "d2",
+      "source": "profile",
+      "source_ref": "profile:U-04420@2026-09-29T10:09:27.036Z",
+      "resolution": "not used: cannot confirm it is the current app setting"
+     },
+     {
+      "value": "d2",
+      "source": "app_setting_earlier",
+      "source_ref": "event:3e4ca1fe-20c0-4967-bb8a-41ec9691a211",
+      "resolution": "not used: cannot confirm it is the current app setting"
+     }
+    ],
+    "supported": false
+   },
+   "ever_paid": {
+    "name": "ever_paid",
+    "value": true,
+    "source": "event",
+    "source_ref": "event:0244d045-fe8c-48a3-ada1-0a815fed0fe7",
+    "source_time": "2026-09-29T10:09:27.036Z",
+    "freshness": "aging",
+    "age_s": 202918.9,
+    "rule": "any paid purchase/renewal event or a paid status on any profile row",
+    "conflicts": [],
+    "supported": true
+   },
+   "history_covers_lifetime": {
+    "name": "history_covers_lifetime",
+    "value": false,
+    "source": "derived",
+    "source_ref": "profile:U-04420@2026-09-29T10:09:27.036Z",
+    "source_time": "2026-09-29T10:09:27.036Z",
+    "freshness": "unknown",
+    "age_s": null,
+    "rule": "signup_at >= first observable event (2026-08-31T18:31:55.380Z); 'never did X' claims need full coverage",
+    "conflicts": [],
+    "supported": true
+   },
+   "last_app_open_before_trigger": {
+    "name": "last_app_open_before_trigger",
+    "value": "2026-10-01T14:35:07.690Z",
+    "source": "event",
+    "source_ref": "event:3e4ca1fe-20c0-4967-bb8a-41ec9691a211",
+    "source_time": "2026-10-01T14:35:07.690Z",
+    "freshness": "fresh",
+    "age_s": 14178.3,
+    "rule": "latest app_open in another session, ordered by server-anchored occurrence time",
+    "conflicts": [],
+    "supported": true
+   },
+   "profile_present": {
+    "name": "profile_present",
+    "value": true,
+    "source": "profile",
+    "source_ref": "profile:U-04420@2026-09-29T10:09:27.036Z",
+    "source_time": "2026-09-29T10:09:27.036Z",
+    "freshness": "aging",
+    "age_s": 202918.9,
+    "rule": "newest updated_at among snapshot rows",
+    "conflicts": [],
+    "supported": true
+   },
+   "push_consent": {
+    "name": "push_consent",
+    "value": true,
+    "source": "profile",
+    "source_ref": "profile:U-04420@2026-09-29T10:09:27.036Z",
+    "source_time": "2026-09-29T10:09:27.036Z",
+    "freshness": "aging",
+    "age_s": 202918.9,
+    "rule": "newest profile row notifications_opt_in",
+    "conflicts": [],
+    "supported": true
+   },
+   "signup_at": {
+    "name": "signup_at",
+    "value": "2024-11-18T06:09:33.832Z",
+    "source": "profile",
+    "source_ref": "profile:U-04420@2026-09-29T10:09:27.036Z",
+    "source_time": "2026-09-29T10:09:27.036Z",
+    "freshness": "aging",
+    "age_s": 202918.9,
+    "rule": "profile.signup_at (no signup event observed)",
+    "conflicts": [],
+    "supported": true
+   },
+   "subscription_status": {
+    "name": "subscription_status",
+    "value": "active",
+    "source": "profile",
+    "source_ref": "profile:U-04420@2026-09-29T10:09:27.036Z",
+    "source_time": "2026-09-29T10:09:27.036Z",
+    "freshness": "aging",
+    "age_s": 202918.9,
+    "rule": "newest profile row (no newer subscription event)",
+    "conflicts": [],
+    "supported": true
+   },
+   "whatsapp_consent": {
+    "name": "whatsapp_consent",
+    "value": false,
+    "source": "profile",
+    "source_ref": "profile:U-04420@2026-09-29T10:09:27.036Z",
+    "source_time": "2026-09-29T10:09:27.036Z",
+    "freshness": "aging",
+    "age_s": 202918.9,
+    "rule": "newest profile row whatsapp_opt_in",
+    "conflicts": [],
+    "supported": true
+   }
+  },
+  "watch": {
+   "plays": 9,
+   "completions": 5,
+   "watched_slugs": [
+    "gibha-bhalomo-d2",
+    "guka-kosusa-d2",
+    "molo-d2",
+    "neba-d2",
+    "yanagu-negiba-d2"
+   ],
+   "top_genres": [
+    "Devotional",
+    "Romance",
+    "Action",
+    "Drama",
+    "Crime"
+   ],
+   "play_days_recent": [
+    "2026-09-23",
+    "2026-09-26",
+    "2026-09-29",
+    "2026-09-30"
+   ],
+   "series": [
+    {
+     "slug": "yanagu-negiba-d2",
+     "furthest": [
+      1,
+      2
+     ],
+     "last_episode": [
+      2,
+      11
+     ],
+     "last_play": "2026-09-26T06:56:03.615Z"
+    },
+    {
+     "slug": "molo-d2",
+     "furthest": [
+      1,
+      1
+     ],
+     "last_episode": [
+      1,
+      7
+     ],
+     "last_play": "2026-09-11T09:33:12.007Z"
+    },
+    {
+     "slug": "gibha-bhalomo-d2",
+     "furthest": [
+      1,
+      1
+     ],
+     "last_episode": [
+      1,
+      48
+     ],
+     "last_play": "2026-09-17T06:16:57.966Z"
+    },
+    {
+     "slug": "neba-d2",
+     "furthest": [
+      1,
+      1
+     ],
+     "last_episode": [
+      1,
+      1
+     ],
+     "last_play": "2026-09-23T17:33:31.808Z"
+    },
+    {
+     "slug": "guka-kosusa-d2",
+     "furthest": [
+      1,
+      2
+     ],
+     "last_episode": [
+      1,
+      41
+     ],
+     "last_play": "2026-09-30T12:49:54.471Z"
+    }
+   ]
+  },
+  "learning": {
+   "actions": {
+    "home_page": {
+     "published": 1
+    },
+    "push": {
+     "scheduled": 1
+    }
+   },
+   "goal_results": [
+    {
+     "attribution": "n/a",
+     "goal_id": "G07",
+     "instance_id": "GI-352e2389b64d",
+     "result": "failed"
+    }
+   ],
+   "messages": {
+    "push": {
+     "clicked": 0,
+     "delivered": 1,
+     "failed": {}
+    }
+   },
+   "notes": [],
+   "pages": {
+    "published": 1,
+    "shown_personalised": 1
+   }
+  }
+ },
+ "goals": [
+  {
+   "instance_id": "GI-352e2389b64d",
+   "user_id": "U-04420",
+   "goal_id": "G07",
+   "rule_version": "G07-r1",
+   "status": "open",
+   "started_at": "2026-10-01T14:35:07.690Z",
+   "deadline": "2026-10-04T14:35:07.690Z",
+   "success_event": "play_started",
+   "success_condition": "same content_slug as the unfinished series",
+   "decision_id": "D-b9a1b189c677",
+   "arm": "agent",
+   "eligibility": {
+    "context": {
+     "furthest": [
+      1,
+      2
+     ],
+     "series_slug": "yanagu-negiba-d2"
+    },
+    "evidence": [
+     "goal_rule:G07-r1",
+     "event:6b53dfb1-b82d-4f7e-ac6c-8b6deadb4d96",
+     "event:15169433-2acb-4b71-8346-e9ea134fb823",
+     "event:c3a78c73-a270-4096-bd4e-e37deed33ad1"
+    ],
+    "reason": "series yanagu-negiba-d2 reached S1E2 of S2E11, idle 5.3 days"
+   },
+   "closed_at": null,
+   "close_reason": null,
+   "outcome": null,
+   "history": [
+    {
+     "at": "2026-10-01T14:35:07.690Z",
+     "change": "opened",
+     "reason": "series yanagu-negiba-d2 reached S1E2 of S2E11, idle 5.3 days"
+    }
+   ]
+  }
+ ],
+ "decisions": [
+  {
+   "decision_id": "D-b9a1b189c677",
+   "trigger": "3e4ca1fe-20c0-4967-bb8a-41ec9691a211",
+   "deliver_at": "2026-10-01T14:35:07.690Z",
+   "status": "PUBLISHED",
+   "action": "HOME_PAGE+PUSH",
+   "goal": "G07",
+   "reason": null
+  }
+ ],
+ "actions": [
+  {
+   "action_id": "A-1daa973bd668",
+   "type": "home_page",
+   "status": "published",
+   "status_reason": null,
+   "published_at": "2026-10-01T14:35:08.411Z",
+   "send_at": null
+  },
+  {
+   "action_id": "A-4301755d148f",
+   "type": "push",
+   "status": "scheduled",
+   "status_reason": null,
+   "published_at": "2026-10-01T14:35:08.411Z",
+   "send_at": "2026-10-02T03:30:00.000Z"
+  }
+ ],
+ "outcomes": [
+  {
+   "arm": "agent",
+   "attribution": "n/a",
+   "deadline": "2026-10-04T14:35:07.690Z",
+   "decision_id": "D-b9a1b189c677",
+   "evidence": [],
+   "exposures_before_success": [],
+   "exposures_window": [
+    "event:oua-028141",
+    "event:oua-028143"
+   ],
+   "final": true,
+   "goal_id": "G07",
+   "goal_instance_id": "GI-352e2389b64d",
+   "goal_status_in_replay": "open",
+   "judged_at": "2026-10-15T17:58:40.000Z",
+   "observed_until": "2026-10-15T17:58:40.000Z",
+   "reason": "no qualifying play_started between 2026-10-01T14:35:07.690Z and 2026-10-04T14:35:07.690Z",
+   "result": "failed",
+   "rule_history": [
+    {
+     "at": "2026-10-01T14:35:07.690Z",
+     "change": "opened",
+     "reason": "series yanagu-negiba-d2 reached S1E2 of S2E11, idle 5.3 days"
+    }
+   ],
+   "rule_version": "G07-r1",
+   "started_at": "2026-10-01T14:35:07.690Z",
+   "success_condition": "same content_slug as the unfinished series",
+   "success_signal": "play_started",
+   "user_id": "U-04420"
+  }
+ ],
+ "learning": {
+  "actions": {
+   "home_page": {
+    "published": 1
+   },
+   "push": {
+    "scheduled": 1
+   }
+  },
+  "goal_results": [
+   {
+    "attribution": "n/a",
+    "goal_id": "G07",
+    "instance_id": "GI-352e2389b64d",
+    "result": "failed"
+   }
+  ],
+  "messages": {
+   "push": {
+    "clicked": 0,
+    "delivered": 1,
+    "failed": {}
+   }
+  },
+  "notes": [],
+  "pages": {
+   "published": 1,
+   "shown_personalised": 1
+  }
+ },
+ "audit": []
+}

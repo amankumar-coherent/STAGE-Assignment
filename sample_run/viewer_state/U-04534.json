@@ -1,0 +1,363 @@
+{
+ "viewer_id": "U-04534",
+ "arm": "agent",
+ "as_of": "2026-10-01T18:31:25.944Z",
+ "facts": {
+  "user_id": "U-04534",
+  "as_of": "2026-10-01T18:31:25.944Z",
+  "profile_present": true,
+  "history_start": "2026-08-31T18:31:55.380Z",
+  "history_covers_lifetime": false,
+  "events_seen": 97,
+  "facts": {
+   "dialect": {
+    "name": "dialect",
+    "value": null,
+    "source": "unknown",
+    "source_ref": null,
+    "source_time": null,
+    "freshness": "unknown",
+    "age_s": null,
+    "rule": "trigger carries no valid app_dialect (raw=None); the page the app will request is unknown, so no alternative is substituted",
+    "conflicts": [
+     {
+      "value": "d2",
+      "source": "profile",
+      "source_ref": "profile:U-04534@2026-09-29T05:16:05.770Z",
+      "resolution": "not used: cannot confirm it is the current app setting"
+     },
+     {
+      "value": "d2",
+      "source": "app_setting_earlier",
+      "source_ref": "event:5effd06f-3f1f-4b4b-af45-77e87b4d8345",
+      "resolution": "not used: cannot confirm it is the current app setting"
+     }
+    ],
+    "supported": false
+   },
+   "ever_paid": {
+    "name": "ever_paid",
+    "value": true,
+    "source": "event",
+    "source_ref": "event:b9153614-a8ac-456a-b0fc-8ab7b24a00c9",
+    "source_time": "2026-09-29T05:16:05.770Z",
+    "freshness": "aging",
+    "age_s": 220520.2,
+    "rule": "any paid purchase/renewal event or a paid status on any profile row",
+    "conflicts": [],
+    "supported": true
+   },
+   "history_covers_lifetime": {
+    "name": "history_covers_lifetime",
+    "value": false,
+    "source": "derived",
+    "source_ref": "profile:U-04534@2026-09-29T05:16:05.770Z",
+    "source_time": "2026-09-29T05:16:05.770Z",
+    "freshness": "unknown",
+    "age_s": null,
+    "rule": "signup_at >= first observable event (2026-08-31T18:31:55.380Z); 'never did X' claims need full coverage",
+    "conflicts": [],
+    "supported": true
+   },
+   "last_app_open_before_trigger": {
+    "name": "last_app_open_before_trigger",
+    "value": "2026-10-01T06:13:49.793Z",
+    "source": "event",
+    "source_ref": "event:5effd06f-3f1f-4b4b-af45-77e87b4d8345",
+    "source_time": "2026-10-01T06:13:49.793Z",
+    "freshness": "fresh",
+    "age_s": 44256.2,
+    "rule": "latest app_open in another session, ordered by server-anchored occurrence time",
+    "conflicts": [],
+    "supported": true
+   },
+   "profile_present": {
+    "name": "profile_present",
+    "value": true,
+    "source": "profile",
+    "source_ref": "profile:U-04534@2026-09-29T05:16:05.770Z",
+    "source_time": "2026-09-29T05:16:05.770Z",
+    "freshness": "aging",
+    "age_s": 220520.2,
+    "rule": "newest updated_at among snapshot rows",
+    "conflicts": [],
+    "supported": true
+   },
+   "push_consent": {
+    "name": "push_consent",
+    "value": true,
+    "source": "profile",
+    "source_ref": "profile:U-04534@2026-09-29T05:16:05.770Z",
+    "source_time": "2026-09-29T05:16:05.770Z",
+    "freshness": "aging",
+    "age_s": 220520.2,
+    "rule": "newest profile row notifications_opt_in",
+    "conflicts": [],
+    "supported": true
+   },
+   "signup_at": {
+    "name": "signup_at",
+    "value": "2026-04-30T14:23:08.740Z",
+    "source": "profile",
+    "source_ref": "profile:U-04534@2026-09-29T05:16:05.770Z",
+    "source_time": "2026-09-29T05:16:05.770Z",
+    "freshness": "aging",
+    "age_s": 220520.2,
+    "rule": "profile.signup_at (no signup event observed)",
+    "conflicts": [],
+    "supported": true
+   },
+   "subscription_status": {
+    "name": "subscription_status",
+    "value": "active",
+    "source": "profile",
+    "source_ref": "profile:U-04534@2026-09-29T05:16:05.770Z",
+    "source_time": "2026-09-29T05:16:05.770Z",
+    "freshness": "aging",
+    "age_s": 220520.2,
+    "rule": "newest profile row (no newer subscription event)",
+    "conflicts": [],
+    "supported": true
+   },
+   "whatsapp_consent": {
+    "name": "whatsapp_consent",
+    "value": true,
+    "source": "profile",
+    "source_ref": "profile:U-04534@2026-09-29T05:16:05.770Z",
+    "source_time": "2026-09-29T05:16:05.770Z",
+    "freshness": "aging",
+    "age_s": 220520.2,
+    "rule": "newest profile row whatsapp_opt_in",
+    "conflicts": [],
+    "supported": true
+   }
+  },
+  "watch": {
+   "plays": 10,
+   "completions": 5,
+   "watched_slugs": [
+    "guka-kosusa-d2",
+    "molo-d2",
+    "rigu-dhadi-d2"
+   ],
+   "top_genres": [
+    "Romance",
+    "Action",
+    "Devotional",
+    "Comedy"
+   ],
+   "play_days_recent": [
+    "2026-09-18",
+    "2026-09-20",
+    "2026-09-22",
+    "2026-09-25",
+    "2026-09-26",
+    "2026-09-27"
+   ],
+   "series": [
+    {
+     "slug": "guka-kosusa-d2",
+     "furthest": [
+      1,
+      4
+     ],
+     "last_episode": [
+      1,
+      41
+     ],
+     "last_play": "2026-09-27T06:44:24.048Z"
+    },
+    {
+     "slug": "molo-d2",
+     "furthest": [
+      1,
+      1
+     ],
+     "last_episode": [
+      1,
+      7
+     ],
+     "last_play": "2026-09-20T07:04:02.567Z"
+    },
+    {
+     "slug": "rigu-dhadi-d2",
+     "furthest": [
+      1,
+      2
+     ],
+     "last_episode": [
+      1,
+      23
+     ],
+     "last_play": "2026-09-25T23:47:22.780Z"
+    }
+   ]
+  },
+  "learning": {
+   "actions": {
+    "home_page": {
+     "published": 1
+    },
+    "push": {
+     "sent": 1
+    }
+   },
+   "goal_results": [
+    {
+     "attribution": "n/a",
+     "goal_id": "G07",
+     "instance_id": "GI-1cc6067c1aa9",
+     "result": "failed"
+    }
+   ],
+   "messages": {
+    "push": {
+     "clicked": 1,
+     "delivered": 1,
+     "failed": {}
+    }
+   },
+   "notes": [],
+   "pages": {
+    "published": 1,
+    "shown_personalised": 1
+   }
+  }
+ },
+ "goals": [
+  {
+   "instance_id": "GI-1cc6067c1aa9",
+   "user_id": "U-04534",
+   "goal_id": "G07",
+   "rule_version": "G07-r1",
+   "status": "open",
+   "started_at": "2026-10-01T06:13:49.793Z",
+   "deadline": "2026-10-04T06:13:49.793Z",
+   "success_event": "play_started",
+   "success_condition": "same content_slug as the unfinished series",
+   "decision_id": "D-dee7a0a32941",
+   "arm": "agent",
+   "eligibility": {
+    "context": {
+     "furthest": [
+      1,
+      4
+     ],
+     "series_slug": "guka-kosusa-d2"
+    },
+    "evidence": [
+     "goal_rule:G07-r1",
+     "event:2dc0b563-a367-4543-b019-722ff3abed52",
+     "event:594b87b8-2420-47e4-bebb-d0648c73af48",
+     "event:5e36d99e-b62e-4721-8835-6dfc36e81572"
+    ],
+    "reason": "series guka-kosusa-d2 reached S1E4 of S1E41, idle 4.0 days"
+   },
+   "closed_at": null,
+   "close_reason": null,
+   "outcome": null,
+   "history": [
+    {
+     "at": "2026-10-01T06:13:49.793Z",
+     "change": "opened",
+     "reason": "series guka-kosusa-d2 reached S1E4 of S1E41, idle 4.0 days"
+    }
+   ]
+  }
+ ],
+ "decisions": [
+  {
+   "decision_id": "D-dee7a0a32941",
+   "trigger": "5effd06f-3f1f-4b4b-af45-77e87b4d8345",
+   "deliver_at": "2026-10-01T06:13:49.793Z",
+   "status": "PUBLISHED",
+   "action": "HOME_PAGE+PUSH",
+   "goal": "G07",
+   "reason": null
+  }
+ ],
+ "actions": [
+  {
+   "action_id": "A-af59112ba8d2",
+   "type": "push",
+   "status": "sent",
+   "status_reason": "revalidated at send time",
+   "published_at": "2026-10-01T06:13:50.516Z",
+   "send_at": "2026-10-01T09:13:52.510Z"
+  },
+  {
+   "action_id": "A-c7452bf11ef0",
+   "type": "home_page",
+   "status": "published",
+   "status_reason": null,
+   "published_at": "2026-10-01T06:13:50.516Z",
+   "send_at": null
+  }
+ ],
+ "outcomes": [
+  {
+   "arm": "agent",
+   "attribution": "n/a",
+   "deadline": "2026-10-04T06:13:49.793Z",
+   "decision_id": "D-dee7a0a32941",
+   "evidence": [],
+   "exposures_before_success": [],
+   "exposures_window": [
+    "event:oua-028769",
+    "event:oua-028772",
+    "event:oua-028773"
+   ],
+   "final": true,
+   "goal_id": "G07",
+   "goal_instance_id": "GI-1cc6067c1aa9",
+   "goal_status_in_replay": "open",
+   "judged_at": "2026-10-15T17:58:40.000Z",
+   "observed_until": "2026-10-15T17:58:40.000Z",
+   "reason": "no qualifying play_started between 2026-10-01T06:13:49.793Z and 2026-10-04T06:13:49.793Z",
+   "result": "failed",
+   "rule_history": [
+    {
+     "at": "2026-10-01T06:13:49.793Z",
+     "change": "opened",
+     "reason": "series guka-kosusa-d2 reached S1E4 of S1E41, idle 4.0 days"
+    }
+   ],
+   "rule_version": "G07-r1",
+   "started_at": "2026-10-01T06:13:49.793Z",
+   "success_condition": "same content_slug as the unfinished series",
+   "success_signal": "play_started",
+   "user_id": "U-04534"
+  }
+ ],
+ "learning": {
+  "actions": {
+   "home_page": {
+    "published": 1
+   },
+   "push": {
+    "sent": 1
+   }
+  },
+  "goal_results": [
+   {
+    "attribution": "n/a",
+    "goal_id": "G07",
+    "instance_id": "GI-1cc6067c1aa9",
+    "result": "failed"
+   }
+  ],
+  "messages": {
+   "push": {
+    "clicked": 1,
+    "delivered": 1,
+    "failed": {}
+   }
+  },
+  "notes": [],
+  "pages": {
+   "published": 1,
+   "shown_personalised": 1
+  }
+ },
+ "audit": []
+}

@@ -1,0 +1,222 @@
+{
+ "viewer_id": "U-02888",
+ "arm": "holdout",
+ "as_of": "2026-10-01T18:31:25.944Z",
+ "facts": {
+  "user_id": "U-02888",
+  "as_of": "2026-10-01T18:31:25.944Z",
+  "profile_present": true,
+  "history_start": "2026-08-31T18:31:55.380Z",
+  "history_covers_lifetime": false,
+  "events_seen": 85,
+  "facts": {
+   "dialect": {
+    "name": "dialect",
+    "value": null,
+    "source": "unknown",
+    "source_ref": null,
+    "source_time": null,
+    "freshness": "unknown",
+    "age_s": null,
+    "rule": "trigger carries no valid app_dialect (raw=None); the page the app will request is unknown, so no alternative is substituted",
+    "conflicts": [
+     {
+      "value": "d2",
+      "source": "profile",
+      "source_ref": "profile:U-02888@2026-09-29T17:39:42.982Z",
+      "resolution": "not used: cannot confirm it is the current app setting"
+     },
+     {
+      "value": "d2",
+      "source": "app_setting_earlier",
+      "source_ref": "event:5755eb52-ab88-4a9b-8ac1-8adf9c84b6c8",
+      "resolution": "not used: cannot confirm it is the current app setting"
+     }
+    ],
+    "supported": false
+   },
+   "ever_paid": {
+    "name": "ever_paid",
+    "value": true,
+    "source": "event",
+    "source_ref": "event:609a47f8-d07f-4beb-a192-995024fdded8",
+    "source_time": "2026-09-29T17:39:42.982Z",
+    "freshness": "aging",
+    "age_s": 175903.0,
+    "rule": "any paid purchase/renewal event or a paid status on any profile row",
+    "conflicts": [],
+    "supported": true
+   },
+   "history_covers_lifetime": {
+    "name": "history_covers_lifetime",
+    "value": false,
+    "source": "derived",
+    "source_ref": "profile:U-02888@2026-09-29T17:39:42.982Z",
+    "source_time": "2026-09-29T17:39:42.982Z",
+    "freshness": "unknown",
+    "age_s": null,
+    "rule": "signup_at >= first observable event (2026-08-31T18:31:55.380Z); 'never did X' claims need full coverage",
+    "conflicts": [],
+    "supported": true
+   },
+   "last_app_open_before_trigger": {
+    "name": "last_app_open_before_trigger",
+    "value": "2026-10-01T01:24:26.290Z",
+    "source": "event",
+    "source_ref": "event:5755eb52-ab88-4a9b-8ac1-8adf9c84b6c8",
+    "source_time": "2026-10-01T01:24:26.290Z",
+    "freshness": "fresh",
+    "age_s": 61619.7,
+    "rule": "latest app_open in another session, ordered by server-anchored occurrence time",
+    "conflicts": [],
+    "supported": true
+   },
+   "profile_present": {
+    "name": "profile_present",
+    "value": true,
+    "source": "profile",
+    "source_ref": "profile:U-02888@2026-09-29T17:39:42.982Z",
+    "source_time": "2026-09-29T17:39:42.982Z",
+    "freshness": "aging",
+    "age_s": 175903.0,
+    "rule": "newest updated_at among snapshot rows",
+    "conflicts": [],
+    "supported": true
+   },
+   "push_consent": {
+    "name": "push_consent",
+    "value": true,
+    "source": "profile",
+    "source_ref": "profile:U-02888@2026-09-29T17:39:42.982Z",
+    "source_time": "2026-09-29T17:39:42.982Z",
+    "freshness": "aging",
+    "age_s": 175903.0,
+    "rule": "newest profile row notifications_opt_in",
+    "conflicts": [],
+    "supported": true
+   },
+   "signup_at": {
+    "name": "signup_at",
+    "value": "2025-08-12T03:47:17.981Z",
+    "source": "profile",
+    "source_ref": "profile:U-02888@2026-09-29T17:39:42.982Z",
+    "source_time": "2026-09-29T17:39:42.982Z",
+    "freshness": "aging",
+    "age_s": 175903.0,
+    "rule": "profile.signup_at (no signup event observed)",
+    "conflicts": [],
+    "supported": true
+   },
+   "subscription_status": {
+    "name": "subscription_status",
+    "value": "active",
+    "source": "profile",
+    "source_ref": "profile:U-02888@2026-09-29T17:39:42.982Z",
+    "source_time": "2026-09-29T17:39:42.982Z",
+    "freshness": "aging",
+    "age_s": 175903.0,
+    "rule": "newest profile row (no newer subscription event)",
+    "conflicts": [],
+    "supported": true
+   },
+   "whatsapp_consent": {
+    "name": "whatsapp_consent",
+    "value": true,
+    "source": "profile",
+    "source_ref": "profile:U-02888@2026-09-29T17:39:42.982Z",
+    "source_time": "2026-09-29T17:39:42.982Z",
+    "freshness": "aging",
+    "age_s": 175903.0,
+    "rule": "newest profile row whatsapp_opt_in",
+    "conflicts": [],
+    "supported": true
+   }
+  },
+  "watch": {
+   "plays": 10,
+   "completions": 6,
+   "watched_slugs": [
+    "bhariya-d2",
+    "dhapipa-gini-d2",
+    "guka-kosusa-d2",
+    "molo-d2"
+   ],
+   "top_genres": [
+    "Romance",
+    "Action",
+    "Devotional",
+    "Family"
+   ],
+   "play_days_recent": [
+    "2026-09-29"
+   ],
+   "series": [
+    {
+     "slug": "bhariya-d2",
+     "furthest": [
+      1,
+      2
+     ],
+     "last_episode": [
+      1,
+      58
+     ],
+     "last_play": "2026-09-05T00:02:29.637Z"
+    },
+    {
+     "slug": "dhapipa-gini-d2",
+     "furthest": [
+      1,
+      1
+     ],
+     "last_episode": [
+      1,
+      55
+     ],
+     "last_play": "2026-09-29T06:51:18.513Z"
+    },
+    {
+     "slug": "molo-d2",
+     "furthest": [
+      1,
+      3
+     ],
+     "last_episode": [
+      1,
+      7
+     ],
+     "last_play": "2026-09-14T09:04:28.449Z"
+    },
+    {
+     "slug": "guka-kosusa-d2",
+     "furthest": [
+      1,
+      1
+     ],
+     "last_episode": [
+      1,
+      41
+     ],
+     "last_play": "2026-09-03T03:56:39.568Z"
+    }
+   ]
+  },
+  "learning": {}
+ },
+ "goals": [],
+ "decisions": [
+  {
+   "decision_id": "D-39964eeb6c36",
+   "trigger": "5755eb52-ab88-4a9b-8ac1-8adf9c84b6c8",
+   "deliver_at": "2026-10-01T13:33:31.937Z",
+   "status": "HOLDOUT",
+   "action": "NONE",
+   "goal": null,
+   "reason": "holdout arm: no agent action of any kind (goal tracked only so outcomes can be compared with the agent arm)"
+  }
+ ],
+ "actions": [],
+ "outcomes": [],
+ "learning": {},
+ "audit": []
+}

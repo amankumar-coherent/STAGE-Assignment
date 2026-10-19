@@ -1,0 +1,318 @@
+{
+ "viewer_id": "U-01068",
+ "arm": "agent",
+ "as_of": "2026-10-01T18:31:25.944Z",
+ "facts": {
+  "user_id": "U-01068",
+  "as_of": "2026-10-01T18:31:25.944Z",
+  "profile_present": true,
+  "history_start": "2026-08-31T18:31:55.380Z",
+  "history_covers_lifetime": false,
+  "events_seen": 19,
+  "facts": {
+   "dialect": {
+    "name": "dialect",
+    "value": null,
+    "source": "unknown",
+    "source_ref": null,
+    "source_time": null,
+    "freshness": "unknown",
+    "age_s": null,
+    "rule": "trigger carries no valid app_dialect (raw=None); the page the app will request is unknown, so no alternative is substituted",
+    "conflicts": [
+     {
+      "value": "d6",
+      "source": "profile",
+      "source_ref": "profile:U-01068@2026-09-29T02:11:27.096Z",
+      "resolution": "not used: cannot confirm it is the current app setting"
+     },
+     {
+      "value": "d2",
+      "source": "app_setting_earlier",
+      "source_ref": "event:f71c1910-dce3-435a-bb9f-9d1c9cf4b4bf",
+      "resolution": "not used: cannot confirm it is the current app setting"
+     }
+    ],
+    "supported": false
+   },
+   "ever_paid": {
+    "name": "ever_paid",
+    "value": true,
+    "source": "event",
+    "source_ref": "event:f71c1910-dce3-435a-bb9f-9d1c9cf4b4bf",
+    "source_time": "2026-10-01T05:47:15.141Z",
+    "freshness": "fresh",
+    "age_s": 45850.8,
+    "rule": "any paid purchase/renewal event or a paid status on any profile row",
+    "conflicts": [],
+    "supported": true
+   },
+   "history_covers_lifetime": {
+    "name": "history_covers_lifetime",
+    "value": false,
+    "source": "derived",
+    "source_ref": "profile:U-01068@2026-09-29T02:11:27.096Z",
+    "source_time": "2026-09-29T02:11:27.096Z",
+    "freshness": "unknown",
+    "age_s": null,
+    "rule": "signup_at >= first observable event (2026-08-31T18:31:55.380Z); 'never did X' claims need full coverage",
+    "conflicts": [],
+    "supported": true
+   },
+   "last_app_open_before_trigger": {
+    "name": "last_app_open_before_trigger",
+    "value": "2026-10-01T05:45:09.537Z",
+    "source": "event",
+    "source_ref": "event:f1e6f942-fd27-4030-bb7a-2d4d7a5013c6",
+    "source_time": "2026-10-01T05:45:09.537Z",
+    "freshness": "fresh",
+    "age_s": 45976.4,
+    "rule": "latest app_open in another session, ordered by server-anchored occurrence time",
+    "conflicts": [],
+    "supported": true
+   },
+   "profile_present": {
+    "name": "profile_present",
+    "value": true,
+    "source": "profile",
+    "source_ref": "profile:U-01068@2026-09-29T02:11:27.096Z",
+    "source_time": "2026-09-29T02:11:27.096Z",
+    "freshness": "aging",
+    "age_s": 231598.8,
+    "rule": "newest updated_at among snapshot rows",
+    "conflicts": [],
+    "supported": true
+   },
+   "push_consent": {
+    "name": "push_consent",
+    "value": true,
+    "source": "profile",
+    "source_ref": "profile:U-01068@2026-09-29T02:11:27.096Z",
+    "source_time": "2026-09-29T02:11:27.096Z",
+    "freshness": "aging",
+    "age_s": 231598.8,
+    "rule": "newest profile row notifications_opt_in",
+    "conflicts": [],
+    "supported": true
+   },
+   "signup_at": {
+    "name": "signup_at",
+    "value": "2025-04-29T08:42:17.465Z",
+    "source": "profile",
+    "source_ref": "profile:U-01068@2026-09-29T02:11:27.096Z",
+    "source_time": "2026-09-29T02:11:27.096Z",
+    "freshness": "aging",
+    "age_s": 231598.8,
+    "rule": "profile.signup_at (no signup event observed)",
+    "conflicts": [],
+    "supported": true
+   },
+   "subscription_status": {
+    "name": "subscription_status",
+    "value": "active",
+    "source": "event",
+    "source_ref": "event:f71c1910-dce3-435a-bb9f-9d1c9cf4b4bf",
+    "source_time": "2026-10-01T05:47:15.141Z",
+    "freshness": "fresh",
+    "age_s": 45850.8,
+    "rule": "subscription event newer than the profile row overrides it",
+    "conflicts": [
+     {
+      "value": "never",
+      "source": "profile",
+      "source_ref": "profile:U-01068@2026-09-29T02:11:27.096Z",
+      "resolution": "older than purchase_completed"
+     }
+    ],
+    "supported": true
+   },
+   "whatsapp_consent": {
+    "name": "whatsapp_consent",
+    "value": false,
+    "source": "profile",
+    "source_ref": "profile:U-01068@2026-09-29T02:11:27.096Z",
+    "source_time": "2026-09-29T02:11:27.096Z",
+    "freshness": "aging",
+    "age_s": 231598.8,
+    "rule": "newest profile row whatsapp_opt_in",
+    "conflicts": [],
+    "supported": true
+   }
+  },
+  "watch": {
+   "plays": 0,
+   "completions": 0,
+   "watched_slugs": [],
+   "top_genres": [],
+   "play_days_recent": [],
+   "series": []
+  },
+  "learning": {
+   "actions": {
+    "home_page": {
+     "published": 1
+    }
+   },
+   "goal_results": [
+    {
+     "attribution": "success_without_observed_exposure",
+     "goal_id": "G05",
+     "instance_id": "GI-e864eeb6e927",
+     "result": "succeeded"
+    }
+   ],
+   "messages": {},
+   "notes": [
+    "published page(s) were never shown: viewer did not reach a home page while a page was live"
+   ],
+   "pages": {
+    "published": 1,
+    "shown_personalised": 0
+   }
+  }
+ },
+ "goals": [
+  {
+   "instance_id": "GI-e864eeb6e927",
+   "user_id": "U-01068",
+   "goal_id": "G05",
+   "rule_version": "G05-r1",
+   "status": "succeeded",
+   "started_at": "2026-10-01T05:45:09.537Z",
+   "deadline": "2026-10-08T05:45:09.537Z",
+   "success_event": "purchase_completed",
+   "success_condition": "is_trial = false",
+   "decision_id": "D-312a2221cbc0",
+   "arm": "agent",
+   "eligibility": {
+    "context": {},
+    "evidence": [
+     "goal_rule:G05-r1",
+     "profile:U-01068@2026-09-29T02:11:27.096Z"
+    ],
+    "reason": "subscription_status=never (profile, aging)"
+   },
+   "closed_at": "2026-10-01T05:47:15.141Z",
+   "close_reason": "success signal event:f71c1910-dce3-435a-bb9f-9d1c9cf4b4bf",
+   "outcome": {
+    "judged_from": "live replay events",
+    "result": "succeeded",
+    "rule_version": "G05-r1",
+    "success_event": [
+     "event:f71c1910-dce3-435a-bb9f-9d1c9cf4b4bf"
+    ]
+   },
+   "history": [
+    {
+     "at": "2026-10-01T05:45:09.537Z",
+     "change": "opened",
+     "reason": "subscription_status=never (profile, aging)"
+    },
+    {
+     "at": "2026-10-01T05:47:15.141Z",
+     "change": "status->succeeded",
+     "reason": "success signal event:f71c1910-dce3-435a-bb9f-9d1c9cf4b4bf"
+    }
+   ]
+  }
+ ],
+ "decisions": [
+  {
+   "decision_id": "D-312a2221cbc0",
+   "trigger": "f1e6f942-fd27-4030-bb7a-2d4d7a5013c6",
+   "deliver_at": "2026-10-01T05:45:09.537Z",
+   "status": "PUBLISHED",
+   "action": "HOME_PAGE",
+   "goal": "G05",
+   "reason": null
+  }
+ ],
+ "actions": [
+  {
+   "action_id": "A-f543cb37ab1d",
+   "type": "home_page",
+   "status": "published",
+   "status_reason": null,
+   "published_at": "2026-10-01T05:45:09.554Z",
+   "send_at": null
+  }
+ ],
+ "outcomes": [
+  {
+   "arm": "agent",
+   "attribution": "success_without_observed_exposure",
+   "deadline": "2026-10-08T05:45:09.537Z",
+   "decision_id": "D-312a2221cbc0",
+   "evidence": [
+    "event:f71c1910-dce3-435a-bb9f-9d1c9cf4b4bf"
+   ],
+   "exposures_before_success": [],
+   "final": true,
+   "goal_id": "G05",
+   "goal_instance_id": "GI-e864eeb6e927",
+   "goal_status_in_replay": "succeeded",
+   "judged_at": "2026-10-15T17:58:40.000Z",
+   "observed_until": "2026-10-15T17:58:40.000Z",
+   "reason": "purchase_completed at 2026-10-01T05:47:15.141Z (2 min after goal start) satisfies 'is_trial = false' under G05-r1",
+   "result": "succeeded",
+   "rule_history": [
+    {
+     "at": "2026-10-01T05:45:09.537Z",
+     "change": "opened",
+     "reason": "subscription_status=never (profile, aging)"
+    },
+    {
+     "at": "2026-10-01T05:47:15.141Z",
+     "change": "status->succeeded",
+     "reason": "success signal event:f71c1910-dce3-435a-bb9f-9d1c9cf4b4bf"
+    }
+   ],
+   "rule_version": "G05-r1",
+   "started_at": "2026-10-01T05:45:09.537Z",
+   "success_condition": "is_trial = false",
+   "success_signal": "purchase_completed",
+   "user_id": "U-01068"
+  }
+ ],
+ "learning": {
+  "actions": {
+   "home_page": {
+    "published": 1
+   }
+  },
+  "goal_results": [
+   {
+    "attribution": "success_without_observed_exposure",
+    "goal_id": "G05",
+    "instance_id": "GI-e864eeb6e927",
+    "result": "succeeded"
+   }
+  ],
+  "messages": {},
+  "notes": [
+   "published page(s) were never shown: viewer did not reach a home page while a page was live"
+  ],
+  "pages": {
+   "published": 1,
+   "shown_personalised": 0
+  }
+ },
+ "audit": [
+  {
+   "at": "2026-10-01T05:47:15.141Z",
+   "kind": "goal_succeeded_live",
+   "evidence": [
+    "event:f71c1910-dce3-435a-bb9f-9d1c9cf4b4bf"
+   ],
+   "instance_id": "GI-e864eeb6e927"
+  },
+  {
+   "at": "2026-10-01T05:47:15.141Z",
+   "kind": "purchase_after_decision",
+   "cancelled": [],
+   "event": "event:f71c1910-dce3-435a-bb9f-9d1c9cf4b4bf",
+   "goal_closed": "GI-e864eeb6e927",
+   "replan": "subscription now active (event overrides the stale profile); no open goal left to revise"
+  }
+ ]
+}

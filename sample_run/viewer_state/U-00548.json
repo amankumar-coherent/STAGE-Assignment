@@ -1,0 +1,336 @@
+{
+ "viewer_id": "U-00548",
+ "arm": "agent",
+ "as_of": "2026-10-01T18:31:25.944Z",
+ "facts": {
+  "user_id": "U-00548",
+  "as_of": "2026-10-01T18:31:25.944Z",
+  "profile_present": true,
+  "history_start": "2026-08-31T18:31:55.380Z",
+  "history_covers_lifetime": false,
+  "events_seen": 40,
+  "facts": {
+   "dialect": {
+    "name": "dialect",
+    "value": null,
+    "source": "unknown",
+    "source_ref": null,
+    "source_time": null,
+    "freshness": "unknown",
+    "age_s": null,
+    "rule": "trigger carries no valid app_dialect (raw=None); the page the app will request is unknown, so no alternative is substituted",
+    "conflicts": [
+     {
+      "value": "d5",
+      "source": "profile",
+      "source_ref": "profile:U-00548@2026-09-29T09:08:00.528Z",
+      "resolution": "not used: cannot confirm it is the current app setting"
+     },
+     {
+      "value": "d5",
+      "source": "app_setting_earlier",
+      "source_ref": "event:a5413e33-1199-45c2-a93b-0d479a068657",
+      "resolution": "not used: cannot confirm it is the current app setting"
+     }
+    ],
+    "supported": false
+   },
+   "ever_paid": {
+    "name": "ever_paid",
+    "value": false,
+    "source": "profile",
+    "source_ref": "profile:U-00548@2026-09-29T09:08:00.528Z",
+    "source_time": "2026-09-29T09:08:00.528Z",
+    "freshness": "aging",
+    "age_s": 206605.4,
+    "rule": "any paid purchase/renewal event or a paid status on any profile row",
+    "conflicts": [],
+    "supported": true
+   },
+   "history_covers_lifetime": {
+    "name": "history_covers_lifetime",
+    "value": false,
+    "source": "derived",
+    "source_ref": "profile:U-00548@2026-09-29T09:08:00.528Z",
+    "source_time": "2026-09-29T09:08:00.528Z",
+    "freshness": "unknown",
+    "age_s": null,
+    "rule": "signup_at >= first observable event (2026-08-31T18:31:55.380Z); 'never did X' claims need full coverage",
+    "conflicts": [],
+    "supported": true
+   },
+   "last_app_open_before_trigger": {
+    "name": "last_app_open_before_trigger",
+    "value": "2026-09-30T18:36:53.265Z",
+    "source": "event",
+    "source_ref": "event:a5413e33-1199-45c2-a93b-0d479a068657",
+    "source_time": "2026-09-30T18:36:53.265Z",
+    "freshness": "fresh",
+    "age_s": 86072.7,
+    "rule": "latest app_open in another session, ordered by server-anchored occurrence time",
+    "conflicts": [],
+    "supported": true
+   },
+   "profile_present": {
+    "name": "profile_present",
+    "value": true,
+    "source": "profile",
+    "source_ref": "profile:U-00548@2026-09-29T09:08:00.528Z",
+    "source_time": "2026-09-29T09:08:00.528Z",
+    "freshness": "aging",
+    "age_s": 206605.4,
+    "rule": "newest updated_at among snapshot rows",
+    "conflicts": [],
+    "supported": true
+   },
+   "push_consent": {
+    "name": "push_consent",
+    "value": false,
+    "source": "profile",
+    "source_ref": "profile:U-00548@2026-09-29T09:08:00.528Z",
+    "source_time": "2026-09-29T09:08:00.528Z",
+    "freshness": "aging",
+    "age_s": 206605.4,
+    "rule": "newest profile row notifications_opt_in",
+    "conflicts": [],
+    "supported": true
+   },
+   "signup_at": {
+    "name": "signup_at",
+    "value": "2025-10-22T23:15:17.061Z",
+    "source": "profile",
+    "source_ref": "profile:U-00548@2026-09-29T09:08:00.528Z",
+    "source_time": "2026-09-29T09:08:00.528Z",
+    "freshness": "aging",
+    "age_s": 206605.4,
+    "rule": "profile.signup_at (no signup event observed)",
+    "conflicts": [],
+    "supported": true
+   },
+   "subscription_status": {
+    "name": "subscription_status",
+    "value": "never",
+    "source": "profile",
+    "source_ref": "profile:U-00548@2026-09-29T09:08:00.528Z",
+    "source_time": "2026-09-29T09:08:00.528Z",
+    "freshness": "aging",
+    "age_s": 206605.4,
+    "rule": "newest profile row (no newer subscription event)",
+    "conflicts": [],
+    "supported": true
+   },
+   "whatsapp_consent": {
+    "name": "whatsapp_consent",
+    "value": true,
+    "source": "profile",
+    "source_ref": "profile:U-00548@2026-09-29T09:08:00.528Z",
+    "source_time": "2026-09-29T09:08:00.528Z",
+    "freshness": "aging",
+    "age_s": 206605.4,
+    "rule": "newest profile row whatsapp_opt_in",
+    "conflicts": [],
+    "supported": true
+   }
+  },
+  "watch": {
+   "plays": 1,
+   "completions": 1,
+   "watched_slugs": [
+    "jamo-hasa-d5"
+   ],
+   "top_genres": [
+    "Crime",
+    "Romance"
+   ],
+   "play_days_recent": [],
+   "series": [
+    {
+     "slug": "jamo-hasa-d5",
+     "furthest": [
+      1,
+      1
+     ],
+     "last_episode": [
+      1,
+      33
+     ],
+     "last_play": "2026-09-02T07:24:23.949Z"
+    }
+   ]
+  },
+  "learning": {
+   "actions": {
+    "home_page": {
+     "published": 1
+    },
+    "whatsapp": {
+     "sent": 1
+    }
+   },
+   "goal_results": [
+    {
+     "attribution": "n/a",
+     "goal_id": "G07",
+     "instance_id": "GI-d1fed6180d9b",
+     "result": "failed"
+    }
+   ],
+   "messages": {
+    "whatsapp": {
+     "clicked": 0,
+     "delivered": 1,
+     "failed": {}
+    }
+   },
+   "notes": [],
+   "pages": {
+    "published": 1,
+    "shown_personalised": 1
+   }
+  }
+ },
+ "goals": [
+  {
+   "instance_id": "GI-d1fed6180d9b",
+   "user_id": "U-00548",
+   "goal_id": "G07",
+   "rule_version": "G07-r1",
+   "status": "open",
+   "started_at": "2026-09-30T18:36:53.265Z",
+   "deadline": "2026-10-03T18:36:53.265Z",
+   "success_event": "play_started",
+   "success_condition": "same content_slug as the unfinished series",
+   "decision_id": "D-d56c89fd66a8",
+   "arm": "agent",
+   "eligibility": {
+    "context": {
+     "furthest": [
+      1,
+      1
+     ],
+     "series_slug": "jamo-hasa-d5"
+    },
+    "evidence": [
+     "goal_rule:G07-r1",
+     "event:30f73f16-ff53-4ad6-928f-d1b8556001c1",
+     "event:e04cba0e-b54f-4488-a22e-80c414a6df1d",
+     "event:f6c10331-61ac-4154-a52a-10f082f181fb"
+    ],
+    "reason": "series jamo-hasa-d5 reached S1E1 of S1E33, idle 28.5 days"
+   },
+   "closed_at": null,
+   "close_reason": null,
+   "outcome": null,
+   "history": [
+    {
+     "at": "2026-09-30T18:36:53.265Z",
+     "change": "opened",
+     "reason": "series jamo-hasa-d5 reached S1E1 of S1E33, idle 28.5 days"
+    }
+   ]
+  }
+ ],
+ "decisions": [
+  {
+   "decision_id": "D-d56c89fd66a8",
+   "trigger": "a5413e33-1199-45c2-a93b-0d479a068657",
+   "deliver_at": "2026-09-30T18:36:53.265Z",
+   "status": "PUBLISHED",
+   "action": "HOME_PAGE+WHATSAPP",
+   "goal": "G07",
+   "reason": null
+  },
+  {
+   "decision_id": "D-f28f446ec56b",
+   "trigger": "f059ee32-e785-4c85-aaff-2f50dcc32a16",
+   "deliver_at": "2026-10-01T04:46:16.698Z",
+   "status": "ABSTAINED",
+   "action": "NONE",
+   "goal": "G07",
+   "reason": "stale trigger: app open buffered offline for 124.8 h (> 600 s); the viewer is not in a live session, so a page or message now would not match their visit. Event kept for history."
+  }
+ ],
+ "actions": [
+  {
+   "action_id": "A-11be22f3589e",
+   "type": "whatsapp",
+   "status": "sent",
+   "status_reason": "revalidated at send time",
+   "published_at": "2026-09-30T18:36:53.983Z",
+   "send_at": "2026-10-01T03:30:00.000Z"
+  },
+  {
+   "action_id": "A-392a2a37cbc2",
+   "type": "home_page",
+   "status": "published",
+   "status_reason": null,
+   "published_at": "2026-09-30T18:36:53.983Z",
+   "send_at": null
+  }
+ ],
+ "outcomes": [
+  {
+   "arm": "agent",
+   "attribution": "n/a",
+   "deadline": "2026-10-03T18:36:53.265Z",
+   "decision_id": "D-d56c89fd66a8",
+   "evidence": [],
+   "exposures_before_success": [],
+   "exposures_window": [
+    "event:oua-003682",
+    "event:oua-003683"
+   ],
+   "final": true,
+   "goal_id": "G07",
+   "goal_instance_id": "GI-d1fed6180d9b",
+   "goal_status_in_replay": "open",
+   "judged_at": "2026-10-15T17:58:40.000Z",
+   "observed_until": "2026-10-15T17:58:40.000Z",
+   "reason": "no qualifying play_started between 2026-09-30T18:36:53.265Z and 2026-10-03T18:36:53.265Z",
+   "result": "failed",
+   "rule_history": [
+    {
+     "at": "2026-09-30T18:36:53.265Z",
+     "change": "opened",
+     "reason": "series jamo-hasa-d5 reached S1E1 of S1E33, idle 28.5 days"
+    }
+   ],
+   "rule_version": "G07-r1",
+   "started_at": "2026-09-30T18:36:53.265Z",
+   "success_condition": "same content_slug as the unfinished series",
+   "success_signal": "play_started",
+   "user_id": "U-00548"
+  }
+ ],
+ "learning": {
+  "actions": {
+   "home_page": {
+    "published": 1
+   },
+   "whatsapp": {
+    "sent": 1
+   }
+  },
+  "goal_results": [
+   {
+    "attribution": "n/a",
+    "goal_id": "G07",
+    "instance_id": "GI-d1fed6180d9b",
+    "result": "failed"
+   }
+  ],
+  "messages": {
+   "whatsapp": {
+    "clicked": 0,
+    "delivered": 1,
+    "failed": {}
+   }
+  },
+  "notes": [],
+  "pages": {
+   "published": 1,
+   "shown_personalised": 1
+  }
+ },
+ "audit": []
+}

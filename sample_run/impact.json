@@ -1,0 +1,648 @@
+{
+  "itt": {
+    "population": "randomized users with >= 1 replay trigger",
+    "n": {
+      "agent": 863,
+      "holdout": 883
+    },
+    "missing_arm": 0,
+    "primary": {
+      "label": "goal reached (first goal; no goal = not reached)",
+      "agent_k": 71,
+      "agent_n": 863,
+      "agent_rate": 0.08227114716106605,
+      "holdout_k": 66,
+      "holdout_n": 883,
+      "holdout_rate": 0.07474518686296716,
+      "diff_pp": 0.752596029809889,
+      "ci_lo_pp": -1.784836855565037,
+      "ci_hi_pp": 3.305529824039996,
+      "relative": 0.10068822641244424,
+      "p_value": 0.5587509092498719
+    },
+    "sensitivity": {
+      "label": "goal reached, excluding inconclusive first goals",
+      "agent_k": 71,
+      "agent_n": 863,
+      "agent_rate": 0.08227114716106605,
+      "holdout_k": 66,
+      "holdout_n": 883,
+      "holdout_rate": 0.07474518686296716,
+      "diff_pp": 0.752596029809889,
+      "ci_lo_pp": -1.784836855565037,
+      "ci_hi_pp": 3.305529824039996,
+      "relative": 0.10068822641244424,
+      "p_value": 0.5587509092498719
+    },
+    "sensitivity_goal_holders": {
+      "label": "goal reached, users with a goal only",
+      "agent_k": 71,
+      "agent_n": 749,
+      "agent_rate": 0.09479305740987984,
+      "holdout_k": 66,
+      "holdout_n": 735,
+      "holdout_rate": 0.08979591836734693,
+      "diff_pp": 0.49971390425329054,
+      "ci_lo_pp": -2.469954195958437,
+      "ci_hi_pp": 3.4644909025442647,
+      "relative": 0.0556499575191165,
+      "p_value": 0.7395191200756841
+    },
+    "balance_no_goal": {
+      "label": "pre-treatment balance: share of users with no goal",
+      "agent_k": 114,
+      "agent_n": 863,
+      "agent_rate": 0.1320973348783314,
+      "holdout_k": 148,
+      "holdout_n": 883,
+      "holdout_rate": 0.16761041902604756,
+      "diff_pp": -3.551308414771617,
+      "ci_lo_pp": -6.8965807443352265,
+      "ci_hi_pp": -0.19773498805751785,
+      "relative": -0.2118787385299553,
+      "p_value": 0.037760890777042457
+    },
+    "by_goal": [
+      {
+        "label": "G01",
+        "agent_k": 22,
+        "agent_n": 59,
+        "agent_rate": 0.3728813559322034,
+        "holdout_k": 15,
+        "holdout_n": 51,
+        "holdout_rate": 0.29411764705882354,
+        "diff_pp": 7.876370887337986,
+        "ci_lo_pp": -9.734639819772472,
+        "ci_hi_pp": 24.529555782638578,
+        "relative": 0.2677966101694915,
+        "p_value": 0.38325786783384413
+      },
+      {
+        "label": "G02",
+        "agent_k": 5,
+        "agent_n": 24,
+        "agent_rate": 0.20833333333333334,
+        "holdout_k": 1,
+        "holdout_n": 23,
+        "holdout_rate": 0.043478260869565216,
+        "diff_pp": 16.485507246376812,
+        "ci_lo_pp": -3.794875315599555,
+        "ci_hi_pp": 36.44560231930485,
+        "relative": 3.791666666666667,
+        "p_value": 0.09045823439181751
+      },
+      {
+        "label": "G03",
+        "n_agent": 1,
+        "n_holdout": 0,
+        "note": "empty arm"
+      },
+      {
+        "label": "G04",
+        "agent_k": 0,
+        "agent_n": 1,
+        "agent_rate": 0.0,
+        "holdout_k": 0,
+        "holdout_n": 1,
+        "holdout_rate": 0.0,
+        "diff_pp": 0.0,
+        "ci_lo_pp": -79.34506856227625,
+        "ci_hi_pp": 79.34506856227625,
+        "relative": null,
+        "p_value": 1.0
+      },
+      {
+        "label": "G05",
+        "agent_k": 5,
+        "agent_n": 130,
+        "agent_rate": 0.038461538461538464,
+        "holdout_k": 6,
+        "holdout_n": 114,
+        "holdout_rate": 0.05263157894736842,
+        "diff_pp": -1.4170040485829953,
+        "ci_lo_pp": -7.566699434019325,
+        "ci_hi_pp": 4.190565441052692,
+        "relative": -0.26923076923076916,
+        "p_value": 0.5945527443670723
+      },
+      {
+        "label": "G06",
+        "agent_k": 0,
+        "agent_n": 10,
+        "agent_rate": 0.0,
+        "holdout_k": 1,
+        "holdout_n": 11,
+        "holdout_rate": 0.09090909090909091,
+        "diff_pp": -9.090909090909092,
+        "ci_lo_pp": -37.73584364515957,
+        "ci_hi_pp": 19.649497497234222,
+        "relative": -1.0,
+        "p_value": 0.3285649834391966
+      },
+      {
+        "label": "G07",
+        "agent_k": 12,
+        "agent_n": 438,
+        "agent_rate": 0.0273972602739726,
+        "holdout_k": 18,
+        "holdout_n": 440,
+        "holdout_rate": 0.04090909090909091,
+        "diff_pp": -1.3511830635118307,
+        "ci_lo_pp": -3.9140901089274998,
+        "ci_hi_pp": 1.1314524559995387,
+        "relative": -0.33028919330289197,
+        "p_value": 0.27047855383060365
+      },
+      {
+        "label": "G08",
+        "agent_k": 9,
+        "agent_n": 34,
+        "agent_rate": 0.2647058823529412,
+        "holdout_k": 10,
+        "holdout_n": 42,
+        "holdout_rate": 0.23809523809523808,
+        "diff_pp": 2.6610644257703098,
+        "ci_lo_pp": -16.246677714498286,
+        "ci_hi_pp": 22.25154352829845,
+        "relative": 0.11176470588235299,
+        "p_value": 0.7899416325171564
+      },
+      {
+        "label": "G09",
+        "agent_k": 4,
+        "agent_n": 22,
+        "agent_rate": 0.18181818181818182,
+        "holdout_k": 2,
+        "holdout_n": 15,
+        "holdout_rate": 0.13333333333333333,
+        "diff_pp": 4.8484848484848495,
+        "ci_lo_pp": -22.001103099819673,
+        "ci_hi_pp": 27.334259115305304,
+        "relative": 0.36363636363636376,
+        "p_value": 0.6944432043313575
+      },
+      {
+        "label": "G12",
+        "agent_k": 14,
+        "agent_n": 30,
+        "agent_rate": 0.4666666666666667,
+        "holdout_k": 13,
+        "holdout_n": 38,
+        "holdout_rate": 0.34210526315789475,
+        "diff_pp": 12.456140350877194,
+        "ci_lo_pp": -10.408939193840578,
+        "ci_hi_pp": 34.00799719052581,
+        "relative": 0.36410256410256414,
+        "p_value": 0.29724610858399836
+      }
+    ],
+    "secondary": [
+      {
+        "label": "any play_started in the 14-day horizon",
+        "agent_k": 665,
+        "agent_n": 863,
+        "agent_rate": 0.7705677867902665,
+        "holdout_k": 669,
+        "holdout_n": 883,
+        "holdout_rate": 0.7576443941109853,
+        "diff_pp": 1.292339267928122,
+        "ci_lo_pp": -2.6931235964908486,
+        "ci_hi_pp": 5.267282215484208,
+        "relative": 0.017057332938423597,
+        "p_value": 0.5248711295636106
+      },
+      {
+        "label": "any episode_completed",
+        "agent_k": 488,
+        "agent_n": 863,
+        "agent_rate": 0.5654692931633836,
+        "holdout_k": 502,
+        "holdout_n": 883,
+        "holdout_rate": 0.5685164212910532,
+        "diff_pp": -0.3047128127669607,
+        "ci_lo_pp": -4.943255938560934,
+        "ci_hi_pp": 4.334263874001563,
+        "relative": -0.005359789116996527,
+        "p_value": 0.8977727386402996
+      },
+      {
+        "label": "paid purchase (is_trial = false)",
+        "agent_k": 35,
+        "agent_n": 863,
+        "agent_rate": 0.04055619930475087,
+        "holdout_k": 36,
+        "holdout_n": 883,
+        "holdout_rate": 0.04077010192525481,
+        "diff_pp": -0.021390262050394182,
+        "ci_lo_pp": -1.9090168848334783,
+        "ci_hi_pp": 1.875379820620043,
+        "relative": -0.005246555941805009,
+        "p_value": 0.981949451409796
+      },
+      {
+        "label": "notification opt-out (harm metric)",
+        "agent_k": 0,
+        "agent_n": 863,
+        "agent_rate": 0.0,
+        "holdout_k": 0,
+        "holdout_n": 883,
+        "holdout_rate": 0.0,
+        "diff_pp": 0.0,
+        "ci_lo_pp": -0.4331618444859839,
+        "ci_hi_pp": 0.44315587142316526,
+        "relative": null,
+        "p_value": 1.0
+      }
+    ],
+    "goal_mix": {
+      "agent": {
+        "G07": 438,
+        "G06": 10,
+        "G05": 130,
+        "G09": 22,
+        "G12": 30,
+        "none": 114,
+        "G08": 34,
+        "G01": 59,
+        "G02": 24,
+        "G03": 1,
+        "G04": 1
+      },
+      "holdout": {
+        "G07": 440,
+        "G02": 23,
+        "G05": 114,
+        "G12": 38,
+        "G08": 42,
+        "G06": 11,
+        "none": 148,
+        "G01": 51,
+        "G09": 15,
+        "G04": 1
+      }
+    },
+    "result_counts": {
+      "agent": {
+        "failed": 678,
+        "succeeded": 71,
+        "no_goal": 114
+      },
+      "holdout": {
+        "failed": 669,
+        "succeeded": 66,
+        "no_goal": 148
+      }
+    },
+    "arms_file_counts": {
+      "holdout": 2487,
+      "agent": 2513
+    }
+  },
+  "pilot": {
+    "n_rows": 3891,
+    "assignment_mismatches": 0,
+    "flawed": {
+      "label": "served vs everyone else (pilot report method)",
+      "agent_k": 87,
+      "agent_n": 217,
+      "agent_rate": 0.4009216589861751,
+      "holdout_k": 649,
+      "holdout_n": 3674,
+      "holdout_rate": 0.17664670658682635,
+      "diff_pp": 22.427495239934874,
+      "ci_lo_pp": 16.007648396607433,
+      "ci_hi_pp": 29.17325888859743,
+      "relative": 1.269624306803093,
+      "p_value": 2.4579183713659625e-16
+    },
+    "itt": {
+      "label": "treatment arm vs holdout arm (ITT)",
+      "agent_k": 349,
+      "agent_n": 1912,
+      "agent_rate": 0.18253138075313807,
+      "holdout_k": 387,
+      "holdout_n": 1979,
+      "holdout_rate": 0.1955533097524002,
+      "diff_pp": -1.3021928999262133,
+      "ci_lo_pp": -3.759901634092686,
+      "ci_hi_pp": 1.1613297893384844,
+      "relative": -0.06659017439157566,
+      "p_value": 0.2997854506278967
+    },
+    "served_in_holdout": 0,
+    "served_goal_mix": {
+      "G09": 105,
+      "G05": 84,
+      "G02": 15,
+      "G06": 12,
+      "G04": 1
+    },
+    "others_goal_mix": {
+      "G05": 2034,
+      "G09": 848,
+      "G02": 345,
+      "G06": 319,
+      "G04": 128
+    },
+    "holdout_rate_by_goal": {
+      "G02": 0.19672131147540983,
+      "G06": 0.028735632183908046,
+      "G09": 0.6728778467908902,
+      "G04": 0.22727272727272727,
+      "G05": 0.005591798695246971
+    },
+    "served_expected_without_agent": 0.343985276447258,
+    "treatment_unserved": {
+      "n": 1695,
+      "rate": 0.15457227138643068
+    },
+    "by_goal": [
+      {
+        "label": "G02",
+        "agent_k": 34,
+        "agent_n": 177,
+        "agent_rate": 0.192090395480226,
+        "holdout_k": 36,
+        "holdout_n": 183,
+        "holdout_rate": 0.19672131147540983,
+        "diff_pp": -0.46309159951838375,
+        "ci_lo_pp": -8.628867674498927,
+        "ci_hi_pp": 7.752576917602331,
+        "relative": -0.02354048964218447,
+        "p_value": 0.9116245884625565,
+        "served_share_of_goal": 0.0847457627118644
+      },
+      {
+        "label": "G04",
+        "agent_k": 15,
+        "agent_n": 63,
+        "agent_rate": 0.23809523809523808,
+        "holdout_k": 15,
+        "holdout_n": 66,
+        "holdout_rate": 0.22727272727272727,
+        "diff_pp": 1.0822510822510818,
+        "ci_lo_pp": -13.362153286509368,
+        "ci_hi_pp": 15.612412560067368,
+        "relative": 0.04761904761904767,
+        "p_value": 0.8843626822960652,
+        "served_share_of_goal": 0.015873015873015872
+      },
+      {
+        "label": "G05",
+        "agent_k": 13,
+        "agent_n": 1045,
+        "agent_rate": 0.012440191387559809,
+        "holdout_k": 6,
+        "holdout_n": 1073,
+        "holdout_rate": 0.005591798695246971,
+        "diff_pp": 0.6848392692312837,
+        "ci_lo_pp": -0.14905398349554458,
+        "ci_hi_pp": 1.6085572732754732,
+        "relative": 1.2247208931419458,
+        "p_value": 0.09468355363118791,
+        "served_share_of_goal": 0.08038277511961722
+      },
+      {
+        "label": "G06",
+        "agent_k": 1,
+        "agent_n": 157,
+        "agent_rate": 0.006369426751592357,
+        "holdout_k": 5,
+        "holdout_n": 174,
+        "holdout_rate": 0.028735632183908046,
+        "diff_pp": -2.236620543231569,
+        "ci_lo_pp": -5.9497799146082775,
+        "ci_hi_pp": 1.0796455876201747,
+        "relative": -0.778343949044586,
+        "p_value": 0.1277468194430992,
+        "served_share_of_goal": 0.07643312101910828
+      },
+      {
+        "label": "G09",
+        "agent_k": 286,
+        "agent_n": 470,
+        "agent_rate": 0.6085106382978723,
+        "holdout_k": 325,
+        "holdout_n": 483,
+        "holdout_rate": 0.6728778467908902,
+        "diff_pp": -6.436720849301791,
+        "ci_lo_pp": -12.467452066647564,
+        "ci_hi_pp": -0.3458914200154407,
+        "relative": -0.09565957446808504,
+        "p_value": 0.03834994524488582,
+        "served_share_of_goal": 0.22340425531914893
+      }
+    ]
+  },
+  "seeds": [
+    {
+      "seed": "oua-practice",
+      "primary": {
+        "label": "goal reached (first goal; no goal = not reached)",
+        "agent_k": 71,
+        "agent_n": 863,
+        "agent_rate": 0.08227114716106605,
+        "holdout_k": 66,
+        "holdout_n": 883,
+        "holdout_rate": 0.07474518686296716,
+        "diff_pp": 0.752596029809889,
+        "ci_lo_pp": -1.784836855565037,
+        "ci_hi_pp": 3.305529824039996,
+        "relative": 0.10068822641244424,
+        "p_value": 0.5587509092498719
+      }
+    },
+    {
+      "seed": "seed-a",
+      "primary": {
+        "label": "goal reached (first goal; no goal = not reached)",
+        "agent_k": 74,
+        "agent_n": 863,
+        "agent_rate": 0.08574739281575898,
+        "holdout_k": 68,
+        "holdout_n": 883,
+        "holdout_rate": 0.07701019252548132,
+        "diff_pp": 0.8737200290277664,
+        "ci_lo_pp": -1.70433920648719,
+        "ci_hi_pp": 3.4676966721318285,
+        "relative": 0.11345511553404664,
+        "p_value": 0.504273643349394
+      }
+    },
+    {
+      "seed": "seed-b",
+      "primary": {
+        "label": "goal reached (first goal; no goal = not reached)",
+        "agent_k": 80,
+        "agent_n": 863,
+        "agent_rate": 0.09269988412514485,
+        "holdout_k": 62,
+        "holdout_n": 883,
+        "holdout_rate": 0.07021517553793885,
+        "diff_pp": 2.2484708587205997,
+        "ci_lo_pp": -0.32438383437805063,
+        "ci_hi_pp": 4.848399787986598,
+        "relative": 0.32022576907262734,
+        "p_value": 0.0857060010998961
+      }
+    },
+    {
+      "seed": "seed-c",
+      "primary": {
+        "label": "goal reached (first goal; no goal = not reached)",
+        "agent_k": 73,
+        "agent_n": 863,
+        "agent_rate": 0.08458864426419467,
+        "holdout_k": 70,
+        "holdout_n": 883,
+        "holdout_rate": 0.07927519818799547,
+        "diff_pp": 0.53134460761992,
+        "ci_lo_pp": -2.0558312241489407,
+        "ci_hi_pp": 3.131593622949479,
+        "relative": 0.06702532693262708,
+        "p_value": 0.6856184558200602
+      }
+    },
+    {
+      "seed": "seed-d",
+      "primary": {
+        "label": "goal reached (first goal; no goal = not reached)",
+        "agent_k": 71,
+        "agent_n": 863,
+        "agent_rate": 0.08227114716106605,
+        "holdout_k": 85,
+        "holdout_n": 883,
+        "holdout_rate": 0.09626274065685164,
+        "diff_pp": -1.399159349578559,
+        "ci_lo_pp": -4.090817483421218,
+        "ci_hi_pp": 1.2921160728070764,
+        "relative": -0.14534796537386674,
+        "p_value": 0.30548532925697186
+      }
+    }
+  ],
+  "policy_audit": {
+    "actions_checked": 1304,
+    "problems_total": 0,
+    "problems": {}
+  },
+  "simulator": {
+    "oua-practice": {
+      "seed": "oua-practice",
+      "triggered_users": 1746,
+      "events_written": 32066,
+      "counts": {
+        "actions_total": 1317,
+        "home_page_accepted": 906,
+        "home_page_published_but_not_shown": 14,
+        "home_page_shown_personalised": 823,
+        "in_app_message_queued": 9,
+        "in_app_message_requested": 9,
+        "organic_purchases_scripted": 36,
+        "push_clicked": 6,
+        "push_delivered": 327,
+        "push_requested": 377,
+        "push_undeliverable_token": 50,
+        "whatsapp_delivered": 25,
+        "whatsapp_requested": 25
+      },
+      "policy_problem_count": 0,
+      "_command": "C:\\Program Files\\Python314\\python.exe C:\\Users\\aman.kumar\\Desktop\\Stage\\submission\\pack\\simulator\\simulate_outcomes.py --pack C:\\Users\\aman.kumar\\Desktop\\Stage\\submission\\pack --actions C:\\Users\\aman.kumar\\Desktop\\Stage\\submission\\sample_run\\actions.jsonl --out C:\\Users\\aman.kumar\\Desktop\\Stage\\submission\\sample_run\\sim --seed oua-practice",
+      "_stderr": "wrote 32066 events for 1746 users -> C:\\Users\\aman.kumar\\Desktop\\Stage\\submission\\sample_run\\sim"
+    },
+    "seed-a": {
+      "seed": "seed-a",
+      "triggered_users": 1746,
+      "events_written": 31877,
+      "counts": {
+        "actions_total": 1317,
+        "home_page_accepted": 906,
+        "home_page_published_but_not_shown": 17,
+        "home_page_shown_personalised": 832,
+        "in_app_message_queued": 9,
+        "in_app_message_requested": 9,
+        "organic_purchases_scripted": 36,
+        "push_clicked": 2,
+        "push_delivered": 327,
+        "push_requested": 377,
+        "push_undeliverable_token": 50,
+        "whatsapp_delivered": 25,
+        "whatsapp_requested": 25
+      },
+      "policy_problem_count": 0,
+      "_command": "C:\\Program Files\\Python314\\python.exe C:\\Users\\aman.kumar\\Desktop\\Stage\\submission\\pack\\simulator\\simulate_outcomes.py --pack C:\\Users\\aman.kumar\\Desktop\\Stage\\submission\\pack --actions C:\\Users\\aman.kumar\\Desktop\\Stage\\submission\\sample_run\\actions.jsonl --out C:\\Users\\aman.kumar\\Desktop\\Stage\\submission\\sample_run\\sim_seeds\\seed-a --seed seed-a",
+      "_stderr": "wrote 31877 events for 1746 users -> C:\\Users\\aman.kumar\\Desktop\\Stage\\submission\\sample_run\\sim_seeds\\seed-a"
+    },
+    "seed-b": {
+      "seed": "seed-b",
+      "triggered_users": 1746,
+      "events_written": 32083,
+      "counts": {
+        "actions_total": 1317,
+        "home_page_accepted": 906,
+        "home_page_published_but_not_shown": 18,
+        "home_page_shown_personalised": 840,
+        "in_app_message_queued": 9,
+        "in_app_message_requested": 9,
+        "organic_purchases_scripted": 36,
+        "push_clicked": 5,
+        "push_delivered": 327,
+        "push_requested": 377,
+        "push_undeliverable_token": 50,
+        "whatsapp_clicked": 1,
+        "whatsapp_delivered": 25,
+        "whatsapp_requested": 25
+      },
+      "policy_problem_count": 0,
+      "_command": "C:\\Program Files\\Python314\\python.exe C:\\Users\\aman.kumar\\Desktop\\Stage\\submission\\pack\\simulator\\simulate_outcomes.py --pack C:\\Users\\aman.kumar\\Desktop\\Stage\\submission\\pack --actions C:\\Users\\aman.kumar\\Desktop\\Stage\\submission\\sample_run\\actions.jsonl --out C:\\Users\\aman.kumar\\Desktop\\Stage\\submission\\sample_run\\sim_seeds\\seed-b --seed seed-b",
+      "_stderr": "wrote 32083 events for 1746 users -> C:\\Users\\aman.kumar\\Desktop\\Stage\\submission\\sample_run\\sim_seeds\\seed-b"
+    },
+    "seed-c": {
+      "seed": "seed-c",
+      "triggered_users": 1746,
+      "events_written": 32555,
+      "counts": {
+        "actions_total": 1317,
+        "home_page_accepted": 906,
+        "home_page_published_but_not_shown": 19,
+        "home_page_shown_personalised": 820,
+        "in_app_message_queued": 9,
+        "in_app_message_requested": 9,
+        "organic_purchases_scripted": 36,
+        "push_clicked": 5,
+        "push_delivered": 327,
+        "push_requested": 377,
+        "push_undeliverable_token": 50,
+        "whatsapp_clicked": 2,
+        "whatsapp_delivered": 25,
+        "whatsapp_requested": 25
+      },
+      "policy_problem_count": 0,
+      "_command": "C:\\Program Files\\Python314\\python.exe C:\\Users\\aman.kumar\\Desktop\\Stage\\submission\\pack\\simulator\\simulate_outcomes.py --pack C:\\Users\\aman.kumar\\Desktop\\Stage\\submission\\pack --actions C:\\Users\\aman.kumar\\Desktop\\Stage\\submission\\sample_run\\actions.jsonl --out C:\\Users\\aman.kumar\\Desktop\\Stage\\submission\\sample_run\\sim_seeds\\seed-c --seed seed-c",
+      "_stderr": "wrote 32555 events for 1746 users -> C:\\Users\\aman.kumar\\Desktop\\Stage\\submission\\sample_run\\sim_seeds\\seed-c"
+    },
+    "seed-d": {
+      "seed": "seed-d",
+      "triggered_users": 1746,
+      "events_written": 31726,
+      "counts": {
+        "actions_total": 1317,
+        "home_page_accepted": 906,
+        "home_page_published_but_not_shown": 16,
+        "home_page_shown_personalised": 827,
+        "in_app_message_queued": 9,
+        "in_app_message_requested": 9,
+        "organic_purchases_scripted": 36,
+        "push_clicked": 8,
+        "push_delivered": 327,
+        "push_requested": 377,
+        "push_undeliverable_token": 50,
+        "whatsapp_delivered": 25,
+        "whatsapp_requested": 25
+      },
+      "policy_problem_count": 0,
+      "_command": "C:\\Program Files\\Python314\\python.exe C:\\Users\\aman.kumar\\Desktop\\Stage\\submission\\pack\\simulator\\simulate_outcomes.py --pack C:\\Users\\aman.kumar\\Desktop\\Stage\\submission\\pack --actions C:\\Users\\aman.kumar\\Desktop\\Stage\\submission\\sample_run\\actions.jsonl --out C:\\Users\\aman.kumar\\Desktop\\Stage\\submission\\sample_run\\sim_seeds\\seed-d --seed seed-d",
+      "_stderr": "wrote 31726 events for 1746 users -> C:\\Users\\aman.kumar\\Desktop\\Stage\\submission\\sample_run\\sim_seeds\\seed-d"
+    }
+  }
+}

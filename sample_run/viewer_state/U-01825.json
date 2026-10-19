@@ -1,0 +1,366 @@
+{
+ "viewer_id": "U-01825",
+ "arm": "holdout",
+ "as_of": "2026-10-01T18:31:25.944Z",
+ "facts": {
+  "user_id": "U-01825",
+  "as_of": "2026-10-01T18:31:25.944Z",
+  "profile_present": true,
+  "history_start": "2026-08-31T18:31:55.380Z",
+  "history_covers_lifetime": false,
+  "events_seen": 65,
+  "facts": {
+   "dialect": {
+    "name": "dialect",
+    "value": null,
+    "source": "unknown",
+    "source_ref": null,
+    "source_time": null,
+    "freshness": "unknown",
+    "age_s": null,
+    "rule": "trigger carries no valid app_dialect (raw=None); the page the app will request is unknown, so no alternative is substituted",
+    "conflicts": [
+     {
+      "value": "d1",
+      "source": "profile",
+      "source_ref": "profile:U-01825@2026-09-28T18:19:46.256Z",
+      "resolution": "not used: cannot confirm it is the current app setting"
+     },
+     {
+      "value": "d1",
+      "source": "app_setting_earlier",
+      "source_ref": "event:7a6d32e6-ffd2-4ed3-95f4-284efc94a6e5",
+      "resolution": "not used: cannot confirm it is the current app setting"
+     }
+    ],
+    "supported": false
+   },
+   "ever_paid": {
+    "name": "ever_paid",
+    "value": true,
+    "source": "event",
+    "source_ref": "event:d783f9fc-1d13-42df-ba51-69309e16603f",
+    "source_time": "2026-09-28T18:19:46.256Z",
+    "freshness": "aging",
+    "age_s": 259899.7,
+    "rule": "any paid purchase/renewal event or a paid status on any profile row",
+    "conflicts": [],
+    "supported": true
+   },
+   "history_covers_lifetime": {
+    "name": "history_covers_lifetime",
+    "value": false,
+    "source": "derived",
+    "source_ref": "profile:U-01825@2026-09-28T18:19:46.256Z",
+    "source_time": "2026-09-28T18:19:46.256Z",
+    "freshness": "unknown",
+    "age_s": null,
+    "rule": "signup_at >= first observable event (2026-08-31T18:31:55.380Z); 'never did X' claims need full coverage",
+    "conflicts": [],
+    "supported": true
+   },
+   "last_app_open_before_trigger": {
+    "name": "last_app_open_before_trigger",
+    "value": "2026-10-01T14:54:06.470Z",
+    "source": "event",
+    "source_ref": "event:7a6d32e6-ffd2-4ed3-95f4-284efc94a6e5",
+    "source_time": "2026-10-01T14:54:06.470Z",
+    "freshness": "fresh",
+    "age_s": 13039.5,
+    "rule": "latest app_open in another session, ordered by server-anchored occurrence time",
+    "conflicts": [],
+    "supported": true
+   },
+   "profile_present": {
+    "name": "profile_present",
+    "value": true,
+    "source": "profile",
+    "source_ref": "profile:U-01825@2026-09-28T18:19:46.256Z",
+    "source_time": "2026-09-28T18:19:46.256Z",
+    "freshness": "aging",
+    "age_s": 259899.7,
+    "rule": "newest updated_at among snapshot rows",
+    "conflicts": [],
+    "supported": true
+   },
+   "push_consent": {
+    "name": "push_consent",
+    "value": true,
+    "source": "profile",
+    "source_ref": "profile:U-01825@2026-09-28T18:19:46.256Z",
+    "source_time": "2026-09-28T18:19:46.256Z",
+    "freshness": "aging",
+    "age_s": 259899.7,
+    "rule": "newest profile row notifications_opt_in",
+    "conflicts": [],
+    "supported": true
+   },
+   "signup_at": {
+    "name": "signup_at",
+    "value": "2025-07-09T10:50:41.641Z",
+    "source": "profile",
+    "source_ref": "profile:U-01825@2026-09-28T18:19:46.256Z",
+    "source_time": "2026-09-28T18:19:46.256Z",
+    "freshness": "aging",
+    "age_s": 259899.7,
+    "rule": "profile.signup_at (no signup event observed)",
+    "conflicts": [],
+    "supported": true
+   },
+   "subscription_status": {
+    "name": "subscription_status",
+    "value": "active",
+    "source": "profile",
+    "source_ref": "profile:U-01825@2026-09-28T18:19:46.256Z",
+    "source_time": "2026-09-28T18:19:46.256Z",
+    "freshness": "aging",
+    "age_s": 259899.7,
+    "rule": "newest profile row (no newer subscription event)",
+    "conflicts": [],
+    "supported": true
+   },
+   "whatsapp_consent": {
+    "name": "whatsapp_consent",
+    "value": false,
+    "source": "profile",
+    "source_ref": "profile:U-01825@2026-09-28T18:19:46.256Z",
+    "source_time": "2026-09-28T18:19:46.256Z",
+    "freshness": "aging",
+    "age_s": 259899.7,
+    "rule": "newest profile row whatsapp_opt_in",
+    "conflicts": [],
+    "supported": true
+   }
+  },
+  "watch": {
+   "plays": 9,
+   "completions": 3,
+   "watched_slugs": [
+    "dapa-pini-d1",
+    "hama-chudibha-d1",
+    "raloja-d1",
+    "rava-baya-d1",
+    "salosa-valo-d1"
+   ],
+   "top_genres": [
+    "Comedy",
+    "Thriller",
+    "Crime",
+    "Action",
+    "Devotional"
+   ],
+   "play_days_recent": [
+    "2026-09-23",
+    "2026-09-26"
+   ],
+   "series": [
+    {
+     "slug": "raloja-d1",
+     "furthest": [
+      1,
+      1
+     ],
+     "last_episode": [
+      1,
+      1
+     ],
+     "last_play": "2026-09-05T18:16:51.086Z"
+    },
+    {
+     "slug": "hama-chudibha-d1",
+     "furthest": [
+      1,
+      1
+     ],
+     "last_episode": [
+      1,
+      36
+     ],
+     "last_play": "2026-09-15T13:41:19.505Z"
+    },
+    {
+     "slug": "salosa-valo-d1",
+     "furthest": [
+      1,
+      2
+     ],
+     "last_episode": [
+      1,
+      12
+     ],
+     "last_play": "2026-09-17T04:30:32.873Z"
+    },
+    {
+     "slug": "dapa-pini-d1",
+     "furthest": [
+      1,
+      1
+     ],
+     "last_episode": [
+      1,
+      56
+     ],
+     "last_play": "2026-09-23T14:25:51.841Z"
+    },
+    {
+     "slug": "rava-baya-d1",
+     "furthest": [
+      1,
+      1
+     ],
+     "last_episode": [
+      1,
+      1
+     ],
+     "last_play": "2026-09-26T07:34:27.307Z"
+    }
+   ]
+  },
+  "learning": {
+   "actions": {},
+   "goal_results": [
+    {
+     "attribution": "n/a",
+     "goal_id": "G07",
+     "instance_id": "GI-a59d0742b6da",
+     "result": "failed"
+    }
+   ],
+   "messages": {},
+   "notes": [],
+   "pages": {
+    "published": 0,
+    "shown_personalised": 0
+   }
+  }
+ },
+ "goals": [
+  {
+   "instance_id": "GI-a59d0742b6da",
+   "user_id": "U-01825",
+   "goal_id": "G07",
+   "rule_version": "G07-r1",
+   "status": "open",
+   "started_at": "2026-10-01T05:44:18.563Z",
+   "deadline": "2026-10-04T05:44:18.563Z",
+   "success_event": "play_started",
+   "success_condition": "same content_slug as the unfinished series",
+   "decision_id": "D-6a5439b0ffde",
+   "arm": "holdout",
+   "eligibility": {
+    "context": {
+     "furthest": [
+      1,
+      1
+     ],
+     "series_slug": "dapa-pini-d1"
+    },
+    "evidence": [
+     "goal_rule:G07-r1",
+     "event:ab27560c-8508-4479-b553-a3090893ace5",
+     "event:3218f5fb-17dc-478a-9a93-53ea69031a5b",
+     "event:b577ac25-ee85-438d-8766-4a8006f1360e"
+    ],
+    "reason": "series dapa-pini-d1 reached S1E1 of S1E56, idle 7.6 days"
+   },
+   "closed_at": null,
+   "close_reason": null,
+   "outcome": null,
+   "history": [
+    {
+     "at": "2026-10-01T05:44:18.563Z",
+     "change": "opened",
+     "reason": "series dapa-pini-d1 reached S1E1 of S1E56, idle 7.6 days"
+    }
+   ]
+  }
+ ],
+ "decisions": [
+  {
+   "decision_id": "D-6a5439b0ffde",
+   "trigger": "15ab3fe0-8e4c-46c1-8f83-ed3059653efc",
+   "deliver_at": "2026-10-01T05:44:18.563Z",
+   "status": "HOLDOUT",
+   "action": "NONE",
+   "goal": "G07",
+   "reason": "holdout arm: no agent action of any kind (goal tracked only so outcomes can be compared with the agent arm)"
+  },
+  {
+   "decision_id": "D-de6639743da7",
+   "trigger": "b62773ea-052d-476f-934f-ab6763b251cc",
+   "deliver_at": "2026-10-01T09:49:38.254Z",
+   "status": "HOLDOUT",
+   "action": "NONE",
+   "goal": "G07",
+   "reason": "holdout arm: no agent action of any kind (goal tracked only so outcomes can be compared with the agent arm)"
+  },
+  {
+   "decision_id": "D-51f0ebe9fe0f",
+   "trigger": "f32d0448-c763-423f-8c1e-6c21e7b0913d",
+   "deliver_at": "2026-10-01T14:54:02.472Z",
+   "status": "HOLDOUT",
+   "action": "NONE",
+   "goal": "G07",
+   "reason": "holdout arm: no agent action of any kind (goal tracked only so outcomes can be compared with the agent arm)"
+  },
+  {
+   "decision_id": "D-adb4d3569d15",
+   "trigger": "7a6d32e6-ffd2-4ed3-95f4-284efc94a6e5",
+   "deliver_at": "2026-10-01T14:54:06.470Z",
+   "status": "HOLDOUT",
+   "action": "NONE",
+   "goal": "G07",
+   "reason": "holdout arm: no agent action of any kind (goal tracked only so outcomes can be compared with the agent arm)"
+  }
+ ],
+ "actions": [],
+ "outcomes": [
+  {
+   "arm": "holdout",
+   "attribution": "n/a",
+   "deadline": "2026-10-04T05:44:18.563Z",
+   "decision_id": "D-6a5439b0ffde",
+   "evidence": [],
+   "exposures_before_success": [],
+   "exposures_window": [],
+   "final": true,
+   "goal_id": "G07",
+   "goal_instance_id": "GI-a59d0742b6da",
+   "goal_status_in_replay": "open",
+   "judged_at": "2026-10-15T17:58:40.000Z",
+   "observed_until": "2026-10-15T17:58:40.000Z",
+   "reason": "no qualifying play_started between 2026-10-01T05:44:18.563Z and 2026-10-04T05:44:18.563Z",
+   "result": "failed",
+   "rule_history": [
+    {
+     "at": "2026-10-01T05:44:18.563Z",
+     "change": "opened",
+     "reason": "series dapa-pini-d1 reached S1E1 of S1E56, idle 7.6 days"
+    }
+   ],
+   "rule_version": "G07-r1",
+   "started_at": "2026-10-01T05:44:18.563Z",
+   "success_condition": "same content_slug as the unfinished series",
+   "success_signal": "play_started",
+   "user_id": "U-01825"
+  }
+ ],
+ "learning": {
+  "actions": {},
+  "goal_results": [
+   {
+    "attribution": "n/a",
+    "goal_id": "G07",
+    "instance_id": "GI-a59d0742b6da",
+    "result": "failed"
+   }
+  ],
+  "messages": {},
+  "notes": [],
+  "pages": {
+   "published": 0,
+   "shown_personalised": 0
+  }
+ },
+ "audit": []
+}

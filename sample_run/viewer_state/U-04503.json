@@ -1,0 +1,405 @@
+{
+ "viewer_id": "U-04503",
+ "arm": "agent",
+ "as_of": "2026-10-01T18:31:25.944Z",
+ "facts": {
+  "user_id": "U-04503",
+  "as_of": "2026-10-01T18:31:25.944Z",
+  "profile_present": true,
+  "history_start": "2026-08-31T18:31:55.380Z",
+  "history_covers_lifetime": false,
+  "events_seen": 28,
+  "facts": {
+   "dialect": {
+    "name": "dialect",
+    "value": null,
+    "source": "unknown",
+    "source_ref": null,
+    "source_time": null,
+    "freshness": "unknown",
+    "age_s": null,
+    "rule": "trigger carries no valid app_dialect (raw=None); the page the app will request is unknown, so no alternative is substituted",
+    "conflicts": [
+     {
+      "value": "d1",
+      "source": "profile",
+      "source_ref": "profile:U-04503@2026-09-28T23:56:13.853Z",
+      "resolution": "not used: cannot confirm it is the current app setting"
+     },
+     {
+      "value": "d1",
+      "source": "app_setting_earlier",
+      "source_ref": "event:5050a44b-0d2e-464b-9280-f7d978f98746",
+      "resolution": "not used: cannot confirm it is the current app setting"
+     }
+    ],
+    "supported": false
+   },
+   "ever_paid": {
+    "name": "ever_paid",
+    "value": false,
+    "source": "profile",
+    "source_ref": "profile:U-04503@2026-09-28T23:56:13.853Z",
+    "source_time": "2026-09-28T23:56:13.853Z",
+    "freshness": "aging",
+    "age_s": 239712.1,
+    "rule": "any paid purchase/renewal event or a paid status on any profile row",
+    "conflicts": [],
+    "supported": true
+   },
+   "history_covers_lifetime": {
+    "name": "history_covers_lifetime",
+    "value": false,
+    "source": "derived",
+    "source_ref": "profile:U-04503@2026-09-28T23:56:13.853Z",
+    "source_time": "2026-09-28T23:56:13.853Z",
+    "freshness": "unknown",
+    "age_s": null,
+    "rule": "signup_at >= first observable event (2026-08-31T18:31:55.380Z); 'never did X' claims need full coverage",
+    "conflicts": [],
+    "supported": true
+   },
+   "last_app_open_before_trigger": {
+    "name": "last_app_open_before_trigger",
+    "value": "2026-10-01T14:50:18.839Z",
+    "source": "event",
+    "source_ref": "event:5050a44b-0d2e-464b-9280-f7d978f98746",
+    "source_time": "2026-10-01T14:50:18.839Z",
+    "freshness": "fresh",
+    "age_s": 13267.1,
+    "rule": "latest app_open in another session, ordered by server-anchored occurrence time",
+    "conflicts": [],
+    "supported": true
+   },
+   "profile_present": {
+    "name": "profile_present",
+    "value": true,
+    "source": "profile",
+    "source_ref": "profile:U-04503@2026-09-28T23:56:13.853Z",
+    "source_time": "2026-09-28T23:56:13.853Z",
+    "freshness": "aging",
+    "age_s": 239712.1,
+    "rule": "newest updated_at among snapshot rows",
+    "conflicts": [],
+    "supported": true
+   },
+   "push_consent": {
+    "name": "push_consent",
+    "value": true,
+    "source": "profile",
+    "source_ref": "profile:U-04503@2026-09-28T23:56:13.853Z",
+    "source_time": "2026-09-28T23:56:13.853Z",
+    "freshness": "aging",
+    "age_s": 239712.1,
+    "rule": "newest profile row notifications_opt_in",
+    "conflicts": [],
+    "supported": true
+   },
+   "signup_at": {
+    "name": "signup_at",
+    "value": "2024-10-10T19:05:02.836Z",
+    "source": "profile",
+    "source_ref": "profile:U-04503@2026-09-28T23:56:13.853Z",
+    "source_time": "2026-09-28T23:56:13.853Z",
+    "freshness": "aging",
+    "age_s": 239712.1,
+    "rule": "profile.signup_at (no signup event observed)",
+    "conflicts": [],
+    "supported": true
+   },
+   "subscription_status": {
+    "name": "subscription_status",
+    "value": "never",
+    "source": "profile",
+    "source_ref": "profile:U-04503@2026-09-28T23:56:13.853Z",
+    "source_time": "2026-09-28T23:56:13.853Z",
+    "freshness": "aging",
+    "age_s": 239712.1,
+    "rule": "newest profile row (no newer subscription event)",
+    "conflicts": [],
+    "supported": true
+   },
+   "whatsapp_consent": {
+    "name": "whatsapp_consent",
+    "value": false,
+    "source": "profile",
+    "source_ref": "profile:U-04503@2026-09-28T23:56:13.853Z",
+    "source_time": "2026-09-28T23:56:13.853Z",
+    "freshness": "aging",
+    "age_s": 239712.1,
+    "rule": "newest profile row whatsapp_opt_in",
+    "conflicts": [],
+    "supported": true
+   }
+  },
+  "watch": {
+   "plays": 2,
+   "completions": 2,
+   "watched_slugs": [
+    "hama-chudibha-d1",
+    "rava-baya-d1"
+   ],
+   "top_genres": [
+    "Thriller",
+    "Comedy",
+    "Drama"
+   ],
+   "play_days_recent": [],
+   "series": [
+    {
+     "slug": "rava-baya-d1",
+     "furthest": [
+      1,
+      1
+     ],
+     "last_episode": [
+      1,
+      1
+     ],
+     "last_play": "2026-09-04T08:00:17.135Z"
+    },
+    {
+     "slug": "hama-chudibha-d1",
+     "furthest": [
+      1,
+      1
+     ],
+     "last_episode": [
+      1,
+      36
+     ],
+     "last_play": "2026-09-07T18:50:17.324Z"
+    }
+   ]
+  },
+  "learning": {
+   "actions": {
+    "home_page": {
+     "published": 3
+    },
+    "push": {
+     "sent": 1
+    }
+   },
+   "goal_results": [
+    {
+     "attribution": "n/a",
+     "goal_id": "G07",
+     "instance_id": "GI-5b454d570513",
+     "result": "failed"
+    }
+   ],
+   "messages": {
+    "push": {
+     "clicked": 0,
+     "delivered": 1,
+     "failed": {}
+    }
+   },
+   "notes": [],
+   "pages": {
+    "published": 3,
+    "shown_personalised": 5
+   }
+  }
+ },
+ "goals": [
+  {
+   "instance_id": "GI-5b454d570513",
+   "user_id": "U-04503",
+   "goal_id": "G07",
+   "rule_version": "G07-r1",
+   "status": "open",
+   "started_at": "2026-10-01T02:03:52.589Z",
+   "deadline": "2026-10-04T02:03:52.589Z",
+   "success_event": "play_started",
+   "success_condition": "same content_slug as the unfinished series",
+   "decision_id": "D-58981f1f2029",
+   "arm": "agent",
+   "eligibility": {
+    "context": {
+     "furthest": [
+      1,
+      1
+     ],
+     "series_slug": "hama-chudibha-d1"
+    },
+    "evidence": [
+     "goal_rule:G07-r1",
+     "event:c8aab449-e49f-4c01-8271-d967e7890b9b",
+     "event:95b89ace-7a49-4e39-8bd6-0627af12c60e",
+     "event:8ad45100-dcdb-458c-9b97-f4df164cbaac"
+    ],
+    "reason": "series hama-chudibha-d1 reached S1E1 of S1E36, idle 23.3 days"
+   },
+   "closed_at": null,
+   "close_reason": null,
+   "outcome": null,
+   "history": [
+    {
+     "at": "2026-10-01T02:03:52.589Z",
+     "change": "opened",
+     "reason": "series hama-chudibha-d1 reached S1E1 of S1E36, idle 23.3 days"
+    }
+   ]
+  }
+ ],
+ "decisions": [
+  {
+   "decision_id": "D-58981f1f2029",
+   "trigger": "369d70f5-6a2b-4b4e-b35e-82f99b9e741d",
+   "deliver_at": "2026-10-01T02:03:52.589Z",
+   "status": "PUBLISHED",
+   "action": "HOME_PAGE+PUSH",
+   "goal": "G07",
+   "reason": null
+  },
+  {
+   "decision_id": "D-0a64ff87a402",
+   "trigger": "0af7abba-83f5-4f0a-b85f-6c4d81a74a91",
+   "deliver_at": "2026-10-01T02:25:44.520Z",
+   "status": "ABSTAINED",
+   "action": "NONE",
+   "goal": "G07",
+   "reason": "a personalised page for d1 is already live until 2026-10-01T04:03:53.308Z; not republished; no message: this goal already has one"
+  },
+  {
+   "decision_id": "D-bd2ff2339b60",
+   "trigger": "a16ad6d8-9146-4a0b-a499-3fefa0fbc3ec",
+   "deliver_at": "2026-10-01T11:29:33.692Z",
+   "status": "PUBLISHED",
+   "action": "HOME_PAGE",
+   "goal": "G07",
+   "reason": null
+  },
+  {
+   "decision_id": "D-bd2ff2339b60-dup-cf88b3",
+   "trigger": "a16ad6d8-9146-4a0b-a499-3fefa0fbc3ec",
+   "deliver_at": "2026-10-01T11:35:03.405Z",
+   "status": "DUPLICATE_IGNORED",
+   "action": "NONE",
+   "goal": null,
+   "reason": "duplicate delivery (#2) of trigger a16ad6d8-9146-4a0b-a499-3fefa0fbc3ec; already decided as D-bd2ff2339b60"
+  },
+  {
+   "decision_id": "D-0beb8db26f4a",
+   "trigger": "4ba784d3-8e6e-4cb2-a35e-c383e412a7bc",
+   "deliver_at": "2026-10-01T11:58:12.208Z",
+   "status": "ABSTAINED",
+   "action": "NONE",
+   "goal": "G07",
+   "reason": "a personalised page for d1 is already live until 2026-10-01T13:29:33.709Z; not republished; no message: this goal already has one"
+  },
+  {
+   "decision_id": "D-2593dfcd1803",
+   "trigger": "5050a44b-0d2e-464b-9280-f7d978f98746",
+   "deliver_at": "2026-10-01T14:50:18.839Z",
+   "status": "PUBLISHED",
+   "action": "HOME_PAGE",
+   "goal": "G07",
+   "reason": null
+  }
+ ],
+ "actions": [
+  {
+   "action_id": "A-c98441b8bd89",
+   "type": "push",
+   "status": "sent",
+   "status_reason": "revalidated at send time",
+   "published_at": "2026-10-01T02:03:53.308Z",
+   "send_at": "2026-10-01T05:03:55.304Z"
+  },
+  {
+   "action_id": "A-d5ab63b8516d",
+   "type": "home_page",
+   "status": "published",
+   "status_reason": null,
+   "published_at": "2026-10-01T02:03:53.308Z",
+   "send_at": null
+  },
+  {
+   "action_id": "A-4cb3c81aad36",
+   "type": "home_page",
+   "status": "published",
+   "status_reason": null,
+   "published_at": "2026-10-01T11:29:33.709Z",
+   "send_at": null
+  },
+  {
+   "action_id": "A-8a338cc40a3b",
+   "type": "home_page",
+   "status": "published",
+   "status_reason": null,
+   "published_at": "2026-10-01T14:50:18.856Z",
+   "send_at": null
+  }
+ ],
+ "outcomes": [
+  {
+   "arm": "agent",
+   "attribution": "n/a",
+   "deadline": "2026-10-04T02:03:52.589Z",
+   "decision_id": "D-58981f1f2029",
+   "evidence": [],
+   "exposures_before_success": [],
+   "exposures_window": [
+    "event:oua-028650",
+    "event:oua-028652",
+    "event:oua-028663",
+    "event:oua-028654",
+    "event:oua-028656"
+   ],
+   "final": true,
+   "goal_id": "G07",
+   "goal_instance_id": "GI-5b454d570513",
+   "goal_status_in_replay": "open",
+   "judged_at": "2026-10-15T17:58:40.000Z",
+   "observed_until": "2026-10-15T17:58:40.000Z",
+   "reason": "no qualifying play_started between 2026-10-01T02:03:52.589Z and 2026-10-04T02:03:52.589Z",
+   "result": "failed",
+   "rule_history": [
+    {
+     "at": "2026-10-01T02:03:52.589Z",
+     "change": "opened",
+     "reason": "series hama-chudibha-d1 reached S1E1 of S1E36, idle 23.3 days"
+    }
+   ],
+   "rule_version": "G07-r1",
+   "started_at": "2026-10-01T02:03:52.589Z",
+   "success_condition": "same content_slug as the unfinished series",
+   "success_signal": "play_started",
+   "user_id": "U-04503"
+  }
+ ],
+ "learning": {
+  "actions": {
+   "home_page": {
+    "published": 3
+   },
+   "push": {
+    "sent": 1
+   }
+  },
+  "goal_results": [
+   {
+    "attribution": "n/a",
+    "goal_id": "G07",
+    "instance_id": "GI-5b454d570513",
+    "result": "failed"
+   }
+  ],
+  "messages": {
+   "push": {
+    "clicked": 0,
+    "delivered": 1,
+    "failed": {}
+   }
+  },
+  "notes": [],
+  "pages": {
+   "published": 3,
+   "shown_personalised": 5
+  }
+ },
+ "audit": []
+}

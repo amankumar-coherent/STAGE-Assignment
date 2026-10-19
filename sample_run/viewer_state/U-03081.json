@@ -1,0 +1,192 @@
+{
+ "viewer_id": "U-03081",
+ "arm": "holdout",
+ "as_of": "2026-10-01T18:31:25.944Z",
+ "facts": {
+  "user_id": "U-03081",
+  "as_of": "2026-10-01T18:31:25.944Z",
+  "profile_present": true,
+  "history_start": "2026-08-31T18:31:55.380Z",
+  "history_covers_lifetime": false,
+  "events_seen": 27,
+  "facts": {
+   "dialect": {
+    "name": "dialect",
+    "value": null,
+    "source": "unknown",
+    "source_ref": null,
+    "source_time": null,
+    "freshness": "unknown",
+    "age_s": null,
+    "rule": "trigger carries no valid app_dialect (raw=None); the page the app will request is unknown, so no alternative is substituted",
+    "conflicts": [],
+    "supported": false
+   },
+   "ever_paid": {
+    "name": "ever_paid",
+    "value": false,
+    "source": "profile",
+    "source_ref": "profile:U-03081@2026-09-28T21:19:18.016Z",
+    "source_time": "2026-09-28T21:19:18.016Z",
+    "freshness": "aging",
+    "age_s": 249127.9,
+    "rule": "any paid purchase/renewal event or a paid status on any profile row",
+    "conflicts": [],
+    "supported": true
+   },
+   "history_covers_lifetime": {
+    "name": "history_covers_lifetime",
+    "value": false,
+    "source": "derived",
+    "source_ref": "profile:U-03081@2026-09-28T21:19:18.016Z",
+    "source_time": "2026-09-28T21:19:18.016Z",
+    "freshness": "unknown",
+    "age_s": null,
+    "rule": "signup_at >= first observable event (2026-08-31T18:31:55.380Z); 'never did X' claims need full coverage",
+    "conflicts": [],
+    "supported": true
+   },
+   "last_app_open_before_trigger": {
+    "name": "last_app_open_before_trigger",
+    "value": "2026-09-23T19:56:05.958Z",
+    "source": "event",
+    "source_ref": "event:a5e78985-be4d-44a6-84a3-4ebb9f0db521",
+    "source_time": "2026-09-23T19:56:05.958Z",
+    "freshness": "stale",
+    "age_s": 686120.0,
+    "rule": "latest app_open in another session, ordered by server-anchored occurrence time",
+    "conflicts": [],
+    "supported": true
+   },
+   "profile_present": {
+    "name": "profile_present",
+    "value": true,
+    "source": "profile",
+    "source_ref": "profile:U-03081@2026-09-28T21:19:18.016Z",
+    "source_time": "2026-09-28T21:19:18.016Z",
+    "freshness": "aging",
+    "age_s": 249127.9,
+    "rule": "newest updated_at among snapshot rows",
+    "conflicts": [],
+    "supported": true
+   },
+   "push_consent": {
+    "name": "push_consent",
+    "value": true,
+    "source": "profile",
+    "source_ref": "profile:U-03081@2026-09-28T21:19:18.016Z",
+    "source_time": "2026-09-28T21:19:18.016Z",
+    "freshness": "aging",
+    "age_s": 249127.9,
+    "rule": "newest profile row notifications_opt_in",
+    "conflicts": [],
+    "supported": true
+   },
+   "signup_at": {
+    "name": "signup_at",
+    "value": "2026-04-01T19:35:34.992Z",
+    "source": "profile",
+    "source_ref": "profile:U-03081@2026-09-28T21:19:18.016Z",
+    "source_time": "2026-09-28T21:19:18.016Z",
+    "freshness": "aging",
+    "age_s": 249127.9,
+    "rule": "profile.signup_at (no signup event observed)",
+    "conflicts": [],
+    "supported": true
+   },
+   "subscription_status": {
+    "name": "subscription_status",
+    "value": "never",
+    "source": "profile",
+    "source_ref": "profile:U-03081@2026-09-28T21:19:18.016Z",
+    "source_time": "2026-09-28T21:19:18.016Z",
+    "freshness": "aging",
+    "age_s": 249127.9,
+    "rule": "newest profile row (no newer subscription event)",
+    "conflicts": [],
+    "supported": true
+   },
+   "whatsapp_consent": {
+    "name": "whatsapp_consent",
+    "value": true,
+    "source": "profile",
+    "source_ref": "profile:U-03081@2026-09-28T21:19:18.016Z",
+    "source_time": "2026-09-28T21:19:18.016Z",
+    "freshness": "aging",
+    "age_s": 249127.9,
+    "rule": "newest profile row whatsapp_opt_in",
+    "conflicts": [],
+    "supported": true
+   }
+  },
+  "watch": {
+   "plays": 2,
+   "completions": 2,
+   "watched_slugs": [
+    "hama-chudibha-d1",
+    "molo-d2"
+   ],
+   "top_genres": [
+    "Action",
+    "Comedy",
+    "Romance",
+    "Thriller"
+   ],
+   "play_days_recent": [
+    "2026-09-20"
+   ],
+   "series": [
+    {
+     "slug": "molo-d2",
+     "furthest": [
+      1,
+      1
+     ],
+     "last_episode": [
+      1,
+      7
+     ],
+     "last_play": "2026-09-09T11:35:07.155Z"
+    },
+    {
+     "slug": "hama-chudibha-d1",
+     "furthest": [
+      1,
+      1
+     ],
+     "last_episode": [
+      1,
+      36
+     ],
+     "last_play": "2026-09-20T02:33:48.096Z"
+    }
+   ]
+  },
+  "learning": {}
+ },
+ "goals": [],
+ "decisions": [
+  {
+   "decision_id": "D-9cb42a7c13d6",
+   "trigger": "2ccc1af5-2e5c-4554-8aad-f366010afc77",
+   "deliver_at": "2026-10-01T04:45:58.102Z",
+   "status": "HOLDOUT",
+   "action": "NONE",
+   "goal": null,
+   "reason": "holdout arm: no agent action of any kind (goal tracked only so outcomes can be compared with the agent arm)"
+  },
+  {
+   "decision_id": "D-908244da209e",
+   "trigger": "a5e78985-be4d-44a6-84a3-4ebb9f0db521",
+   "deliver_at": "2026-10-01T07:17:11.988Z",
+   "status": "HOLDOUT",
+   "action": "NONE",
+   "goal": null,
+   "reason": "holdout arm: no agent action of any kind (goal tracked only so outcomes can be compared with the agent arm)"
+  }
+ ],
+ "actions": [],
+ "outcomes": [],
+ "learning": {},
+ "audit": []
+}

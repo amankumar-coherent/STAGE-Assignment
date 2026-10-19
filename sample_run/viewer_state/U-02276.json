@@ -1,0 +1,224 @@
+{
+ "viewer_id": "U-02276",
+ "arm": "agent",
+ "as_of": "2026-10-01T18:31:25.944Z",
+ "facts": {
+  "user_id": "U-02276",
+  "as_of": "2026-10-01T18:31:25.944Z",
+  "profile_present": true,
+  "history_start": "2026-08-31T18:31:55.380Z",
+  "history_covers_lifetime": true,
+  "events_seen": 44,
+  "facts": {
+   "dialect": {
+    "name": "dialect",
+    "value": null,
+    "source": "unknown",
+    "source_ref": null,
+    "source_time": null,
+    "freshness": "unknown",
+    "age_s": null,
+    "rule": "trigger carries no valid app_dialect (raw=None); the page the app will request is unknown, so no alternative is substituted",
+    "conflicts": [
+     {
+      "value": "d3",
+      "source": "profile",
+      "source_ref": "profile:U-02276@2026-09-29T12:41:30.457Z",
+      "resolution": "not used: cannot confirm it is the current app setting"
+     },
+     {
+      "value": "d1",
+      "source": "app_setting_earlier",
+      "source_ref": "event:a9190634-4202-43ae-beae-1e66ab739b15",
+      "resolution": "not used: cannot confirm it is the current app setting"
+     }
+    ],
+    "supported": false
+   },
+   "ever_paid": {
+    "name": "ever_paid",
+    "value": true,
+    "source": "profile",
+    "source_ref": "profile:U-02276@2026-09-29T12:41:30.457Z",
+    "source_time": "2026-09-29T12:41:30.457Z",
+    "freshness": "aging",
+    "age_s": 193795.5,
+    "rule": "any paid purchase/renewal event or a paid status on any profile row",
+    "conflicts": [],
+    "supported": true
+   },
+   "history_covers_lifetime": {
+    "name": "history_covers_lifetime",
+    "value": true,
+    "source": "derived",
+    "source_ref": "event:fe470f72-53a8-4ac0-b176-7c82fa482874",
+    "source_time": "2026-09-20T15:32:13.842Z",
+    "freshness": "unknown",
+    "age_s": null,
+    "rule": "signup_at >= first observable event (2026-08-31T18:31:55.380Z); 'never did X' claims need full coverage",
+    "conflicts": [],
+    "supported": true
+   },
+   "lapsed_at": {
+    "name": "lapsed_at",
+    "value": "2026-09-23T15:32:15.619Z",
+    "source": "event",
+    "source_ref": "event:bab67671-e71f-49ad-8be6-655d1084d654",
+    "source_time": "2026-09-23T15:32:15.619Z",
+    "freshness": "unknown",
+    "age_s": null,
+    "rule": "subscription_lapsed event",
+    "conflicts": [],
+    "supported": true
+   },
+   "last_app_open_before_trigger": {
+    "name": "last_app_open_before_trigger",
+    "value": "2026-09-29T12:39:13.451Z",
+    "source": "event",
+    "source_ref": "event:a9190634-4202-43ae-beae-1e66ab739b15",
+    "source_time": "2026-09-29T12:39:13.451Z",
+    "freshness": "aging",
+    "age_s": 193932.5,
+    "rule": "latest app_open in another session, ordered by server-anchored occurrence time",
+    "conflicts": [],
+    "supported": true
+   },
+   "profile_present": {
+    "name": "profile_present",
+    "value": true,
+    "source": "profile",
+    "source_ref": "profile:U-02276@2026-09-29T12:41:30.457Z",
+    "source_time": "2026-09-29T12:41:30.457Z",
+    "freshness": "aging",
+    "age_s": 193795.5,
+    "rule": "newest updated_at among snapshot rows",
+    "conflicts": [],
+    "supported": true
+   },
+   "push_consent": {
+    "name": "push_consent",
+    "value": true,
+    "source": "profile",
+    "source_ref": "profile:U-02276@2026-09-29T12:41:30.457Z",
+    "source_time": "2026-09-29T12:41:30.457Z",
+    "freshness": "aging",
+    "age_s": 193795.5,
+    "rule": "newest profile row notifications_opt_in",
+    "conflicts": [],
+    "supported": true
+   },
+   "signup_at": {
+    "name": "signup_at",
+    "value": "2026-09-20T15:32:13.842Z",
+    "source": "event",
+    "source_ref": "event:fe470f72-53a8-4ac0-b176-7c82fa482874",
+    "source_time": "2026-09-20T15:32:13.842Z",
+    "freshness": "stale",
+    "age_s": 961152.1,
+    "rule": "signup_completed event > profile.signup_at",
+    "conflicts": [],
+    "supported": true
+   },
+   "subscription_status": {
+    "name": "subscription_status",
+    "value": "lapsed",
+    "source": "profile",
+    "source_ref": "profile:U-02276@2026-09-29T12:41:30.457Z",
+    "source_time": "2026-09-29T12:41:30.457Z",
+    "freshness": "aging",
+    "age_s": 193795.5,
+    "rule": "newest profile row (no newer subscription event)",
+    "conflicts": [],
+    "supported": true
+   },
+   "whatsapp_consent": {
+    "name": "whatsapp_consent",
+    "value": true,
+    "source": "profile",
+    "source_ref": "profile:U-02276@2026-09-29T12:41:30.457Z",
+    "source_time": "2026-09-29T12:41:30.457Z",
+    "freshness": "aging",
+    "age_s": 193795.5,
+    "rule": "newest profile row whatsapp_opt_in",
+    "conflicts": [],
+    "supported": true
+   }
+  },
+  "watch": {
+   "plays": 5,
+   "completions": 4,
+   "watched_slugs": [
+    "pipa-d1",
+    "raloja-d1",
+    "rava-baya-d1"
+   ],
+   "top_genres": [
+    "Thriller",
+    "Action",
+    "Devotional",
+    "Drama"
+   ],
+   "play_days_recent": [
+    "2026-09-22",
+    "2026-09-23",
+    "2026-09-24",
+    "2026-09-28"
+   ],
+   "series": [
+    {
+     "slug": "rava-baya-d1",
+     "furthest": [
+      1,
+      1
+     ],
+     "last_episode": [
+      1,
+      1
+     ],
+     "last_play": "2026-09-22T12:47:14.418Z"
+    },
+    {
+     "slug": "raloja-d1",
+     "furthest": [
+      1,
+      1
+     ],
+     "last_episode": [
+      1,
+      1
+     ],
+     "last_play": "2026-09-23T18:23:08.012Z"
+    },
+    {
+     "slug": "pipa-d1",
+     "furthest": [
+      1,
+      3
+     ],
+     "last_episode": [
+      1,
+      37
+     ],
+     "last_play": "2026-09-28T08:46:30.204Z"
+    }
+   ]
+  },
+  "learning": {}
+ },
+ "goals": [],
+ "decisions": [
+  {
+   "decision_id": "D-181645315b7d",
+   "trigger": "969e92ee-bbb4-4e75-bec9-c679abd7d2d9",
+   "deliver_at": "2026-10-01T11:12:40.974Z",
+   "status": "ABSTAINED",
+   "action": "NONE",
+   "goal": null,
+   "reason": "stale trigger: app open buffered offline for 97.5 h (> 600 s); the viewer is not in a live session, so a page or message now would not match their visit. Event kept for history."
+  }
+ ],
+ "actions": [],
+ "outcomes": [],
+ "learning": {},
+ "audit": []
+}

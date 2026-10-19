@@ -1,0 +1,284 @@
+{
+ "viewer_id": "U-02806",
+ "arm": "holdout",
+ "as_of": "2026-10-01T18:31:25.944Z",
+ "facts": {
+  "user_id": "U-02806",
+  "as_of": "2026-10-01T18:31:25.944Z",
+  "profile_present": true,
+  "history_start": "2026-08-31T18:31:55.380Z",
+  "history_covers_lifetime": true,
+  "events_seen": 24,
+  "facts": {
+   "dialect": {
+    "name": "dialect",
+    "value": null,
+    "source": "unknown",
+    "source_ref": null,
+    "source_time": null,
+    "freshness": "unknown",
+    "age_s": null,
+    "rule": "trigger carries no valid app_dialect (raw=None); the page the app will request is unknown, so no alternative is substituted",
+    "conflicts": [
+     {
+      "value": "d3",
+      "source": "app_setting_earlier",
+      "source_ref": "event:32228447-752f-412e-b68c-a8e5f42a3f8d",
+      "resolution": "not used: cannot confirm it is the current app setting"
+     }
+    ],
+    "supported": false
+   },
+   "ever_paid": {
+    "name": "ever_paid",
+    "value": false,
+    "source": "profile",
+    "source_ref": "profile:U-02806@2026-09-29T14:56:08.510Z",
+    "source_time": "2026-09-29T14:56:08.510Z",
+    "freshness": "aging",
+    "age_s": 185717.4,
+    "rule": "any paid purchase/renewal event or a paid status on any profile row",
+    "conflicts": [],
+    "supported": true
+   },
+   "history_covers_lifetime": {
+    "name": "history_covers_lifetime",
+    "value": true,
+    "source": "derived",
+    "source_ref": "event:857be135-4540-45ca-a587-b9d8fdcd11ef",
+    "source_time": "2026-09-03T09:56:14.899Z",
+    "freshness": "unknown",
+    "age_s": null,
+    "rule": "signup_at >= first observable event (2026-08-31T18:31:55.380Z); 'never did X' claims need full coverage",
+    "conflicts": [],
+    "supported": true
+   },
+   "last_app_open_before_trigger": {
+    "name": "last_app_open_before_trigger",
+    "value": "2026-10-01T15:46:45.973Z",
+    "source": "event",
+    "source_ref": "event:32228447-752f-412e-b68c-a8e5f42a3f8d",
+    "source_time": "2026-10-01T15:46:45.973Z",
+    "freshness": "fresh",
+    "age_s": 9880.0,
+    "rule": "latest app_open in another session, ordered by server-anchored occurrence time",
+    "conflicts": [],
+    "supported": true
+   },
+   "profile_present": {
+    "name": "profile_present",
+    "value": true,
+    "source": "profile",
+    "source_ref": "profile:U-02806@2026-09-29T14:56:08.510Z",
+    "source_time": "2026-09-29T14:56:08.510Z",
+    "freshness": "aging",
+    "age_s": 185717.4,
+    "rule": "newest updated_at among snapshot rows",
+    "conflicts": [],
+    "supported": true
+   },
+   "push_consent": {
+    "name": "push_consent",
+    "value": true,
+    "source": "profile",
+    "source_ref": "profile:U-02806@2026-09-29T14:56:08.510Z",
+    "source_time": "2026-09-29T14:56:08.510Z",
+    "freshness": "aging",
+    "age_s": 185717.4,
+    "rule": "newest profile row notifications_opt_in",
+    "conflicts": [],
+    "supported": true
+   },
+   "signup_at": {
+    "name": "signup_at",
+    "value": "2026-09-03T09:56:14.899Z",
+    "source": "event",
+    "source_ref": "event:857be135-4540-45ca-a587-b9d8fdcd11ef",
+    "source_time": "2026-09-03T09:56:14.899Z",
+    "freshness": "stale",
+    "age_s": 2450111.0,
+    "rule": "signup_completed event > profile.signup_at",
+    "conflicts": [],
+    "supported": true
+   },
+   "subscription_status": {
+    "name": "subscription_status",
+    "value": "never",
+    "source": "profile",
+    "source_ref": "profile:U-02806@2026-09-29T14:56:08.510Z",
+    "source_time": "2026-09-29T14:56:08.510Z",
+    "freshness": "aging",
+    "age_s": 185717.4,
+    "rule": "newest profile row (no newer subscription event)",
+    "conflicts": [],
+    "supported": true
+   },
+   "whatsapp_consent": {
+    "name": "whatsapp_consent",
+    "value": false,
+    "source": "profile",
+    "source_ref": "profile:U-02806@2026-09-29T14:56:08.510Z",
+    "source_time": "2026-09-29T14:56:08.510Z",
+    "freshness": "aging",
+    "age_s": 185717.4,
+    "rule": "newest profile row whatsapp_opt_in",
+    "conflicts": [],
+    "supported": true
+   }
+  },
+  "watch": {
+   "plays": 1,
+   "completions": 0,
+   "watched_slugs": [
+    "digi-mone-d3"
+   ],
+   "top_genres": [
+    "Drama",
+    "Romance"
+   ],
+   "play_days_recent": [],
+   "series": [
+    {
+     "slug": "digi-mone-d3",
+     "furthest": [
+      1,
+      1
+     ],
+     "last_episode": [
+      1,
+      32
+     ],
+     "last_play": "2026-09-13T10:37:28.497Z"
+    }
+   ]
+  },
+  "learning": {
+   "actions": {},
+   "goal_results": [
+    {
+     "attribution": "n/a",
+     "goal_id": "G07",
+     "instance_id": "GI-a87c86c352e2",
+     "result": "failed"
+    }
+   ],
+   "messages": {},
+   "notes": [],
+   "pages": {
+    "published": 0,
+    "shown_personalised": 0
+   }
+  }
+ },
+ "goals": [
+  {
+   "instance_id": "GI-a87c86c352e2",
+   "user_id": "U-02806",
+   "goal_id": "G07",
+   "rule_version": "G07-r1",
+   "status": "open",
+   "started_at": "2026-10-01T15:46:44.983Z",
+   "deadline": "2026-10-04T15:46:44.983Z",
+   "success_event": "play_started",
+   "success_condition": "same content_slug as the unfinished series",
+   "decision_id": "D-08b1420ec42e",
+   "arm": "holdout",
+   "eligibility": {
+    "context": {
+     "furthest": [
+      1,
+      1
+     ],
+     "series_slug": "digi-mone-d3"
+    },
+    "evidence": [
+     "goal_rule:G07-r1",
+     "event:f39c415b-5ba6-4a8f-8ecd-aa810d86eadb",
+     "event:9a575729-55d6-426e-a55d-8b041617c463",
+     "event:b5e16204-b0f3-4f60-a591-d54d2e3c8fe5"
+    ],
+    "reason": "series digi-mone-d3 reached S1E1 of S1E32, idle 18.2 days"
+   },
+   "closed_at": null,
+   "close_reason": null,
+   "outcome": null,
+   "history": [
+    {
+     "at": "2026-10-01T15:46:44.983Z",
+     "change": "opened",
+     "reason": "series digi-mone-d3 reached S1E1 of S1E32, idle 18.2 days"
+    }
+   ]
+  }
+ ],
+ "decisions": [
+  {
+   "decision_id": "D-08b1420ec42e",
+   "trigger": "72ecd570-4d14-4a7e-af33-bdca3020b71e",
+   "deliver_at": "2026-10-01T15:46:44.983Z",
+   "status": "HOLDOUT",
+   "action": "NONE",
+   "goal": "G07",
+   "reason": "holdout arm: no agent action of any kind (goal tracked only so outcomes can be compared with the agent arm)"
+  },
+  {
+   "decision_id": "D-94a0e380a665",
+   "trigger": "32228447-752f-412e-b68c-a8e5f42a3f8d",
+   "deliver_at": "2026-10-01T15:46:45.973Z",
+   "status": "HOLDOUT",
+   "action": "NONE",
+   "goal": "G07",
+   "reason": "holdout arm: no agent action of any kind (goal tracked only so outcomes can be compared with the agent arm)"
+  }
+ ],
+ "actions": [],
+ "outcomes": [
+  {
+   "arm": "holdout",
+   "attribution": "n/a",
+   "deadline": "2026-10-04T15:46:44.983Z",
+   "decision_id": "D-08b1420ec42e",
+   "evidence": [],
+   "exposures_before_success": [],
+   "exposures_window": [],
+   "final": true,
+   "goal_id": "G07",
+   "goal_instance_id": "GI-a87c86c352e2",
+   "goal_status_in_replay": "open",
+   "judged_at": "2026-10-15T17:58:40.000Z",
+   "observed_until": "2026-10-15T17:58:40.000Z",
+   "reason": "no qualifying play_started between 2026-10-01T15:46:44.983Z and 2026-10-04T15:46:44.983Z",
+   "result": "failed",
+   "rule_history": [
+    {
+     "at": "2026-10-01T15:46:44.983Z",
+     "change": "opened",
+     "reason": "series digi-mone-d3 reached S1E1 of S1E32, idle 18.2 days"
+    }
+   ],
+   "rule_version": "G07-r1",
+   "started_at": "2026-10-01T15:46:44.983Z",
+   "success_condition": "same content_slug as the unfinished series",
+   "success_signal": "play_started",
+   "user_id": "U-02806"
+  }
+ ],
+ "learning": {
+  "actions": {},
+  "goal_results": [
+   {
+    "attribution": "n/a",
+    "goal_id": "G07",
+    "instance_id": "GI-a87c86c352e2",
+    "result": "failed"
+   }
+  ],
+  "messages": {},
+  "notes": [],
+  "pages": {
+   "published": 0,
+   "shown_personalised": 0
+  }
+ },
+ "audit": []
+}

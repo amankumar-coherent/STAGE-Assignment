@@ -1,0 +1,353 @@
+{
+ "viewer_id": "U-01711",
+ "arm": "agent",
+ "as_of": "2026-10-01T18:31:25.944Z",
+ "facts": {
+  "user_id": "U-01711",
+  "as_of": "2026-10-01T18:31:25.944Z",
+  "profile_present": true,
+  "history_start": "2026-08-31T18:31:55.380Z",
+  "history_covers_lifetime": false,
+  "events_seen": 20,
+  "facts": {
+   "dialect": {
+    "name": "dialect",
+    "value": null,
+    "source": "unknown",
+    "source_ref": null,
+    "source_time": null,
+    "freshness": "unknown",
+    "age_s": null,
+    "rule": "trigger carries no valid app_dialect (raw=None); the page the app will request is unknown, so no alternative is substituted",
+    "conflicts": [
+     {
+      "value": "d6",
+      "source": "profile",
+      "source_ref": "profile:U-01711@2026-09-28T18:53:49.940Z",
+      "resolution": "not used: cannot confirm it is the current app setting"
+     },
+     {
+      "value": "d4",
+      "source": "app_setting_earlier",
+      "source_ref": "event:612ddd34-1b44-478f-8ec0-414b09f159bc",
+      "resolution": "not used: cannot confirm it is the current app setting"
+     }
+    ],
+    "supported": false
+   },
+   "ever_paid": {
+    "name": "ever_paid",
+    "value": false,
+    "source": "profile",
+    "source_ref": "profile:U-01711@2026-09-28T18:53:49.940Z",
+    "source_time": "2026-09-28T18:53:49.940Z",
+    "freshness": "aging",
+    "age_s": 257856.0,
+    "rule": "any paid purchase/renewal event or a paid status on any profile row",
+    "conflicts": [],
+    "supported": true
+   },
+   "history_covers_lifetime": {
+    "name": "history_covers_lifetime",
+    "value": false,
+    "source": "derived",
+    "source_ref": "profile:U-01711@2026-09-28T18:53:49.940Z",
+    "source_time": "2026-09-28T18:53:49.940Z",
+    "freshness": "unknown",
+    "age_s": null,
+    "rule": "signup_at >= first observable event (2026-08-31T18:31:55.380Z); 'never did X' claims need full coverage",
+    "conflicts": [],
+    "supported": true
+   },
+   "last_app_open_before_trigger": {
+    "name": "last_app_open_before_trigger",
+    "value": "2026-10-01T13:18:21.591Z",
+    "source": "event",
+    "source_ref": "event:612ddd34-1b44-478f-8ec0-414b09f159bc",
+    "source_time": "2026-10-01T13:18:21.591Z",
+    "freshness": "fresh",
+    "age_s": 18784.4,
+    "rule": "latest app_open in another session, ordered by server-anchored occurrence time",
+    "conflicts": [],
+    "supported": true
+   },
+   "profile_present": {
+    "name": "profile_present",
+    "value": true,
+    "source": "profile",
+    "source_ref": "profile:U-01711@2026-09-28T18:53:49.940Z",
+    "source_time": "2026-09-28T18:53:49.940Z",
+    "freshness": "aging",
+    "age_s": 257856.0,
+    "rule": "newest updated_at among snapshot rows",
+    "conflicts": [],
+    "supported": true
+   },
+   "push_consent": {
+    "name": "push_consent",
+    "value": true,
+    "source": "profile",
+    "source_ref": "profile:U-01711@2026-09-28T18:53:49.940Z",
+    "source_time": "2026-09-28T18:53:49.940Z",
+    "freshness": "aging",
+    "age_s": 257856.0,
+    "rule": "newest profile row notifications_opt_in",
+    "conflicts": [],
+    "supported": true
+   },
+   "signup_at": {
+    "name": "signup_at",
+    "value": "2025-07-19T02:53:38.946Z",
+    "source": "profile",
+    "source_ref": "profile:U-01711@2026-09-28T18:53:49.940Z",
+    "source_time": "2026-09-28T18:53:49.940Z",
+    "freshness": "aging",
+    "age_s": 257856.0,
+    "rule": "profile.signup_at (no signup event observed)",
+    "conflicts": [],
+    "supported": true
+   },
+   "subscription_status": {
+    "name": "subscription_status",
+    "value": "never",
+    "source": "profile",
+    "source_ref": "profile:U-01711@2026-09-28T18:53:49.940Z",
+    "source_time": "2026-09-28T18:53:49.940Z",
+    "freshness": "aging",
+    "age_s": 257856.0,
+    "rule": "newest profile row (no newer subscription event)",
+    "conflicts": [],
+    "supported": true
+   },
+   "whatsapp_consent": {
+    "name": "whatsapp_consent",
+    "value": false,
+    "source": "profile",
+    "source_ref": "profile:U-01711@2026-09-28T18:53:49.940Z",
+    "source_time": "2026-09-28T18:53:49.940Z",
+    "freshness": "aging",
+    "age_s": 257856.0,
+    "rule": "newest profile row whatsapp_opt_in",
+    "conflicts": [],
+    "supported": true
+   }
+  },
+  "watch": {
+   "plays": 1,
+   "completions": 1,
+   "watched_slugs": [
+    "radi-d4"
+   ],
+   "top_genres": [
+    "Romance"
+   ],
+   "play_days_recent": [],
+   "series": [
+    {
+     "slug": "radi-d4",
+     "furthest": [
+      1,
+      1
+     ],
+     "last_episode": [
+      1,
+      57
+     ],
+     "last_play": "2026-09-05T13:48:03.496Z"
+    }
+   ]
+  },
+  "learning": {
+   "actions": {
+    "home_page": {
+     "published": 2
+    },
+    "push": {
+     "sent": 1
+    }
+   },
+   "goal_results": [
+    {
+     "attribution": "n/a",
+     "goal_id": "G07",
+     "instance_id": "GI-78c28608a7b1",
+     "result": "failed"
+    }
+   ],
+   "messages": {
+    "push": {
+     "clicked": 0,
+     "delivered": 1,
+     "failed": {}
+    }
+   },
+   "notes": [],
+   "pages": {
+    "published": 2,
+    "shown_personalised": 2
+   }
+  }
+ },
+ "goals": [
+  {
+   "instance_id": "GI-78c28608a7b1",
+   "user_id": "U-01711",
+   "goal_id": "G07",
+   "rule_version": "G07-r1",
+   "status": "open",
+   "started_at": "2026-10-01T10:55:43.845Z",
+   "deadline": "2026-10-04T10:55:43.845Z",
+   "success_event": "play_started",
+   "success_condition": "same content_slug as the unfinished series",
+   "decision_id": "D-3a46c4dfc34e",
+   "arm": "agent",
+   "eligibility": {
+    "context": {
+     "furthest": [
+      1,
+      1
+     ],
+     "series_slug": "radi-d4"
+    },
+    "evidence": [
+     "goal_rule:G07-r1",
+     "event:6b0f7bb2-a51b-4ad1-a1dc-a133143604a3",
+     "event:9c6fa62b-88bb-4913-b5ec-afa425336791",
+     "event:a27fbcdc-b2ae-4d71-b69b-fc0477b221d0"
+    ],
+    "reason": "series radi-d4 reached S1E1 of S1E57, idle 25.9 days"
+   },
+   "closed_at": null,
+   "close_reason": null,
+   "outcome": null,
+   "history": [
+    {
+     "at": "2026-10-01T10:55:43.845Z",
+     "change": "opened",
+     "reason": "series radi-d4 reached S1E1 of S1E57, idle 25.9 days"
+    }
+   ]
+  }
+ ],
+ "decisions": [
+  {
+   "decision_id": "D-a950bc17ef83",
+   "trigger": "81ef6c0f-b6cc-41e4-8f80-351bab240388",
+   "deliver_at": "2026-10-01T04:46:09.293Z",
+   "status": "ABSTAINED",
+   "action": "NONE",
+   "goal": null,
+   "reason": "stale trigger: app open buffered offline for 23.1 h (> 600 s); the viewer is not in a live session, so a page or message now would not match their visit. Event kept for history."
+  },
+  {
+   "decision_id": "D-3a46c4dfc34e",
+   "trigger": "a1303961-3501-4062-8062-235981155227",
+   "deliver_at": "2026-10-01T10:55:43.845Z",
+   "status": "PUBLISHED",
+   "action": "HOME_PAGE+PUSH",
+   "goal": "G07",
+   "reason": null
+  },
+  {
+   "decision_id": "D-f7dc2becbc12",
+   "trigger": "612ddd34-1b44-478f-8ec0-414b09f159bc",
+   "deliver_at": "2026-10-01T13:18:21.591Z",
+   "status": "PUBLISHED",
+   "action": "HOME_PAGE",
+   "goal": "G07",
+   "reason": null
+  }
+ ],
+ "actions": [
+  {
+   "action_id": "A-ad9289d8e67c",
+   "type": "push",
+   "status": "sent",
+   "status_reason": "revalidated at send time",
+   "published_at": "2026-10-01T10:55:44.563Z",
+   "send_at": "2026-10-01T13:55:46.560Z"
+  },
+  {
+   "action_id": "A-bcc2f8e248f9",
+   "type": "home_page",
+   "status": "published",
+   "status_reason": null,
+   "published_at": "2026-10-01T10:55:44.563Z",
+   "send_at": null
+  },
+  {
+   "action_id": "A-866f71c81da8",
+   "type": "home_page",
+   "status": "published",
+   "status_reason": null,
+   "published_at": "2026-10-01T13:18:21.608Z",
+   "send_at": null
+  }
+ ],
+ "outcomes": [
+  {
+   "arm": "agent",
+   "attribution": "n/a",
+   "deadline": "2026-10-04T10:55:43.845Z",
+   "decision_id": "D-3a46c4dfc34e",
+   "evidence": [],
+   "exposures_before_success": [],
+   "exposures_window": [
+    "event:oua-011447",
+    "event:oua-011449",
+    "event:oua-011450"
+   ],
+   "final": true,
+   "goal_id": "G07",
+   "goal_instance_id": "GI-78c28608a7b1",
+   "goal_status_in_replay": "open",
+   "judged_at": "2026-10-15T17:58:40.000Z",
+   "observed_until": "2026-10-15T17:58:40.000Z",
+   "reason": "no qualifying play_started between 2026-10-01T10:55:43.845Z and 2026-10-04T10:55:43.845Z",
+   "result": "failed",
+   "rule_history": [
+    {
+     "at": "2026-10-01T10:55:43.845Z",
+     "change": "opened",
+     "reason": "series radi-d4 reached S1E1 of S1E57, idle 25.9 days"
+    }
+   ],
+   "rule_version": "G07-r1",
+   "started_at": "2026-10-01T10:55:43.845Z",
+   "success_condition": "same content_slug as the unfinished series",
+   "success_signal": "play_started",
+   "user_id": "U-01711"
+  }
+ ],
+ "learning": {
+  "actions": {
+   "home_page": {
+    "published": 2
+   },
+   "push": {
+    "sent": 1
+   }
+  },
+  "goal_results": [
+   {
+    "attribution": "n/a",
+    "goal_id": "G07",
+    "instance_id": "GI-78c28608a7b1",
+    "result": "failed"
+   }
+  ],
+  "messages": {
+   "push": {
+    "clicked": 0,
+    "delivered": 1,
+    "failed": {}
+   }
+  },
+  "notes": [],
+  "pages": {
+   "published": 2,
+   "shown_personalised": 2
+  }
+ },
+ "audit": []
+}

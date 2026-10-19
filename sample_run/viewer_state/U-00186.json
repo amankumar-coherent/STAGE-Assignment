@@ -1,0 +1,275 @@
+{
+ "viewer_id": "U-00186",
+ "arm": "holdout",
+ "as_of": "2026-10-01T18:31:25.944Z",
+ "facts": {
+  "user_id": "U-00186",
+  "as_of": "2026-10-01T18:31:25.944Z",
+  "profile_present": false,
+  "history_start": "2026-08-31T18:31:55.380Z",
+  "history_covers_lifetime": false,
+  "events_seen": 33,
+  "facts": {
+   "dialect": {
+    "name": "dialect",
+    "value": null,
+    "source": "unknown",
+    "source_ref": null,
+    "source_time": null,
+    "freshness": "unknown",
+    "age_s": null,
+    "rule": "trigger carries no valid app_dialect (raw=None); the page the app will request is unknown, so no alternative is substituted",
+    "conflicts": [
+     {
+      "value": "d2",
+      "source": "app_setting_earlier",
+      "source_ref": "event:93255332-4a9b-46b0-9a47-d9f6ac2b8a2f",
+      "resolution": "not used: cannot confirm it is the current app setting"
+     }
+    ],
+    "supported": false
+   },
+   "ever_paid": {
+    "name": "ever_paid",
+    "value": true,
+    "source": "event",
+    "source_ref": "event:6716a710-60bb-4f87-a51d-3bf9ca75f683",
+    "source_time": "2026-09-03T08:52:16.014Z",
+    "freshness": "stale",
+    "age_s": 2453949.9,
+    "rule": "any paid purchase/renewal event or a paid status on any profile row",
+    "conflicts": [],
+    "supported": true
+   },
+   "history_covers_lifetime": {
+    "name": "history_covers_lifetime",
+    "value": false,
+    "source": "derived",
+    "source_ref": null,
+    "source_time": null,
+    "freshness": "unknown",
+    "age_s": null,
+    "rule": "signup_at >= first observable event (2026-08-31T18:31:55.380Z); 'never did X' claims need full coverage",
+    "conflicts": [],
+    "supported": true
+   },
+   "last_app_open_before_trigger": {
+    "name": "last_app_open_before_trigger",
+    "value": "2026-10-01T11:51:01.746Z",
+    "source": "event",
+    "source_ref": "event:93255332-4a9b-46b0-9a47-d9f6ac2b8a2f",
+    "source_time": "2026-10-01T11:51:01.746Z",
+    "freshness": "fresh",
+    "age_s": 24024.2,
+    "rule": "latest app_open in another session, ordered by server-anchored occurrence time",
+    "conflicts": [],
+    "supported": true
+   },
+   "profile_present": {
+    "name": "profile_present",
+    "value": false,
+    "source": "unknown",
+    "source_ref": null,
+    "source_time": null,
+    "freshness": "unknown",
+    "age_s": null,
+    "rule": "newest updated_at among snapshot rows",
+    "conflicts": [],
+    "supported": true
+   },
+   "push_consent": {
+    "name": "push_consent",
+    "value": false,
+    "source": "unknown",
+    "source_ref": null,
+    "source_time": null,
+    "freshness": "unknown",
+    "age_s": null,
+    "rule": "no profile row: consent is never inferred (e.g. from a phone number)",
+    "conflicts": [],
+    "supported": true
+   },
+   "signup_at": {
+    "name": "signup_at",
+    "value": null,
+    "source": "unknown",
+    "source_ref": null,
+    "source_time": null,
+    "freshness": "unknown",
+    "age_s": null,
+    "rule": "no profile row and no signup_completed event",
+    "conflicts": [],
+    "supported": false
+   },
+   "subscription_status": {
+    "name": "subscription_status",
+    "value": "active",
+    "source": "event",
+    "source_ref": "event:6716a710-60bb-4f87-a51d-3bf9ca75f683",
+    "source_time": "2026-09-03T08:52:16.014Z",
+    "freshness": "stale",
+    "age_s": 2453949.9,
+    "rule": "subscription event newer than the profile row overrides it",
+    "conflicts": [],
+    "supported": true
+   },
+   "whatsapp_consent": {
+    "name": "whatsapp_consent",
+    "value": false,
+    "source": "unknown",
+    "source_ref": null,
+    "source_time": null,
+    "freshness": "unknown",
+    "age_s": null,
+    "rule": "no profile row: consent is never inferred (e.g. from a phone number)",
+    "conflicts": [],
+    "supported": true
+   }
+  },
+  "watch": {
+   "plays": 3,
+   "completions": 0,
+   "watched_slugs": [
+    "molo-d2"
+   ],
+   "top_genres": [
+    "Action",
+    "Romance"
+   ],
+   "play_days_recent": [],
+   "series": [
+    {
+     "slug": "molo-d2",
+     "furthest": [
+      1,
+      1
+     ],
+     "last_episode": [
+      1,
+      7
+     ],
+     "last_play": "2026-09-16T03:26:49.336Z"
+    }
+   ]
+  },
+  "learning": {
+   "actions": {},
+   "goal_results": [
+    {
+     "attribution": "n/a",
+     "goal_id": "G07",
+     "instance_id": "GI-1e4f30a170d6",
+     "result": "failed"
+    }
+   ],
+   "messages": {},
+   "notes": [],
+   "pages": {
+    "published": 0,
+    "shown_personalised": 0
+   }
+  }
+ },
+ "goals": [
+  {
+   "instance_id": "GI-1e4f30a170d6",
+   "user_id": "U-00186",
+   "goal_id": "G07",
+   "rule_version": "G07-r1",
+   "status": "open",
+   "started_at": "2026-10-01T11:51:01.746Z",
+   "deadline": "2026-10-04T11:51:01.746Z",
+   "success_event": "play_started",
+   "success_condition": "same content_slug as the unfinished series",
+   "decision_id": "D-c4239e03465a",
+   "arm": "holdout",
+   "eligibility": {
+    "context": {
+     "furthest": [
+      1,
+      1
+     ],
+     "series_slug": "molo-d2"
+    },
+    "evidence": [
+     "goal_rule:G07-r1",
+     "event:b4135a20-e603-44bf-b673-1bcfd951c8a1",
+     "event:e0c23445-9fdc-45c7-900e-d0c12c7cee0a",
+     "event:daf47ebb-4c46-4c1b-934d-54286b76fbb4"
+    ],
+    "reason": "series molo-d2 reached S1E1 of S1E7, idle 15.4 days"
+   },
+   "closed_at": null,
+   "close_reason": null,
+   "outcome": null,
+   "history": [
+    {
+     "at": "2026-10-01T11:51:01.746Z",
+     "change": "opened",
+     "reason": "series molo-d2 reached S1E1 of S1E7, idle 15.4 days"
+    }
+   ]
+  }
+ ],
+ "decisions": [
+  {
+   "decision_id": "D-c4239e03465a",
+   "trigger": "93255332-4a9b-46b0-9a47-d9f6ac2b8a2f",
+   "deliver_at": "2026-10-01T11:51:01.746Z",
+   "status": "HOLDOUT",
+   "action": "NONE",
+   "goal": "G07",
+   "reason": "holdout arm: no agent action of any kind (goal tracked only so outcomes can be compared with the agent arm)"
+  }
+ ],
+ "actions": [],
+ "outcomes": [
+  {
+   "arm": "holdout",
+   "attribution": "n/a",
+   "deadline": "2026-10-04T11:51:01.746Z",
+   "decision_id": "D-c4239e03465a",
+   "evidence": [],
+   "exposures_before_success": [],
+   "exposures_window": [],
+   "final": true,
+   "goal_id": "G07",
+   "goal_instance_id": "GI-1e4f30a170d6",
+   "goal_status_in_replay": "open",
+   "judged_at": "2026-10-15T17:58:40.000Z",
+   "observed_until": "2026-10-15T17:58:40.000Z",
+   "reason": "no qualifying play_started between 2026-10-01T11:51:01.746Z and 2026-10-04T11:51:01.746Z",
+   "result": "failed",
+   "rule_history": [
+    {
+     "at": "2026-10-01T11:51:01.746Z",
+     "change": "opened",
+     "reason": "series molo-d2 reached S1E1 of S1E7, idle 15.4 days"
+    }
+   ],
+   "rule_version": "G07-r1",
+   "started_at": "2026-10-01T11:51:01.746Z",
+   "success_condition": "same content_slug as the unfinished series",
+   "success_signal": "play_started",
+   "user_id": "U-00186"
+  }
+ ],
+ "learning": {
+  "actions": {},
+  "goal_results": [
+   {
+    "attribution": "n/a",
+    "goal_id": "G07",
+    "instance_id": "GI-1e4f30a170d6",
+    "result": "failed"
+   }
+  ],
+  "messages": {},
+  "notes": [],
+  "pages": {
+   "published": 0,
+   "shown_personalised": 0
+  }
+ },
+ "audit": []
+}

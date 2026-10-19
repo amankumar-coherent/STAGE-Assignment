@@ -1,0 +1,348 @@
+{
+ "viewer_id": "U-03492",
+ "arm": "agent",
+ "as_of": "2026-10-01T18:31:25.944Z",
+ "facts": {
+  "user_id": "U-03492",
+  "as_of": "2026-10-01T18:31:25.944Z",
+  "profile_present": true,
+  "history_start": "2026-08-31T18:31:55.380Z",
+  "history_covers_lifetime": false,
+  "events_seen": 93,
+  "facts": {
+   "dialect": {
+    "name": "dialect",
+    "value": null,
+    "source": "unknown",
+    "source_ref": null,
+    "source_time": null,
+    "freshness": "unknown",
+    "age_s": null,
+    "rule": "trigger carries no valid app_dialect (raw=None); the page the app will request is unknown, so no alternative is substituted",
+    "conflicts": [
+     {
+      "value": "d5",
+      "source": "profile",
+      "source_ref": "profile:U-03492@2026-09-29T05:26:00.824Z",
+      "resolution": "not used: cannot confirm it is the current app setting"
+     },
+     {
+      "value": "d5",
+      "source": "app_setting_earlier",
+      "source_ref": "event:b43006ad-ff74-4a7c-911f-cdd079b82b23",
+      "resolution": "not used: cannot confirm it is the current app setting"
+     }
+    ],
+    "supported": false
+   },
+   "ever_paid": {
+    "name": "ever_paid",
+    "value": true,
+    "source": "event",
+    "source_ref": "event:3f9569bf-c0c8-4c13-9ef6-807ea5631930",
+    "source_time": "2026-09-29T05:26:00.824Z",
+    "freshness": "aging",
+    "age_s": 219925.1,
+    "rule": "any paid purchase/renewal event or a paid status on any profile row",
+    "conflicts": [],
+    "supported": true
+   },
+   "history_covers_lifetime": {
+    "name": "history_covers_lifetime",
+    "value": false,
+    "source": "derived",
+    "source_ref": "profile:U-03492@2026-09-29T05:26:00.824Z",
+    "source_time": "2026-09-29T05:26:00.824Z",
+    "freshness": "unknown",
+    "age_s": null,
+    "rule": "signup_at >= first observable event (2026-08-31T18:31:55.380Z); 'never did X' claims need full coverage",
+    "conflicts": [],
+    "supported": true
+   },
+   "last_app_open_before_trigger": {
+    "name": "last_app_open_before_trigger",
+    "value": "2026-10-01T00:11:02.920Z",
+    "source": "event",
+    "source_ref": "event:b43006ad-ff74-4a7c-911f-cdd079b82b23",
+    "source_time": "2026-10-01T00:11:02.920Z",
+    "freshness": "fresh",
+    "age_s": 66023.0,
+    "rule": "latest app_open in another session, ordered by server-anchored occurrence time",
+    "conflicts": [],
+    "supported": true
+   },
+   "profile_present": {
+    "name": "profile_present",
+    "value": true,
+    "source": "profile",
+    "source_ref": "profile:U-03492@2026-09-29T05:26:00.824Z",
+    "source_time": "2026-09-29T05:26:00.824Z",
+    "freshness": "aging",
+    "age_s": 219925.1,
+    "rule": "newest updated_at among snapshot rows",
+    "conflicts": [],
+    "supported": true
+   },
+   "push_consent": {
+    "name": "push_consent",
+    "value": false,
+    "source": "profile",
+    "source_ref": "profile:U-03492@2026-09-29T05:26:00.824Z",
+    "source_time": "2026-09-29T05:26:00.824Z",
+    "freshness": "aging",
+    "age_s": 219925.1,
+    "rule": "newest profile row notifications_opt_in",
+    "conflicts": [],
+    "supported": true
+   },
+   "signup_at": {
+    "name": "signup_at",
+    "value": "2026-02-22T05:13:51.185Z",
+    "source": "profile",
+    "source_ref": "profile:U-03492@2026-09-29T05:26:00.824Z",
+    "source_time": "2026-09-29T05:26:00.824Z",
+    "freshness": "aging",
+    "age_s": 219925.1,
+    "rule": "profile.signup_at (no signup event observed)",
+    "conflicts": [],
+    "supported": true
+   },
+   "subscription_status": {
+    "name": "subscription_status",
+    "value": "active",
+    "source": "profile",
+    "source_ref": "profile:U-03492@2026-09-29T05:26:00.824Z",
+    "source_time": "2026-09-29T05:26:00.824Z",
+    "freshness": "aging",
+    "age_s": 219925.1,
+    "rule": "newest profile row (no newer subscription event)",
+    "conflicts": [],
+    "supported": true
+   },
+   "whatsapp_consent": {
+    "name": "whatsapp_consent",
+    "value": false,
+    "source": "profile",
+    "source_ref": "profile:U-03492@2026-09-29T05:26:00.824Z",
+    "source_time": "2026-09-29T05:26:00.824Z",
+    "freshness": "aging",
+    "age_s": 219925.1,
+    "rule": "newest profile row whatsapp_opt_in",
+    "conflicts": [],
+    "supported": true
+   }
+  },
+  "watch": {
+   "plays": 12,
+   "completions": 6,
+   "watched_slugs": [
+    "diti-kochu-d5",
+    "gubava-gihaya-d5",
+    "hapi-niri-d5",
+    "haya-kani-d5"
+   ],
+   "top_genres": [
+    "Devotional",
+    "Family",
+    "Action",
+    "Crime",
+    "Romance"
+   ],
+   "play_days_recent": [
+    "2026-09-19",
+    "2026-09-20",
+    "2026-09-21",
+    "2026-09-23",
+    "2026-09-26"
+   ],
+   "series": [
+    {
+     "slug": "gubava-gihaya-d5",
+     "furthest": [
+      1,
+      2
+     ],
+     "last_episode": [
+      1,
+      29
+     ],
+     "last_play": "2026-09-23T16:16:17.242Z"
+    },
+    {
+     "slug": "hapi-niri-d5",
+     "furthest": [
+      1,
+      3
+     ],
+     "last_episode": [
+      1,
+      26
+     ],
+     "last_play": "2026-09-19T17:46:58.928Z"
+    },
+    {
+     "slug": "haya-kani-d5",
+     "furthest": [
+      1,
+      1
+     ],
+     "last_episode": [
+      1,
+      1
+     ],
+     "last_play": "2026-09-21T09:56:34.321Z"
+    },
+    {
+     "slug": "diti-kochu-d5",
+     "furthest": [
+      1,
+      2
+     ],
+     "last_episode": [
+      1,
+      32
+     ],
+     "last_play": "2026-09-26T03:44:36.968Z"
+    }
+   ]
+  },
+  "learning": {
+   "actions": {
+    "home_page": {
+     "published": 1
+    }
+   },
+   "goal_results": [
+    {
+     "attribution": "n/a",
+     "goal_id": "G07",
+     "instance_id": "GI-6596ca62752f",
+     "result": "failed"
+    }
+   ],
+   "messages": {},
+   "notes": [],
+   "pages": {
+    "published": 1,
+    "shown_personalised": 1
+   }
+  }
+ },
+ "goals": [
+  {
+   "instance_id": "GI-6596ca62752f",
+   "user_id": "U-03492",
+   "goal_id": "G07",
+   "rule_version": "G07-r1",
+   "status": "open",
+   "started_at": "2026-10-01T00:11:02.920Z",
+   "deadline": "2026-10-04T00:11:02.920Z",
+   "success_event": "play_started",
+   "success_condition": "same content_slug as the unfinished series",
+   "decision_id": "D-b8ab5fb7d760",
+   "arm": "agent",
+   "eligibility": {
+    "context": {
+     "furthest": [
+      1,
+      2
+     ],
+     "series_slug": "diti-kochu-d5"
+    },
+    "evidence": [
+     "goal_rule:G07-r1",
+     "event:3077b2b9-9c39-43d6-9bbe-01692d31b4a0",
+     "event:37689e61-179c-44ac-a116-89a44d431e85",
+     "event:781fc4e5-1fcf-4bce-8c65-59ff31299573"
+    ],
+    "reason": "series diti-kochu-d5 reached S1E2 of S1E32, idle 4.9 days"
+   },
+   "closed_at": null,
+   "close_reason": null,
+   "outcome": null,
+   "history": [
+    {
+     "at": "2026-10-01T00:11:02.920Z",
+     "change": "opened",
+     "reason": "series diti-kochu-d5 reached S1E2 of S1E32, idle 4.9 days"
+    }
+   ]
+  }
+ ],
+ "decisions": [
+  {
+   "decision_id": "D-b8ab5fb7d760",
+   "trigger": "b43006ad-ff74-4a7c-911f-cdd079b82b23",
+   "deliver_at": "2026-10-01T00:11:02.920Z",
+   "status": "PUBLISHED",
+   "action": "HOME_PAGE",
+   "goal": "G07",
+   "reason": null
+  }
+ ],
+ "actions": [
+  {
+   "action_id": "A-96e0297d6d03",
+   "type": "home_page",
+   "status": "published",
+   "status_reason": null,
+   "published_at": "2026-10-01T00:11:03.640Z",
+   "send_at": null
+  }
+ ],
+ "outcomes": [
+  {
+   "arm": "agent",
+   "attribution": "n/a",
+   "deadline": "2026-10-04T00:11:02.920Z",
+   "decision_id": "D-b8ab5fb7d760",
+   "evidence": [],
+   "exposures_before_success": [],
+   "exposures_window": [
+    "event:oua-022334"
+   ],
+   "final": true,
+   "goal_id": "G07",
+   "goal_instance_id": "GI-6596ca62752f",
+   "goal_status_in_replay": "open",
+   "judged_at": "2026-10-15T17:58:40.000Z",
+   "observed_until": "2026-10-15T17:58:40.000Z",
+   "reason": "no qualifying play_started between 2026-10-01T00:11:02.920Z and 2026-10-04T00:11:02.920Z",
+   "result": "failed",
+   "rule_history": [
+    {
+     "at": "2026-10-01T00:11:02.920Z",
+     "change": "opened",
+     "reason": "series diti-kochu-d5 reached S1E2 of S1E32, idle 4.9 days"
+    }
+   ],
+   "rule_version": "G07-r1",
+   "started_at": "2026-10-01T00:11:02.920Z",
+   "success_condition": "same content_slug as the unfinished series",
+   "success_signal": "play_started",
+   "user_id": "U-03492"
+  }
+ ],
+ "learning": {
+  "actions": {
+   "home_page": {
+    "published": 1
+   }
+  },
+  "goal_results": [
+   {
+    "attribution": "n/a",
+    "goal_id": "G07",
+    "instance_id": "GI-6596ca62752f",
+    "result": "failed"
+   }
+  ],
+  "messages": {},
+  "notes": [],
+  "pages": {
+   "published": 1,
+   "shown_personalised": 1
+  }
+ },
+ "audit": []
+}

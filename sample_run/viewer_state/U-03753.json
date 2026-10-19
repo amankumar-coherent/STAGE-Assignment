@@ -1,0 +1,390 @@
+{
+ "viewer_id": "U-03753",
+ "arm": "agent",
+ "as_of": "2026-10-01T18:31:25.944Z",
+ "facts": {
+  "user_id": "U-03753",
+  "as_of": "2026-10-01T18:31:25.944Z",
+  "profile_present": true,
+  "history_start": "2026-08-31T18:31:55.380Z",
+  "history_covers_lifetime": false,
+  "events_seen": 81,
+  "facts": {
+   "dialect": {
+    "name": "dialect",
+    "value": null,
+    "source": "unknown",
+    "source_ref": null,
+    "source_time": null,
+    "freshness": "unknown",
+    "age_s": null,
+    "rule": "trigger carries no valid app_dialect (raw=None); the page the app will request is unknown, so no alternative is substituted",
+    "conflicts": [
+     {
+      "value": "d1",
+      "source": "profile",
+      "source_ref": "profile:U-03753@2026-09-29T17:15:53.256Z",
+      "resolution": "not used: cannot confirm it is the current app setting"
+     },
+     {
+      "value": "d1",
+      "source": "app_setting_earlier",
+      "source_ref": "event:daf7e011-1c5a-43ba-af87-cb30519729a7",
+      "resolution": "not used: cannot confirm it is the current app setting"
+     }
+    ],
+    "supported": false
+   },
+   "ever_paid": {
+    "name": "ever_paid",
+    "value": true,
+    "source": "event",
+    "source_ref": "event:7af0f476-11eb-4a9b-b791-8dbc40d7e420",
+    "source_time": "2026-09-29T17:15:53.256Z",
+    "freshness": "aging",
+    "age_s": 177332.7,
+    "rule": "any paid purchase/renewal event or a paid status on any profile row",
+    "conflicts": [],
+    "supported": true
+   },
+   "history_covers_lifetime": {
+    "name": "history_covers_lifetime",
+    "value": false,
+    "source": "derived",
+    "source_ref": "profile:U-03753@2026-09-29T17:15:53.256Z",
+    "source_time": "2026-09-29T17:15:53.256Z",
+    "freshness": "unknown",
+    "age_s": null,
+    "rule": "signup_at >= first observable event (2026-08-31T18:31:55.380Z); 'never did X' claims need full coverage",
+    "conflicts": [],
+    "supported": true
+   },
+   "last_app_open_before_trigger": {
+    "name": "last_app_open_before_trigger",
+    "value": "2026-10-01T16:34:18.598Z",
+    "source": "event",
+    "source_ref": "event:daf7e011-1c5a-43ba-af87-cb30519729a7",
+    "source_time": "2026-10-01T16:34:18.598Z",
+    "freshness": "fresh",
+    "age_s": 7027.3,
+    "rule": "latest app_open in another session, ordered by server-anchored occurrence time",
+    "conflicts": [],
+    "supported": true
+   },
+   "profile_present": {
+    "name": "profile_present",
+    "value": true,
+    "source": "profile",
+    "source_ref": "profile:U-03753@2026-09-29T17:15:53.256Z",
+    "source_time": "2026-09-29T17:15:53.256Z",
+    "freshness": "aging",
+    "age_s": 177332.7,
+    "rule": "newest updated_at among snapshot rows",
+    "conflicts": [],
+    "supported": true
+   },
+   "push_consent": {
+    "name": "push_consent",
+    "value": true,
+    "source": "profile",
+    "source_ref": "profile:U-03753@2026-09-29T17:15:53.256Z",
+    "source_time": "2026-09-29T17:15:53.256Z",
+    "freshness": "aging",
+    "age_s": 177332.7,
+    "rule": "newest profile row notifications_opt_in",
+    "conflicts": [],
+    "supported": true
+   },
+   "signup_at": {
+    "name": "signup_at",
+    "value": "2024-12-01T21:35:22.315Z",
+    "source": "profile",
+    "source_ref": "profile:U-03753@2026-09-29T17:15:53.256Z",
+    "source_time": "2026-09-29T17:15:53.256Z",
+    "freshness": "aging",
+    "age_s": 177332.7,
+    "rule": "profile.signup_at (no signup event observed)",
+    "conflicts": [],
+    "supported": true
+   },
+   "subscription_status": {
+    "name": "subscription_status",
+    "value": "active",
+    "source": "profile",
+    "source_ref": "profile:U-03753@2026-09-29T17:15:53.256Z",
+    "source_time": "2026-09-29T17:15:53.256Z",
+    "freshness": "aging",
+    "age_s": 177332.7,
+    "rule": "newest profile row (no newer subscription event)",
+    "conflicts": [],
+    "supported": true
+   },
+   "whatsapp_consent": {
+    "name": "whatsapp_consent",
+    "value": true,
+    "source": "profile",
+    "source_ref": "profile:U-03753@2026-09-29T17:15:53.256Z",
+    "source_time": "2026-09-29T17:15:53.256Z",
+    "freshness": "aging",
+    "age_s": 177332.7,
+    "rule": "newest profile row whatsapp_opt_in",
+    "conflicts": [],
+    "supported": true
+   }
+  },
+  "watch": {
+   "plays": 9,
+   "completions": 2,
+   "watched_slugs": [
+    "bagugu-gigupi-d1",
+    "kopibha-niya-d1",
+    "rava-baya-d1",
+    "salosa-valo-d1"
+   ],
+   "top_genres": [
+    "Drama",
+    "Comedy",
+    "Crime",
+    "Romance",
+    "Thriller"
+   ],
+   "play_days_recent": [
+    "2026-09-19",
+    "2026-09-24",
+    "2026-09-27",
+    "2026-09-29"
+   ],
+   "series": [
+    {
+     "slug": "rava-baya-d1",
+     "furthest": [
+      1,
+      1
+     ],
+     "last_episode": [
+      1,
+      1
+     ],
+     "last_play": "2026-09-27T14:37:49.558Z"
+    },
+    {
+     "slug": "salosa-valo-d1",
+     "furthest": [
+      1,
+      2
+     ],
+     "last_episode": [
+      1,
+      12
+     ],
+     "last_play": "2026-09-29T00:46:01.585Z"
+    },
+    {
+     "slug": "bagugu-gigupi-d1",
+     "furthest": [
+      1,
+      1
+     ],
+     "last_episode": [
+      1,
+      8
+     ],
+     "last_play": "2026-09-18T19:59:06.955Z"
+    },
+    {
+     "slug": "kopibha-niya-d1",
+     "furthest": [
+      1,
+      1
+     ],
+     "last_episode": [
+      1,
+      8
+     ],
+     "last_play": "2026-09-24T11:26:07.239Z"
+    }
+   ]
+  },
+  "learning": {
+   "actions": {
+    "home_page": {
+     "published": 1
+    },
+    "push": {
+     "scheduled": 1
+    }
+   },
+   "goal_results": [
+    {
+     "attribution": "n/a",
+     "goal_id": "G07",
+     "instance_id": "GI-e90818fca9a9",
+     "result": "failed"
+    }
+   ],
+   "messages": {
+    "push": {
+     "clicked": 0,
+     "delivered": 1,
+     "failed": {}
+    }
+   },
+   "notes": [],
+   "pages": {
+    "published": 1,
+    "shown_personalised": 1
+   }
+  }
+ },
+ "goals": [
+  {
+   "instance_id": "GI-e90818fca9a9",
+   "user_id": "U-03753",
+   "goal_id": "G07",
+   "rule_version": "G07-r1",
+   "status": "open",
+   "started_at": "2026-10-01T15:44:52.984Z",
+   "deadline": "2026-10-04T15:44:52.984Z",
+   "success_event": "play_started",
+   "success_condition": "same content_slug as the unfinished series",
+   "decision_id": "D-8aa7a29a86c8",
+   "arm": "agent",
+   "eligibility": {
+    "context": {
+     "furthest": [
+      1,
+      1
+     ],
+     "series_slug": "kopibha-niya-d1"
+    },
+    "evidence": [
+     "goal_rule:G07-r1",
+     "event:8fc75db8-e7a7-43ac-b378-ddb9ef4410e6"
+    ],
+    "reason": "series kopibha-niya-d1 reached S1E1 of S1E8, idle 7.2 days"
+   },
+   "closed_at": null,
+   "close_reason": null,
+   "outcome": null,
+   "history": [
+    {
+     "at": "2026-10-01T15:44:52.984Z",
+     "change": "opened",
+     "reason": "series kopibha-niya-d1 reached S1E1 of S1E8, idle 7.2 days"
+    }
+   ]
+  }
+ ],
+ "decisions": [
+  {
+   "decision_id": "D-e8185879fd54",
+   "trigger": "7a121c4f-0b0e-499e-8219-691855b1e425",
+   "deliver_at": "2026-10-01T05:50:33.952Z",
+   "status": "ABSTAINED",
+   "action": "NONE",
+   "goal": null,
+   "reason": "stale trigger: app open buffered offline for 101.6 h (> 600 s); the viewer is not in a live session, so a page or message now would not match their visit. Event kept for history."
+  },
+  {
+   "decision_id": "D-8aa7a29a86c8",
+   "trigger": "a491fb8b-b766-4b86-a775-7730d5bd1575",
+   "deliver_at": "2026-10-01T15:44:52.984Z",
+   "status": "PUBLISHED",
+   "action": "HOME_PAGE+PUSH",
+   "goal": "G07",
+   "reason": null
+  },
+  {
+   "decision_id": "D-96f1735d072d",
+   "trigger": "daf7e011-1c5a-43ba-af87-cb30519729a7",
+   "deliver_at": "2026-10-01T16:34:18.598Z",
+   "status": "ABSTAINED",
+   "action": "NONE",
+   "goal": "G07",
+   "reason": "a personalised page for d1 is already live until 2026-10-01T17:44:53.706Z; not republished; no message: this goal already has one"
+  }
+ ],
+ "actions": [
+  {
+   "action_id": "A-347f4842c50d",
+   "type": "push",
+   "status": "scheduled",
+   "status_reason": null,
+   "published_at": "2026-10-01T15:44:53.706Z",
+   "send_at": "2026-10-02T03:30:00.000Z"
+  },
+  {
+   "action_id": "A-e6e93483e1a6",
+   "type": "home_page",
+   "status": "published",
+   "status_reason": null,
+   "published_at": "2026-10-01T15:44:53.706Z",
+   "send_at": null
+  }
+ ],
+ "outcomes": [
+  {
+   "arm": "agent",
+   "attribution": "n/a",
+   "deadline": "2026-10-04T15:44:52.984Z",
+   "decision_id": "D-8aa7a29a86c8",
+   "evidence": [],
+   "exposures_before_success": [],
+   "exposures_window": [
+    "event:oua-024329",
+    "event:oua-024330"
+   ],
+   "final": true,
+   "goal_id": "G07",
+   "goal_instance_id": "GI-e90818fca9a9",
+   "goal_status_in_replay": "open",
+   "judged_at": "2026-10-15T17:58:40.000Z",
+   "observed_until": "2026-10-15T17:58:40.000Z",
+   "reason": "no qualifying play_started between 2026-10-01T15:44:52.984Z and 2026-10-04T15:44:52.984Z",
+   "result": "failed",
+   "rule_history": [
+    {
+     "at": "2026-10-01T15:44:52.984Z",
+     "change": "opened",
+     "reason": "series kopibha-niya-d1 reached S1E1 of S1E8, idle 7.2 days"
+    }
+   ],
+   "rule_version": "G07-r1",
+   "started_at": "2026-10-01T15:44:52.984Z",
+   "success_condition": "same content_slug as the unfinished series",
+   "success_signal": "play_started",
+   "user_id": "U-03753"
+  }
+ ],
+ "learning": {
+  "actions": {
+   "home_page": {
+    "published": 1
+   },
+   "push": {
+    "scheduled": 1
+   }
+  },
+  "goal_results": [
+   {
+    "attribution": "n/a",
+    "goal_id": "G07",
+    "instance_id": "GI-e90818fca9a9",
+    "result": "failed"
+   }
+  ],
+  "messages": {
+   "push": {
+    "clicked": 0,
+    "delivered": 1,
+    "failed": {}
+   }
+  },
+  "notes": [],
+  "pages": {
+   "published": 1,
+   "shown_personalised": 1
+  }
+ },
+ "audit": []
+}

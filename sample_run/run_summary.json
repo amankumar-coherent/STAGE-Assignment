@@ -1,0 +1,36 @@
+{
+  "pack": "C:\\Users\\aman.kumar\\Desktop\\Stage\\submission\\pack",
+  "seeds": [
+    "oua-practice",
+    "seed-a",
+    "seed-b",
+    "seed-c",
+    "seed-d"
+  ],
+  "decisions": 2782,
+  "actions": 1317,
+  "viewer_state_files": 1746,
+  "primary": {
+    "label": "goal reached (first goal; no goal = not reached)",
+    "agent_k": 71,
+    "agent_n": 863,
+    "agent_rate": 0.08227114716106605,
+    "holdout_k": 66,
+    "holdout_n": 883,
+    "holdout_rate": 0.07474518686296716,
+    "diff_pp": 0.752596029809889,
+    "ci_lo_pp": -1.784836855565037,
+    "ci_hi_pp": 3.305529824039996,
+    "relative": 0.10068822641244424,
+    "p_value": 0.5587509092498719
+  },
+  "slo_met": true,
+  "wall_s": 87.6,
+  "simulator_ran": {
+    "oua-practice": 32066,
+    "seed-a": 31877,
+    "seed-b": 32083,
+    "seed-c": 32555,
+    "seed-d": 31726
+  }
+}

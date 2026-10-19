@@ -1,0 +1,400 @@
+{
+ "viewer_id": "U-00976",
+ "arm": "agent",
+ "as_of": "2026-10-01T18:31:25.944Z",
+ "facts": {
+  "user_id": "U-00976",
+  "as_of": "2026-10-01T18:31:25.944Z",
+  "profile_present": true,
+  "history_start": "2026-08-31T18:31:55.380Z",
+  "history_covers_lifetime": false,
+  "events_seen": 121,
+  "facts": {
+   "dialect": {
+    "name": "dialect",
+    "value": null,
+    "source": "unknown",
+    "source_ref": null,
+    "source_time": null,
+    "freshness": "unknown",
+    "age_s": null,
+    "rule": "trigger carries no valid app_dialect (raw=None); the page the app will request is unknown, so no alternative is substituted",
+    "conflicts": [
+     {
+      "value": "d2",
+      "source": "profile",
+      "source_ref": "profile:U-00976@2026-09-29T04:36:06.374Z",
+      "resolution": "not used: cannot confirm it is the current app setting"
+     },
+     {
+      "value": "d2",
+      "source": "app_setting_earlier",
+      "source_ref": "event:a853ef71-4c51-4171-8b65-a805d654bf07",
+      "resolution": "not used: cannot confirm it is the current app setting"
+     }
+    ],
+    "supported": false
+   },
+   "ever_paid": {
+    "name": "ever_paid",
+    "value": true,
+    "source": "event",
+    "source_ref": "event:429d6939-f7a8-4a85-9d98-136b2c90b6ea",
+    "source_time": "2026-09-29T04:36:06.374Z",
+    "freshness": "aging",
+    "age_s": 222919.6,
+    "rule": "any paid purchase/renewal event or a paid status on any profile row",
+    "conflicts": [],
+    "supported": true
+   },
+   "history_covers_lifetime": {
+    "name": "history_covers_lifetime",
+    "value": false,
+    "source": "derived",
+    "source_ref": "profile:U-00976@2026-09-29T04:36:06.374Z",
+    "source_time": "2026-09-29T04:36:06.374Z",
+    "freshness": "unknown",
+    "age_s": null,
+    "rule": "signup_at >= first observable event (2026-08-31T18:31:55.380Z); 'never did X' claims need full coverage",
+    "conflicts": [],
+    "supported": true
+   },
+   "last_app_open_before_trigger": {
+    "name": "last_app_open_before_trigger",
+    "value": "2026-10-01T11:38:18.667Z",
+    "source": "event",
+    "source_ref": "event:a853ef71-4c51-4171-8b65-a805d654bf07",
+    "source_time": "2026-10-01T11:38:18.667Z",
+    "freshness": "fresh",
+    "age_s": 24787.3,
+    "rule": "latest app_open in another session, ordered by server-anchored occurrence time",
+    "conflicts": [],
+    "supported": true
+   },
+   "profile_present": {
+    "name": "profile_present",
+    "value": true,
+    "source": "profile",
+    "source_ref": "profile:U-00976@2026-09-29T04:36:06.374Z",
+    "source_time": "2026-09-29T04:36:06.374Z",
+    "freshness": "aging",
+    "age_s": 222919.6,
+    "rule": "newest updated_at among snapshot rows",
+    "conflicts": [],
+    "supported": true
+   },
+   "push_consent": {
+    "name": "push_consent",
+    "value": true,
+    "source": "profile",
+    "source_ref": "profile:U-00976@2026-09-29T04:36:06.374Z",
+    "source_time": "2026-09-29T04:36:06.374Z",
+    "freshness": "aging",
+    "age_s": 222919.6,
+    "rule": "newest profile row notifications_opt_in",
+    "conflicts": [],
+    "supported": true
+   },
+   "push_deliverable": {
+    "name": "push_deliverable",
+    "value": false,
+    "source": "derived",
+    "source_ref": "event:oua-006658",
+    "source_time": "2026-10-01T14:38:21.385Z",
+    "freshness": "unknown",
+    "age_s": null,
+    "rule": "learned from an earlier message_failed(token_invalid)",
+    "conflicts": [],
+    "supported": true
+   },
+   "signup_at": {
+    "name": "signup_at",
+    "value": "2025-07-16T02:17:39.179Z",
+    "source": "profile",
+    "source_ref": "profile:U-00976@2026-09-29T04:36:06.374Z",
+    "source_time": "2026-09-29T04:36:06.374Z",
+    "freshness": "aging",
+    "age_s": 222919.6,
+    "rule": "profile.signup_at (no signup event observed)",
+    "conflicts": [],
+    "supported": true
+   },
+   "subscription_status": {
+    "name": "subscription_status",
+    "value": "active",
+    "source": "profile",
+    "source_ref": "profile:U-00976@2026-09-29T04:36:06.374Z",
+    "source_time": "2026-09-29T04:36:06.374Z",
+    "freshness": "aging",
+    "age_s": 222919.6,
+    "rule": "newest profile row (no newer subscription event)",
+    "conflicts": [],
+    "supported": true
+   },
+   "whatsapp_consent": {
+    "name": "whatsapp_consent",
+    "value": true,
+    "source": "profile",
+    "source_ref": "profile:U-00976@2026-09-29T04:36:06.374Z",
+    "source_time": "2026-09-29T04:36:06.374Z",
+    "freshness": "aging",
+    "age_s": 222919.6,
+    "rule": "newest profile row whatsapp_opt_in",
+    "conflicts": [],
+    "supported": true
+   }
+  },
+  "watch": {
+   "plays": 13,
+   "completions": 9,
+   "watched_slugs": [
+    "bhaja-moguba-d2",
+    "dichupi-niha-d2",
+    "molo-d2",
+    "neya-kadhana-d2"
+   ],
+   "top_genres": [
+    "Thriller",
+    "Romance",
+    "Action",
+    "Comedy"
+   ],
+   "play_days_recent": [
+    "2026-09-20",
+    "2026-09-22",
+    "2026-09-25",
+    "2026-09-26",
+    "2026-09-27",
+    "2026-09-28"
+   ],
+   "series": [
+    {
+     "slug": "bhaja-moguba-d2",
+     "furthest": [
+      1,
+      2
+     ],
+     "last_episode": [
+      1,
+      34
+     ],
+     "last_play": "2026-09-28T02:58:34.833Z"
+    },
+    {
+     "slug": "molo-d2",
+     "furthest": [
+      1,
+      3
+     ],
+     "last_episode": [
+      1,
+      7
+     ],
+     "last_play": "2026-09-14T03:02:40.508Z"
+    },
+    {
+     "slug": "dichupi-niha-d2",
+     "furthest": [
+      1,
+      4
+     ],
+     "last_episode": [
+      1,
+      10
+     ],
+     "last_play": "2026-09-25T15:51:30.722Z"
+    },
+    {
+     "slug": "neya-kadhana-d2",
+     "furthest": [
+      1,
+      1
+     ],
+     "last_episode": [
+      1,
+      42
+     ],
+     "last_play": "2026-09-27T11:40:36.634Z"
+    }
+   ]
+  },
+  "learning": {
+   "actions": {
+    "home_page": {
+     "published": 1
+    },
+    "push": {
+     "sent": 1
+    }
+   },
+   "goal_results": [
+    {
+     "attribution": "n/a",
+     "goal_id": "G07",
+     "instance_id": "GI-69db01150e81",
+     "result": "failed"
+    }
+   ],
+   "messages": {
+    "push": {
+     "clicked": 0,
+     "delivered": 0,
+     "failed": {
+      "token_invalid": 1
+     }
+    }
+   },
+   "notes": [
+    "push token invalid: future push suppressed for this viewer"
+   ],
+   "pages": {
+    "published": 1,
+    "shown_personalised": 1
+   },
+   "push_token_at": "2026-10-01T14:38:21.385Z",
+   "push_token_invalid": true,
+   "push_token_ref": "event:oua-006658"
+  }
+ },
+ "goals": [
+  {
+   "instance_id": "GI-69db01150e81",
+   "user_id": "U-00976",
+   "goal_id": "G07",
+   "rule_version": "G07-r1",
+   "status": "open",
+   "started_at": "2026-10-01T11:38:18.667Z",
+   "deadline": "2026-10-04T11:38:18.667Z",
+   "success_event": "play_started",
+   "success_condition": "same content_slug as the unfinished series",
+   "decision_id": "D-128d0cd58474",
+   "arm": "agent",
+   "eligibility": {
+    "context": {
+     "furthest": [
+      1,
+      2
+     ],
+     "series_slug": "bhaja-moguba-d2"
+    },
+    "evidence": [
+     "goal_rule:G07-r1",
+     "event:1641d127-3ccf-43de-a70c-9e28020206c1",
+     "event:a3f630b9-c0be-453a-a471-cbbd4b1f2c59",
+     "event:12b4af0d-ffbe-4f78-8d25-cb9a99761cf2"
+    ],
+    "reason": "series bhaja-moguba-d2 reached S1E2 of S1E34, idle 3.4 days"
+   },
+   "closed_at": null,
+   "close_reason": null,
+   "outcome": null,
+   "history": [
+    {
+     "at": "2026-10-01T11:38:18.667Z",
+     "change": "opened",
+     "reason": "series bhaja-moguba-d2 reached S1E2 of S1E34, idle 3.4 days"
+    }
+   ]
+  }
+ ],
+ "decisions": [
+  {
+   "decision_id": "D-128d0cd58474",
+   "trigger": "a853ef71-4c51-4171-8b65-a805d654bf07",
+   "deliver_at": "2026-10-01T11:38:18.667Z",
+   "status": "PUBLISHED",
+   "action": "HOME_PAGE+PUSH",
+   "goal": "G07",
+   "reason": null
+  }
+ ],
+ "actions": [
+  {
+   "action_id": "A-17029fe98ca4",
+   "type": "home_page",
+   "status": "published",
+   "status_reason": null,
+   "published_at": "2026-10-01T11:38:19.392Z",
+   "send_at": null
+  },
+  {
+   "action_id": "A-789250ed356b",
+   "type": "push",
+   "status": "sent",
+   "status_reason": "revalidated at send time",
+   "published_at": "2026-10-01T11:38:19.392Z",
+   "send_at": "2026-10-01T14:38:21.385Z"
+  }
+ ],
+ "outcomes": [
+  {
+   "arm": "agent",
+   "attribution": "n/a",
+   "deadline": "2026-10-04T11:38:18.667Z",
+   "decision_id": "D-128d0cd58474",
+   "evidence": [],
+   "exposures_before_success": [],
+   "exposures_window": [
+    "event:oua-006656"
+   ],
+   "final": true,
+   "goal_id": "G07",
+   "goal_instance_id": "GI-69db01150e81",
+   "goal_status_in_replay": "open",
+   "judged_at": "2026-10-15T17:58:40.000Z",
+   "observed_until": "2026-10-15T17:58:40.000Z",
+   "reason": "no qualifying play_started between 2026-10-01T11:38:18.667Z and 2026-10-04T11:38:18.667Z",
+   "result": "failed",
+   "rule_history": [
+    {
+     "at": "2026-10-01T11:38:18.667Z",
+     "change": "opened",
+     "reason": "series bhaja-moguba-d2 reached S1E2 of S1E34, idle 3.4 days"
+    }
+   ],
+   "rule_version": "G07-r1",
+   "started_at": "2026-10-01T11:38:18.667Z",
+   "success_condition": "same content_slug as the unfinished series",
+   "success_signal": "play_started",
+   "user_id": "U-00976"
+  }
+ ],
+ "learning": {
+  "actions": {
+   "home_page": {
+    "published": 1
+   },
+   "push": {
+    "sent": 1
+   }
+  },
+  "goal_results": [
+   {
+    "attribution": "n/a",
+    "goal_id": "G07",
+    "instance_id": "GI-69db01150e81",
+    "result": "failed"
+   }
+  ],
+  "messages": {
+   "push": {
+    "clicked": 0,
+    "delivered": 0,
+    "failed": {
+     "token_invalid": 1
+    }
+   }
+  },
+  "notes": [
+   "push token invalid: future push suppressed for this viewer"
+  ],
+  "pages": {
+   "published": 1,
+   "shown_personalised": 1
+  },
+  "push_token_at": "2026-10-01T14:38:21.385Z",
+  "push_token_invalid": true,
+  "push_token_ref": "event:oua-006658"
+ },
+ "audit": []
+}

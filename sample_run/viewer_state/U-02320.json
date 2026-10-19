@@ -1,0 +1,157 @@
+{
+ "viewer_id": "U-02320",
+ "arm": "agent",
+ "as_of": "2026-10-01T18:31:25.944Z",
+ "facts": {
+  "user_id": "U-02320",
+  "as_of": "2026-10-01T18:31:25.944Z",
+  "profile_present": true,
+  "history_start": "2026-08-31T18:31:55.380Z",
+  "history_covers_lifetime": false,
+  "events_seen": 4,
+  "facts": {
+   "dialect": {
+    "name": "dialect",
+    "value": null,
+    "source": "unknown",
+    "source_ref": null,
+    "source_time": null,
+    "freshness": "unknown",
+    "age_s": null,
+    "rule": "trigger carries no valid app_dialect (raw=None); the page the app will request is unknown, so no alternative is substituted",
+    "conflicts": [],
+    "supported": false
+   },
+   "ever_paid": {
+    "name": "ever_paid",
+    "value": true,
+    "source": "profile",
+    "source_ref": "profile:U-02320@2026-09-29T01:41:48.597Z",
+    "source_time": "2026-09-29T01:41:48.597Z",
+    "freshness": "aging",
+    "age_s": 233377.3,
+    "rule": "any paid purchase/renewal event or a paid status on any profile row",
+    "conflicts": [],
+    "supported": true
+   },
+   "history_covers_lifetime": {
+    "name": "history_covers_lifetime",
+    "value": false,
+    "source": "derived",
+    "source_ref": "profile:U-02320@2026-09-29T01:41:48.597Z",
+    "source_time": "2026-09-29T01:41:48.597Z",
+    "freshness": "unknown",
+    "age_s": null,
+    "rule": "signup_at >= first observable event (2026-08-31T18:31:55.380Z); 'never did X' claims need full coverage",
+    "conflicts": [],
+    "supported": true
+   },
+   "last_app_open_before_trigger": {
+    "name": "last_app_open_before_trigger",
+    "value": "2026-10-01T13:14:12.189Z",
+    "source": "event",
+    "source_ref": "event:a7960def-c80b-4a7d-ae36-e5b7c841376c",
+    "source_time": "2026-10-01T13:14:12.189Z",
+    "freshness": "fresh",
+    "age_s": 19033.8,
+    "rule": "latest app_open in another session, ordered by server-anchored occurrence time",
+    "conflicts": [],
+    "supported": true
+   },
+   "profile_present": {
+    "name": "profile_present",
+    "value": true,
+    "source": "profile",
+    "source_ref": "profile:U-02320@2026-09-29T01:41:48.597Z",
+    "source_time": "2026-09-29T01:41:48.597Z",
+    "freshness": "aging",
+    "age_s": 233377.3,
+    "rule": "newest updated_at among snapshot rows",
+    "conflicts": [],
+    "supported": true
+   },
+   "push_consent": {
+    "name": "push_consent",
+    "value": true,
+    "source": "profile",
+    "source_ref": "profile:U-02320@2026-09-29T01:41:48.597Z",
+    "source_time": "2026-09-29T01:41:48.597Z",
+    "freshness": "aging",
+    "age_s": 233377.3,
+    "rule": "newest profile row notifications_opt_in",
+    "conflicts": [],
+    "supported": true
+   },
+   "signup_at": {
+    "name": "signup_at",
+    "value": "2026-07-26T20:48:31.081Z",
+    "source": "profile",
+    "source_ref": "profile:U-02320@2026-09-29T01:41:48.597Z",
+    "source_time": "2026-09-29T01:41:48.597Z",
+    "freshness": "aging",
+    "age_s": 233377.3,
+    "rule": "profile.signup_at (no signup event observed)",
+    "conflicts": [],
+    "supported": true
+   },
+   "subscription_status": {
+    "name": "subscription_status",
+    "value": "lapsed",
+    "source": "profile",
+    "source_ref": "profile:U-02320@2026-09-29T01:41:48.597Z",
+    "source_time": "2026-09-29T01:41:48.597Z",
+    "freshness": "aging",
+    "age_s": 233377.3,
+    "rule": "newest profile row (no newer subscription event)",
+    "conflicts": [],
+    "supported": true
+   },
+   "whatsapp_consent": {
+    "name": "whatsapp_consent",
+    "value": true,
+    "source": "profile",
+    "source_ref": "profile:U-02320@2026-09-29T01:41:48.597Z",
+    "source_time": "2026-09-29T01:41:48.597Z",
+    "freshness": "aging",
+    "age_s": 233377.3,
+    "rule": "newest profile row whatsapp_opt_in",
+    "conflicts": [],
+    "supported": true
+   }
+  },
+  "watch": {
+   "plays": 0,
+   "completions": 0,
+   "watched_slugs": [],
+   "top_genres": [],
+   "play_days_recent": [],
+   "series": []
+  },
+  "learning": {}
+ },
+ "goals": [],
+ "decisions": [
+  {
+   "decision_id": "D-64a9c322524d",
+   "trigger": "613208c9-7551-49df-8baf-f4d3ff42b0c6",
+   "deliver_at": "2026-10-01T12:48:46.947Z",
+   "status": "ABSTAINED",
+   "action": "NONE",
+   "goal": null,
+   "reason": "no eligible, measurable goal: none of the measurable goals is supported by evidence (unmeasurable, never selectable: ['G10', 'G11'])"
+  },
+  {
+   "decision_id": "D-a64ec78d054d",
+   "trigger": "a7960def-c80b-4a7d-ae36-e5b7c841376c",
+   "deliver_at": "2026-10-01T13:14:12.189Z",
+   "status": "ABSTAINED",
+   "action": "NONE",
+   "goal": null,
+   "reason": "no eligible, measurable goal: none of the measurable goals is supported by evidence (unmeasurable, never selectable: ['G10', 'G11'])"
+  }
+ ],
+ "actions": [],
+ "outcomes": [],
+ "learning": {},
+ "audit": []
+}

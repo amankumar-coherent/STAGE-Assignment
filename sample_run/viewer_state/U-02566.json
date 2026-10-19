@@ -1,0 +1,374 @@
+{
+ "viewer_id": "U-02566",
+ "arm": "agent",
+ "as_of": "2026-10-01T18:31:25.944Z",
+ "facts": {
+  "user_id": "U-02566",
+  "as_of": "2026-10-01T18:31:25.944Z",
+  "profile_present": true,
+  "history_start": "2026-08-31T18:31:55.380Z",
+  "history_covers_lifetime": false,
+  "events_seen": 104,
+  "facts": {
+   "dialect": {
+    "name": "dialect",
+    "value": null,
+    "source": "unknown",
+    "source_ref": null,
+    "source_time": null,
+    "freshness": "unknown",
+    "age_s": null,
+    "rule": "trigger carries no valid app_dialect (raw=None); the page the app will request is unknown, so no alternative is substituted",
+    "conflicts": [
+     {
+      "value": "d4",
+      "source": "profile",
+      "source_ref": "profile:U-02566@2026-09-28T23:59:47.280Z",
+      "resolution": "not used: cannot confirm it is the current app setting"
+     },
+     {
+      "value": "d1",
+      "source": "app_setting_earlier",
+      "source_ref": "event:a2b8f4eb-cb7b-4006-a5b5-df1ee241c182",
+      "resolution": "not used: cannot confirm it is the current app setting"
+     }
+    ],
+    "supported": false
+   },
+   "ever_paid": {
+    "name": "ever_paid",
+    "value": true,
+    "source": "event",
+    "source_ref": "event:293c2f12-bc07-45a8-b157-79692fd729bf",
+    "source_time": "2026-09-28T23:59:47.280Z",
+    "freshness": "aging",
+    "age_s": 239498.7,
+    "rule": "any paid purchase/renewal event or a paid status on any profile row",
+    "conflicts": [],
+    "supported": true
+   },
+   "history_covers_lifetime": {
+    "name": "history_covers_lifetime",
+    "value": false,
+    "source": "derived",
+    "source_ref": "profile:U-02566@2026-09-28T23:59:47.280Z",
+    "source_time": "2026-09-28T23:59:47.280Z",
+    "freshness": "unknown",
+    "age_s": null,
+    "rule": "signup_at >= first observable event (2026-08-31T18:31:55.380Z); 'never did X' claims need full coverage",
+    "conflicts": [],
+    "supported": true
+   },
+   "last_app_open_before_trigger": {
+    "name": "last_app_open_before_trigger",
+    "value": "2026-10-01T12:07:06.061Z",
+    "source": "event",
+    "source_ref": "event:a2b8f4eb-cb7b-4006-a5b5-df1ee241c182",
+    "source_time": "2026-10-01T12:07:06.061Z",
+    "freshness": "fresh",
+    "age_s": 23059.9,
+    "rule": "latest app_open in another session, ordered by server-anchored occurrence time",
+    "conflicts": [],
+    "supported": true
+   },
+   "profile_present": {
+    "name": "profile_present",
+    "value": true,
+    "source": "profile",
+    "source_ref": "profile:U-02566@2026-09-28T23:59:47.280Z",
+    "source_time": "2026-09-28T23:59:47.280Z",
+    "freshness": "aging",
+    "age_s": 239498.7,
+    "rule": "newest updated_at among snapshot rows",
+    "conflicts": [],
+    "supported": true
+   },
+   "push_consent": {
+    "name": "push_consent",
+    "value": true,
+    "source": "profile",
+    "source_ref": "profile:U-02566@2026-09-28T23:59:47.280Z",
+    "source_time": "2026-09-28T23:59:47.280Z",
+    "freshness": "aging",
+    "age_s": 239498.7,
+    "rule": "newest profile row notifications_opt_in",
+    "conflicts": [],
+    "supported": true
+   },
+   "signup_at": {
+    "name": "signup_at",
+    "value": "2026-07-16T04:26:04.883Z",
+    "source": "profile",
+    "source_ref": "profile:U-02566@2026-09-28T23:59:47.280Z",
+    "source_time": "2026-09-28T23:59:47.280Z",
+    "freshness": "aging",
+    "age_s": 239498.7,
+    "rule": "profile.signup_at (no signup event observed)",
+    "conflicts": [],
+    "supported": true
+   },
+   "subscription_status": {
+    "name": "subscription_status",
+    "value": "active",
+    "source": "profile",
+    "source_ref": "profile:U-02566@2026-09-28T23:59:47.280Z",
+    "source_time": "2026-09-28T23:59:47.280Z",
+    "freshness": "aging",
+    "age_s": 239498.7,
+    "rule": "newest profile row (no newer subscription event)",
+    "conflicts": [],
+    "supported": true
+   },
+   "whatsapp_consent": {
+    "name": "whatsapp_consent",
+    "value": true,
+    "source": "profile",
+    "source_ref": "profile:U-02566@2026-09-28T23:59:47.280Z",
+    "source_time": "2026-09-28T23:59:47.280Z",
+    "freshness": "aging",
+    "age_s": 239498.7,
+    "rule": "newest profile row whatsapp_opt_in",
+    "conflicts": [],
+    "supported": true
+   }
+  },
+  "watch": {
+   "plays": 13,
+   "completions": 6,
+   "watched_slugs": [
+    "nini-namoko-d1",
+    "rava-baya-d1",
+    "roti-d1",
+    "tidha-dakachu-d1"
+   ],
+   "top_genres": [
+    "Family",
+    "Action",
+    "Comedy",
+    "Drama",
+    "Thriller"
+   ],
+   "play_days_recent": [
+    "2026-09-21",
+    "2026-09-23",
+    "2026-09-26",
+    "2026-09-28"
+   ],
+   "series": [
+    {
+     "slug": "nini-namoko-d1",
+     "furthest": [
+      1,
+      6
+     ],
+     "last_episode": [
+      1,
+      36
+     ],
+     "last_play": "2026-09-28T04:04:45.880Z"
+    },
+    {
+     "slug": "roti-d1",
+     "furthest": [
+      1,
+      1
+     ],
+     "last_episode": [
+      1,
+      1
+     ],
+     "last_play": "2026-09-15T09:47:25.978Z"
+    },
+    {
+     "slug": "tidha-dakachu-d1",
+     "furthest": [
+      1,
+      1
+     ],
+     "last_episode": [
+      2,
+      9
+     ],
+     "last_play": "2026-09-26T14:15:21.335Z"
+    },
+    {
+     "slug": "rava-baya-d1",
+     "furthest": [
+      1,
+      1
+     ],
+     "last_episode": [
+      1,
+      1
+     ],
+     "last_play": "2026-09-23T14:52:54.925Z"
+    }
+   ]
+  },
+  "learning": {
+   "actions": {
+    "home_page": {
+     "published": 1
+    },
+    "push": {
+     "sent": 1
+    }
+   },
+   "goal_results": [
+    {
+     "attribution": "n/a",
+     "goal_id": "G07",
+     "instance_id": "GI-025961db077c",
+     "result": "failed"
+    }
+   ],
+   "messages": {
+    "push": {
+     "clicked": 0,
+     "delivered": 1,
+     "failed": {}
+    }
+   },
+   "notes": [],
+   "pages": {
+    "published": 1,
+    "shown_personalised": 1
+   }
+  }
+ },
+ "goals": [
+  {
+   "instance_id": "GI-025961db077c",
+   "user_id": "U-02566",
+   "goal_id": "G07",
+   "rule_version": "G07-r1",
+   "status": "open",
+   "started_at": "2026-10-01T12:07:06.061Z",
+   "deadline": "2026-10-04T12:07:06.061Z",
+   "success_event": "play_started",
+   "success_condition": "same content_slug as the unfinished series",
+   "decision_id": "D-fd1dd9e2cf61",
+   "arm": "agent",
+   "eligibility": {
+    "context": {
+     "furthest": [
+      1,
+      6
+     ],
+     "series_slug": "nini-namoko-d1"
+    },
+    "evidence": [
+     "goal_rule:G07-r1",
+     "event:86f80280-40e4-49eb-8714-3531bd387cf0",
+     "event:4c2005f4-5770-40c1-9f50-2ecd7e4ac973",
+     "event:cc303dae-b707-4839-b7bc-a7f4d11a7728"
+    ],
+    "reason": "series nini-namoko-d1 reached S1E6 of S1E36, idle 3.3 days"
+   },
+   "closed_at": null,
+   "close_reason": null,
+   "outcome": null,
+   "history": [
+    {
+     "at": "2026-10-01T12:07:06.061Z",
+     "change": "opened",
+     "reason": "series nini-namoko-d1 reached S1E6 of S1E36, idle 3.3 days"
+    }
+   ]
+  }
+ ],
+ "decisions": [
+  {
+   "decision_id": "D-fd1dd9e2cf61",
+   "trigger": "a2b8f4eb-cb7b-4006-a5b5-df1ee241c182",
+   "deliver_at": "2026-10-01T12:07:06.061Z",
+   "status": "PUBLISHED",
+   "action": "HOME_PAGE+PUSH",
+   "goal": "G07",
+   "reason": null
+  }
+ ],
+ "actions": [
+  {
+   "action_id": "A-a2433af33d71",
+   "type": "home_page",
+   "status": "published",
+   "status_reason": null,
+   "published_at": "2026-10-01T12:07:06.787Z",
+   "send_at": null
+  },
+  {
+   "action_id": "A-ea192168be58",
+   "type": "push",
+   "status": "sent",
+   "status_reason": "revalidated at send time",
+   "published_at": "2026-10-01T12:07:06.787Z",
+   "send_at": "2026-10-01T15:07:08.778Z"
+  }
+ ],
+ "outcomes": [
+  {
+   "arm": "agent",
+   "attribution": "n/a",
+   "deadline": "2026-10-04T12:07:06.061Z",
+   "decision_id": "D-fd1dd9e2cf61",
+   "evidence": [],
+   "exposures_before_success": [],
+   "exposures_window": [
+    "event:oua-016354",
+    "event:oua-016356"
+   ],
+   "final": true,
+   "goal_id": "G07",
+   "goal_instance_id": "GI-025961db077c",
+   "goal_status_in_replay": "open",
+   "judged_at": "2026-10-15T17:58:40.000Z",
+   "observed_until": "2026-10-15T17:58:40.000Z",
+   "reason": "no qualifying play_started between 2026-10-01T12:07:06.061Z and 2026-10-04T12:07:06.061Z",
+   "result": "failed",
+   "rule_history": [
+    {
+     "at": "2026-10-01T12:07:06.061Z",
+     "change": "opened",
+     "reason": "series nini-namoko-d1 reached S1E6 of S1E36, idle 3.3 days"
+    }
+   ],
+   "rule_version": "G07-r1",
+   "started_at": "2026-10-01T12:07:06.061Z",
+   "success_condition": "same content_slug as the unfinished series",
+   "success_signal": "play_started",
+   "user_id": "U-02566"
+  }
+ ],
+ "learning": {
+  "actions": {
+   "home_page": {
+    "published": 1
+   },
+   "push": {
+    "sent": 1
+   }
+  },
+  "goal_results": [
+   {
+    "attribution": "n/a",
+    "goal_id": "G07",
+    "instance_id": "GI-025961db077c",
+    "result": "failed"
+   }
+  ],
+  "messages": {
+   "push": {
+    "clicked": 0,
+    "delivered": 1,
+    "failed": {}
+   }
+  },
+  "notes": [],
+  "pages": {
+   "published": 1,
+   "shown_personalised": 1
+  }
+ },
+ "audit": []
+}

@@ -1,0 +1,296 @@
+{
+ "viewer_id": "U-02046",
+ "arm": "holdout",
+ "as_of": "2026-10-01T18:31:25.944Z",
+ "facts": {
+  "user_id": "U-02046",
+  "as_of": "2026-10-01T18:31:25.944Z",
+  "profile_present": true,
+  "history_start": "2026-08-31T18:31:55.380Z",
+  "history_covers_lifetime": false,
+  "events_seen": 10,
+  "facts": {
+   "dialect": {
+    "name": "dialect",
+    "value": null,
+    "source": "unknown",
+    "source_ref": null,
+    "source_time": null,
+    "freshness": "unknown",
+    "age_s": null,
+    "rule": "trigger carries no valid app_dialect (raw=None); the page the app will request is unknown, so no alternative is substituted",
+    "conflicts": [
+     {
+      "value": "d4",
+      "source": "profile",
+      "source_ref": "profile:U-02046@2026-09-28T18:42:51.096Z",
+      "resolution": "not used: cannot confirm it is the current app setting"
+     },
+     {
+      "value": "d3",
+      "source": "app_setting_earlier",
+      "source_ref": "event:e54b2e25-09a7-4355-a5c4-a67be257f0ba",
+      "resolution": "not used: cannot confirm it is the current app setting"
+     }
+    ],
+    "supported": false
+   },
+   "ever_paid": {
+    "name": "ever_paid",
+    "value": true,
+    "source": "event",
+    "source_ref": "event:e54b2e25-09a7-4355-a5c4-a67be257f0ba",
+    "source_time": "2026-10-01T14:05:59.553Z",
+    "freshness": "fresh",
+    "age_s": 15926.4,
+    "rule": "any paid purchase/renewal event or a paid status on any profile row",
+    "conflicts": [],
+    "supported": true
+   },
+   "history_covers_lifetime": {
+    "name": "history_covers_lifetime",
+    "value": false,
+    "source": "derived",
+    "source_ref": "profile:U-02046@2026-09-28T18:42:51.096Z",
+    "source_time": "2026-09-28T18:42:51.096Z",
+    "freshness": "unknown",
+    "age_s": null,
+    "rule": "signup_at >= first observable event (2026-08-31T18:31:55.380Z); 'never did X' claims need full coverage",
+    "conflicts": [],
+    "supported": true
+   },
+   "last_app_open_before_trigger": {
+    "name": "last_app_open_before_trigger",
+    "value": "2026-10-01T14:03:40.721Z",
+    "source": "event",
+    "source_ref": "event:b9f12995-86cf-4f85-9f64-7cf66bcd3574",
+    "source_time": "2026-10-01T14:03:40.721Z",
+    "freshness": "fresh",
+    "age_s": 16065.2,
+    "rule": "latest app_open in another session, ordered by server-anchored occurrence time",
+    "conflicts": [],
+    "supported": true
+   },
+   "profile_present": {
+    "name": "profile_present",
+    "value": true,
+    "source": "profile",
+    "source_ref": "profile:U-02046@2026-09-28T18:42:51.096Z",
+    "source_time": "2026-09-28T18:42:51.096Z",
+    "freshness": "aging",
+    "age_s": 258514.8,
+    "rule": "newest updated_at among snapshot rows",
+    "conflicts": [],
+    "supported": true
+   },
+   "push_consent": {
+    "name": "push_consent",
+    "value": true,
+    "source": "profile",
+    "source_ref": "profile:U-02046@2026-09-28T18:42:51.096Z",
+    "source_time": "2026-09-28T18:42:51.096Z",
+    "freshness": "aging",
+    "age_s": 258514.8,
+    "rule": "newest profile row notifications_opt_in",
+    "conflicts": [],
+    "supported": true
+   },
+   "signup_at": {
+    "name": "signup_at",
+    "value": "2024-10-19T13:46:15.344Z",
+    "source": "profile",
+    "source_ref": "profile:U-02046@2026-09-28T18:42:51.096Z",
+    "source_time": "2026-09-28T18:42:51.096Z",
+    "freshness": "aging",
+    "age_s": 258514.8,
+    "rule": "profile.signup_at (no signup event observed)",
+    "conflicts": [],
+    "supported": true
+   },
+   "subscription_status": {
+    "name": "subscription_status",
+    "value": "active",
+    "source": "event",
+    "source_ref": "event:e54b2e25-09a7-4355-a5c4-a67be257f0ba",
+    "source_time": "2026-10-01T14:05:59.553Z",
+    "freshness": "fresh",
+    "age_s": 15926.4,
+    "rule": "subscription event newer than the profile row overrides it",
+    "conflicts": [
+     {
+      "value": "never",
+      "source": "profile",
+      "source_ref": "profile:U-02046@2026-09-28T18:42:51.096Z",
+      "resolution": "older than purchase_completed"
+     }
+    ],
+    "supported": true
+   },
+   "whatsapp_consent": {
+    "name": "whatsapp_consent",
+    "value": false,
+    "source": "profile",
+    "source_ref": "profile:U-02046@2026-09-28T18:42:51.096Z",
+    "source_time": "2026-09-28T18:42:51.096Z",
+    "freshness": "aging",
+    "age_s": 258514.8,
+    "rule": "newest profile row whatsapp_opt_in",
+    "conflicts": [],
+    "supported": true
+   }
+  },
+  "watch": {
+   "plays": 1,
+   "completions": 0,
+   "watched_slugs": [
+    "jakasa-dapi-d3"
+   ],
+   "top_genres": [
+    "Crime"
+   ],
+   "play_days_recent": [],
+   "series": [
+    {
+     "slug": "jakasa-dapi-d3",
+     "furthest": [
+      1,
+      1
+     ],
+     "last_episode": [
+      2,
+      12
+     ],
+     "last_play": "2026-09-16T10:16:02.200Z"
+    }
+   ]
+  },
+  "learning": {
+   "actions": {},
+   "goal_results": [
+    {
+     "attribution": "n/a",
+     "goal_id": "G07",
+     "instance_id": "GI-563940eca8c8",
+     "result": "failed"
+    }
+   ],
+   "messages": {},
+   "notes": [],
+   "pages": {
+    "published": 0,
+    "shown_personalised": 0
+   }
+  }
+ },
+ "goals": [
+  {
+   "instance_id": "GI-563940eca8c8",
+   "user_id": "U-02046",
+   "goal_id": "G07",
+   "rule_version": "G07-r1",
+   "status": "open",
+   "started_at": "2026-10-01T14:03:40.721Z",
+   "deadline": "2026-10-04T14:03:40.721Z",
+   "success_event": "play_started",
+   "success_condition": "same content_slug as the unfinished series",
+   "decision_id": "D-d0a5af12e2ac",
+   "arm": "holdout",
+   "eligibility": {
+    "context": {
+     "furthest": [
+      1,
+      1
+     ],
+     "series_slug": "jakasa-dapi-d3"
+    },
+    "evidence": [
+     "goal_rule:G07-r1",
+     "event:2f1f5edd-52e9-44af-8391-e2f4c24f42fc",
+     "event:e3b465de-ba19-4dc8-b1a9-7654195cc67a",
+     "event:abbdc460-ce9e-4b0c-80ef-64cc7791a161"
+    ],
+    "reason": "series jakasa-dapi-d3 reached S1E1 of S2E12, idle 15.2 days"
+   },
+   "closed_at": null,
+   "close_reason": null,
+   "outcome": null,
+   "history": [
+    {
+     "at": "2026-10-01T14:03:40.721Z",
+     "change": "opened",
+     "reason": "series jakasa-dapi-d3 reached S1E1 of S2E12, idle 15.2 days"
+    }
+   ]
+  }
+ ],
+ "decisions": [
+  {
+   "decision_id": "D-d0a5af12e2ac",
+   "trigger": "b9f12995-86cf-4f85-9f64-7cf66bcd3574",
+   "deliver_at": "2026-10-01T14:03:40.721Z",
+   "status": "HOLDOUT",
+   "action": "NONE",
+   "goal": "G07",
+   "reason": "holdout arm: no agent action of any kind (goal tracked only so outcomes can be compared with the agent arm)"
+  }
+ ],
+ "actions": [],
+ "outcomes": [
+  {
+   "arm": "holdout",
+   "attribution": "n/a",
+   "deadline": "2026-10-04T14:03:40.721Z",
+   "decision_id": "D-d0a5af12e2ac",
+   "evidence": [],
+   "exposures_before_success": [],
+   "exposures_window": [],
+   "final": true,
+   "goal_id": "G07",
+   "goal_instance_id": "GI-563940eca8c8",
+   "goal_status_in_replay": "open",
+   "judged_at": "2026-10-15T17:58:40.000Z",
+   "observed_until": "2026-10-15T17:58:40.000Z",
+   "reason": "no qualifying play_started between 2026-10-01T14:03:40.721Z and 2026-10-04T14:03:40.721Z",
+   "result": "failed",
+   "rule_history": [
+    {
+     "at": "2026-10-01T14:03:40.721Z",
+     "change": "opened",
+     "reason": "series jakasa-dapi-d3 reached S1E1 of S2E12, idle 15.2 days"
+    }
+   ],
+   "rule_version": "G07-r1",
+   "started_at": "2026-10-01T14:03:40.721Z",
+   "success_condition": "same content_slug as the unfinished series",
+   "success_signal": "play_started",
+   "user_id": "U-02046"
+  }
+ ],
+ "learning": {
+  "actions": {},
+  "goal_results": [
+   {
+    "attribution": "n/a",
+    "goal_id": "G07",
+    "instance_id": "GI-563940eca8c8",
+    "result": "failed"
+   }
+  ],
+  "messages": {},
+  "notes": [],
+  "pages": {
+   "published": 0,
+   "shown_personalised": 0
+  }
+ },
+ "audit": [
+  {
+   "at": "2026-10-01T14:05:59.553Z",
+   "kind": "purchase_after_decision",
+   "cancelled": [],
+   "event": "event:e54b2e25-09a7-4355-a5c4-a67be257f0ba",
+   "goal_closed": null,
+   "replan": "goal G07 kept: its eligibility does not depend on subscription status; subscription now active for later decisions"
+  }
+ ]
+}

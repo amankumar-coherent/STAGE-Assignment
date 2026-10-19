@@ -1,0 +1,290 @@
+{
+ "viewer_id": "U-00680",
+ "arm": "holdout",
+ "as_of": "2026-10-01T18:31:25.944Z",
+ "facts": {
+  "user_id": "U-00680",
+  "as_of": "2026-10-01T18:31:25.944Z",
+  "profile_present": true,
+  "history_start": "2026-08-31T18:31:55.380Z",
+  "history_covers_lifetime": false,
+  "events_seen": 23,
+  "facts": {
+   "dialect": {
+    "name": "dialect",
+    "value": null,
+    "source": "unknown",
+    "source_ref": null,
+    "source_time": null,
+    "freshness": "unknown",
+    "age_s": null,
+    "rule": "trigger carries no valid app_dialect (raw=None); the page the app will request is unknown, so no alternative is substituted",
+    "conflicts": [
+     {
+      "value": "d3",
+      "source": "profile",
+      "source_ref": "profile:U-00680@2026-09-29T13:32:42.041Z",
+      "resolution": "not used: cannot confirm it is the current app setting"
+     },
+     {
+      "value": "d1",
+      "source": "app_setting_earlier",
+      "source_ref": "event:319483a8-7eb7-42b4-9cf2-c7f920670cba",
+      "resolution": "not used: cannot confirm it is the current app setting"
+     }
+    ],
+    "supported": false
+   },
+   "ever_paid": {
+    "name": "ever_paid",
+    "value": false,
+    "source": "profile",
+    "source_ref": "profile:U-00680@2026-09-29T13:32:42.041Z",
+    "source_time": "2026-09-29T13:32:42.041Z",
+    "freshness": "aging",
+    "age_s": 190723.9,
+    "rule": "any paid purchase/renewal event or a paid status on any profile row",
+    "conflicts": [],
+    "supported": true
+   },
+   "history_covers_lifetime": {
+    "name": "history_covers_lifetime",
+    "value": false,
+    "source": "derived",
+    "source_ref": "profile:U-00680@2026-09-29T13:32:42.041Z",
+    "source_time": "2026-09-29T13:32:42.041Z",
+    "freshness": "unknown",
+    "age_s": null,
+    "rule": "signup_at >= first observable event (2026-08-31T18:31:55.380Z); 'never did X' claims need full coverage",
+    "conflicts": [],
+    "supported": true
+   },
+   "last_app_open_before_trigger": {
+    "name": "last_app_open_before_trigger",
+    "value": "2026-10-01T13:06:18.279Z",
+    "source": "event",
+    "source_ref": "event:511f5f71-61fd-475c-a9b3-afaeb0886e61",
+    "source_time": "2026-10-01T13:06:18.279Z",
+    "freshness": "fresh",
+    "age_s": 19507.7,
+    "rule": "latest app_open in another session, ordered by server-anchored occurrence time",
+    "conflicts": [],
+    "supported": true
+   },
+   "profile_present": {
+    "name": "profile_present",
+    "value": true,
+    "source": "profile",
+    "source_ref": "profile:U-00680@2026-09-29T13:32:42.041Z",
+    "source_time": "2026-09-29T13:32:42.041Z",
+    "freshness": "aging",
+    "age_s": 190723.9,
+    "rule": "newest updated_at among snapshot rows",
+    "conflicts": [],
+    "supported": true
+   },
+   "push_consent": {
+    "name": "push_consent",
+    "value": true,
+    "source": "profile",
+    "source_ref": "profile:U-00680@2026-09-29T13:32:42.041Z",
+    "source_time": "2026-09-29T13:32:42.041Z",
+    "freshness": "aging",
+    "age_s": 190723.9,
+    "rule": "newest profile row notifications_opt_in",
+    "conflicts": [],
+    "supported": true
+   },
+   "signup_at": {
+    "name": "signup_at",
+    "value": "2025-03-06T16:26:08.380Z",
+    "source": "profile",
+    "source_ref": "profile:U-00680@2026-09-29T13:32:42.041Z",
+    "source_time": "2026-09-29T13:32:42.041Z",
+    "freshness": "aging",
+    "age_s": 190723.9,
+    "rule": "profile.signup_at (no signup event observed)",
+    "conflicts": [],
+    "supported": true
+   },
+   "subscription_status": {
+    "name": "subscription_status",
+    "value": "never",
+    "source": "profile",
+    "source_ref": "profile:U-00680@2026-09-29T13:32:42.041Z",
+    "source_time": "2026-09-29T13:32:42.041Z",
+    "freshness": "aging",
+    "age_s": 190723.9,
+    "rule": "newest profile row (no newer subscription event)",
+    "conflicts": [],
+    "supported": true
+   },
+   "whatsapp_consent": {
+    "name": "whatsapp_consent",
+    "value": true,
+    "source": "profile",
+    "source_ref": "profile:U-00680@2026-09-29T13:32:42.041Z",
+    "source_time": "2026-09-29T13:32:42.041Z",
+    "freshness": "aging",
+    "age_s": 190723.9,
+    "rule": "newest profile row whatsapp_opt_in",
+    "conflicts": [],
+    "supported": true
+   }
+  },
+  "watch": {
+   "plays": 1,
+   "completions": 1,
+   "watched_slugs": [
+    "hate-d1"
+   ],
+   "top_genres": [
+    "Comedy",
+    "Devotional"
+   ],
+   "play_days_recent": [],
+   "series": [
+    {
+     "slug": "hate-d1",
+     "furthest": [
+      1,
+      1
+     ],
+     "last_episode": [
+      1,
+      34
+     ],
+     "last_play": "2026-09-17T14:06:50.878Z"
+    }
+   ]
+  },
+  "learning": {
+   "actions": {},
+   "goal_results": [
+    {
+     "attribution": "n/a",
+     "goal_id": "G07",
+     "instance_id": "GI-45b868082e30",
+     "result": "failed"
+    }
+   ],
+   "messages": {},
+   "notes": [],
+   "pages": {
+    "published": 0,
+    "shown_personalised": 0
+   }
+  }
+ },
+ "goals": [
+  {
+   "instance_id": "GI-45b868082e30",
+   "user_id": "U-00680",
+   "goal_id": "G07",
+   "rule_version": "G07-r1",
+   "status": "open",
+   "started_at": "2026-10-01T13:06:18.279Z",
+   "deadline": "2026-10-04T13:06:18.279Z",
+   "success_event": "play_started",
+   "success_condition": "same content_slug as the unfinished series",
+   "decision_id": "D-7828aa47ef0d",
+   "arm": "holdout",
+   "eligibility": {
+    "context": {
+     "furthest": [
+      1,
+      1
+     ],
+     "series_slug": "hate-d1"
+    },
+    "evidence": [
+     "goal_rule:G07-r1",
+     "event:c73894e0-59e9-4478-80f7-bd725339f573",
+     "event:e597439d-65c0-4151-9a6f-65e59c87e3b8",
+     "event:76d31143-75b1-4439-ac5f-82e1b0ddedd8"
+    ],
+    "reason": "series hate-d1 reached S1E1 of S1E34, idle 14.0 days"
+   },
+   "closed_at": null,
+   "close_reason": null,
+   "outcome": null,
+   "history": [
+    {
+     "at": "2026-10-01T13:06:18.279Z",
+     "change": "opened",
+     "reason": "series hate-d1 reached S1E1 of S1E34, idle 14.0 days"
+    }
+   ]
+  }
+ ],
+ "decisions": [
+  {
+   "decision_id": "D-c2a1fdeae95d",
+   "trigger": "319483a8-7eb7-42b4-9cf2-c7f920670cba",
+   "deliver_at": "2026-10-01T04:45:02.591Z",
+   "status": "HOLDOUT",
+   "action": "NONE",
+   "goal": null,
+   "reason": "holdout arm: no agent action of any kind (goal tracked only so outcomes can be compared with the agent arm)"
+  },
+  {
+   "decision_id": "D-7828aa47ef0d",
+   "trigger": "511f5f71-61fd-475c-a9b3-afaeb0886e61",
+   "deliver_at": "2026-10-01T13:06:18.279Z",
+   "status": "HOLDOUT",
+   "action": "NONE",
+   "goal": "G07",
+   "reason": "holdout arm: no agent action of any kind (goal tracked only so outcomes can be compared with the agent arm)"
+  }
+ ],
+ "actions": [],
+ "outcomes": [
+  {
+   "arm": "holdout",
+   "attribution": "n/a",
+   "deadline": "2026-10-04T13:06:18.279Z",
+   "decision_id": "D-7828aa47ef0d",
+   "evidence": [],
+   "exposures_before_success": [],
+   "exposures_window": [],
+   "final": true,
+   "goal_id": "G07",
+   "goal_instance_id": "GI-45b868082e30",
+   "goal_status_in_replay": "open",
+   "judged_at": "2026-10-15T17:58:40.000Z",
+   "observed_until": "2026-10-15T17:58:40.000Z",
+   "reason": "no qualifying play_started between 2026-10-01T13:06:18.279Z and 2026-10-04T13:06:18.279Z",
+   "result": "failed",
+   "rule_history": [
+    {
+     "at": "2026-10-01T13:06:18.279Z",
+     "change": "opened",
+     "reason": "series hate-d1 reached S1E1 of S1E34, idle 14.0 days"
+    }
+   ],
+   "rule_version": "G07-r1",
+   "started_at": "2026-10-01T13:06:18.279Z",
+   "success_condition": "same content_slug as the unfinished series",
+   "success_signal": "play_started",
+   "user_id": "U-00680"
+  }
+ ],
+ "learning": {
+  "actions": {},
+  "goal_results": [
+   {
+    "attribution": "n/a",
+    "goal_id": "G07",
+    "instance_id": "GI-45b868082e30",
+    "result": "failed"
+   }
+  ],
+  "messages": {},
+  "notes": [],
+  "pages": {
+   "published": 0,
+   "shown_personalised": 0
+  }
+ },
+ "audit": []
+}

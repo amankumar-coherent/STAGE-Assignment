@@ -1,0 +1,184 @@
+{
+  "version": "2026-09-30",
+  "notes": "One active goal per user at a time. A goal window starts when the agent commits to the goal. All times are UTC unless a field says IST.",
+  "goals": [
+    {
+      "goal_id": "G01",
+      "name": "first_play_24h",
+      "description": "A new user starts any episode within 24 hours.",
+      "eligibility": {
+        "text": "Signed up in the last 7 days and has never started a play.",
+        "signed_up_within_days": 7,
+        "requires_no_prior_event": "play_started"
+      },
+      "success": {
+        "event": "play_started",
+        "condition": "any title",
+        "window_hours": 24
+      }
+    },
+    {
+      "goal_id": "G02",
+      "name": "first_full_episode_3d",
+      "description": "The user finishes a whole episode (90% or more) for the first time.",
+      "eligibility": {
+        "text": "Has never completed an episode.",
+        "requires_no_prior_event": "episode_completed"
+      },
+      "success": {
+        "event": "episode_completed",
+        "condition": "any episode",
+        "window_hours": 72
+      }
+    },
+    {
+      "goal_id": "G03",
+      "name": "second_day_return_2d",
+      "description": "A new user comes back on a second day.",
+      "eligibility": {
+        "text": "Signed up in the last 2 days.",
+        "signed_up_within_days": 2
+      },
+      "success": {
+        "event": "app_open",
+        "condition": "on a later IST calendar day than the goal start",
+        "window_hours": 48
+      }
+    },
+    {
+      "goal_id": "G04",
+      "name": "trial_to_paid_7d",
+      "description": "A user on a trial moves to a paid plan.",
+      "eligibility": {
+        "text": "Subscription status is trial_active.",
+        "subscription_status": [
+          "trial_active"
+        ]
+      },
+      "success": {
+        "event": "purchase_completed",
+        "condition": "is_trial = false",
+        "window_hours": 168
+      }
+    },
+    {
+      "goal_id": "G05",
+      "name": "first_paid_7d",
+      "description": "A user who has never paid buys a first paid plan.",
+      "eligibility": {
+        "text": "Has never had a paid plan.",
+        "subscription_status": [
+          "never"
+        ]
+      },
+      "success": {
+        "event": "purchase_completed",
+        "condition": "is_trial = false",
+        "window_hours": 168
+      }
+    },
+    {
+      "goal_id": "G06",
+      "name": "reactivate_lapsed_14d",
+      "description": "A recently lapsed subscriber buys again.",
+      "eligibility": {
+        "text": "Subscription recently lapsed.",
+        "subscription_status": [
+          "lapsed"
+        ]
+      },
+      "success": {
+        "event": "purchase_completed",
+        "condition": "any paid plan",
+        "window_hours": 336
+      }
+    },
+    {
+      "goal_id": "G07",
+      "name": "resume_series_3d",
+      "description": "The user continues a series they left unfinished.",
+      "eligibility": {
+        "text": "Started a show or micro-drama, has unwatched episodes left, and has not played it for 3 or more days."
+      },
+      "success": {
+        "event": "play_started",
+        "condition": "same content_slug as the unfinished series",
+        "window_hours": 72
+      }
+    },
+    {
+      "goal_id": "G08",
+      "name": "try_new_release_7d",
+      "description": "A subscriber plays a recent release.",
+      "eligibility": {
+        "text": "Active subscriber.",
+        "subscription_status": [
+          "active"
+        ]
+      },
+      "success": {
+        "event": "play_started",
+        "condition": "a title released in the 30 days before the goal start",
+        "window_hours": 168
+      }
+    },
+    {
+      "goal_id": "G09",
+      "name": "weekly_habit_14d",
+      "description": "A subscriber who rarely watches builds a habit.",
+      "eligibility": {
+        "text": "Active subscriber with plays on at most 1 day in the last 14 days.",
+        "subscription_status": [
+          "active"
+        ]
+      },
+      "success": {
+        "event": "play_started",
+        "condition": "on 3 distinct IST days",
+        "window_hours": 336
+      }
+    },
+    {
+      "goal_id": "G10",
+      "name": "meaningful_engagement_7d",
+      "description": "The user engages meaningfully with the app.",
+      "eligibility": {
+        "text": "Any user."
+      },
+      "success": {
+        "event": null,
+        "condition": "engages meaningfully",
+        "window_hours": 168
+      }
+    },
+    {
+      "goal_id": "G11",
+      "name": "tv_activation_14d",
+      "description": "A subscriber starts watching on the TV app.",
+      "eligibility": {
+        "text": "Active subscriber.",
+        "subscription_status": [
+          "active"
+        ]
+      },
+      "success": {
+        "event": "tv_app_open",
+        "condition": "any",
+        "window_hours": 336
+      }
+    },
+    {
+      "goal_id": "G12",
+      "name": "return_after_absence_7d",
+      "description": "A user who had stopped visiting plays again.",
+      "eligibility": {
+        "text": "No app_open in the 14 days before the trigger."
+      },
+      "success": {
+        "event": "play_started",
+        "condition": "any title",
+        "window_hours": 168
+      }
+    }
+  ]
+}

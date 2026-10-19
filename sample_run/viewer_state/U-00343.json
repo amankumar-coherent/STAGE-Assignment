@@ -1,0 +1,392 @@
+{
+ "viewer_id": "U-00343",
+ "arm": "agent",
+ "as_of": "2026-10-01T18:31:25.944Z",
+ "facts": {
+  "user_id": "U-00343",
+  "as_of": "2026-10-01T18:31:25.944Z",
+  "profile_present": true,
+  "history_start": "2026-08-31T18:31:55.380Z",
+  "history_covers_lifetime": false,
+  "events_seen": 52,
+  "facts": {
+   "dialect": {
+    "name": "dialect",
+    "value": null,
+    "source": "unknown",
+    "source_ref": null,
+    "source_time": null,
+    "freshness": "unknown",
+    "age_s": null,
+    "rule": "trigger carries no valid app_dialect (raw=None); the page the app will request is unknown, so no alternative is substituted",
+    "conflicts": [
+     {
+      "value": "d3",
+      "source": "profile",
+      "source_ref": "profile:U-00343@2026-09-29T06:48:17.874Z",
+      "resolution": "not used: cannot confirm it is the current app setting"
+     },
+     {
+      "value": "d3",
+      "source": "app_setting_earlier",
+      "source_ref": "event:43813b63-139a-4137-9e71-7b9b13ef5d18",
+      "resolution": "not used: cannot confirm it is the current app setting"
+     }
+    ],
+    "supported": false
+   },
+   "ever_paid": {
+    "name": "ever_paid",
+    "value": true,
+    "source": "event",
+    "source_ref": "event:78b21df5-83a0-4c19-a2fa-48b0f5af3ccc",
+    "source_time": "2026-10-01T03:58:44.267Z",
+    "freshness": "fresh",
+    "age_s": 52361.7,
+    "rule": "any paid purchase/renewal event or a paid status on any profile row",
+    "conflicts": [],
+    "supported": true
+   },
+   "history_covers_lifetime": {
+    "name": "history_covers_lifetime",
+    "value": false,
+    "source": "derived",
+    "source_ref": "profile:U-00343@2026-09-29T06:48:17.874Z",
+    "source_time": "2026-09-29T06:48:17.874Z",
+    "freshness": "unknown",
+    "age_s": null,
+    "rule": "signup_at >= first observable event (2026-08-31T18:31:55.380Z); 'never did X' claims need full coverage",
+    "conflicts": [],
+    "supported": true
+   },
+   "last_app_open_before_trigger": {
+    "name": "last_app_open_before_trigger",
+    "value": "2026-10-01T15:03:17.841Z",
+    "source": "event",
+    "source_ref": "event:43813b63-139a-4137-9e71-7b9b13ef5d18",
+    "source_time": "2026-10-01T15:03:17.841Z",
+    "freshness": "fresh",
+    "age_s": 12488.1,
+    "rule": "latest app_open in another session, ordered by server-anchored occurrence time",
+    "conflicts": [],
+    "supported": true
+   },
+   "profile_present": {
+    "name": "profile_present",
+    "value": true,
+    "source": "profile",
+    "source_ref": "profile:U-00343@2026-09-29T06:48:17.874Z",
+    "source_time": "2026-09-29T06:48:17.874Z",
+    "freshness": "aging",
+    "age_s": 214988.1,
+    "rule": "newest updated_at among snapshot rows",
+    "conflicts": [],
+    "supported": true
+   },
+   "push_consent": {
+    "name": "push_consent",
+    "value": false,
+    "source": "profile",
+    "source_ref": "profile:U-00343@2026-09-29T06:48:17.874Z",
+    "source_time": "2026-09-29T06:48:17.874Z",
+    "freshness": "aging",
+    "age_s": 214988.1,
+    "rule": "newest profile row notifications_opt_in",
+    "conflicts": [],
+    "supported": true
+   },
+   "signup_at": {
+    "name": "signup_at",
+    "value": "2026-03-07T16:37:30.980Z",
+    "source": "profile",
+    "source_ref": "profile:U-00343@2026-09-29T06:48:17.874Z",
+    "source_time": "2026-09-29T06:48:17.874Z",
+    "freshness": "aging",
+    "age_s": 214988.1,
+    "rule": "profile.signup_at (no signup event observed)",
+    "conflicts": [],
+    "supported": true
+   },
+   "subscription_status": {
+    "name": "subscription_status",
+    "value": "active",
+    "source": "event",
+    "source_ref": "event:78b21df5-83a0-4c19-a2fa-48b0f5af3ccc",
+    "source_time": "2026-10-01T03:58:44.267Z",
+    "freshness": "fresh",
+    "age_s": 52361.7,
+    "rule": "subscription event newer than the profile row overrides it",
+    "conflicts": [
+     {
+      "value": "never",
+      "source": "profile",
+      "source_ref": "profile:U-00343@2026-09-29T06:48:17.874Z",
+      "resolution": "older than purchase_completed"
+     }
+    ],
+    "supported": true
+   },
+   "whatsapp_consent": {
+    "name": "whatsapp_consent",
+    "value": true,
+    "source": "profile",
+    "source_ref": "profile:U-00343@2026-09-29T06:48:17.874Z",
+    "source_time": "2026-09-29T06:48:17.874Z",
+    "freshness": "aging",
+    "age_s": 214988.1,
+    "rule": "newest profile row whatsapp_opt_in",
+    "conflicts": [],
+    "supported": true
+   }
+  },
+  "watch": {
+   "plays": 5,
+   "completions": 3,
+   "watched_slugs": [
+    "digi-mone-d3",
+    "rate-java-d3",
+    "yatite-roloda-d3"
+   ],
+   "top_genres": [
+    "Romance",
+    "Drama",
+    "Comedy"
+   ],
+   "play_days_recent": [
+    "2026-09-19",
+    "2026-09-21",
+    "2026-09-26"
+   ],
+   "series": [
+    {
+     "slug": "yatite-roloda-d3",
+     "furthest": [
+      1,
+      1
+     ],
+     "last_episode": [
+      1,
+      23
+     ],
+     "last_play": "2026-09-19T03:45:45.291Z"
+    },
+    {
+     "slug": "digi-mone-d3",
+     "furthest": [
+      1,
+      2
+     ],
+     "last_episode": [
+      1,
+      32
+     ],
+     "last_play": "2026-09-26T02:46:12.431Z"
+    },
+    {
+     "slug": "rate-java-d3",
+     "furthest": [
+      1,
+      1
+     ],
+     "last_episode": [
+      1,
+      1
+     ],
+     "last_play": "2026-09-21T12:48:12.550Z"
+    }
+   ]
+  },
+  "learning": {
+   "actions": {
+    "home_page": {
+     "published": 2
+    },
+    "whatsapp": {
+     "sent": 1
+    }
+   },
+   "goal_results": [
+    {
+     "attribution": "n/a",
+     "goal_id": "G07",
+     "instance_id": "GI-6b4ba9f0cb3e",
+     "result": "failed"
+    }
+   ],
+   "messages": {
+    "whatsapp": {
+     "clicked": 0,
+     "delivered": 1,
+     "failed": {}
+    }
+   },
+   "notes": [],
+   "pages": {
+    "published": 2,
+    "shown_personalised": 2
+   }
+  }
+ },
+ "goals": [
+  {
+   "instance_id": "GI-6b4ba9f0cb3e",
+   "user_id": "U-00343",
+   "goal_id": "G07",
+   "rule_version": "G07-r1",
+   "status": "open",
+   "started_at": "2026-10-01T03:56:47.443Z",
+   "deadline": "2026-10-04T03:56:47.443Z",
+   "success_event": "play_started",
+   "success_condition": "same content_slug as the unfinished series",
+   "decision_id": "D-ff81bff33d11",
+   "arm": "agent",
+   "eligibility": {
+    "context": {
+     "furthest": [
+      1,
+      2
+     ],
+     "series_slug": "digi-mone-d3"
+    },
+    "evidence": [
+     "goal_rule:G07-r1",
+     "event:c012ebf5-bbe4-413f-8078-caad896409a0",
+     "event:b7f531b2-3e73-470f-9383-4af8db910340",
+     "event:7e5de2e6-aefa-4eb6-a36b-33a31148d9cf"
+    ],
+    "reason": "series digi-mone-d3 reached S1E2 of S1E32, idle 5.0 days"
+   },
+   "closed_at": null,
+   "close_reason": null,
+   "outcome": null,
+   "history": [
+    {
+     "at": "2026-10-01T03:56:47.443Z",
+     "change": "opened",
+     "reason": "series digi-mone-d3 reached S1E2 of S1E32, idle 5.0 days"
+    }
+   ]
+  }
+ ],
+ "decisions": [
+  {
+   "decision_id": "D-ff81bff33d11",
+   "trigger": "a9c9152f-bd2f-4c97-93e0-388b4aebd4fd",
+   "deliver_at": "2026-10-01T03:56:47.443Z",
+   "status": "PUBLISHED",
+   "action": "HOME_PAGE+WHATSAPP",
+   "goal": "G07",
+   "reason": null
+  },
+  {
+   "decision_id": "D-aaf7aefff24d",
+   "trigger": "43813b63-139a-4137-9e71-7b9b13ef5d18",
+   "deliver_at": "2026-10-01T15:03:17.841Z",
+   "status": "PUBLISHED",
+   "action": "HOME_PAGE",
+   "goal": "G07",
+   "reason": null
+  }
+ ],
+ "actions": [
+  {
+   "action_id": "A-2a3a46f90f85",
+   "type": "home_page",
+   "status": "published",
+   "status_reason": null,
+   "published_at": "2026-10-01T03:56:48.163Z",
+   "send_at": null
+  },
+  {
+   "action_id": "A-78fafe7b136f",
+   "type": "whatsapp",
+   "status": "sent",
+   "status_reason": "revalidated at send time",
+   "published_at": "2026-10-01T03:56:48.163Z",
+   "send_at": "2026-10-01T06:56:50.160Z"
+  },
+  {
+   "action_id": "A-165f1e668734",
+   "type": "home_page",
+   "status": "published",
+   "status_reason": null,
+   "published_at": "2026-10-01T15:03:17.857Z",
+   "send_at": null
+  }
+ ],
+ "outcomes": [
+  {
+   "arm": "agent",
+   "attribution": "n/a",
+   "deadline": "2026-10-04T03:56:47.443Z",
+   "decision_id": "D-ff81bff33d11",
+   "evidence": [],
+   "exposures_before_success": [],
+   "exposures_window": [
+    "event:oua-002432",
+    "event:oua-002436",
+    "event:oua-002435"
+   ],
+   "final": true,
+   "goal_id": "G07",
+   "goal_instance_id": "GI-6b4ba9f0cb3e",
+   "goal_status_in_replay": "open",
+   "judged_at": "2026-10-15T17:58:40.000Z",
+   "observed_until": "2026-10-15T17:58:40.000Z",
+   "reason": "no qualifying play_started between 2026-10-01T03:56:47.443Z and 2026-10-04T03:56:47.443Z",
+   "result": "failed",
+   "rule_history": [
+    {
+     "at": "2026-10-01T03:56:47.443Z",
+     "change": "opened",
+     "reason": "series digi-mone-d3 reached S1E2 of S1E32, idle 5.0 days"
+    }
+   ],
+   "rule_version": "G07-r1",
+   "started_at": "2026-10-01T03:56:47.443Z",
+   "success_condition": "same content_slug as the unfinished series",
+   "success_signal": "play_started",
+   "user_id": "U-00343"
+  }
+ ],
+ "learning": {
+  "actions": {
+   "home_page": {
+    "published": 2
+   },
+   "whatsapp": {
+    "sent": 1
+   }
+  },
+  "goal_results": [
+   {
+    "attribution": "n/a",
+    "goal_id": "G07",
+    "instance_id": "GI-6b4ba9f0cb3e",
+    "result": "failed"
+   }
+  ],
+  "messages": {
+   "whatsapp": {
+    "clicked": 0,
+    "delivered": 1,
+    "failed": {}
+   }
+  },
+  "notes": [],
+  "pages": {
+   "published": 2,
+   "shown_personalised": 2
+  }
+ },
+ "audit": [
+  {
+   "at": "2026-10-01T03:58:44.267Z",
+   "kind": "purchase_after_decision",
+   "cancelled": [],
+   "event": "event:78b21df5-83a0-4c19-a2fa-48b0f5af3ccc",
+   "goal_closed": null,
+   "replan": "goal G07 kept: its eligibility does not depend on subscription status; subscription now active for later decisions"
+  }
+ ]
+}

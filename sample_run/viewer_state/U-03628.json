@@ -1,0 +1,327 @@
+{
+ "viewer_id": "U-03628",
+ "arm": "holdout",
+ "as_of": "2026-10-01T18:31:25.944Z",
+ "facts": {
+  "user_id": "U-03628",
+  "as_of": "2026-10-01T18:31:25.944Z",
+  "profile_present": true,
+  "history_start": "2026-08-31T18:31:55.380Z",
+  "history_covers_lifetime": false,
+  "events_seen": 69,
+  "facts": {
+   "dialect": {
+    "name": "dialect",
+    "value": null,
+    "source": "unknown",
+    "source_ref": null,
+    "source_time": null,
+    "freshness": "unknown",
+    "age_s": null,
+    "rule": "trigger carries no valid app_dialect (raw=None); the page the app will request is unknown, so no alternative is substituted",
+    "conflicts": [
+     {
+      "value": "d2",
+      "source": "profile",
+      "source_ref": "profile:U-03628@2026-09-29T05:45:40.638Z",
+      "resolution": "not used: cannot confirm it is the current app setting"
+     },
+     {
+      "value": "d5",
+      "source": "app_setting_earlier",
+      "source_ref": "event:1ccdc92f-de17-40c8-b917-94e0dc8d8bb8",
+      "resolution": "not used: cannot confirm it is the current app setting"
+     }
+    ],
+    "supported": false
+   },
+   "ever_paid": {
+    "name": "ever_paid",
+    "value": true,
+    "source": "event",
+    "source_ref": "event:56a87c31-53d5-4250-9fda-f1d901281282",
+    "source_time": "2026-09-29T05:45:40.638Z",
+    "freshness": "aging",
+    "age_s": 218745.3,
+    "rule": "any paid purchase/renewal event or a paid status on any profile row",
+    "conflicts": [],
+    "supported": true
+   },
+   "history_covers_lifetime": {
+    "name": "history_covers_lifetime",
+    "value": false,
+    "source": "derived",
+    "source_ref": "profile:U-03628@2026-09-29T05:45:40.638Z",
+    "source_time": "2026-09-29T05:45:40.638Z",
+    "freshness": "unknown",
+    "age_s": null,
+    "rule": "signup_at >= first observable event (2026-08-31T18:31:55.380Z); 'never did X' claims need full coverage",
+    "conflicts": [],
+    "supported": true
+   },
+   "last_app_open_before_trigger": {
+    "name": "last_app_open_before_trigger",
+    "value": "2026-10-01T11:57:48.659Z",
+    "source": "event",
+    "source_ref": "event:1ccdc92f-de17-40c8-b917-94e0dc8d8bb8",
+    "source_time": "2026-10-01T11:57:48.659Z",
+    "freshness": "fresh",
+    "age_s": 23617.3,
+    "rule": "latest app_open in another session, ordered by server-anchored occurrence time",
+    "conflicts": [],
+    "supported": true
+   },
+   "profile_present": {
+    "name": "profile_present",
+    "value": true,
+    "source": "profile",
+    "source_ref": "profile:U-03628@2026-09-29T05:45:40.638Z",
+    "source_time": "2026-09-29T05:45:40.638Z",
+    "freshness": "aging",
+    "age_s": 218745.3,
+    "rule": "newest updated_at among snapshot rows",
+    "conflicts": [],
+    "supported": true
+   },
+   "push_consent": {
+    "name": "push_consent",
+    "value": false,
+    "source": "profile",
+    "source_ref": "profile:U-03628@2026-09-29T05:45:40.638Z",
+    "source_time": "2026-09-29T05:45:40.638Z",
+    "freshness": "aging",
+    "age_s": 218745.3,
+    "rule": "newest profile row notifications_opt_in",
+    "conflicts": [],
+    "supported": true
+   },
+   "signup_at": {
+    "name": "signup_at",
+    "value": "2025-11-02T08:33:03.014Z",
+    "source": "profile",
+    "source_ref": "profile:U-03628@2026-09-29T05:45:40.638Z",
+    "source_time": "2026-09-29T05:45:40.638Z",
+    "freshness": "aging",
+    "age_s": 218745.3,
+    "rule": "profile.signup_at (no signup event observed)",
+    "conflicts": [],
+    "supported": true
+   },
+   "subscription_status": {
+    "name": "subscription_status",
+    "value": "active",
+    "source": "profile",
+    "source_ref": "profile:U-03628@2026-09-29T05:45:40.638Z",
+    "source_time": "2026-09-29T05:45:40.638Z",
+    "freshness": "aging",
+    "age_s": 218745.3,
+    "rule": "newest profile row (no newer subscription event)",
+    "conflicts": [],
+    "supported": true
+   },
+   "whatsapp_consent": {
+    "name": "whatsapp_consent",
+    "value": true,
+    "source": "profile",
+    "source_ref": "profile:U-03628@2026-09-29T05:45:40.638Z",
+    "source_time": "2026-09-29T05:45:40.638Z",
+    "freshness": "aging",
+    "age_s": 218745.3,
+    "rule": "newest profile row whatsapp_opt_in",
+    "conflicts": [],
+    "supported": true
+   }
+  },
+  "watch": {
+   "plays": 7,
+   "completions": 4,
+   "watched_slugs": [
+    "gubava-gihaya-d5",
+    "gudha-bati-d5",
+    "nigi-risa-d5",
+    "yatite-roloda-d3"
+   ],
+   "top_genres": [
+    "Romance",
+    "Devotional",
+    "Drama",
+    "Comedy"
+   ],
+   "play_days_recent": [
+    "2026-09-19",
+    "2026-09-24",
+    "2026-09-25",
+    "2026-09-30"
+   ],
+   "series": [
+    {
+     "slug": "yatite-roloda-d3",
+     "furthest": [
+      1,
+      3
+     ],
+     "last_episode": [
+      1,
+      23
+     ],
+     "last_play": "2026-09-24T11:36:55.352Z"
+    },
+    {
+     "slug": "gubava-gihaya-d5",
+     "furthest": [
+      1,
+      1
+     ],
+     "last_episode": [
+      1,
+      29
+     ],
+     "last_play": "2026-09-30T14:10:59.102Z"
+    },
+    {
+     "slug": "nigi-risa-d5",
+     "furthest": [
+      1,
+      1
+     ],
+     "last_episode": [
+      1,
+      1
+     ],
+     "last_play": "2026-09-24T10:09:43.591Z"
+    },
+    {
+     "slug": "gudha-bati-d5",
+     "furthest": [
+      1,
+      1
+     ],
+     "last_episode": [
+      1,
+      46
+     ],
+     "last_play": "2026-09-25T05:38:37.222Z"
+    }
+   ]
+  },
+  "learning": {
+   "actions": {},
+   "goal_results": [
+    {
+     "attribution": "n/a",
+     "goal_id": "G07",
+     "instance_id": "GI-69f95be01a87",
+     "result": "failed"
+    }
+   ],
+   "messages": {},
+   "notes": [],
+   "pages": {
+    "published": 0,
+    "shown_personalised": 0
+   }
+  }
+ },
+ "goals": [
+  {
+   "instance_id": "GI-69f95be01a87",
+   "user_id": "U-03628",
+   "goal_id": "G07",
+   "rule_version": "G07-r1",
+   "status": "open",
+   "started_at": "2026-10-01T11:57:48.659Z",
+   "deadline": "2026-10-04T11:57:48.659Z",
+   "success_event": "play_started",
+   "success_condition": "same content_slug as the unfinished series",
+   "decision_id": "D-634f4164bb0e",
+   "arm": "holdout",
+   "eligibility": {
+    "context": {
+     "furthest": [
+      1,
+      1
+     ],
+     "series_slug": "gudha-bati-d5"
+    },
+    "evidence": [
+     "goal_rule:G07-r1",
+     "event:6ad3d48e-aa67-49a1-b9f6-5eddcbc22ed0",
+     "event:3fe8b66b-9e58-45da-b96f-49885a542669",
+     "event:77707dae-12de-459d-bd16-a1ad5f8f0e9e"
+    ],
+    "reason": "series gudha-bati-d5 reached S1E1 of S1E46, idle 6.3 days"
+   },
+   "closed_at": null,
+   "close_reason": null,
+   "outcome": null,
+   "history": [
+    {
+     "at": "2026-10-01T11:57:48.659Z",
+     "change": "opened",
+     "reason": "series gudha-bati-d5 reached S1E1 of S1E46, idle 6.3 days"
+    }
+   ]
+  }
+ ],
+ "decisions": [
+  {
+   "decision_id": "D-634f4164bb0e",
+   "trigger": "1ccdc92f-de17-40c8-b917-94e0dc8d8bb8",
+   "deliver_at": "2026-10-01T11:57:48.659Z",
+   "status": "HOLDOUT",
+   "action": "NONE",
+   "goal": "G07",
+   "reason": "holdout arm: no agent action of any kind (goal tracked only so outcomes can be compared with the agent arm)"
+  }
+ ],
+ "actions": [],
+ "outcomes": [
+  {
+   "arm": "holdout",
+   "attribution": "n/a",
+   "deadline": "2026-10-04T11:57:48.659Z",
+   "decision_id": "D-634f4164bb0e",
+   "evidence": [],
+   "exposures_before_success": [],
+   "exposures_window": [],
+   "final": true,
+   "goal_id": "G07",
+   "goal_instance_id": "GI-69f95be01a87",
+   "goal_status_in_replay": "open",
+   "judged_at": "2026-10-15T17:58:40.000Z",
+   "observed_until": "2026-10-15T17:58:40.000Z",
+   "reason": "no qualifying play_started between 2026-10-01T11:57:48.659Z and 2026-10-04T11:57:48.659Z",
+   "result": "failed",
+   "rule_history": [
+    {
+     "at": "2026-10-01T11:57:48.659Z",
+     "change": "opened",
+     "reason": "series gudha-bati-d5 reached S1E1 of S1E46, idle 6.3 days"
+    }
+   ],
+   "rule_version": "G07-r1",
+   "started_at": "2026-10-01T11:57:48.659Z",
+   "success_condition": "same content_slug as the unfinished series",
+   "success_signal": "play_started",
+   "user_id": "U-03628"
+  }
+ ],
+ "learning": {
+  "actions": {},
+  "goal_results": [
+   {
+    "attribution": "n/a",
+    "goal_id": "G07",
+    "instance_id": "GI-69f95be01a87",
+    "result": "failed"
+   }
+  ],
+  "messages": {},
+  "notes": [],
+  "pages": {
+   "published": 0,
+   "shown_personalised": 0
+  }
+ },
+ "audit": []
+}

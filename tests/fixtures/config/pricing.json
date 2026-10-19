@@ -1,0 +1,22 @@
+{
+  "currency": "INR",
+  "plans": [
+    {
+      "plan_id": "P_TRIAL",
+      "price_inr": 1,
+      "days": 3,
+      "renews_to": "P_MONTH"
+    },
+    {
+      "plan_id": "P_MONTH",
+      "price_inr": 149,
+      "days": 30
+    },
+    {
+      "plan_id": "P_QUARTER",
+      "price_inr": 399,
+      "days": 90
+    }
+  ],
+  "note": "No other prices, discounts or offers exist."
+}

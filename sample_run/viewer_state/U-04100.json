@@ -1,0 +1,389 @@
+{
+ "viewer_id": "U-04100",
+ "arm": "holdout",
+ "as_of": "2026-10-01T18:31:25.944Z",
+ "facts": {
+  "user_id": "U-04100",
+  "as_of": "2026-10-01T18:31:25.944Z",
+  "profile_present": true,
+  "history_start": "2026-08-31T18:31:55.380Z",
+  "history_covers_lifetime": false,
+  "events_seen": 67,
+  "facts": {
+   "dialect": {
+    "name": "dialect",
+    "value": null,
+    "source": "unknown",
+    "source_ref": null,
+    "source_time": null,
+    "freshness": "unknown",
+    "age_s": null,
+    "rule": "trigger carries no valid app_dialect (raw=None); the page the app will request is unknown, so no alternative is substituted",
+    "conflicts": [
+     {
+      "value": "d2",
+      "source": "profile",
+      "source_ref": "profile:U-04100@2026-09-29T10:38:21.508Z",
+      "resolution": "not used: cannot confirm it is the current app setting"
+     },
+     {
+      "value": "d2",
+      "source": "app_setting_earlier",
+      "source_ref": "event:bf4d139a-e13c-4090-8967-a9a77e3cd90f",
+      "resolution": "not used: cannot confirm it is the current app setting"
+     }
+    ],
+    "supported": false
+   },
+   "ever_paid": {
+    "name": "ever_paid",
+    "value": true,
+    "source": "event",
+    "source_ref": "event:5ea41236-64e1-4a3a-8ffc-61ac4a1d9e04",
+    "source_time": "2026-09-29T10:38:21.508Z",
+    "freshness": "aging",
+    "age_s": 201184.4,
+    "rule": "any paid purchase/renewal event or a paid status on any profile row",
+    "conflicts": [],
+    "supported": true
+   },
+   "history_covers_lifetime": {
+    "name": "history_covers_lifetime",
+    "value": false,
+    "source": "derived",
+    "source_ref": "profile:U-04100@2026-09-29T10:38:21.508Z",
+    "source_time": "2026-09-29T10:38:21.508Z",
+    "freshness": "unknown",
+    "age_s": null,
+    "rule": "signup_at >= first observable event (2026-08-31T18:31:55.380Z); 'never did X' claims need full coverage",
+    "conflicts": [],
+    "supported": true
+   },
+   "last_app_open_before_trigger": {
+    "name": "last_app_open_before_trigger",
+    "value": "2026-10-01T16:44:40.016Z",
+    "source": "event",
+    "source_ref": "event:bf4d139a-e13c-4090-8967-a9a77e3cd90f",
+    "source_time": "2026-10-01T16:44:40.016Z",
+    "freshness": "fresh",
+    "age_s": 6405.9,
+    "rule": "latest app_open in another session, ordered by server-anchored occurrence time",
+    "conflicts": [],
+    "supported": true
+   },
+   "profile_present": {
+    "name": "profile_present",
+    "value": true,
+    "source": "profile",
+    "source_ref": "profile:U-04100@2026-09-29T10:38:21.508Z",
+    "source_time": "2026-09-29T10:38:21.508Z",
+    "freshness": "aging",
+    "age_s": 201184.4,
+    "rule": "newest updated_at among snapshot rows",
+    "conflicts": [],
+    "supported": true
+   },
+   "push_consent": {
+    "name": "push_consent",
+    "value": true,
+    "source": "profile",
+    "source_ref": "profile:U-04100@2026-09-29T10:38:21.508Z",
+    "source_time": "2026-09-29T10:38:21.508Z",
+    "freshness": "aging",
+    "age_s": 201184.4,
+    "rule": "newest profile row notifications_opt_in",
+    "conflicts": [],
+    "supported": true
+   },
+   "signup_at": {
+    "name": "signup_at",
+    "value": "2026-08-15T05:10:42.243Z",
+    "source": "profile",
+    "source_ref": "profile:U-04100@2026-09-29T10:38:21.508Z",
+    "source_time": "2026-09-29T10:38:21.508Z",
+    "freshness": "aging",
+    "age_s": 201184.4,
+    "rule": "profile.signup_at (no signup event observed)",
+    "conflicts": [],
+    "supported": true
+   },
+   "subscription_status": {
+    "name": "subscription_status",
+    "value": "active",
+    "source": "profile",
+    "source_ref": "profile:U-04100@2026-09-29T10:38:21.508Z",
+    "source_time": "2026-09-29T10:38:21.508Z",
+    "freshness": "aging",
+    "age_s": 201184.4,
+    "rule": "newest profile row (no newer subscription event)",
+    "conflicts": [],
+    "supported": true
+   },
+   "whatsapp_consent": {
+    "name": "whatsapp_consent",
+    "value": false,
+    "source": "profile",
+    "source_ref": "profile:U-04100@2026-09-29T10:38:21.508Z",
+    "source_time": "2026-09-29T10:38:21.508Z",
+    "freshness": "aging",
+    "age_s": 201184.4,
+    "rule": "newest profile row whatsapp_opt_in",
+    "conflicts": [],
+    "supported": true
+   }
+  },
+  "watch": {
+   "plays": 9,
+   "completions": 2,
+   "watched_slugs": [
+    "dava-nedi-d2",
+    "dhapipa-gini-d2",
+    "molo-d2",
+    "mopi-vasuva-d2",
+    "piropa-moguti-d2",
+    "tela-sagi-d2"
+   ],
+   "top_genres": [
+    "Romance",
+    "Thriller",
+    "Action",
+    "Comedy",
+    "Devotional"
+   ],
+   "play_days_recent": [
+    "2026-09-19",
+    "2026-09-22",
+    "2026-09-23",
+    "2026-09-25",
+    "2026-09-29"
+   ],
+   "series": [
+    {
+     "slug": "molo-d2",
+     "furthest": [
+      1,
+      1
+     ],
+     "last_episode": [
+      1,
+      7
+     ],
+     "last_play": "2026-09-11T15:09:20.440Z"
+    },
+    {
+     "slug": "dhapipa-gini-d2",
+     "furthest": [
+      1,
+      1
+     ],
+     "last_episode": [
+      1,
+      55
+     ],
+     "last_play": "2026-09-19T09:38:18.443Z"
+    },
+    {
+     "slug": "piropa-moguti-d2",
+     "furthest": [
+      1,
+      1
+     ],
+     "last_episode": [
+      1,
+      22
+     ],
+     "last_play": "2026-09-22T05:08:06.853Z"
+    },
+    {
+     "slug": "dava-nedi-d2",
+     "furthest": [
+      1,
+      1
+     ],
+     "last_episode": [
+      1,
+      1
+     ],
+     "last_play": "2026-09-23T06:10:29.589Z"
+    },
+    {
+     "slug": "mopi-vasuva-d2",
+     "furthest": [
+      1,
+      3
+     ],
+     "last_episode": [
+      1,
+      41
+     ],
+     "last_play": "2026-09-29T09:46:26.627Z"
+    },
+    {
+     "slug": "tela-sagi-d2",
+     "furthest": [
+      1,
+      1
+     ],
+     "last_episode": [
+      1,
+      1
+     ],
+     "last_play": "2026-09-23T18:14:12.691Z"
+    }
+   ]
+  },
+  "learning": {
+   "actions": {},
+   "goal_results": [
+    {
+     "attribution": "n/a",
+     "goal_id": "G07",
+     "instance_id": "GI-a395d3197802",
+     "result": "failed"
+    }
+   ],
+   "messages": {},
+   "notes": [],
+   "pages": {
+    "published": 0,
+    "shown_personalised": 0
+   }
+  }
+ },
+ "goals": [
+  {
+   "instance_id": "GI-a395d3197802",
+   "user_id": "U-04100",
+   "goal_id": "G07",
+   "rule_version": "G07-r1",
+   "status": "open",
+   "started_at": "2026-10-01T03:02:09.991Z",
+   "deadline": "2026-10-04T03:02:09.991Z",
+   "success_event": "play_started",
+   "success_condition": "same content_slug as the unfinished series",
+   "decision_id": "D-5188975aeb58",
+   "arm": "holdout",
+   "eligibility": {
+    "context": {
+     "furthest": [
+      1,
+      1
+     ],
+     "series_slug": "piropa-moguti-d2"
+    },
+    "evidence": [
+     "goal_rule:G07-r1",
+     "event:e0e10ccd-aa57-48fe-b466-b651623e67d0"
+    ],
+    "reason": "series piropa-moguti-d2 reached S1E1 of S1E22, idle 8.9 days"
+   },
+   "closed_at": null,
+   "close_reason": null,
+   "outcome": null,
+   "history": [
+    {
+     "at": "2026-10-01T03:02:09.991Z",
+     "change": "opened",
+     "reason": "series piropa-moguti-d2 reached S1E1 of S1E22, idle 8.9 days"
+    }
+   ]
+  }
+ ],
+ "decisions": [
+  {
+   "decision_id": "D-5188975aeb58",
+   "trigger": "1825aa23-259d-4474-b601-13dd5ae3364a",
+   "deliver_at": "2026-10-01T03:02:09.991Z",
+   "status": "HOLDOUT",
+   "action": "NONE",
+   "goal": "G07",
+   "reason": "holdout arm: no agent action of any kind (goal tracked only so outcomes can be compared with the agent arm)"
+  },
+  {
+   "decision_id": "D-5188975aeb58-dup-a9462a",
+   "trigger": "1825aa23-259d-4474-b601-13dd5ae3364a",
+   "deliver_at": "2026-10-01T03:02:16.217Z",
+   "status": "DUPLICATE_IGNORED",
+   "action": "NONE",
+   "goal": null,
+   "reason": "duplicate delivery (#2) of trigger 1825aa23-259d-4474-b601-13dd5ae3364a; already decided as D-5188975aeb58"
+  },
+  {
+   "decision_id": "D-0833490b152e",
+   "trigger": "bdeeef89-ff73-46fe-8e1b-4fec1fdde99c",
+   "deliver_at": "2026-10-01T06:59:04.683Z",
+   "status": "HOLDOUT",
+   "action": "NONE",
+   "goal": "G07",
+   "reason": "holdout arm: no agent action of any kind (goal tracked only so outcomes can be compared with the agent arm)"
+  },
+  {
+   "decision_id": "D-00ef227179a1",
+   "trigger": "21828e0e-7efc-4657-bc5d-250aa81e2c61",
+   "deliver_at": "2026-10-01T12:14:12.087Z",
+   "status": "HOLDOUT",
+   "action": "NONE",
+   "goal": "G07",
+   "reason": "holdout arm: no agent action of any kind (goal tracked only so outcomes can be compared with the agent arm)"
+  },
+  {
+   "decision_id": "D-a303be87c521",
+   "trigger": "bf4d139a-e13c-4090-8967-a9a77e3cd90f",
+   "deliver_at": "2026-10-01T16:44:40.016Z",
+   "status": "HOLDOUT",
+   "action": "NONE",
+   "goal": "G07",
+   "reason": "holdout arm: no agent action of any kind (goal tracked only so outcomes can be compared with the agent arm)"
+  }
+ ],
+ "actions": [],
+ "outcomes": [
+  {
+   "arm": "holdout",
+   "attribution": "n/a",
+   "deadline": "2026-10-04T03:02:09.991Z",
+   "decision_id": "D-5188975aeb58",
+   "evidence": [],
+   "exposures_before_success": [],
+   "exposures_window": [],
+   "final": true,
+   "goal_id": "G07",
+   "goal_instance_id": "GI-a395d3197802",
+   "goal_status_in_replay": "open",
+   "judged_at": "2026-10-15T17:58:40.000Z",
+   "observed_until": "2026-10-15T17:58:40.000Z",
+   "reason": "no qualifying play_started between 2026-10-01T03:02:09.991Z and 2026-10-04T03:02:09.991Z",
+   "result": "failed",
+   "rule_history": [
+    {
+     "at": "2026-10-01T03:02:09.991Z",
+     "change": "opened",
+     "reason": "series piropa-moguti-d2 reached S1E1 of S1E22, idle 8.9 days"
+    }
+   ],
+   "rule_version": "G07-r1",
+   "started_at": "2026-10-01T03:02:09.991Z",
+   "success_condition": "same content_slug as the unfinished series",
+   "success_signal": "play_started",
+   "user_id": "U-04100"
+  }
+ ],
+ "learning": {
+  "actions": {},
+  "goal_results": [
+   {
+    "attribution": "n/a",
+    "goal_id": "G07",
+    "instance_id": "GI-a395d3197802",
+    "result": "failed"
+   }
+  ],
+  "messages": {},
+  "notes": [],
+  "pages": {
+   "published": 0,
+   "shown_personalised": 0
+  }
+ },
+ "audit": []
+}

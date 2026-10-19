@@ -1,0 +1,7 @@
+# The data pack is personal data (synthetic, but treat it as real): never commit or upload it.
+pack/
+sample_run/state.db*
+sample_run/sim/
+sample_run/sim_seeds/
+__pycache__/
+*.pyc

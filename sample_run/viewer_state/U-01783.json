@@ -1,0 +1,234 @@
+{
+ "viewer_id": "U-01783",
+ "arm": "holdout",
+ "as_of": "2026-10-01T18:31:25.944Z",
+ "facts": {
+  "user_id": "U-01783",
+  "as_of": "2026-10-01T18:31:25.944Z",
+  "profile_present": true,
+  "history_start": "2026-08-31T18:31:55.380Z",
+  "history_covers_lifetime": false,
+  "events_seen": 46,
+  "facts": {
+   "dialect": {
+    "name": "dialect",
+    "value": null,
+    "source": "unknown",
+    "source_ref": null,
+    "source_time": null,
+    "freshness": "unknown",
+    "age_s": null,
+    "rule": "trigger carries no valid app_dialect (raw=None); the page the app will request is unknown, so no alternative is substituted",
+    "conflicts": [
+     {
+      "value": "d4",
+      "source": "profile",
+      "source_ref": "profile:U-01783@2026-09-29T03:39:44.118Z",
+      "resolution": "not used: cannot confirm it is the current app setting"
+     },
+     {
+      "value": "d4",
+      "source": "app_setting_earlier",
+      "source_ref": "event:28bce024-bad6-47ac-857b-3b6446915b61",
+      "resolution": "not used: cannot confirm it is the current app setting"
+     }
+    ],
+    "supported": false
+   },
+   "ever_paid": {
+    "name": "ever_paid",
+    "value": true,
+    "source": "event",
+    "source_ref": "event:5678257e-5559-456c-ab7f-7b5a23caf95b",
+    "source_time": "2026-09-29T03:39:44.118Z",
+    "freshness": "aging",
+    "age_s": 226301.8,
+    "rule": "any paid purchase/renewal event or a paid status on any profile row",
+    "conflicts": [],
+    "supported": true
+   },
+   "history_covers_lifetime": {
+    "name": "history_covers_lifetime",
+    "value": false,
+    "source": "derived",
+    "source_ref": "profile:U-01783@2026-09-29T03:39:44.118Z",
+    "source_time": "2026-09-29T03:39:44.118Z",
+    "freshness": "unknown",
+    "age_s": null,
+    "rule": "signup_at >= first observable event (2026-08-31T18:31:55.380Z); 'never did X' claims need full coverage",
+    "conflicts": [],
+    "supported": true
+   },
+   "last_app_open_before_trigger": {
+    "name": "last_app_open_before_trigger",
+    "value": "2026-09-30T12:31:48.732Z",
+    "source": "event",
+    "source_ref": "event:28bce024-bad6-47ac-857b-3b6446915b61",
+    "source_time": "2026-09-30T12:31:48.732Z",
+    "freshness": "aging",
+    "age_s": 107977.2,
+    "rule": "latest app_open in another session, ordered by server-anchored occurrence time",
+    "conflicts": [],
+    "supported": true
+   },
+   "profile_present": {
+    "name": "profile_present",
+    "value": true,
+    "source": "profile",
+    "source_ref": "profile:U-01783@2026-09-29T03:39:44.118Z",
+    "source_time": "2026-09-29T03:39:44.118Z",
+    "freshness": "aging",
+    "age_s": 226301.8,
+    "rule": "newest updated_at among snapshot rows",
+    "conflicts": [],
+    "supported": true
+   },
+   "push_consent": {
+    "name": "push_consent",
+    "value": true,
+    "source": "profile",
+    "source_ref": "profile:U-01783@2026-09-29T03:39:44.118Z",
+    "source_time": "2026-09-29T03:39:44.118Z",
+    "freshness": "aging",
+    "age_s": 226301.8,
+    "rule": "newest profile row notifications_opt_in",
+    "conflicts": [],
+    "supported": true
+   },
+   "signup_at": {
+    "name": "signup_at",
+    "value": "2026-07-17T12:57:44.008Z",
+    "source": "profile",
+    "source_ref": "profile:U-01783@2026-09-29T03:39:44.118Z",
+    "source_time": "2026-09-29T03:39:44.118Z",
+    "freshness": "aging",
+    "age_s": 226301.8,
+    "rule": "profile.signup_at (no signup event observed)",
+    "conflicts": [],
+    "supported": true
+   },
+   "subscription_status": {
+    "name": "subscription_status",
+    "value": "active",
+    "source": "profile",
+    "source_ref": "profile:U-01783@2026-09-29T03:39:44.118Z",
+    "source_time": "2026-09-29T03:39:44.118Z",
+    "freshness": "aging",
+    "age_s": 226301.8,
+    "rule": "newest profile row (no newer subscription event)",
+    "conflicts": [],
+    "supported": true
+   },
+   "whatsapp_consent": {
+    "name": "whatsapp_consent",
+    "value": false,
+    "source": "profile",
+    "source_ref": "profile:U-01783@2026-09-29T03:39:44.118Z",
+    "source_time": "2026-09-29T03:39:44.118Z",
+    "freshness": "aging",
+    "age_s": 226301.8,
+    "rule": "newest profile row whatsapp_opt_in",
+    "conflicts": [],
+    "supported": true
+   }
+  },
+  "watch": {
+   "plays": 6,
+   "completions": 3,
+   "watched_slugs": [
+    "bagi-baya-d4",
+    "chuma-daja-d4",
+    "gineni-d4",
+    "radi-d4"
+   ],
+   "top_genres": [
+    "Romance",
+    "Comedy",
+    "Crime",
+    "Drama",
+    "Family"
+   ],
+   "play_days_recent": [
+    "2026-09-18",
+    "2026-09-21",
+    "2026-09-22"
+   ],
+   "series": [
+    {
+     "slug": "radi-d4",
+     "furthest": [
+      1,
+      1
+     ],
+     "last_episode": [
+      1,
+      57
+     ],
+     "last_play": "2026-09-04T10:09:32.113Z"
+    },
+    {
+     "slug": "bagi-baya-d4",
+     "furthest": [
+      1,
+      3
+     ],
+     "last_episode": [
+      1,
+      40
+     ],
+     "last_play": "2026-09-21T05:51:56.784Z"
+    },
+    {
+     "slug": "chuma-daja-d4",
+     "furthest": [
+      1,
+      1
+     ],
+     "last_episode": [
+      1,
+      1
+     ],
+     "last_play": "2026-09-11T12:04:30.217Z"
+    },
+    {
+     "slug": "gineni-d4",
+     "furthest": [
+      1,
+      1
+     ],
+     "last_episode": [
+      1,
+      1
+     ],
+     "last_play": "2026-09-22T01:16:05.366Z"
+    }
+   ]
+  },
+  "learning": {}
+ },
+ "goals": [],
+ "decisions": [
+  {
+   "decision_id": "D-7ab4938c9b5e",
+   "trigger": "28bce024-bad6-47ac-857b-3b6446915b61",
+   "deliver_at": "2026-10-01T11:14:21.926Z",
+   "status": "HOLDOUT",
+   "action": "NONE",
+   "goal": null,
+   "reason": "holdout arm: no agent action of any kind (goal tracked only so outcomes can be compared with the agent arm)"
+  },
+  {
+   "decision_id": "D-7ab4938c9b5e-dup-17eb20",
+   "trigger": "28bce024-bad6-47ac-857b-3b6446915b61",
+   "deliver_at": "2026-10-01T11:24:42.122Z",
+   "status": "DUPLICATE_IGNORED",
+   "action": "NONE",
+   "goal": null,
+   "reason": "duplicate delivery (#2) of trigger 28bce024-bad6-47ac-857b-3b6446915b61; already decided as D-7ab4938c9b5e"
+  }
+ ],
+ "actions": [],
+ "outcomes": [],
+ "learning": {},
+ "audit": []
+}

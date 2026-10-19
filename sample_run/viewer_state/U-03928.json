@@ -1,0 +1,233 @@
+{
+ "viewer_id": "U-03928",
+ "arm": "holdout",
+ "as_of": "2026-10-01T18:31:25.944Z",
+ "facts": {
+  "user_id": "U-03928",
+  "as_of": "2026-10-01T18:31:25.944Z",
+  "profile_present": true,
+  "history_start": "2026-08-31T18:31:55.380Z",
+  "history_covers_lifetime": false,
+  "events_seen": 49,
+  "facts": {
+   "dialect": {
+    "name": "dialect",
+    "value": null,
+    "source": "unknown",
+    "source_ref": null,
+    "source_time": null,
+    "freshness": "unknown",
+    "age_s": null,
+    "rule": "trigger carries no valid app_dialect (raw=None); the page the app will request is unknown, so no alternative is substituted",
+    "conflicts": [
+     {
+      "value": "d1",
+      "source": "profile",
+      "source_ref": "profile:U-03928@2026-09-28T20:10:44.736Z",
+      "resolution": "not used: cannot confirm it is the current app setting"
+     },
+     {
+      "value": "d1",
+      "source": "app_setting_earlier",
+      "source_ref": "event:96c1df81-27df-445b-a6f8-07c3538af542",
+      "resolution": "not used: cannot confirm it is the current app setting"
+     }
+    ],
+    "supported": false
+   },
+   "ever_paid": {
+    "name": "ever_paid",
+    "value": true,
+    "source": "event",
+    "source_ref": "event:5407891f-5133-4d67-b93a-72c620c22dc9",
+    "source_time": "2026-09-28T20:10:44.736Z",
+    "freshness": "aging",
+    "age_s": 253241.2,
+    "rule": "any paid purchase/renewal event or a paid status on any profile row",
+    "conflicts": [],
+    "supported": true
+   },
+   "history_covers_lifetime": {
+    "name": "history_covers_lifetime",
+    "value": false,
+    "source": "derived",
+    "source_ref": "profile:U-03928@2026-09-28T20:10:44.736Z",
+    "source_time": "2026-09-28T20:10:44.736Z",
+    "freshness": "unknown",
+    "age_s": null,
+    "rule": "signup_at >= first observable event (2026-08-31T18:31:55.380Z); 'never did X' claims need full coverage",
+    "conflicts": [],
+    "supported": true
+   },
+   "last_app_open_before_trigger": {
+    "name": "last_app_open_before_trigger",
+    "value": "2026-09-30T14:08:17.384Z",
+    "source": "event",
+    "source_ref": "event:e61f9bfc-6618-4778-b6b6-c86ed0e7ef72",
+    "source_time": "2026-09-30T14:08:17.384Z",
+    "freshness": "aging",
+    "age_s": 102188.6,
+    "rule": "latest app_open in another session, ordered by server-anchored occurrence time",
+    "conflicts": [],
+    "supported": true
+   },
+   "profile_present": {
+    "name": "profile_present",
+    "value": true,
+    "source": "profile",
+    "source_ref": "profile:U-03928@2026-09-28T20:10:44.736Z",
+    "source_time": "2026-09-28T20:10:44.736Z",
+    "freshness": "aging",
+    "age_s": 253241.2,
+    "rule": "newest updated_at among snapshot rows",
+    "conflicts": [],
+    "supported": true
+   },
+   "push_consent": {
+    "name": "push_consent",
+    "value": true,
+    "source": "profile",
+    "source_ref": "profile:U-03928@2026-09-28T20:10:44.736Z",
+    "source_time": "2026-09-28T20:10:44.736Z",
+    "freshness": "aging",
+    "age_s": 253241.2,
+    "rule": "newest profile row notifications_opt_in",
+    "conflicts": [],
+    "supported": true
+   },
+   "signup_at": {
+    "name": "signup_at",
+    "value": "2025-02-06T11:23:25.684Z",
+    "source": "profile",
+    "source_ref": "profile:U-03928@2026-09-28T20:10:44.736Z",
+    "source_time": "2026-09-28T20:10:44.736Z",
+    "freshness": "aging",
+    "age_s": 253241.2,
+    "rule": "profile.signup_at (no signup event observed)",
+    "conflicts": [],
+    "supported": true
+   },
+   "subscription_status": {
+    "name": "subscription_status",
+    "value": "active",
+    "source": "profile",
+    "source_ref": "profile:U-03928@2026-09-28T20:10:44.736Z",
+    "source_time": "2026-09-28T20:10:44.736Z",
+    "freshness": "aging",
+    "age_s": 253241.2,
+    "rule": "newest profile row (no newer subscription event)",
+    "conflicts": [],
+    "supported": true
+   },
+   "whatsapp_consent": {
+    "name": "whatsapp_consent",
+    "value": true,
+    "source": "profile",
+    "source_ref": "profile:U-03928@2026-09-28T20:10:44.736Z",
+    "source_time": "2026-09-28T20:10:44.736Z",
+    "freshness": "aging",
+    "age_s": 253241.2,
+    "rule": "newest profile row whatsapp_opt_in",
+    "conflicts": [],
+    "supported": true
+   }
+  },
+  "watch": {
+   "plays": 5,
+   "completions": 1,
+   "watched_slugs": [
+    "raja-badi-d1",
+    "rava-baya-d1",
+    "roti-d1",
+    "yakani-panine-d1"
+   ],
+   "top_genres": [
+    "Thriller",
+    "Devotional",
+    "Drama",
+    "Comedy",
+    "Family"
+   ],
+   "play_days_recent": [
+    "2026-09-25",
+    "2026-09-29"
+   ],
+   "series": [
+    {
+     "slug": "raja-badi-d1",
+     "furthest": [
+      1,
+      1
+     ],
+     "last_episode": [
+      1,
+      1
+     ],
+     "last_play": "2026-09-02T15:41:16.727Z"
+    },
+    {
+     "slug": "rava-baya-d1",
+     "furthest": [
+      1,
+      1
+     ],
+     "last_episode": [
+      1,
+      1
+     ],
+     "last_play": "2026-09-29T13:31:51.190Z"
+    },
+    {
+     "slug": "roti-d1",
+     "furthest": [
+      1,
+      1
+     ],
+     "last_episode": [
+      1,
+      1
+     ],
+     "last_play": "2026-09-25T17:53:48.236Z"
+    },
+    {
+     "slug": "yakani-panine-d1",
+     "furthest": [
+      1,
+      1
+     ],
+     "last_episode": [
+      1,
+      1
+     ],
+     "last_play": "2026-09-29T08:53:56.200Z"
+    }
+   ]
+  },
+  "learning": {}
+ },
+ "goals": [],
+ "decisions": [
+  {
+   "decision_id": "D-021759c50add",
+   "trigger": "1cc4d8ac-fb76-4fa3-9311-17edd8f20431",
+   "deliver_at": "2026-10-01T03:26:00.617Z",
+   "status": "HOLDOUT",
+   "action": "NONE",
+   "goal": null,
+   "reason": "holdout arm: no agent action of any kind (goal tracked only so outcomes can be compared with the agent arm)"
+  },
+  {
+   "decision_id": "D-021759c50add-dup-65fe97",
+   "trigger": "1cc4d8ac-fb76-4fa3-9311-17edd8f20431",
+   "deliver_at": "2026-10-01T03:26:09.074Z",
+   "status": "DUPLICATE_IGNORED",
+   "action": "NONE",
+   "goal": null,
+   "reason": "duplicate delivery (#2) of trigger 1cc4d8ac-fb76-4fa3-9311-17edd8f20431; already decided as D-021759c50add"
+  }
+ ],
+ "actions": [],
+ "outcomes": [],
+ "learning": {},
+ "audit": []
+}

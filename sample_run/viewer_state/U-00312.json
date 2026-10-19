@@ -1,0 +1,370 @@
+{
+ "viewer_id": "U-00312",
+ "arm": "agent",
+ "as_of": "2026-10-01T18:31:25.944Z",
+ "facts": {
+  "user_id": "U-00312",
+  "as_of": "2026-10-01T18:31:25.944Z",
+  "profile_present": true,
+  "history_start": "2026-08-31T18:31:55.380Z",
+  "history_covers_lifetime": false,
+  "events_seen": 76,
+  "facts": {
+   "dialect": {
+    "name": "dialect",
+    "value": null,
+    "source": "unknown",
+    "source_ref": null,
+    "source_time": null,
+    "freshness": "unknown",
+    "age_s": null,
+    "rule": "trigger carries no valid app_dialect (raw=None); the page the app will request is unknown, so no alternative is substituted",
+    "conflicts": [
+     {
+      "value": "d4",
+      "source": "profile",
+      "source_ref": "profile:U-00312@2026-09-29T04:50:11.613Z",
+      "resolution": "not used: cannot confirm it is the current app setting"
+     },
+     {
+      "value": "d4",
+      "source": "app_setting_earlier",
+      "source_ref": "event:6cacc24e-29b4-4f2b-8e82-e9a4bd377482",
+      "resolution": "not used: cannot confirm it is the current app setting"
+     }
+    ],
+    "supported": false
+   },
+   "ever_paid": {
+    "name": "ever_paid",
+    "value": true,
+    "source": "profile",
+    "source_ref": "profile:U-00312@2026-09-29T04:50:11.613Z",
+    "source_time": "2026-09-29T04:50:11.613Z",
+    "freshness": "aging",
+    "age_s": 222074.3,
+    "rule": "any paid purchase/renewal event or a paid status on any profile row",
+    "conflicts": [],
+    "supported": true
+   },
+   "history_covers_lifetime": {
+    "name": "history_covers_lifetime",
+    "value": false,
+    "source": "derived",
+    "source_ref": "profile:U-00312@2026-09-29T04:50:11.613Z",
+    "source_time": "2026-09-29T04:50:11.613Z",
+    "freshness": "unknown",
+    "age_s": null,
+    "rule": "signup_at >= first observable event (2026-08-31T18:31:55.380Z); 'never did X' claims need full coverage",
+    "conflicts": [],
+    "supported": true
+   },
+   "lapsed_at": {
+    "name": "lapsed_at",
+    "value": "2026-09-05T15:20:25.764Z",
+    "source": "event",
+    "source_ref": "event:557068c7-514d-48b3-a243-22c4f4c773e5",
+    "source_time": "2026-09-05T15:20:25.764Z",
+    "freshness": "unknown",
+    "age_s": null,
+    "rule": "subscription_lapsed event",
+    "conflicts": [],
+    "supported": true
+   },
+   "last_app_open_before_trigger": {
+    "name": "last_app_open_before_trigger",
+    "value": "2026-10-01T14:24:23.834Z",
+    "source": "event",
+    "source_ref": "event:6cacc24e-29b4-4f2b-8e82-e9a4bd377482",
+    "source_time": "2026-10-01T14:24:23.834Z",
+    "freshness": "fresh",
+    "age_s": 14822.1,
+    "rule": "latest app_open in another session, ordered by server-anchored occurrence time",
+    "conflicts": [],
+    "supported": true
+   },
+   "profile_present": {
+    "name": "profile_present",
+    "value": true,
+    "source": "profile",
+    "source_ref": "profile:U-00312@2026-09-29T04:50:11.613Z",
+    "source_time": "2026-09-29T04:50:11.613Z",
+    "freshness": "aging",
+    "age_s": 222074.3,
+    "rule": "newest updated_at among snapshot rows",
+    "conflicts": [],
+    "supported": true
+   },
+   "push_consent": {
+    "name": "push_consent",
+    "value": true,
+    "source": "profile",
+    "source_ref": "profile:U-00312@2026-09-29T04:50:11.613Z",
+    "source_time": "2026-09-29T04:50:11.613Z",
+    "freshness": "aging",
+    "age_s": 222074.3,
+    "rule": "newest profile row notifications_opt_in",
+    "conflicts": [],
+    "supported": true
+   },
+   "signup_at": {
+    "name": "signup_at",
+    "value": "2026-01-20T17:25:52.151Z",
+    "source": "profile",
+    "source_ref": "profile:U-00312@2026-09-29T04:50:11.613Z",
+    "source_time": "2026-09-29T04:50:11.613Z",
+    "freshness": "aging",
+    "age_s": 222074.3,
+    "rule": "profile.signup_at (no signup event observed)",
+    "conflicts": [],
+    "supported": true
+   },
+   "subscription_status": {
+    "name": "subscription_status",
+    "value": "lapsed",
+    "source": "profile",
+    "source_ref": "profile:U-00312@2026-09-29T04:50:11.613Z",
+    "source_time": "2026-09-29T04:50:11.613Z",
+    "freshness": "aging",
+    "age_s": 222074.3,
+    "rule": "newest profile row (no newer subscription event)",
+    "conflicts": [],
+    "supported": true
+   },
+   "whatsapp_consent": {
+    "name": "whatsapp_consent",
+    "value": true,
+    "source": "profile",
+    "source_ref": "profile:U-00312@2026-09-29T04:50:11.613Z",
+    "source_time": "2026-09-29T04:50:11.613Z",
+    "freshness": "aging",
+    "age_s": 222074.3,
+    "rule": "newest profile row whatsapp_opt_in",
+    "conflicts": [],
+    "supported": true
+   }
+  },
+  "watch": {
+   "plays": 8,
+   "completions": 5,
+   "watched_slugs": [
+    "bagi-baya-d4",
+    "hada-maloni-d4",
+    "vapa-kalasa-d4"
+   ],
+   "top_genres": [
+    "Romance",
+    "Action",
+    "Devotional",
+    "Family"
+   ],
+   "play_days_recent": [
+    "2026-09-18",
+    "2026-09-21"
+   ],
+   "series": [
+    {
+     "slug": "bagi-baya-d4",
+     "furthest": [
+      1,
+      5
+     ],
+     "last_episode": [
+      1,
+      40
+     ],
+     "last_play": "2026-09-21T03:18:39.851Z"
+    },
+    {
+     "slug": "hada-maloni-d4",
+     "furthest": [
+      1,
+      1
+     ],
+     "last_episode": [
+      1,
+      1
+     ],
+     "last_play": "2026-09-08T15:26:16.420Z"
+    },
+    {
+     "slug": "vapa-kalasa-d4",
+     "furthest": [
+      1,
+      1
+     ],
+     "last_episode": [
+      2,
+      11
+     ],
+     "last_play": "2026-09-09T09:57:33.694Z"
+    }
+   ]
+  },
+  "learning": {
+   "actions": {
+    "home_page": {
+     "published": 1
+    },
+    "push": {
+     "scheduled": 1
+    }
+   },
+   "goal_results": [
+    {
+     "attribution": "n/a",
+     "goal_id": "G07",
+     "instance_id": "GI-ae1bbf70df57",
+     "result": "failed"
+    }
+   ],
+   "messages": {
+    "push": {
+     "clicked": 0,
+     "delivered": 1,
+     "failed": {}
+    }
+   },
+   "notes": [],
+   "pages": {
+    "published": 1,
+    "shown_personalised": 1
+   }
+  }
+ },
+ "goals": [
+  {
+   "instance_id": "GI-ae1bbf70df57",
+   "user_id": "U-00312",
+   "goal_id": "G07",
+   "rule_version": "G07-r1",
+   "status": "open",
+   "started_at": "2026-10-01T14:24:23.834Z",
+   "deadline": "2026-10-04T14:24:23.834Z",
+   "success_event": "play_started",
+   "success_condition": "same content_slug as the unfinished series",
+   "decision_id": "D-163c063b6521",
+   "arm": "agent",
+   "eligibility": {
+    "context": {
+     "furthest": [
+      1,
+      5
+     ],
+     "series_slug": "bagi-baya-d4"
+    },
+    "evidence": [
+     "goal_rule:G07-r1",
+     "event:204b0ee2-49e2-4148-a95e-5246ad60b51c",
+     "event:8998c200-8762-44d3-9a29-66ff19f4f109",
+     "event:c8d38b9b-ada8-488b-b67c-6f8cc7c7877a"
+    ],
+    "reason": "series bagi-baya-d4 reached S1E5 of S1E40, idle 10.5 days"
+   },
+   "closed_at": null,
+   "close_reason": null,
+   "outcome": null,
+   "history": [
+    {
+     "at": "2026-10-01T14:24:23.834Z",
+     "change": "opened",
+     "reason": "series bagi-baya-d4 reached S1E5 of S1E40, idle 10.5 days"
+    }
+   ]
+  }
+ ],
+ "decisions": [
+  {
+   "decision_id": "D-163c063b6521",
+   "trigger": "6cacc24e-29b4-4f2b-8e82-e9a4bd377482",
+   "deliver_at": "2026-10-01T14:24:23.834Z",
+   "status": "PUBLISHED",
+   "action": "HOME_PAGE+PUSH",
+   "goal": "G07",
+   "reason": null
+  }
+ ],
+ "actions": [
+  {
+   "action_id": "A-037820783785",
+   "type": "home_page",
+   "status": "published",
+   "status_reason": null,
+   "published_at": "2026-10-01T14:24:24.555Z",
+   "send_at": null
+  },
+  {
+   "action_id": "A-b9908a4d51c6",
+   "type": "push",
+   "status": "scheduled",
+   "status_reason": null,
+   "published_at": "2026-10-01T14:24:24.555Z",
+   "send_at": "2026-10-02T03:30:00.000Z"
+  }
+ ],
+ "outcomes": [
+  {
+   "arm": "agent",
+   "attribution": "n/a",
+   "deadline": "2026-10-04T14:24:23.834Z",
+   "decision_id": "D-163c063b6521",
+   "evidence": [],
+   "exposures_before_success": [],
+   "exposures_window": [
+    "event:oua-002194",
+    "event:oua-002196"
+   ],
+   "final": true,
+   "goal_id": "G07",
+   "goal_instance_id": "GI-ae1bbf70df57",
+   "goal_status_in_replay": "open",
+   "judged_at": "2026-10-15T17:58:40.000Z",
+   "observed_until": "2026-10-15T17:58:40.000Z",
+   "reason": "no qualifying play_started between 2026-10-01T14:24:23.834Z and 2026-10-04T14:24:23.834Z",
+   "result": "failed",
+   "rule_history": [
+    {
+     "at": "2026-10-01T14:24:23.834Z",
+     "change": "opened",
+     "reason": "series bagi-baya-d4 reached S1E5 of S1E40, idle 10.5 days"
+    }
+   ],
+   "rule_version": "G07-r1",
+   "started_at": "2026-10-01T14:24:23.834Z",
+   "success_condition": "same content_slug as the unfinished series",
+   "success_signal": "play_started",
+   "user_id": "U-00312"
+  }
+ ],
+ "learning": {
+  "actions": {
+   "home_page": {
+    "published": 1
+   },
+   "push": {
+    "scheduled": 1
+   }
+  },
+  "goal_results": [
+   {
+    "attribution": "n/a",
+    "goal_id": "G07",
+    "instance_id": "GI-ae1bbf70df57",
+    "result": "failed"
+   }
+  ],
+  "messages": {
+   "push": {
+    "clicked": 0,
+    "delivered": 1,
+    "failed": {}
+   }
+  },
+  "notes": [],
+  "pages": {
+   "published": 1,
+   "shown_personalised": 1
+  }
+ },
+ "audit": []
+}

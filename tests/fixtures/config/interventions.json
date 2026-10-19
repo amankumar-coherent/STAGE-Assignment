@@ -1,0 +1,100 @@
+{
+  "version": "2026-09-30",
+  "home_page": {
+    "description": "A personalised home page for one user. While it is live it replaces the default layout for that user.",
+    "dialect_rule": "A page is published for one dialect. The app asks for the home page of the dialect it is currently set to, and shows a personalised page only if one exists for that dialect.",
+    "ttl_minutes": 120,
+    "hero": {
+      "max_titles": 1
+    },
+    "rows": {
+      "max_rows": 6,
+      "min_titles_per_row": 3,
+      "max_titles_per_row": 10,
+      "row_types": [
+        "next_episode",
+        "because_you_watched",
+        "popular_in_dialect",
+        "new_releases",
+        "genre"
+      ],
+      "rules": [
+        "A row with fewer than 3 valid titles is dropped by the platform.",
+        "A title is valid only if it is in the page dialect and available at publish time.",
+        "The same content (content_slug) can appear only once per page.",
+        "Continue Watching is added by the platform itself; the agent does not publish it."
+      ]
+    },
+    "timing_note": "Users usually reach the home page within a few seconds of opening the app. A page that arrives later is seen only on a later visit while it is live."
+  },
+  "push": {
+    "consent_field": "notifications_opt_in",
+    "quiet_hours_ist": [
+      "22:00",
+      "08:00"
+    ],
+    "frequency": "At most 1 push or WhatsApp message per user per IST calendar day, both channels combined.",
+    "copy": {
+      "title_max_chars": 40,
+      "body_max_chars": 120,
+      "forbidden_phrases": [
+        "last chance",
+        "hurry",
+        "only today",
+        "free forever",
+        "guaranteed"
+      ],
+      "price_claims": "Only prices that exist in config/pricing.json."
+    },
+    "deeplink_format": "ott://title/<title_id>",
+    "delivery_note": "Delivery is confirmed only by a message_delivered event. Some device tokens are no longer valid; the platform does not tell you which in advance."
+  },
+  "whatsapp": {
+    "consent_field": "whatsapp_opt_in",
+    "quiet_hours_ist": [
+      "22:00",
+      "08:00"
+    ],
+    "frequency": "Shared with push (see push.frequency).",
+    "approved_templates": [
+      {
+        "template_id": "wa_new_episode_v2",
+        "language": "hin",
+        "variables": [
+          "title_name",
+          "episode_number"
+        ],
+        "text": "Naya episode aa gaya! {{title_name}} ka episode {{episode_number}} ab dekhiye."
+      },
+      {
+        "template_id": "wa_recommend_title_v1",
+        "language": "hin",
+        "variables": [
+          "title_name",
+          "dialect_name"
+        ],
+        "text": "Aapke liye {{dialect_name}} mein: {{title_name}}. Abhi dekhiye."
+      },
+      {
+        "template_id": "wa_trial_ending_v1",
+        "language": "hin",
+        "variables": [
+          "plan_price"
+        ],
+        "text": "Aapka trial jald khatam ho raha hai. {{plan_price}} mein dekhte rahiye."
+      }
+    ],
+    "rules": [
+      "Only approved templates can be sent.",
+      "Variables are filled from the catalogue or pricing; free text is not accepted."
+    ]
+  },
+  "in_app_message": {
+    "description": "Shown at the next app open.",
+    "max_per_day": 1,
+    "consent": "not required"
+  },
+  "no_action": {
+    "description": "Doing nothing is always allowed and must be recorded with its reason."
+  }
+}

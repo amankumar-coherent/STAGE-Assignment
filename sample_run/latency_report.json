@@ -1,0 +1,212 @@
+{
+  "semantics": {
+    "latency_ms": "published_at - deliver_at = queue wait + service time (virtual clock)",
+    "service_ms": "measured wall-clock compute of the decision + simulated dependency latency (mock model latency, store reads, timeouts, retries)",
+    "compute_ms": "real wall-clock CPU time of the decision code on this machine",
+    "workers": 8,
+    "target_s": 60,
+    "failure_s": 300,
+    "scope": "every trigger delivery, including duplicates and abstentions"
+  },
+  "triggers_processed": 2769,
+  "decisions_by_status": {
+    "ABSTAINED": 461,
+    "DUPLICATE_IGNORED": 90,
+    "HOLDOUT": 1325,
+    "PUBLISHED": 906
+  },
+  "all_decisions": {
+    "n": 2769,
+    "median_ms": 18.1,
+    "p95_ms": 722.9,
+    "p99_ms": 728.7,
+    "max_ms": 6019.4,
+    "mean_ms": 308.8
+  },
+  "published_decisions": {
+    "n": 893,
+    "median_ms": 717.2,
+    "p95_ms": 726.0,
+    "p99_ms": 731.9,
+    "max_ms": 2514.3,
+    "mean_ms": 430.2
+  },
+  "queue_wait": {
+    "n": 2769,
+    "median_ms": 0.0,
+    "p95_ms": 0.0,
+    "p99_ms": 0.0,
+    "max_ms": 0.0,
+    "mean_ms": 0.0
+  },
+  "compute_only": {
+    "n": 2769,
+    "median_ms": 2.1,
+    "p95_ms": 7.8,
+    "p99_ms": 12.0,
+    "max_ms": 20.6,
+    "mean_ms": 2.8
+  },
+  "over_60s": {
+    "count": 0,
+    "pct": 0.0
+  },
+  "over_5min": 0,
+  "fallbacks": 17,
+  "model_status_counts": {
+    "malformed": 1,
+    "not_called": 1654,
+    "ok": 1098,
+    "rejected_unsupported_claim": 1,
+    "skipped_circuit_open": 6,
+    "timeout": 1,
+    "unavailable": 8
+  },
+  "model_client_stats": {
+    "circuit_opened": 3,
+    "malformed": 1,
+    "ok": 1098,
+    "rejected_unsupported_claim": 1,
+    "skipped_circuit_open": 6,
+    "timeout": 1,
+    "unavailable": 8
+  },
+  "store_gate": {
+    "reads": 2679,
+    "timeouts": 5,
+    "failed_reads": 1
+  },
+  "degraded_decisions": 18,
+  "stale_triggers": 432,
+  "errors": 0,
+  "model_faults": [
+    {
+      "trigger_event_id": "202cccb8-8127-465f-b2d0-038cf533197e",
+      "fault": "unsupported_claim",
+      "user_id": "U-01991",
+      "model_calls_hit": 1,
+      "decision_id": "D-1c282782ae74",
+      "model_status": "rejected_unsupported_claim",
+      "goal": "G07",
+      "fallback_used": true,
+      "status": "PUBLISHED",
+      "note": null
+    },
+    {
+      "trigger_event_id": "a54e16b6-056d-4d0a-a35d-bd8257802c54",
+      "fault": "unsupported_claim",
+      "user_id": "U-02509",
+      "model_calls_hit": 0,
+      "decision_id": "D-5d4249411a65",
+      "model_status": "not_called",
+      "goal": null,
+      "fallback_used": false,
+      "status": "ABSTAINED",
+      "note": "model not called for this trigger (see decision)"
+    },
+    {
+      "trigger_event_id": "cd885956-0406-4b17-8e0b-3b97bbdd8a13",
+      "fault": "unsupported_claim",
+      "user_id": "U-04860",
+      "model_calls_hit": 0,
+      "decision_id": "D-2f1ab5c8bbb3",
+      "model_status": "not_called",
+      "goal": null,
+      "fallback_used": false,
+      "status": "ABSTAINED",
+      "note": "model not called for this trigger (see decision)"
+    },
+    {
+      "trigger_event_id": "76b138f6-0952-456d-904a-bd0d04497cf7",
+      "fault": "malformed_output",
+      "user_id": "U-02563",
+      "model_calls_hit": 2,
+      "decision_id": "D-d1a720655fca",
+      "model_status": "malformed",
+      "goal": "G07",
+      "fallback_used": true,
+      "status": "PUBLISHED",
+      "note": null
+    },
+    {
+      "trigger_event_id": "5edb5b00-0773-4063-8da8-40929553233c",
+      "fault": "timeout",
+      "user_id": "U-01090",
+      "model_calls_hit": 2,
+      "decision_id": "D-96ff11ee1084",
+      "model_status": "timeout",
+      "goal": "G07",
+      "fallback_used": true,
+      "status": "HOLDOUT",
+      "note": null
+    }
+  ],
+  "controls": [
+    {
+      "at": "2026-10-01T07:00:00.000Z",
+      "type": "title_withdrawn",
+      "title_id": "T0001",
+      "repaired_pages": [
+        "D-8738a21c8448",
+        "D-9f29e85ea34e",
+        "D-cdb4031d83be",
+        "D-0976afa8fd50",
+        "D-11a959586294",
+        "D-9e6a0af2a46a",
+        "D-d58efca9a072",
+        "D-df4cdecbf6cc",
+        "D-14238684603d",
+        "D-fb7c1fd015bd",
+        "D-5846c4b7ad2f",
+        "D-639a99114922",
+        "D-88d647a77b26"
+      ]
+    },
+    {
+      "at": "2026-10-01T08:30:00.000Z",
+      "type": "goal_rule_corrected",
+      "goal_id": "G03",
+      "from": "G03-r1",
+      "to": "G03-r2",
+      "affected_open_goals": 0,
+      "open_goals_total": 576,
+      "untouched": 576,
+      "affected_instances": []
+    },
+    {
+      "at": "2026-10-01T10:35:00.000Z",
+      "type": "dependency_unavailable",
+      "dependency": "model_provider",
+      "until": "2026-10-01T10:42:00.000Z",
+      "detail": "every model call fails with HTTP 503"
+    },
+    {
+      "at": "2026-10-01T13:10:00.000Z",
+      "type": "dependency_degraded",
+      "dependency": "user_data_store",
+      "until": "2026-10-01T13:17:00.000Z",
+      "detail": "p95 read latency 8 s and 20% of reads time out"
+    }
+  ],
+  "final_revalidation": {
+    "kept_scheduled": 152,
+    "cancelled": 0
+  },
+  "replay_wall_clock_s": 19.73,
+  "counters": {
+    "cancelled_actions": 8,
+    "duplicate_live_events": 7,
+    "duplicate_triggers": 90,
+    "goals_revised": 0,
+    "model_malformed": 1,
+    "model_rejected_unsupported_claim": 1,
+    "model_skipped_circuit_open": 6,
+    "model_timeout": 1,
+    "model_unavailable": 8,
+    "status_ABSTAINED": 461,
+    "status_HOLDOUT": 1325,
+    "status_PUBLISHED": 906,
+    "store_failures": 1
+  },
+  "slo_met": true
+}

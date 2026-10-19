@@ -1,0 +1,365 @@
+{
+ "viewer_id": "U-00613",
+ "arm": "agent",
+ "as_of": "2026-10-01T18:31:25.944Z",
+ "facts": {
+  "user_id": "U-00613",
+  "as_of": "2026-10-01T18:31:25.944Z",
+  "profile_present": true,
+  "history_start": "2026-08-31T18:31:55.380Z",
+  "history_covers_lifetime": false,
+  "events_seen": 49,
+  "facts": {
+   "dialect": {
+    "name": "dialect",
+    "value": null,
+    "source": "unknown",
+    "source_ref": null,
+    "source_time": null,
+    "freshness": "unknown",
+    "age_s": null,
+    "rule": "trigger carries no valid app_dialect (raw=None); the page the app will request is unknown, so no alternative is substituted",
+    "conflicts": [
+     {
+      "value": "d6",
+      "source": "profile",
+      "source_ref": "profile:U-00613@2026-09-28T18:07:30.299Z",
+      "resolution": "not used: cannot confirm it is the current app setting"
+     },
+     {
+      "value": "d3",
+      "source": "app_setting_earlier",
+      "source_ref": "event:7e18b7e7-e73e-4734-b1bd-9dcb7f994797",
+      "resolution": "not used: cannot confirm it is the current app setting"
+     }
+    ],
+    "supported": false
+   },
+   "ever_paid": {
+    "name": "ever_paid",
+    "value": false,
+    "source": "profile",
+    "source_ref": "profile:U-00613@2026-09-28T18:07:30.299Z",
+    "source_time": "2026-09-28T18:07:30.299Z",
+    "freshness": "aging",
+    "age_s": 260635.6,
+    "rule": "any paid purchase/renewal event or a paid status on any profile row",
+    "conflicts": [],
+    "supported": true
+   },
+   "history_covers_lifetime": {
+    "name": "history_covers_lifetime",
+    "value": false,
+    "source": "derived",
+    "source_ref": "profile:U-00613@2026-09-28T18:07:30.299Z",
+    "source_time": "2026-09-28T18:07:30.299Z",
+    "freshness": "unknown",
+    "age_s": null,
+    "rule": "signup_at >= first observable event (2026-08-31T18:31:55.380Z); 'never did X' claims need full coverage",
+    "conflicts": [],
+    "supported": true
+   },
+   "last_app_open_before_trigger": {
+    "name": "last_app_open_before_trigger",
+    "value": "2026-10-01T09:07:46.952Z",
+    "source": "event",
+    "source_ref": "event:7e18b7e7-e73e-4734-b1bd-9dcb7f994797",
+    "source_time": "2026-10-01T09:07:46.952Z",
+    "freshness": "fresh",
+    "age_s": 33819.0,
+    "rule": "latest app_open in another session, ordered by server-anchored occurrence time",
+    "conflicts": [],
+    "supported": true
+   },
+   "profile_present": {
+    "name": "profile_present",
+    "value": true,
+    "source": "profile",
+    "source_ref": "profile:U-00613@2026-09-28T18:07:30.299Z",
+    "source_time": "2026-09-28T18:07:30.299Z",
+    "freshness": "aging",
+    "age_s": 260635.6,
+    "rule": "newest updated_at among snapshot rows",
+    "conflicts": [],
+    "supported": true
+   },
+   "push_consent": {
+    "name": "push_consent",
+    "value": true,
+    "source": "profile",
+    "source_ref": "profile:U-00613@2026-09-28T18:07:30.299Z",
+    "source_time": "2026-09-28T18:07:30.299Z",
+    "freshness": "aging",
+    "age_s": 260635.6,
+    "rule": "newest profile row notifications_opt_in",
+    "conflicts": [],
+    "supported": true
+   },
+   "signup_at": {
+    "name": "signup_at",
+    "value": "2026-02-07T23:45:32.090Z",
+    "source": "profile",
+    "source_ref": "profile:U-00613@2026-09-28T18:07:30.299Z",
+    "source_time": "2026-09-28T18:07:30.299Z",
+    "freshness": "aging",
+    "age_s": 260635.6,
+    "rule": "profile.signup_at (no signup event observed)",
+    "conflicts": [],
+    "supported": true
+   },
+   "subscription_status": {
+    "name": "subscription_status",
+    "value": "never",
+    "source": "profile",
+    "source_ref": "profile:U-00613@2026-09-28T18:07:30.299Z",
+    "source_time": "2026-09-28T18:07:30.299Z",
+    "freshness": "aging",
+    "age_s": 260635.6,
+    "rule": "newest profile row (no newer subscription event)",
+    "conflicts": [],
+    "supported": true
+   },
+   "whatsapp_consent": {
+    "name": "whatsapp_consent",
+    "value": false,
+    "source": "profile",
+    "source_ref": "profile:U-00613@2026-09-28T18:07:30.299Z",
+    "source_time": "2026-09-28T18:07:30.299Z",
+    "freshness": "aging",
+    "age_s": 260635.6,
+    "rule": "newest profile row whatsapp_opt_in",
+    "conflicts": [],
+    "supported": true
+   }
+  },
+  "watch": {
+   "plays": 3,
+   "completions": 0,
+   "watched_slugs": [
+    "haja-d3",
+    "ririgi-d3",
+    "yatite-roloda-d3"
+   ],
+   "top_genres": [
+    "Devotional",
+    "Family",
+    "Romance"
+   ],
+   "play_days_recent": [
+    "2026-09-26"
+   ],
+   "series": [
+    {
+     "slug": "yatite-roloda-d3",
+     "furthest": [
+      1,
+      1
+     ],
+     "last_episode": [
+      1,
+      23
+     ],
+     "last_play": "2026-09-06T15:13:21.171Z"
+    },
+    {
+     "slug": "ririgi-d3",
+     "furthest": [
+      1,
+      1
+     ],
+     "last_episode": [
+      1,
+      9
+     ],
+     "last_play": "2026-09-16T09:08:27.829Z"
+    },
+    {
+     "slug": "haja-d3",
+     "furthest": [
+      1,
+      1
+     ],
+     "last_episode": [
+      1,
+      49
+     ],
+     "last_play": "2026-09-26T09:11:44.333Z"
+    }
+   ]
+  },
+  "learning": {
+   "actions": {
+    "home_page": {
+     "published": 1
+    },
+    "push": {
+     "sent": 1
+    }
+   },
+   "goal_results": [
+    {
+     "attribution": "n/a",
+     "goal_id": "G07",
+     "instance_id": "GI-ffdbda91843c",
+     "result": "failed"
+    }
+   ],
+   "messages": {
+    "push": {
+     "clicked": 0,
+     "delivered": 1,
+     "failed": {}
+    }
+   },
+   "notes": [],
+   "pages": {
+    "published": 1,
+    "shown_personalised": 1
+   }
+  }
+ },
+ "goals": [
+  {
+   "instance_id": "GI-ffdbda91843c",
+   "user_id": "U-00613",
+   "goal_id": "G07",
+   "rule_version": "G07-r1",
+   "status": "open",
+   "started_at": "2026-10-01T09:07:40.923Z",
+   "deadline": "2026-10-04T09:07:40.923Z",
+   "success_event": "play_started",
+   "success_condition": "same content_slug as the unfinished series",
+   "decision_id": "D-5b1754e7749e",
+   "arm": "agent",
+   "eligibility": {
+    "context": {
+     "furthest": [
+      1,
+      1
+     ],
+     "series_slug": "haja-d3"
+    },
+    "evidence": [
+     "goal_rule:G07-r1",
+     "event:2963ec54-d5df-4bd4-936f-c393d3f8b8be",
+     "event:082d93a6-8fca-4c9e-a363-d9676ed66be0",
+     "event:28fc43d9-3c9d-4d1c-948d-8d3255c003c6"
+    ],
+    "reason": "series haja-d3 reached S1E1 of S1E49, idle 5.0 days"
+   },
+   "closed_at": null,
+   "close_reason": null,
+   "outcome": null,
+   "history": [
+    {
+     "at": "2026-10-01T09:07:40.923Z",
+     "change": "opened",
+     "reason": "series haja-d3 reached S1E1 of S1E49, idle 5.0 days"
+    }
+   ]
+  }
+ ],
+ "decisions": [
+  {
+   "decision_id": "D-5b1754e7749e",
+   "trigger": "79f2047c-c140-4069-81e6-240684490473",
+   "deliver_at": "2026-10-01T09:07:40.923Z",
+   "status": "PUBLISHED",
+   "action": "HOME_PAGE+PUSH",
+   "goal": "G07",
+   "reason": null
+  },
+  {
+   "decision_id": "D-03b353e215a8",
+   "trigger": "7e18b7e7-e73e-4734-b1bd-9dcb7f994797",
+   "deliver_at": "2026-10-01T09:07:46.952Z",
+   "status": "ABSTAINED",
+   "action": "NONE",
+   "goal": "G07",
+   "reason": "a personalised page for d3 is already live until 2026-10-01T11:07:41.642Z; not republished; no message: this goal already has one"
+  }
+ ],
+ "actions": [
+  {
+   "action_id": "A-d5309e905c59",
+   "type": "home_page",
+   "status": "published",
+   "status_reason": null,
+   "published_at": "2026-10-01T09:07:41.642Z",
+   "send_at": null
+  },
+  {
+   "action_id": "A-e54659799ebe",
+   "type": "push",
+   "status": "sent",
+   "status_reason": "revalidated at send time",
+   "published_at": "2026-10-01T09:07:41.642Z",
+   "send_at": "2026-10-01T12:07:43.639Z"
+  }
+ ],
+ "outcomes": [
+  {
+   "arm": "agent",
+   "attribution": "n/a",
+   "deadline": "2026-10-04T09:07:40.923Z",
+   "decision_id": "D-5b1754e7749e",
+   "evidence": [],
+   "exposures_before_success": [],
+   "exposures_window": [
+    "event:oua-003995",
+    "event:oua-003998"
+   ],
+   "final": true,
+   "goal_id": "G07",
+   "goal_instance_id": "GI-ffdbda91843c",
+   "goal_status_in_replay": "open",
+   "judged_at": "2026-10-15T17:58:40.000Z",
+   "observed_until": "2026-10-15T17:58:40.000Z",
+   "reason": "no qualifying play_started between 2026-10-01T09:07:40.923Z and 2026-10-04T09:07:40.923Z",
+   "result": "failed",
+   "rule_history": [
+    {
+     "at": "2026-10-01T09:07:40.923Z",
+     "change": "opened",
+     "reason": "series haja-d3 reached S1E1 of S1E49, idle 5.0 days"
+    }
+   ],
+   "rule_version": "G07-r1",
+   "started_at": "2026-10-01T09:07:40.923Z",
+   "success_condition": "same content_slug as the unfinished series",
+   "success_signal": "play_started",
+   "user_id": "U-00613"
+  }
+ ],
+ "learning": {
+  "actions": {
+   "home_page": {
+    "published": 1
+   },
+   "push": {
+    "sent": 1
+   }
+  },
+  "goal_results": [
+   {
+    "attribution": "n/a",
+    "goal_id": "G07",
+    "instance_id": "GI-ffdbda91843c",
+    "result": "failed"
+   }
+  ],
+  "messages": {
+   "push": {
+    "clicked": 0,
+    "delivered": 1,
+    "failed": {}
+   }
+  },
+  "notes": [],
+  "pages": {
+   "published": 1,
+   "shown_personalised": 1
+  }
+ },
+ "audit": []
+}

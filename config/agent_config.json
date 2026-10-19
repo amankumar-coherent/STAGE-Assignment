@@ -1,0 +1,12 @@
+{
+  "stale_trigger_seconds": 600,
+  "max_model_calls": 8,
+  "max_tool_calls": 20,
+  "model_timeout_ms": 3000,
+  "model_max_attempts": 2,
+  "mock_model_latency_ms": 700,
+  "store_read_timeout_ms": 2500,
+  "workers": 8,
+  "latency_target_s": 60,
+  "latency_fail_s": 300
+}

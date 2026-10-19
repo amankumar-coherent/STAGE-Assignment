@@ -1,0 +1,390 @@
+{
+ "viewer_id": "U-04962",
+ "arm": "agent",
+ "as_of": "2026-10-01T18:31:25.944Z",
+ "facts": {
+  "user_id": "U-04962",
+  "as_of": "2026-10-01T18:31:25.944Z",
+  "profile_present": true,
+  "history_start": "2026-08-31T18:31:55.380Z",
+  "history_covers_lifetime": false,
+  "events_seen": 66,
+  "facts": {
+   "dialect": {
+    "name": "dialect",
+    "value": null,
+    "source": "unknown",
+    "source_ref": null,
+    "source_time": null,
+    "freshness": "unknown",
+    "age_s": null,
+    "rule": "trigger carries no valid app_dialect (raw=None); the page the app will request is unknown, so no alternative is substituted",
+    "conflicts": [
+     {
+      "value": "d1",
+      "source": "profile",
+      "source_ref": "profile:U-04962@2026-09-28T20:47:01.643Z",
+      "resolution": "not used: cannot confirm it is the current app setting"
+     },
+     {
+      "value": "d3",
+      "source": "app_setting_earlier",
+      "source_ref": "event:35907e8b-15d2-4722-b3df-63b6be0a7a31",
+      "resolution": "not used: cannot confirm it is the current app setting"
+     }
+    ],
+    "supported": false
+   },
+   "ever_paid": {
+    "name": "ever_paid",
+    "value": true,
+    "source": "event",
+    "source_ref": "event:6b1ec9f1-ab1a-44f6-90d7-61fa0f4e8b5f",
+    "source_time": "2026-09-28T20:47:01.643Z",
+    "freshness": "aging",
+    "age_s": 251064.3,
+    "rule": "any paid purchase/renewal event or a paid status on any profile row",
+    "conflicts": [],
+    "supported": true
+   },
+   "history_covers_lifetime": {
+    "name": "history_covers_lifetime",
+    "value": false,
+    "source": "derived",
+    "source_ref": "profile:U-04962@2026-09-28T20:47:01.643Z",
+    "source_time": "2026-09-28T20:47:01.643Z",
+    "freshness": "unknown",
+    "age_s": null,
+    "rule": "signup_at >= first observable event (2026-08-31T18:31:55.380Z); 'never did X' claims need full coverage",
+    "conflicts": [],
+    "supported": true
+   },
+   "last_app_open_before_trigger": {
+    "name": "last_app_open_before_trigger",
+    "value": "2026-10-01T14:16:26.261Z",
+    "source": "event",
+    "source_ref": "event:35907e8b-15d2-4722-b3df-63b6be0a7a31",
+    "source_time": "2026-10-01T14:16:26.261Z",
+    "freshness": "fresh",
+    "age_s": 15299.7,
+    "rule": "latest app_open in another session, ordered by server-anchored occurrence time",
+    "conflicts": [],
+    "supported": true
+   },
+   "profile_present": {
+    "name": "profile_present",
+    "value": true,
+    "source": "profile",
+    "source_ref": "profile:U-04962@2026-09-28T20:47:01.643Z",
+    "source_time": "2026-09-28T20:47:01.643Z",
+    "freshness": "aging",
+    "age_s": 251064.3,
+    "rule": "newest updated_at among snapshot rows",
+    "conflicts": [],
+    "supported": true
+   },
+   "push_consent": {
+    "name": "push_consent",
+    "value": true,
+    "source": "profile",
+    "source_ref": "profile:U-04962@2026-09-28T20:47:01.643Z",
+    "source_time": "2026-09-28T20:47:01.643Z",
+    "freshness": "aging",
+    "age_s": 251064.3,
+    "rule": "newest profile row notifications_opt_in",
+    "conflicts": [],
+    "supported": true
+   },
+   "push_deliverable": {
+    "name": "push_deliverable",
+    "value": false,
+    "source": "derived",
+    "source_ref": "event:oua-031825",
+    "source_time": "2026-10-02T03:30:00.000Z",
+    "freshness": "unknown",
+    "age_s": null,
+    "rule": "learned from an earlier message_failed(token_invalid)",
+    "conflicts": [],
+    "supported": true
+   },
+   "signup_at": {
+    "name": "signup_at",
+    "value": "2025-08-06T08:32:18.883Z",
+    "source": "profile",
+    "source_ref": "profile:U-04962@2026-09-28T20:47:01.643Z",
+    "source_time": "2026-09-28T20:47:01.643Z",
+    "freshness": "aging",
+    "age_s": 251064.3,
+    "rule": "profile.signup_at (no signup event observed)",
+    "conflicts": [],
+    "supported": true
+   },
+   "subscription_status": {
+    "name": "subscription_status",
+    "value": "active",
+    "source": "profile",
+    "source_ref": "profile:U-04962@2026-09-28T20:47:01.643Z",
+    "source_time": "2026-09-28T20:47:01.643Z",
+    "freshness": "aging",
+    "age_s": 251064.3,
+    "rule": "newest profile row (no newer subscription event)",
+    "conflicts": [],
+    "supported": true
+   },
+   "whatsapp_consent": {
+    "name": "whatsapp_consent",
+    "value": false,
+    "source": "profile",
+    "source_ref": "profile:U-04962@2026-09-28T20:47:01.643Z",
+    "source_time": "2026-09-28T20:47:01.643Z",
+    "freshness": "aging",
+    "age_s": 251064.3,
+    "rule": "newest profile row whatsapp_opt_in",
+    "conflicts": [],
+    "supported": true
+   }
+  },
+  "watch": {
+   "plays": 8,
+   "completions": 2,
+   "watched_slugs": [
+    "pima-pana-d3",
+    "yane-tegi-d3"
+   ],
+   "top_genres": [
+    "Crime",
+    "Thriller",
+    "Action",
+    "Family"
+   ],
+   "play_days_recent": [
+    "2026-09-21",
+    "2026-09-24",
+    "2026-09-28"
+   ],
+   "series": [
+    {
+     "slug": "pima-pana-d3",
+     "furthest": [
+      1,
+      1
+     ],
+     "last_episode": [
+      1,
+      22
+     ],
+     "last_play": "2026-09-04T14:39:01.341Z"
+    },
+    {
+     "slug": "yane-tegi-d3",
+     "furthest": [
+      1,
+      2
+     ],
+     "last_episode": [
+      1,
+      20
+     ],
+     "last_play": "2026-09-28T11:02:43.522Z"
+    }
+   ]
+  },
+  "learning": {
+   "actions": {
+    "home_page": {
+     "published": 1
+    },
+    "push": {
+     "scheduled": 1
+    }
+   },
+   "goal_results": [
+    {
+     "attribution": "exposed_before_success",
+     "goal_id": "G07",
+     "instance_id": "GI-f11ec98ad959",
+     "result": "succeeded"
+    }
+   ],
+   "messages": {
+    "push": {
+     "clicked": 0,
+     "delivered": 0,
+     "failed": {
+      "token_invalid": 1
+     }
+    }
+   },
+   "notes": [
+    "push token invalid: future push suppressed for this viewer"
+   ],
+   "pages": {
+    "published": 1,
+    "shown_personalised": 1
+   },
+   "push_token_at": "2026-10-02T03:30:00.000Z",
+   "push_token_invalid": true,
+   "push_token_ref": "event:oua-031825"
+  }
+ },
+ "goals": [
+  {
+   "instance_id": "GI-f11ec98ad959",
+   "user_id": "U-04962",
+   "goal_id": "G07",
+   "rule_version": "G07-r1",
+   "status": "open",
+   "started_at": "2026-10-01T14:18:13.201Z",
+   "deadline": "2026-10-04T14:18:13.201Z",
+   "success_event": "play_started",
+   "success_condition": "same content_slug as the unfinished series",
+   "decision_id": "D-78993c7ec59b",
+   "arm": "agent",
+   "eligibility": {
+    "context": {
+     "furthest": [
+      1,
+      2
+     ],
+     "series_slug": "yane-tegi-d3"
+    },
+    "evidence": [
+     "goal_rule:G07-r1",
+     "event:25d37706-10f2-49ca-9a99-c5a821f23eea",
+     "event:7e5f2010-95e3-4430-9bde-e929898b44f1",
+     "event:5f7d30b9-49ba-4eb1-80df-ffb5e0eae743"
+    ],
+    "reason": "series yane-tegi-d3 reached S1E2 of S1E20, idle 3.1 days"
+   },
+   "closed_at": null,
+   "close_reason": null,
+   "outcome": null,
+   "history": [
+    {
+     "at": "2026-10-01T14:18:13.201Z",
+     "change": "opened",
+     "reason": "series yane-tegi-d3 reached S1E2 of S1E20, idle 3.1 days"
+    }
+   ]
+  }
+ ],
+ "decisions": [
+  {
+   "decision_id": "D-00097c7747bc",
+   "trigger": "450e9b19-f8a4-4ed5-a091-06edab63b35d",
+   "deliver_at": "2026-10-01T04:45:26.579Z",
+   "status": "ABSTAINED",
+   "action": "NONE",
+   "goal": null,
+   "reason": "stale trigger: app open buffered offline for 209.1 h (> 600 s); the viewer is not in a live session, so a page or message now would not match their visit. Event kept for history."
+  },
+  {
+   "decision_id": "D-78993c7ec59b",
+   "trigger": "35907e8b-15d2-4722-b3df-63b6be0a7a31",
+   "deliver_at": "2026-10-01T14:18:13.201Z",
+   "status": "PUBLISHED",
+   "action": "HOME_PAGE+PUSH",
+   "goal": "G07",
+   "reason": null
+  },
+  {
+   "decision_id": "D-78993c7ec59b-dup-4e31f6",
+   "trigger": "35907e8b-15d2-4722-b3df-63b6be0a7a31",
+   "deliver_at": "2026-10-01T14:20:41.820Z",
+   "status": "DUPLICATE_IGNORED",
+   "action": "NONE",
+   "goal": null,
+   "reason": "duplicate delivery (#2) of trigger 35907e8b-15d2-4722-b3df-63b6be0a7a31; already decided as D-78993c7ec59b"
+  }
+ ],
+ "actions": [
+  {
+   "action_id": "A-7ea7d2263c0e",
+   "type": "push",
+   "status": "scheduled",
+   "status_reason": null,
+   "published_at": "2026-10-01T14:18:13.921Z",
+   "send_at": "2026-10-02T03:30:00.000Z"
+  },
+  {
+   "action_id": "A-80a2bfb33ea1",
+   "type": "home_page",
+   "status": "published",
+   "status_reason": null,
+   "published_at": "2026-10-01T14:18:13.921Z",
+   "send_at": null
+  }
+ ],
+ "outcomes": [
+  {
+   "arm": "agent",
+   "attribution": "exposed_before_success",
+   "deadline": "2026-10-04T14:18:13.201Z",
+   "decision_id": "D-78993c7ec59b",
+   "evidence": [
+    "event:oua-031824"
+   ],
+   "exposures_before_success": [
+    "event:oua-031823"
+   ],
+   "final": true,
+   "goal_id": "G07",
+   "goal_instance_id": "GI-f11ec98ad959",
+   "goal_status_in_replay": "open",
+   "judged_at": "2026-10-15T17:58:40.000Z",
+   "observed_until": "2026-10-15T17:58:40.000Z",
+   "reason": "play_started at 2026-10-01T14:22:43.820Z (5 min after goal start) satisfies 'same content_slug as the unfinished series' under G07-r1",
+   "result": "succeeded",
+   "rule_history": [
+    {
+     "at": "2026-10-01T14:18:13.201Z",
+     "change": "opened",
+     "reason": "series yane-tegi-d3 reached S1E2 of S1E20, idle 3.1 days"
+    }
+   ],
+   "rule_version": "G07-r1",
+   "started_at": "2026-10-01T14:18:13.201Z",
+   "success_condition": "same content_slug as the unfinished series",
+   "success_signal": "play_started",
+   "user_id": "U-04962"
+  }
+ ],
+ "learning": {
+  "actions": {
+   "home_page": {
+    "published": 1
+   },
+   "push": {
+    "scheduled": 1
+   }
+  },
+  "goal_results": [
+   {
+    "attribution": "exposed_before_success",
+    "goal_id": "G07",
+    "instance_id": "GI-f11ec98ad959",
+    "result": "succeeded"
+   }
+  ],
+  "messages": {
+   "push": {
+    "clicked": 0,
+    "delivered": 0,
+    "failed": {
+     "token_invalid": 1
+    }
+   }
+  },
+  "notes": [
+   "push token invalid: future push suppressed for this viewer"
+  ],
+  "pages": {
+   "published": 1,
+   "shown_personalised": 1
+  },
+  "push_token_at": "2026-10-02T03:30:00.000Z",
+  "push_token_invalid": true,
+  "push_token_ref": "event:oua-031825"
+ },
+ "audit": []
+}

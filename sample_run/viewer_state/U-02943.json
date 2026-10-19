@@ -1,0 +1,399 @@
+{
+ "viewer_id": "U-02943",
+ "arm": "agent",
+ "as_of": "2026-10-01T18:31:25.944Z",
+ "facts": {
+  "user_id": "U-02943",
+  "as_of": "2026-10-01T18:31:25.944Z",
+  "profile_present": true,
+  "history_start": "2026-08-31T18:31:55.380Z",
+  "history_covers_lifetime": false,
+  "events_seen": 104,
+  "facts": {
+   "dialect": {
+    "name": "dialect",
+    "value": null,
+    "source": "unknown",
+    "source_ref": null,
+    "source_time": null,
+    "freshness": "unknown",
+    "age_s": null,
+    "rule": "trigger carries no valid app_dialect (raw=None); the page the app will request is unknown, so no alternative is substituted",
+    "conflicts": [
+     {
+      "value": "d4",
+      "source": "profile",
+      "source_ref": "profile:U-02943@2026-09-29T12:14:07.997Z",
+      "resolution": "not used: cannot confirm it is the current app setting"
+     },
+     {
+      "value": "d4",
+      "source": "app_setting_earlier",
+      "source_ref": "event:6dfc09c8-ea5e-4b0f-a43c-227058473a79",
+      "resolution": "not used: cannot confirm it is the current app setting"
+     }
+    ],
+    "supported": false
+   },
+   "ever_paid": {
+    "name": "ever_paid",
+    "value": true,
+    "source": "profile",
+    "source_ref": "profile:U-02943@2026-09-29T12:14:07.997Z",
+    "source_time": "2026-09-29T12:14:07.997Z",
+    "freshness": "aging",
+    "age_s": 195437.9,
+    "rule": "any paid purchase/renewal event or a paid status on any profile row",
+    "conflicts": [],
+    "supported": true
+   },
+   "history_covers_lifetime": {
+    "name": "history_covers_lifetime",
+    "value": false,
+    "source": "derived",
+    "source_ref": "profile:U-02943@2026-09-29T12:14:07.997Z",
+    "source_time": "2026-09-29T12:14:07.997Z",
+    "freshness": "unknown",
+    "age_s": null,
+    "rule": "signup_at >= first observable event (2026-08-31T18:31:55.380Z); 'never did X' claims need full coverage",
+    "conflicts": [],
+    "supported": true
+   },
+   "lapsed_at": {
+    "name": "lapsed_at",
+    "value": "2026-09-18T23:00:20.062Z",
+    "source": "event",
+    "source_ref": "event:013b4eac-01ec-4f8d-8b9a-129db44d2e9d",
+    "source_time": "2026-09-18T23:00:20.062Z",
+    "freshness": "unknown",
+    "age_s": null,
+    "rule": "subscription_lapsed event",
+    "conflicts": [],
+    "supported": true
+   },
+   "last_app_open_before_trigger": {
+    "name": "last_app_open_before_trigger",
+    "value": "2026-10-01T16:31:39.784Z",
+    "source": "event",
+    "source_ref": "event:6dfc09c8-ea5e-4b0f-a43c-227058473a79",
+    "source_time": "2026-10-01T16:31:39.784Z",
+    "freshness": "fresh",
+    "age_s": 7186.2,
+    "rule": "latest app_open in another session, ordered by server-anchored occurrence time",
+    "conflicts": [],
+    "supported": true
+   },
+   "profile_present": {
+    "name": "profile_present",
+    "value": true,
+    "source": "profile",
+    "source_ref": "profile:U-02943@2026-09-29T12:14:07.997Z",
+    "source_time": "2026-09-29T12:14:07.997Z",
+    "freshness": "aging",
+    "age_s": 195437.9,
+    "rule": "newest updated_at among snapshot rows",
+    "conflicts": [],
+    "supported": true
+   },
+   "push_consent": {
+    "name": "push_consent",
+    "value": true,
+    "source": "profile",
+    "source_ref": "profile:U-02943@2026-09-29T12:14:07.997Z",
+    "source_time": "2026-09-29T12:14:07.997Z",
+    "freshness": "aging",
+    "age_s": 195437.9,
+    "rule": "newest profile row notifications_opt_in",
+    "conflicts": [],
+    "supported": true
+   },
+   "signup_at": {
+    "name": "signup_at",
+    "value": "2025-05-26T00:11:48.077Z",
+    "source": "profile",
+    "source_ref": "profile:U-02943@2026-09-29T12:14:07.997Z",
+    "source_time": "2026-09-29T12:14:07.997Z",
+    "freshness": "aging",
+    "age_s": 195437.9,
+    "rule": "profile.signup_at (no signup event observed)",
+    "conflicts": [],
+    "supported": true
+   },
+   "subscription_status": {
+    "name": "subscription_status",
+    "value": "lapsed",
+    "source": "profile",
+    "source_ref": "profile:U-02943@2026-09-29T12:14:07.997Z",
+    "source_time": "2026-09-29T12:14:07.997Z",
+    "freshness": "aging",
+    "age_s": 195437.9,
+    "rule": "newest profile row (no newer subscription event)",
+    "conflicts": [],
+    "supported": true
+   },
+   "whatsapp_consent": {
+    "name": "whatsapp_consent",
+    "value": false,
+    "source": "profile",
+    "source_ref": "profile:U-02943@2026-09-29T12:14:07.997Z",
+    "source_time": "2026-09-29T12:14:07.997Z",
+    "freshness": "aging",
+    "age_s": 195437.9,
+    "rule": "newest profile row whatsapp_opt_in",
+    "conflicts": [],
+    "supported": true
+   }
+  },
+  "watch": {
+   "plays": 16,
+   "completions": 6,
+   "watched_slugs": [
+    "bagi-baya-d4",
+    "loba-d4",
+    "nada-sada-d4",
+    "radi-d4",
+    "tidaka-koni-d4"
+   ],
+   "top_genres": [
+    "Romance",
+    "Action",
+    "Crime"
+   ],
+   "play_days_recent": [
+    "2026-09-21",
+    "2026-09-22",
+    "2026-09-25",
+    "2026-09-26",
+    "2026-09-28",
+    "2026-09-29"
+   ],
+   "series": [
+    {
+     "slug": "nada-sada-d4",
+     "furthest": [
+      1,
+      1
+     ],
+     "last_episode": [
+      1,
+      1
+     ],
+     "last_play": "2026-09-01T17:11:34.452Z"
+    },
+    {
+     "slug": "radi-d4",
+     "furthest": [
+      1,
+      4
+     ],
+     "last_episode": [
+      1,
+      57
+     ],
+     "last_play": "2026-09-29T12:35:05.823Z"
+    },
+    {
+     "slug": "bagi-baya-d4",
+     "furthest": [
+      1,
+      2
+     ],
+     "last_episode": [
+      1,
+      40
+     ],
+     "last_play": "2026-09-22T15:14:42.614Z"
+    },
+    {
+     "slug": "tidaka-koni-d4",
+     "furthest": [
+      1,
+      1
+     ],
+     "last_episode": [
+      1,
+      1
+     ],
+     "last_play": "2026-09-21T06:56:58.519Z"
+    },
+    {
+     "slug": "loba-d4",
+     "furthest": [
+      1,
+      1
+     ],
+     "last_episode": [
+      1,
+      59
+     ],
+     "last_play": "2026-09-25T06:21:21.726Z"
+    }
+   ]
+  },
+  "learning": {
+   "actions": {
+    "home_page": {
+     "published": 1
+    },
+    "push": {
+     "scheduled": 1
+    }
+   },
+   "goal_results": [
+    {
+     "attribution": "n/a",
+     "goal_id": "G07",
+     "instance_id": "GI-6c4a4c8efdc5",
+     "result": "failed"
+    }
+   ],
+   "messages": {
+    "push": {
+     "clicked": 0,
+     "delivered": 1,
+     "failed": {}
+    }
+   },
+   "notes": [],
+   "pages": {
+    "published": 1,
+    "shown_personalised": 1
+   }
+  }
+ },
+ "goals": [
+  {
+   "instance_id": "GI-6c4a4c8efdc5",
+   "user_id": "U-02943",
+   "goal_id": "G07",
+   "rule_version": "G07-r1",
+   "status": "open",
+   "started_at": "2026-10-01T16:31:39.784Z",
+   "deadline": "2026-10-04T16:31:39.784Z",
+   "success_event": "play_started",
+   "success_condition": "same content_slug as the unfinished series",
+   "decision_id": "D-0d01ceba3df1",
+   "arm": "agent",
+   "eligibility": {
+    "context": {
+     "furthest": [
+      1,
+      1
+     ],
+     "series_slug": "loba-d4"
+    },
+    "evidence": [
+     "goal_rule:G07-r1",
+     "event:99fcd6b2-b262-4983-904d-675ddf27bd6a",
+     "event:ac32233f-f085-421e-905f-81af6111613c",
+     "event:2c79f2c5-c022-430c-98a1-b77adddb6af8"
+    ],
+    "reason": "series loba-d4 reached S1E1 of S1E59, idle 6.4 days"
+   },
+   "closed_at": null,
+   "close_reason": null,
+   "outcome": null,
+   "history": [
+    {
+     "at": "2026-10-01T16:31:39.784Z",
+     "change": "opened",
+     "reason": "series loba-d4 reached S1E1 of S1E59, idle 6.4 days"
+    }
+   ]
+  }
+ ],
+ "decisions": [
+  {
+   "decision_id": "D-0d01ceba3df1",
+   "trigger": "6dfc09c8-ea5e-4b0f-a43c-227058473a79",
+   "deliver_at": "2026-10-01T16:31:39.784Z",
+   "status": "PUBLISHED",
+   "action": "HOME_PAGE+PUSH",
+   "goal": "G07",
+   "reason": null
+  }
+ ],
+ "actions": [
+  {
+   "action_id": "A-ac51288deb92",
+   "type": "home_page",
+   "status": "published",
+   "status_reason": null,
+   "published_at": "2026-10-01T16:31:40.507Z",
+   "send_at": null
+  },
+  {
+   "action_id": "A-e1042ead60cd",
+   "type": "push",
+   "status": "scheduled",
+   "status_reason": null,
+   "published_at": "2026-10-01T16:31:40.507Z",
+   "send_at": "2026-10-02T03:30:00.000Z"
+  }
+ ],
+ "outcomes": [
+  {
+   "arm": "agent",
+   "attribution": "n/a",
+   "deadline": "2026-10-04T16:31:39.784Z",
+   "decision_id": "D-0d01ceba3df1",
+   "evidence": [],
+   "exposures_before_success": [],
+   "exposures_window": [
+    "event:oua-018727",
+    "event:oua-018729"
+   ],
+   "final": true,
+   "goal_id": "G07",
+   "goal_instance_id": "GI-6c4a4c8efdc5",
+   "goal_status_in_replay": "open",
+   "judged_at": "2026-10-15T17:58:40.000Z",
+   "observed_until": "2026-10-15T17:58:40.000Z",
+   "reason": "no qualifying play_started between 2026-10-01T16:31:39.784Z and 2026-10-04T16:31:39.784Z",
+   "result": "failed",
+   "rule_history": [
+    {
+     "at": "2026-10-01T16:31:39.784Z",
+     "change": "opened",
+     "reason": "series loba-d4 reached S1E1 of S1E59, idle 6.4 days"
+    }
+   ],
+   "rule_version": "G07-r1",
+   "started_at": "2026-10-01T16:31:39.784Z",
+   "success_condition": "same content_slug as the unfinished series",
+   "success_signal": "play_started",
+   "user_id": "U-02943"
+  }
+ ],
+ "learning": {
+  "actions": {
+   "home_page": {
+    "published": 1
+   },
+   "push": {
+    "scheduled": 1
+   }
+  },
+  "goal_results": [
+   {
+    "attribution": "n/a",
+    "goal_id": "G07",
+    "instance_id": "GI-6c4a4c8efdc5",
+    "result": "failed"
+   }
+  ],
+  "messages": {
+   "push": {
+    "clicked": 0,
+    "delivered": 1,
+    "failed": {}
+   }
+  },
+  "notes": [],
+  "pages": {
+   "published": 1,
+   "shown_personalised": 1
+  }
+ },
+ "audit": []
+}

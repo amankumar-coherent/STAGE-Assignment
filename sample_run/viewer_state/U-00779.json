@@ -1,0 +1,330 @@
+{
+ "viewer_id": "U-00779",
+ "arm": "agent",
+ "as_of": "2026-10-01T18:31:25.944Z",
+ "facts": {
+  "user_id": "U-00779",
+  "as_of": "2026-10-01T18:31:25.944Z",
+  "profile_present": true,
+  "history_start": "2026-08-31T18:31:55.380Z",
+  "history_covers_lifetime": false,
+  "events_seen": 54,
+  "facts": {
+   "dialect": {
+    "name": "dialect",
+    "value": null,
+    "source": "unknown",
+    "source_ref": null,
+    "source_time": null,
+    "freshness": "unknown",
+    "age_s": null,
+    "rule": "trigger carries no valid app_dialect (raw=None); the page the app will request is unknown, so no alternative is substituted",
+    "conflicts": [
+     {
+      "value": "d7",
+      "source": "profile",
+      "source_ref": "profile:U-00779@2026-09-28T21:01:48.447Z",
+      "resolution": "not used: cannot confirm it is the current app setting"
+     },
+     {
+      "value": "d7",
+      "source": "app_setting_earlier",
+      "source_ref": "event:b69d0d16-ce3e-4ea0-827a-7ae5c52d6b33",
+      "resolution": "not used: cannot confirm it is the current app setting"
+     }
+    ],
+    "supported": false
+   },
+   "ever_paid": {
+    "name": "ever_paid",
+    "value": true,
+    "source": "profile",
+    "source_ref": "profile:U-00779@2026-09-28T21:01:48.447Z",
+    "source_time": "2026-09-28T21:01:48.447Z",
+    "freshness": "aging",
+    "age_s": 250177.5,
+    "rule": "any paid purchase/renewal event or a paid status on any profile row",
+    "conflicts": [],
+    "supported": true
+   },
+   "history_covers_lifetime": {
+    "name": "history_covers_lifetime",
+    "value": false,
+    "source": "derived",
+    "source_ref": "profile:U-00779@2026-09-28T21:01:48.447Z",
+    "source_time": "2026-09-28T21:01:48.447Z",
+    "freshness": "unknown",
+    "age_s": null,
+    "rule": "signup_at >= first observable event (2026-08-31T18:31:55.380Z); 'never did X' claims need full coverage",
+    "conflicts": [],
+    "supported": true
+   },
+   "lapsed_at": {
+    "name": "lapsed_at",
+    "value": "2026-09-06T11:09:58.871Z",
+    "source": "event",
+    "source_ref": "event:cedc0be6-5f04-4b50-adb9-62e93c545fe7",
+    "source_time": "2026-09-06T11:09:58.871Z",
+    "freshness": "unknown",
+    "age_s": null,
+    "rule": "subscription_lapsed event",
+    "conflicts": [],
+    "supported": true
+   },
+   "last_app_open_before_trigger": {
+    "name": "last_app_open_before_trigger",
+    "value": "2026-10-01T16:13:09.202Z",
+    "source": "event",
+    "source_ref": "event:b69d0d16-ce3e-4ea0-827a-7ae5c52d6b33",
+    "source_time": "2026-10-01T16:13:09.202Z",
+    "freshness": "fresh",
+    "age_s": 8296.7,
+    "rule": "latest app_open in another session, ordered by server-anchored occurrence time",
+    "conflicts": [],
+    "supported": true
+   },
+   "profile_present": {
+    "name": "profile_present",
+    "value": true,
+    "source": "profile",
+    "source_ref": "profile:U-00779@2026-09-28T21:01:48.447Z",
+    "source_time": "2026-09-28T21:01:48.447Z",
+    "freshness": "aging",
+    "age_s": 250177.5,
+    "rule": "newest updated_at among snapshot rows",
+    "conflicts": [],
+    "supported": true
+   },
+   "push_consent": {
+    "name": "push_consent",
+    "value": true,
+    "source": "profile",
+    "source_ref": "profile:U-00779@2026-09-28T21:01:48.447Z",
+    "source_time": "2026-09-28T21:01:48.447Z",
+    "freshness": "aging",
+    "age_s": 250177.5,
+    "rule": "newest profile row notifications_opt_in",
+    "conflicts": [],
+    "supported": true
+   },
+   "signup_at": {
+    "name": "signup_at",
+    "value": "2025-11-07T21:04:25.858Z",
+    "source": "profile",
+    "source_ref": "profile:U-00779@2026-09-28T21:01:48.447Z",
+    "source_time": "2026-09-28T21:01:48.447Z",
+    "freshness": "aging",
+    "age_s": 250177.5,
+    "rule": "profile.signup_at (no signup event observed)",
+    "conflicts": [],
+    "supported": true
+   },
+   "subscription_status": {
+    "name": "subscription_status",
+    "value": "lapsed",
+    "source": "profile",
+    "source_ref": "profile:U-00779@2026-09-28T21:01:48.447Z",
+    "source_time": "2026-09-28T21:01:48.447Z",
+    "freshness": "aging",
+    "age_s": 250177.5,
+    "rule": "newest profile row (no newer subscription event)",
+    "conflicts": [],
+    "supported": true
+   },
+   "whatsapp_consent": {
+    "name": "whatsapp_consent",
+    "value": true,
+    "source": "profile",
+    "source_ref": "profile:U-00779@2026-09-28T21:01:48.447Z",
+    "source_time": "2026-09-28T21:01:48.447Z",
+    "freshness": "aging",
+    "age_s": 250177.5,
+    "rule": "newest profile row whatsapp_opt_in",
+    "conflicts": [],
+    "supported": true
+   }
+  },
+  "watch": {
+   "plays": 6,
+   "completions": 2,
+   "watched_slugs": [
+    "dhapipa-gini-d2",
+    "guka-kosusa-d2",
+    "molo-d2",
+    "raloja-d1"
+   ],
+   "top_genres": [
+    "Romance",
+    "Action",
+    "Devotional",
+    "Family"
+   ],
+   "play_days_recent": [
+    "2026-09-23",
+    "2026-09-29"
+   ],
+   "series": [
+    {
+     "slug": "molo-d2",
+     "furthest": [
+      1,
+      1
+     ],
+     "last_episode": [
+      1,
+      7
+     ],
+     "last_play": "2026-09-12T08:37:37.147Z"
+    },
+    {
+     "slug": "raloja-d1",
+     "furthest": [
+      1,
+      1
+     ],
+     "last_episode": [
+      1,
+      1
+     ],
+     "last_play": "2026-09-06T18:48:01.377Z"
+    },
+    {
+     "slug": "dhapipa-gini-d2",
+     "furthest": [
+      1,
+      1
+     ],
+     "last_episode": [
+      1,
+      55
+     ],
+     "last_play": "2026-09-12T07:38:28.921Z"
+    },
+    {
+     "slug": "guka-kosusa-d2",
+     "furthest": [
+      1,
+      2
+     ],
+     "last_episode": [
+      1,
+      41
+     ],
+     "last_play": "2026-09-29T13:53:26.857Z"
+    }
+   ]
+  },
+  "learning": {
+   "actions": {},
+   "goal_results": [
+    {
+     "attribution": "n/a",
+     "goal_id": "G06",
+     "instance_id": "GI-4ca04fb01baf",
+     "result": "failed"
+    }
+   ],
+   "messages": {},
+   "notes": [],
+   "pages": {
+    "published": 0,
+    "shown_personalised": 0
+   }
+  }
+ },
+ "goals": [
+  {
+   "instance_id": "GI-4ca04fb01baf",
+   "user_id": "U-00779",
+   "goal_id": "G06",
+   "rule_version": "G06-r1",
+   "status": "open",
+   "started_at": "2026-10-01T16:13:09.202Z",
+   "deadline": "2026-10-15T16:13:09.202Z",
+   "success_event": "purchase_completed",
+   "success_condition": "any paid plan",
+   "decision_id": "D-566737d7db99",
+   "arm": "agent",
+   "eligibility": {
+    "context": {},
+    "evidence": [
+     "goal_rule:G06-r1",
+     "profile:U-00779@2026-09-28T21:01:48.447Z",
+     "event:cedc0be6-5f04-4b50-adb9-62e93c545fe7"
+    ],
+    "reason": "lapsed 25.2 days ago (<= 30 days)"
+   },
+   "closed_at": null,
+   "close_reason": null,
+   "outcome": null,
+   "history": [
+    {
+     "at": "2026-10-01T16:13:09.202Z",
+     "change": "opened",
+     "reason": "lapsed 25.2 days ago (<= 30 days)"
+    }
+   ]
+  }
+ ],
+ "decisions": [
+  {
+   "decision_id": "D-566737d7db99",
+   "trigger": "b69d0d16-ce3e-4ea0-827a-7ae5c52d6b33",
+   "deliver_at": "2026-10-01T16:13:09.202Z",
+   "status": "ABSTAINED",
+   "action": "NONE",
+   "goal": "G06",
+   "reason": "cannot act: current app_dialect on the trigger (the app shows the page of its current setting); d7 has no titles in the catalogue"
+  }
+ ],
+ "actions": [],
+ "outcomes": [
+  {
+   "arm": "agent",
+   "attribution": "n/a",
+   "deadline": "2026-10-15T16:13:09.202Z",
+   "decision_id": "D-566737d7db99",
+   "evidence": [],
+   "exposures_before_success": [],
+   "exposures_window": [],
+   "final": true,
+   "goal_id": "G06",
+   "goal_instance_id": "GI-4ca04fb01baf",
+   "goal_status_in_replay": "open",
+   "judged_at": "2026-10-15T17:58:40.000Z",
+   "observed_until": "2026-10-15T17:58:40.000Z",
+   "reason": "no qualifying purchase_completed between 2026-10-01T16:13:09.202Z and 2026-10-15T16:13:09.202Z",
+   "result": "failed",
+   "rule_history": [
+    {
+     "at": "2026-10-01T16:13:09.202Z",
+     "change": "opened",
+     "reason": "lapsed 25.2 days ago (<= 30 days)"
+    }
+   ],
+   "rule_version": "G06-r1",
+   "started_at": "2026-10-01T16:13:09.202Z",
+   "success_condition": "any paid plan",
+   "success_signal": "purchase_completed",
+   "user_id": "U-00779"
+  }
+ ],
+ "learning": {
+  "actions": {},
+  "goal_results": [
+   {
+    "attribution": "n/a",
+    "goal_id": "G06",
+    "instance_id": "GI-4ca04fb01baf",
+    "result": "failed"
+   }
+  ],
+  "messages": {},
+  "notes": [],
+  "pages": {
+   "published": 0,
+   "shown_personalised": 0
+  }
+ },
+ "audit": []
+}

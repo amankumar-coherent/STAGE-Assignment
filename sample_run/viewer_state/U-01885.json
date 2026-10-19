@@ -1,0 +1,402 @@
+{
+ "viewer_id": "U-01885",
+ "arm": "agent",
+ "as_of": "2026-10-01T18:31:25.944Z",
+ "facts": {
+  "user_id": "U-01885",
+  "as_of": "2026-10-01T18:31:25.944Z",
+  "profile_present": true,
+  "history_start": "2026-08-31T18:31:55.380Z",
+  "history_covers_lifetime": false,
+  "events_seen": 127,
+  "facts": {
+   "dialect": {
+    "name": "dialect",
+    "value": null,
+    "source": "unknown",
+    "source_ref": null,
+    "source_time": null,
+    "freshness": "unknown",
+    "age_s": null,
+    "rule": "trigger carries no valid app_dialect (raw=None); the page the app will request is unknown, so no alternative is substituted",
+    "conflicts": [
+     {
+      "value": "d4",
+      "source": "profile",
+      "source_ref": "profile:U-01885@2026-09-29T03:14:06.574Z",
+      "resolution": "not used: cannot confirm it is the current app setting"
+     },
+     {
+      "value": "d4",
+      "source": "app_setting_earlier",
+      "source_ref": "event:23b9935e-fa9e-490f-8a6a-b94c9e1edc34",
+      "resolution": "not used: cannot confirm it is the current app setting"
+     }
+    ],
+    "supported": false
+   },
+   "ever_paid": {
+    "name": "ever_paid",
+    "value": true,
+    "source": "event",
+    "source_ref": "event:81415a5f-a430-49c1-8f6e-f82b039ab60b",
+    "source_time": "2026-09-29T03:14:06.574Z",
+    "freshness": "aging",
+    "age_s": 227839.4,
+    "rule": "any paid purchase/renewal event or a paid status on any profile row",
+    "conflicts": [],
+    "supported": true
+   },
+   "history_covers_lifetime": {
+    "name": "history_covers_lifetime",
+    "value": false,
+    "source": "derived",
+    "source_ref": "profile:U-01885@2026-09-29T03:14:06.574Z",
+    "source_time": "2026-09-29T03:14:06.574Z",
+    "freshness": "unknown",
+    "age_s": null,
+    "rule": "signup_at >= first observable event (2026-08-31T18:31:55.380Z); 'never did X' claims need full coverage",
+    "conflicts": [],
+    "supported": true
+   },
+   "last_app_open_before_trigger": {
+    "name": "last_app_open_before_trigger",
+    "value": "2026-10-01T06:37:32.685Z",
+    "source": "event",
+    "source_ref": "event:23b9935e-fa9e-490f-8a6a-b94c9e1edc34",
+    "source_time": "2026-10-01T06:37:32.685Z",
+    "freshness": "fresh",
+    "age_s": 42833.3,
+    "rule": "latest app_open in another session, ordered by server-anchored occurrence time",
+    "conflicts": [],
+    "supported": true
+   },
+   "profile_present": {
+    "name": "profile_present",
+    "value": true,
+    "source": "profile",
+    "source_ref": "profile:U-01885@2026-09-29T03:14:06.574Z",
+    "source_time": "2026-09-29T03:14:06.574Z",
+    "freshness": "aging",
+    "age_s": 227839.4,
+    "rule": "newest updated_at among snapshot rows",
+    "conflicts": [],
+    "supported": true
+   },
+   "push_consent": {
+    "name": "push_consent",
+    "value": true,
+    "source": "profile",
+    "source_ref": "profile:U-01885@2026-09-29T03:14:06.574Z",
+    "source_time": "2026-09-29T03:14:06.574Z",
+    "freshness": "aging",
+    "age_s": 227839.4,
+    "rule": "newest profile row notifications_opt_in",
+    "conflicts": [],
+    "supported": true
+   },
+   "signup_at": {
+    "name": "signup_at",
+    "value": "2024-12-07T13:34:33.640Z",
+    "source": "profile",
+    "source_ref": "profile:U-01885@2026-09-29T03:14:06.574Z",
+    "source_time": "2026-09-29T03:14:06.574Z",
+    "freshness": "aging",
+    "age_s": 227839.4,
+    "rule": "profile.signup_at (no signup event observed)",
+    "conflicts": [],
+    "supported": true
+   },
+   "subscription_status": {
+    "name": "subscription_status",
+    "value": "active",
+    "source": "profile",
+    "source_ref": "profile:U-01885@2026-09-29T03:14:06.574Z",
+    "source_time": "2026-09-29T03:14:06.574Z",
+    "freshness": "aging",
+    "age_s": 227839.4,
+    "rule": "newest profile row (no newer subscription event)",
+    "conflicts": [],
+    "supported": true
+   },
+   "whatsapp_consent": {
+    "name": "whatsapp_consent",
+    "value": false,
+    "source": "profile",
+    "source_ref": "profile:U-01885@2026-09-29T03:14:06.574Z",
+    "source_time": "2026-09-29T03:14:06.574Z",
+    "freshness": "aging",
+    "age_s": 227839.4,
+    "rule": "newest profile row whatsapp_opt_in",
+    "conflicts": [],
+    "supported": true
+   }
+  },
+  "watch": {
+   "plays": 17,
+   "completions": 10,
+   "watched_slugs": [
+    "baba-yarachu-d4",
+    "bagi-baya-d4",
+    "gineni-d4",
+    "nada-sada-d4",
+    "nisu-sapapa-d4",
+    "tidaka-koni-d4"
+   ],
+   "top_genres": [
+    "Crime",
+    "Family",
+    "Action",
+    "Thriller",
+    "Drama"
+   ],
+   "play_days_recent": [
+    "2026-09-18",
+    "2026-09-20",
+    "2026-09-22",
+    "2026-09-23",
+    "2026-09-26",
+    "2026-09-27"
+   ],
+   "series": [
+    {
+     "slug": "nada-sada-d4",
+     "furthest": [
+      1,
+      1
+     ],
+     "last_episode": [
+      1,
+      1
+     ],
+     "last_play": "2026-09-02T18:28:10.250Z"
+    },
+    {
+     "slug": "tidaka-koni-d4",
+     "furthest": [
+      1,
+      1
+     ],
+     "last_episode": [
+      1,
+      1
+     ],
+     "last_play": "2026-09-20T13:08:58.220Z"
+    },
+    {
+     "slug": "nisu-sapapa-d4",
+     "furthest": [
+      1,
+      4
+     ],
+     "last_episode": [
+      1,
+      41
+     ],
+     "last_play": "2026-09-26T11:08:42.247Z"
+    },
+    {
+     "slug": "gineni-d4",
+     "furthest": [
+      1,
+      1
+     ],
+     "last_episode": [
+      1,
+      1
+     ],
+     "last_play": "2026-09-11T16:38:44.295Z"
+    },
+    {
+     "slug": "bagi-baya-d4",
+     "furthest": [
+      1,
+      1
+     ],
+     "last_episode": [
+      1,
+      40
+     ],
+     "last_play": "2026-09-13T11:42:40.050Z"
+    },
+    {
+     "slug": "baba-yarachu-d4",
+     "furthest": [
+      1,
+      2
+     ],
+     "last_episode": [
+      1,
+      25
+     ],
+     "last_play": "2026-09-27T15:06:51.474Z"
+    }
+   ]
+  },
+  "learning": {
+   "actions": {
+    "home_page": {
+     "published": 1
+    },
+    "push": {
+     "sent": 1
+    }
+   },
+   "goal_results": [
+    {
+     "attribution": "n/a",
+     "goal_id": "G07",
+     "instance_id": "GI-4ad778ac3738",
+     "result": "failed"
+    }
+   ],
+   "messages": {
+    "push": {
+     "clicked": 0,
+     "delivered": 1,
+     "failed": {}
+    }
+   },
+   "notes": [],
+   "pages": {
+    "published": 1,
+    "shown_personalised": 1
+   }
+  }
+ },
+ "goals": [
+  {
+   "instance_id": "GI-4ad778ac3738",
+   "user_id": "U-01885",
+   "goal_id": "G07",
+   "rule_version": "G07-r1",
+   "status": "open",
+   "started_at": "2026-10-01T06:37:32.685Z",
+   "deadline": "2026-10-04T06:37:32.685Z",
+   "success_event": "play_started",
+   "success_condition": "same content_slug as the unfinished series",
+   "decision_id": "D-0dda3cb2c6a4",
+   "arm": "agent",
+   "eligibility": {
+    "context": {
+     "furthest": [
+      1,
+      2
+     ],
+     "series_slug": "baba-yarachu-d4"
+    },
+    "evidence": [
+     "goal_rule:G07-r1",
+     "event:79d312d6-52bb-419f-9bea-6f64a907d1d6",
+     "event:ba14fcd5-7f3d-425f-a56f-2f33b7439518",
+     "event:15834303-2175-4713-ae55-c2c2557354ef"
+    ],
+    "reason": "series baba-yarachu-d4 reached S1E2 of S1E25, idle 3.6 days"
+   },
+   "closed_at": null,
+   "close_reason": null,
+   "outcome": null,
+   "history": [
+    {
+     "at": "2026-10-01T06:37:32.685Z",
+     "change": "opened",
+     "reason": "series baba-yarachu-d4 reached S1E2 of S1E25, idle 3.6 days"
+    }
+   ]
+  }
+ ],
+ "decisions": [
+  {
+   "decision_id": "D-0dda3cb2c6a4",
+   "trigger": "23b9935e-fa9e-490f-8a6a-b94c9e1edc34",
+   "deliver_at": "2026-10-01T06:37:32.685Z",
+   "status": "PUBLISHED",
+   "action": "HOME_PAGE+PUSH",
+   "goal": "G07",
+   "reason": null
+  }
+ ],
+ "actions": [
+  {
+   "action_id": "A-a99be44f1909",
+   "type": "push",
+   "status": "sent",
+   "status_reason": "revalidated at send time",
+   "published_at": "2026-10-01T06:37:33.410Z",
+   "send_at": "2026-10-01T09:37:35.403Z"
+  },
+  {
+   "action_id": "A-c0e770d4500e",
+   "type": "home_page",
+   "status": "published",
+   "status_reason": null,
+   "published_at": "2026-10-01T06:37:33.410Z",
+   "send_at": null
+  }
+ ],
+ "outcomes": [
+  {
+   "arm": "agent",
+   "attribution": "n/a",
+   "deadline": "2026-10-04T06:37:32.685Z",
+   "decision_id": "D-0dda3cb2c6a4",
+   "evidence": [],
+   "exposures_before_success": [],
+   "exposures_window": [
+    "event:oua-012832",
+    "event:oua-012834"
+   ],
+   "final": true,
+   "goal_id": "G07",
+   "goal_instance_id": "GI-4ad778ac3738",
+   "goal_status_in_replay": "open",
+   "judged_at": "2026-10-15T17:58:40.000Z",
+   "observed_until": "2026-10-15T17:58:40.000Z",
+   "reason": "no qualifying play_started between 2026-10-01T06:37:32.685Z and 2026-10-04T06:37:32.685Z",
+   "result": "failed",
+   "rule_history": [
+    {
+     "at": "2026-10-01T06:37:32.685Z",
+     "change": "opened",
+     "reason": "series baba-yarachu-d4 reached S1E2 of S1E25, idle 3.6 days"
+    }
+   ],
+   "rule_version": "G07-r1",
+   "started_at": "2026-10-01T06:37:32.685Z",
+   "success_condition": "same content_slug as the unfinished series",
+   "success_signal": "play_started",
+   "user_id": "U-01885"
+  }
+ ],
+ "learning": {
+  "actions": {
+   "home_page": {
+    "published": 1
+   },
+   "push": {
+    "sent": 1
+   }
+  },
+  "goal_results": [
+   {
+    "attribution": "n/a",
+    "goal_id": "G07",
+    "instance_id": "GI-4ad778ac3738",
+    "result": "failed"
+   }
+  ],
+  "messages": {
+   "push": {
+    "clicked": 0,
+    "delivered": 1,
+    "failed": {}
+   }
+  },
+  "notes": [],
+  "pages": {
+   "published": 1,
+   "shown_personalised": 1
+  }
+ },
+ "audit": []
+}

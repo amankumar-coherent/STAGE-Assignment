@@ -1,0 +1,362 @@
+{
+ "viewer_id": "U-03792",
+ "arm": "agent",
+ "as_of": "2026-10-01T18:31:25.944Z",
+ "facts": {
+  "user_id": "U-03792",
+  "as_of": "2026-10-01T18:31:25.944Z",
+  "profile_present": true,
+  "history_start": "2026-08-31T18:31:55.380Z",
+  "history_covers_lifetime": false,
+  "events_seen": 87,
+  "facts": {
+   "dialect": {
+    "name": "dialect",
+    "value": null,
+    "source": "unknown",
+    "source_ref": null,
+    "source_time": null,
+    "freshness": "unknown",
+    "age_s": null,
+    "rule": "trigger carries no valid app_dialect (raw=None); the page the app will request is unknown, so no alternative is substituted",
+    "conflicts": [
+     {
+      "value": "d1",
+      "source": "profile",
+      "source_ref": "profile:U-03792@2026-09-29T11:05:36.705Z",
+      "resolution": "not used: cannot confirm it is the current app setting"
+     },
+     {
+      "value": "d4",
+      "source": "app_setting_earlier",
+      "source_ref": "event:b9de07b0-0f2e-4966-bfdb-3782026c8a5e",
+      "resolution": "not used: cannot confirm it is the current app setting"
+     }
+    ],
+    "supported": false
+   },
+   "ever_paid": {
+    "name": "ever_paid",
+    "value": true,
+    "source": "event",
+    "source_ref": "event:b3762ad3-e6c1-4d63-8cd9-2a1ab1b5e17e",
+    "source_time": "2026-09-29T11:05:36.705Z",
+    "freshness": "aging",
+    "age_s": 199549.2,
+    "rule": "any paid purchase/renewal event or a paid status on any profile row",
+    "conflicts": [],
+    "supported": true
+   },
+   "history_covers_lifetime": {
+    "name": "history_covers_lifetime",
+    "value": false,
+    "source": "derived",
+    "source_ref": "profile:U-03792@2026-09-29T11:05:36.705Z",
+    "source_time": "2026-09-29T11:05:36.705Z",
+    "freshness": "unknown",
+    "age_s": null,
+    "rule": "signup_at >= first observable event (2026-08-31T18:31:55.380Z); 'never did X' claims need full coverage",
+    "conflicts": [],
+    "supported": true
+   },
+   "last_app_open_before_trigger": {
+    "name": "last_app_open_before_trigger",
+    "value": "2026-10-01T06:38:30.125Z",
+    "source": "event",
+    "source_ref": "event:b9de07b0-0f2e-4966-bfdb-3782026c8a5e",
+    "source_time": "2026-10-01T06:38:30.125Z",
+    "freshness": "fresh",
+    "age_s": 42775.8,
+    "rule": "latest app_open in another session, ordered by server-anchored occurrence time",
+    "conflicts": [],
+    "supported": true
+   },
+   "profile_present": {
+    "name": "profile_present",
+    "value": true,
+    "source": "profile",
+    "source_ref": "profile:U-03792@2026-09-29T11:05:36.705Z",
+    "source_time": "2026-09-29T11:05:36.705Z",
+    "freshness": "aging",
+    "age_s": 199549.2,
+    "rule": "newest updated_at among snapshot rows",
+    "conflicts": [],
+    "supported": true
+   },
+   "push_consent": {
+    "name": "push_consent",
+    "value": true,
+    "source": "profile",
+    "source_ref": "profile:U-03792@2026-09-29T11:05:36.705Z",
+    "source_time": "2026-09-29T11:05:36.705Z",
+    "freshness": "aging",
+    "age_s": 199549.2,
+    "rule": "newest profile row notifications_opt_in",
+    "conflicts": [],
+    "supported": true
+   },
+   "signup_at": {
+    "name": "signup_at",
+    "value": "2025-12-13T14:02:36.266Z",
+    "source": "profile",
+    "source_ref": "profile:U-03792@2026-09-29T11:05:36.705Z",
+    "source_time": "2026-09-29T11:05:36.705Z",
+    "freshness": "aging",
+    "age_s": 199549.2,
+    "rule": "profile.signup_at (no signup event observed)",
+    "conflicts": [],
+    "supported": true
+   },
+   "subscription_status": {
+    "name": "subscription_status",
+    "value": "active",
+    "source": "profile",
+    "source_ref": "profile:U-03792@2026-09-29T11:05:36.705Z",
+    "source_time": "2026-09-29T11:05:36.705Z",
+    "freshness": "aging",
+    "age_s": 199549.2,
+    "rule": "newest profile row (no newer subscription event)",
+    "conflicts": [],
+    "supported": true
+   },
+   "whatsapp_consent": {
+    "name": "whatsapp_consent",
+    "value": true,
+    "source": "profile",
+    "source_ref": "profile:U-03792@2026-09-29T11:05:36.705Z",
+    "source_time": "2026-09-29T11:05:36.705Z",
+    "freshness": "aging",
+    "age_s": 199549.2,
+    "rule": "newest profile row whatsapp_opt_in",
+    "conflicts": [],
+    "supported": true
+   }
+  },
+  "watch": {
+   "plays": 11,
+   "completions": 4,
+   "watched_slugs": [
+    "bagi-baya-d4",
+    "gineni-d4",
+    "nisu-sapapa-d4"
+   ],
+   "top_genres": [
+    "Romance",
+    "Family",
+    "Crime",
+    "Drama"
+   ],
+   "play_days_recent": [
+    "2026-09-19",
+    "2026-09-20",
+    "2026-09-30"
+   ],
+   "series": [
+    {
+     "slug": "bagi-baya-d4",
+     "furthest": [
+      1,
+      4
+     ],
+     "last_episode": [
+      1,
+      40
+     ],
+     "last_play": "2026-09-30T07:43:03.758Z"
+    },
+    {
+     "slug": "nisu-sapapa-d4",
+     "furthest": [
+      1,
+      1
+     ],
+     "last_episode": [
+      1,
+      41
+     ],
+     "last_play": "2026-09-02T16:39:02.189Z"
+    },
+    {
+     "slug": "gineni-d4",
+     "furthest": [
+      1,
+      1
+     ],
+     "last_episode": [
+      1,
+      1
+     ],
+     "last_play": "2026-09-30T09:59:31.625Z"
+    }
+   ]
+  },
+  "learning": {
+   "actions": {
+    "home_page": {
+     "published": 1
+    },
+    "push": {
+     "sent": 1
+    }
+   },
+   "goal_results": [
+    {
+     "attribution": "n/a",
+     "goal_id": "G07",
+     "instance_id": "GI-895629ac4b71",
+     "result": "failed"
+    }
+   ],
+   "messages": {
+    "push": {
+     "clicked": 0,
+     "delivered": 1,
+     "failed": {}
+    }
+   },
+   "notes": [
+    "published page(s) were never shown: viewer did not reach a home page while a page was live"
+   ],
+   "pages": {
+    "published": 1,
+    "shown_personalised": 0
+   }
+  }
+ },
+ "goals": [
+  {
+   "instance_id": "GI-895629ac4b71",
+   "user_id": "U-03792",
+   "goal_id": "G07",
+   "rule_version": "G07-r1",
+   "status": "open",
+   "started_at": "2026-10-01T06:38:30.125Z",
+   "deadline": "2026-10-04T06:38:30.125Z",
+   "success_event": "play_started",
+   "success_condition": "same content_slug as the unfinished series",
+   "decision_id": "D-7c80ebc6ea82",
+   "arm": "agent",
+   "eligibility": {
+    "context": {
+     "furthest": [
+      1,
+      1
+     ],
+     "series_slug": "nisu-sapapa-d4"
+    },
+    "evidence": [
+     "goal_rule:G07-r1",
+     "event:3a4fdb33-557b-4dd6-904d-2714308cf9d0",
+     "event:808744ea-5532-4bf6-8f22-b349d19079df",
+     "event:cbfbd4a2-accb-497b-a13a-041e978a3fbd"
+    ],
+    "reason": "series nisu-sapapa-d4 reached S1E1 of S1E41, idle 28.6 days"
+   },
+   "closed_at": null,
+   "close_reason": null,
+   "outcome": null,
+   "history": [
+    {
+     "at": "2026-10-01T06:38:30.125Z",
+     "change": "opened",
+     "reason": "series nisu-sapapa-d4 reached S1E1 of S1E41, idle 28.6 days"
+    }
+   ]
+  }
+ ],
+ "decisions": [
+  {
+   "decision_id": "D-7c80ebc6ea82",
+   "trigger": "b9de07b0-0f2e-4966-bfdb-3782026c8a5e",
+   "deliver_at": "2026-10-01T06:38:30.125Z",
+   "status": "PUBLISHED",
+   "action": "HOME_PAGE+PUSH",
+   "goal": "G07",
+   "reason": null
+  }
+ ],
+ "actions": [
+  {
+   "action_id": "A-915d1f4e2ec7",
+   "type": "push",
+   "status": "sent",
+   "status_reason": "revalidated at send time",
+   "published_at": "2026-10-01T06:38:30.848Z",
+   "send_at": "2026-10-01T09:38:32.842Z"
+  },
+  {
+   "action_id": "A-f161d3827ddd",
+   "type": "home_page",
+   "status": "published",
+   "status_reason": null,
+   "published_at": "2026-10-01T06:38:30.848Z",
+   "send_at": null
+  }
+ ],
+ "outcomes": [
+  {
+   "arm": "agent",
+   "attribution": "n/a",
+   "deadline": "2026-10-04T06:38:30.125Z",
+   "decision_id": "D-7c80ebc6ea82",
+   "evidence": [],
+   "exposures_before_success": [],
+   "exposures_window": [
+    "event:oua-024595"
+   ],
+   "final": true,
+   "goal_id": "G07",
+   "goal_instance_id": "GI-895629ac4b71",
+   "goal_status_in_replay": "open",
+   "judged_at": "2026-10-15T17:58:40.000Z",
+   "observed_until": "2026-10-15T17:58:40.000Z",
+   "reason": "no qualifying play_started between 2026-10-01T06:38:30.125Z and 2026-10-04T06:38:30.125Z",
+   "result": "failed",
+   "rule_history": [
+    {
+     "at": "2026-10-01T06:38:30.125Z",
+     "change": "opened",
+     "reason": "series nisu-sapapa-d4 reached S1E1 of S1E41, idle 28.6 days"
+    }
+   ],
+   "rule_version": "G07-r1",
+   "started_at": "2026-10-01T06:38:30.125Z",
+   "success_condition": "same content_slug as the unfinished series",
+   "success_signal": "play_started",
+   "user_id": "U-03792"
+  }
+ ],
+ "learning": {
+  "actions": {
+   "home_page": {
+    "published": 1
+   },
+   "push": {
+    "sent": 1
+   }
+  },
+  "goal_results": [
+   {
+    "attribution": "n/a",
+    "goal_id": "G07",
+    "instance_id": "GI-895629ac4b71",
+    "result": "failed"
+   }
+  ],
+  "messages": {
+   "push": {
+    "clicked": 0,
+    "delivered": 1,
+    "failed": {}
+   }
+  },
+  "notes": [
+   "published page(s) were never shown: viewer did not reach a home page while a page was live"
+  ],
+  "pages": {
+   "published": 1,
+   "shown_personalised": 0
+  }
+ },
+ "audit": []
+}

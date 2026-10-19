@@ -1,0 +1,377 @@
+{
+ "viewer_id": "U-01468",
+ "arm": "agent",
+ "as_of": "2026-10-01T18:31:25.944Z",
+ "facts": {
+  "user_id": "U-01468",
+  "as_of": "2026-10-01T18:31:25.944Z",
+  "profile_present": true,
+  "history_start": "2026-08-31T18:31:55.380Z",
+  "history_covers_lifetime": false,
+  "events_seen": 37,
+  "facts": {
+   "dialect": {
+    "name": "dialect",
+    "value": null,
+    "source": "unknown",
+    "source_ref": null,
+    "source_time": null,
+    "freshness": "unknown",
+    "age_s": null,
+    "rule": "trigger carries no valid app_dialect (raw=None); the page the app will request is unknown, so no alternative is substituted",
+    "conflicts": [
+     {
+      "value": "d5",
+      "source": "profile",
+      "source_ref": "profile:U-01468@2026-09-29T04:42:10.623Z",
+      "resolution": "not used: cannot confirm it is the current app setting"
+     },
+     {
+      "value": "d5",
+      "source": "app_setting_earlier",
+      "source_ref": "event:8e9b73b6-0d5b-408e-9aed-ed6470106e52",
+      "resolution": "not used: cannot confirm it is the current app setting"
+     }
+    ],
+    "supported": false
+   },
+   "ever_paid": {
+    "name": "ever_paid",
+    "value": true,
+    "source": "profile",
+    "source_ref": "profile:U-01468@2026-09-18T00:39:37.533Z",
+    "source_time": "2026-09-29T04:42:10.623Z",
+    "freshness": "aging",
+    "age_s": 222555.3,
+    "rule": "any paid purchase/renewal event or a paid status on any profile row",
+    "conflicts": [],
+    "supported": true
+   },
+   "history_covers_lifetime": {
+    "name": "history_covers_lifetime",
+    "value": false,
+    "source": "derived",
+    "source_ref": "profile:U-01468@2026-09-29T04:42:10.623Z",
+    "source_time": "2026-09-29T04:42:10.623Z",
+    "freshness": "unknown",
+    "age_s": null,
+    "rule": "signup_at >= first observable event (2026-08-31T18:31:55.380Z); 'never did X' claims need full coverage",
+    "conflicts": [],
+    "supported": true
+   },
+   "last_app_open_before_trigger": {
+    "name": "last_app_open_before_trigger",
+    "value": "2026-10-01T05:07:44.260Z",
+    "source": "event",
+    "source_ref": "event:8e9b73b6-0d5b-408e-9aed-ed6470106e52",
+    "source_time": "2026-10-01T05:07:44.260Z",
+    "freshness": "fresh",
+    "age_s": 48221.7,
+    "rule": "latest app_open in another session, ordered by server-anchored occurrence time",
+    "conflicts": [],
+    "supported": true
+   },
+   "profile_present": {
+    "name": "profile_present",
+    "value": true,
+    "source": "profile",
+    "source_ref": "profile:U-01468@2026-09-29T04:42:10.623Z",
+    "source_time": "2026-09-29T04:42:10.623Z",
+    "freshness": "aging",
+    "age_s": 222555.3,
+    "rule": "newest updated_at among snapshot rows; 1 older row(s) kept as conflicts",
+    "conflicts": [
+     {
+      "value": true,
+      "source": "profile",
+      "source_ref": "profile:U-01468@2026-09-18T00:39:37.533Z",
+      "note": "older duplicate row"
+     }
+    ],
+    "supported": true
+   },
+   "push_consent": {
+    "name": "push_consent",
+    "value": true,
+    "source": "profile",
+    "source_ref": "profile:U-01468@2026-09-29T04:42:10.623Z",
+    "source_time": "2026-09-29T04:42:10.623Z",
+    "freshness": "aging",
+    "age_s": 222555.3,
+    "rule": "newest profile row notifications_opt_in",
+    "conflicts": [],
+    "supported": true
+   },
+   "signup_at": {
+    "name": "signup_at",
+    "value": "2025-01-26T00:13:29.020Z",
+    "source": "profile",
+    "source_ref": "profile:U-01468@2026-09-29T04:42:10.623Z",
+    "source_time": "2026-09-29T04:42:10.623Z",
+    "freshness": "aging",
+    "age_s": 222555.3,
+    "rule": "profile.signup_at (no signup event observed)",
+    "conflicts": [],
+    "supported": true
+   },
+   "subscription_status": {
+    "name": "subscription_status",
+    "value": "never",
+    "source": "profile",
+    "source_ref": "profile:U-01468@2026-09-29T04:42:10.623Z",
+    "source_time": "2026-09-29T04:42:10.623Z",
+    "freshness": "aging",
+    "age_s": 222555.3,
+    "rule": "newest profile row (no newer subscription event)",
+    "conflicts": [
+     {
+      "value": "lapsed",
+      "source": "profile",
+      "source_ref": "profile:U-01468@2026-09-18T00:39:37.533Z",
+      "resolution": "older duplicate row; newest updated_at wins"
+     },
+     {
+      "value": "paid before",
+      "source": "event/profile",
+      "source_ref": "profile:U-01468@2026-09-18T00:39:37.533Z",
+      "resolution": "unresolved: 'never paid' contradicted; status treated as unsupported"
+     }
+    ],
+    "supported": false
+   },
+   "whatsapp_consent": {
+    "name": "whatsapp_consent",
+    "value": true,
+    "source": "profile",
+    "source_ref": "profile:U-01468@2026-09-29T04:42:10.623Z",
+    "source_time": "2026-09-29T04:42:10.623Z",
+    "freshness": "aging",
+    "age_s": 222555.3,
+    "rule": "newest profile row whatsapp_opt_in",
+    "conflicts": [],
+    "supported": true
+   }
+  },
+  "watch": {
+   "plays": 3,
+   "completions": 1,
+   "watched_slugs": [
+    "gubava-gihaya-d5",
+    "jamo-hasa-d5",
+    "nina-d5"
+   ],
+   "top_genres": [
+    "Crime",
+    "Devotional",
+    "Family",
+    "Romance"
+   ],
+   "play_days_recent": [
+    "2026-09-29"
+   ],
+   "series": [
+    {
+     "slug": "gubava-gihaya-d5",
+     "furthest": [
+      1,
+      1
+     ],
+     "last_episode": [
+      1,
+      29
+     ],
+     "last_play": "2026-09-01T13:22:37.912Z"
+    },
+    {
+     "slug": "nina-d5",
+     "furthest": [
+      1,
+      1
+     ],
+     "last_episode": [
+      2,
+      9
+     ],
+     "last_play": "2026-09-02T05:12:58.199Z"
+    },
+    {
+     "slug": "jamo-hasa-d5",
+     "furthest": [
+      1,
+      1
+     ],
+     "last_episode": [
+      1,
+      33
+     ],
+     "last_play": "2026-09-29T11:56:29.567Z"
+    }
+   ]
+  },
+  "learning": {
+   "actions": {
+    "home_page": {
+     "published": 1
+    },
+    "push": {
+     "sent": 1
+    }
+   },
+   "goal_results": [
+    {
+     "attribution": "n/a",
+     "goal_id": "G07",
+     "instance_id": "GI-71dac02850b1",
+     "result": "failed"
+    }
+   ],
+   "messages": {
+    "push": {
+     "clicked": 0,
+     "delivered": 1,
+     "failed": {}
+    }
+   },
+   "notes": [],
+   "pages": {
+    "published": 1,
+    "shown_personalised": 1
+   }
+  }
+ },
+ "goals": [
+  {
+   "instance_id": "GI-71dac02850b1",
+   "user_id": "U-01468",
+   "goal_id": "G07",
+   "rule_version": "G07-r1",
+   "status": "open",
+   "started_at": "2026-10-01T05:07:44.260Z",
+   "deadline": "2026-10-04T05:07:44.260Z",
+   "success_event": "play_started",
+   "success_condition": "same content_slug as the unfinished series",
+   "decision_id": "D-048765a5df9f",
+   "arm": "agent",
+   "eligibility": {
+    "context": {
+     "furthest": [
+      1,
+      1
+     ],
+     "series_slug": "nina-d5"
+    },
+    "evidence": [
+     "goal_rule:G07-r1",
+     "event:f95caed0-444b-4627-9bfc-116b5179caee",
+     "event:15a1b985-7965-4886-a1c7-96225633ce24",
+     "event:95a08661-8026-41f0-b83e-c7ddbc0f4e85"
+    ],
+    "reason": "series nina-d5 reached S1E1 of S2E9, idle 29.0 days"
+   },
+   "closed_at": null,
+   "close_reason": null,
+   "outcome": null,
+   "history": [
+    {
+     "at": "2026-10-01T05:07:44.260Z",
+     "change": "opened",
+     "reason": "series nina-d5 reached S1E1 of S2E9, idle 29.0 days"
+    }
+   ]
+  }
+ ],
+ "decisions": [
+  {
+   "decision_id": "D-048765a5df9f",
+   "trigger": "8e9b73b6-0d5b-408e-9aed-ed6470106e52",
+   "deliver_at": "2026-10-01T05:07:44.260Z",
+   "status": "PUBLISHED",
+   "action": "HOME_PAGE+PUSH",
+   "goal": "G07",
+   "reason": null
+  }
+ ],
+ "actions": [
+  {
+   "action_id": "A-d16fab99e5db",
+   "type": "home_page",
+   "status": "published",
+   "status_reason": null,
+   "published_at": "2026-10-01T05:07:44.279Z",
+   "send_at": null
+  },
+  {
+   "action_id": "A-e54f6c60945a",
+   "type": "push",
+   "status": "sent",
+   "status_reason": "revalidated at send time",
+   "published_at": "2026-10-01T05:07:44.279Z",
+   "send_at": "2026-10-01T08:07:46.276Z"
+  }
+ ],
+ "outcomes": [
+  {
+   "arm": "agent",
+   "attribution": "n/a",
+   "deadline": "2026-10-04T05:07:44.260Z",
+   "decision_id": "D-048765a5df9f",
+   "evidence": [],
+   "exposures_before_success": [],
+   "exposures_window": [
+    "event:oua-010163",
+    "event:oua-010165"
+   ],
+   "final": true,
+   "goal_id": "G07",
+   "goal_instance_id": "GI-71dac02850b1",
+   "goal_status_in_replay": "open",
+   "judged_at": "2026-10-15T17:58:40.000Z",
+   "observed_until": "2026-10-15T17:58:40.000Z",
+   "reason": "no qualifying play_started between 2026-10-01T05:07:44.260Z and 2026-10-04T05:07:44.260Z",
+   "result": "failed",
+   "rule_history": [
+    {
+     "at": "2026-10-01T05:07:44.260Z",
+     "change": "opened",
+     "reason": "series nina-d5 reached S1E1 of S2E9, idle 29.0 days"
+    }
+   ],
+   "rule_version": "G07-r1",
+   "started_at": "2026-10-01T05:07:44.260Z",
+   "success_condition": "same content_slug as the unfinished series",
+   "success_signal": "play_started",
+   "user_id": "U-01468"
+  }
+ ],
+ "learning": {
+  "actions": {
+   "home_page": {
+    "published": 1
+   },
+   "push": {
+    "sent": 1
+   }
+  },
+  "goal_results": [
+   {
+    "attribution": "n/a",
+    "goal_id": "G07",
+    "instance_id": "GI-71dac02850b1",
+    "result": "failed"
+   }
+  ],
+  "messages": {
+   "push": {
+    "clicked": 0,
+    "delivered": 1,
+    "failed": {}
+   }
+  },
+  "notes": [],
+  "pages": {
+   "published": 1,
+   "shown_personalised": 1
+  }
+ },
+ "audit": []
+}

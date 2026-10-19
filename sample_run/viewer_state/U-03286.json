@@ -1,0 +1,336 @@
+{
+ "viewer_id": "U-03286",
+ "arm": "holdout",
+ "as_of": "2026-10-01T18:31:25.944Z",
+ "facts": {
+  "user_id": "U-03286",
+  "as_of": "2026-10-01T18:31:25.944Z",
+  "profile_present": true,
+  "history_start": "2026-08-31T18:31:55.380Z",
+  "history_covers_lifetime": false,
+  "events_seen": 51,
+  "facts": {
+   "dialect": {
+    "name": "dialect",
+    "value": null,
+    "source": "unknown",
+    "source_ref": null,
+    "source_time": null,
+    "freshness": "unknown",
+    "age_s": null,
+    "rule": "trigger carries no valid app_dialect (raw=None); the page the app will request is unknown, so no alternative is substituted",
+    "conflicts": [
+     {
+      "value": "d5",
+      "source": "profile",
+      "source_ref": "profile:U-03286@2026-09-29T11:43:56.980Z",
+      "resolution": "not used: cannot confirm it is the current app setting"
+     },
+     {
+      "value": "d4",
+      "source": "app_setting_earlier",
+      "source_ref": "event:69fc9a9a-25dd-41ed-b2e8-7858b4d7236a",
+      "resolution": "not used: cannot confirm it is the current app setting"
+     }
+    ],
+    "supported": false
+   },
+   "ever_paid": {
+    "name": "ever_paid",
+    "value": true,
+    "source": "event",
+    "source_ref": "event:bfa39850-e87b-4e25-ac95-d0f5300ce097",
+    "source_time": "2026-09-29T11:43:56.980Z",
+    "freshness": "aging",
+    "age_s": 197249.0,
+    "rule": "any paid purchase/renewal event or a paid status on any profile row",
+    "conflicts": [],
+    "supported": true
+   },
+   "history_covers_lifetime": {
+    "name": "history_covers_lifetime",
+    "value": false,
+    "source": "derived",
+    "source_ref": "profile:U-03286@2026-09-29T11:43:56.980Z",
+    "source_time": "2026-09-29T11:43:56.980Z",
+    "freshness": "unknown",
+    "age_s": null,
+    "rule": "signup_at >= first observable event (2026-08-31T18:31:55.380Z); 'never did X' claims need full coverage",
+    "conflicts": [],
+    "supported": true
+   },
+   "last_app_open_before_trigger": {
+    "name": "last_app_open_before_trigger",
+    "value": "2026-10-01T15:32:43.334Z",
+    "source": "event",
+    "source_ref": "event:69fc9a9a-25dd-41ed-b2e8-7858b4d7236a",
+    "source_time": "2026-10-01T15:32:43.334Z",
+    "freshness": "fresh",
+    "age_s": 10722.6,
+    "rule": "latest app_open in another session, ordered by server-anchored occurrence time",
+    "conflicts": [],
+    "supported": true
+   },
+   "profile_present": {
+    "name": "profile_present",
+    "value": true,
+    "source": "profile",
+    "source_ref": "profile:U-03286@2026-09-29T11:43:56.980Z",
+    "source_time": "2026-09-29T11:43:56.980Z",
+    "freshness": "aging",
+    "age_s": 197249.0,
+    "rule": "newest updated_at among snapshot rows",
+    "conflicts": [],
+    "supported": true
+   },
+   "push_consent": {
+    "name": "push_consent",
+    "value": true,
+    "source": "profile",
+    "source_ref": "profile:U-03286@2026-09-29T11:43:56.980Z",
+    "source_time": "2026-09-29T11:43:56.980Z",
+    "freshness": "aging",
+    "age_s": 197249.0,
+    "rule": "newest profile row notifications_opt_in",
+    "conflicts": [],
+    "supported": true
+   },
+   "signup_at": {
+    "name": "signup_at",
+    "value": "2026-05-12T22:25:40.843Z",
+    "source": "profile",
+    "source_ref": "profile:U-03286@2026-09-29T11:43:56.980Z",
+    "source_time": "2026-09-29T11:43:56.980Z",
+    "freshness": "aging",
+    "age_s": 197249.0,
+    "rule": "profile.signup_at (no signup event observed)",
+    "conflicts": [],
+    "supported": true
+   },
+   "subscription_status": {
+    "name": "subscription_status",
+    "value": "active",
+    "source": "profile",
+    "source_ref": "profile:U-03286@2026-09-29T11:43:56.980Z",
+    "source_time": "2026-09-29T11:43:56.980Z",
+    "freshness": "aging",
+    "age_s": 197249.0,
+    "rule": "newest profile row (no newer subscription event)",
+    "conflicts": [],
+    "supported": true
+   },
+   "whatsapp_consent": {
+    "name": "whatsapp_consent",
+    "value": true,
+    "source": "profile",
+    "source_ref": "profile:U-03286@2026-09-29T11:43:56.980Z",
+    "source_time": "2026-09-29T11:43:56.980Z",
+    "freshness": "aging",
+    "age_s": 197249.0,
+    "rule": "newest profile row whatsapp_opt_in",
+    "conflicts": [],
+    "supported": true
+   }
+  },
+  "watch": {
+   "plays": 6,
+   "completions": 1,
+   "watched_slugs": [
+    "gineni-d4",
+    "koha-kagite-d4",
+    "radi-d4",
+    "tidaka-koni-d4"
+   ],
+   "top_genres": [
+    "Action",
+    "Crime",
+    "Family",
+    "Drama",
+    "Romance"
+   ],
+   "play_days_recent": [
+    "2026-09-19",
+    "2026-09-25",
+    "2026-09-26",
+    "2026-09-30"
+   ],
+   "series": [
+    {
+     "slug": "tidaka-koni-d4",
+     "furthest": [
+      1,
+      1
+     ],
+     "last_episode": [
+      1,
+      1
+     ],
+     "last_play": "2026-09-25T07:43:00.903Z"
+    },
+    {
+     "slug": "radi-d4",
+     "furthest": [
+      1,
+      1
+     ],
+     "last_episode": [
+      1,
+      57
+     ],
+     "last_play": "2026-09-19T14:11:34.855Z"
+    },
+    {
+     "slug": "koha-kagite-d4",
+     "furthest": [
+      1,
+      1
+     ],
+     "last_episode": [
+      1,
+      45
+     ],
+     "last_play": "2026-09-26T07:48:14.849Z"
+    },
+    {
+     "slug": "gineni-d4",
+     "furthest": [
+      1,
+      1
+     ],
+     "last_episode": [
+      1,
+      1
+     ],
+     "last_play": "2026-09-30T10:26:58.994Z"
+    }
+   ]
+  },
+  "learning": {
+   "actions": {},
+   "goal_results": [
+    {
+     "attribution": "n/a",
+     "goal_id": "G07",
+     "instance_id": "GI-292d8f359469",
+     "result": "failed"
+    }
+   ],
+   "messages": {},
+   "notes": [],
+   "pages": {
+    "published": 0,
+    "shown_personalised": 0
+   }
+  }
+ },
+ "goals": [
+  {
+   "instance_id": "GI-292d8f359469",
+   "user_id": "U-03286",
+   "goal_id": "G07",
+   "rule_version": "G07-r1",
+   "status": "open",
+   "started_at": "2026-10-01T11:07:21.291Z",
+   "deadline": "2026-10-04T11:07:21.291Z",
+   "success_event": "play_started",
+   "success_condition": "same content_slug as the unfinished series",
+   "decision_id": "D-20fba551e2a7",
+   "arm": "holdout",
+   "eligibility": {
+    "context": {
+     "furthest": [
+      1,
+      1
+     ],
+     "series_slug": "koha-kagite-d4"
+    },
+    "evidence": [
+     "goal_rule:G07-r1",
+     "event:28a430ac-ebd7-49a2-be8e-79db34e9a3ef",
+     "event:2ad5acb1-ba73-4b99-8f38-2be572611b39"
+    ],
+    "reason": "series koha-kagite-d4 reached S1E1 of S1E45, idle 5.1 days"
+   },
+   "closed_at": null,
+   "close_reason": null,
+   "outcome": null,
+   "history": [
+    {
+     "at": "2026-10-01T11:07:21.291Z",
+     "change": "opened",
+     "reason": "series koha-kagite-d4 reached S1E1 of S1E45, idle 5.1 days"
+    }
+   ]
+  }
+ ],
+ "decisions": [
+  {
+   "decision_id": "D-20fba551e2a7",
+   "trigger": "060d77a7-81d2-4ae5-a0e4-f98eafc09099",
+   "deliver_at": "2026-10-01T11:07:21.291Z",
+   "status": "HOLDOUT",
+   "action": "NONE",
+   "goal": "G07",
+   "reason": "holdout arm: no agent action of any kind (goal tracked only so outcomes can be compared with the agent arm)"
+  },
+  {
+   "decision_id": "D-0fa74090cdf0",
+   "trigger": "69fc9a9a-25dd-41ed-b2e8-7858b4d7236a",
+   "deliver_at": "2026-10-01T15:32:43.334Z",
+   "status": "HOLDOUT",
+   "action": "NONE",
+   "goal": "G07",
+   "reason": "holdout arm: no agent action of any kind (goal tracked only so outcomes can be compared with the agent arm)"
+  }
+ ],
+ "actions": [],
+ "outcomes": [
+  {
+   "arm": "holdout",
+   "attribution": "n/a",
+   "deadline": "2026-10-04T11:07:21.291Z",
+   "decision_id": "D-20fba551e2a7",
+   "evidence": [],
+   "exposures_before_success": [],
+   "exposures_window": [],
+   "final": true,
+   "goal_id": "G07",
+   "goal_instance_id": "GI-292d8f359469",
+   "goal_status_in_replay": "open",
+   "judged_at": "2026-10-15T17:58:40.000Z",
+   "observed_until": "2026-10-15T17:58:40.000Z",
+   "reason": "no qualifying play_started between 2026-10-01T11:07:21.291Z and 2026-10-04T11:07:21.291Z",
+   "result": "failed",
+   "rule_history": [
+    {
+     "at": "2026-10-01T11:07:21.291Z",
+     "change": "opened",
+     "reason": "series koha-kagite-d4 reached S1E1 of S1E45, idle 5.1 days"
+    }
+   ],
+   "rule_version": "G07-r1",
+   "started_at": "2026-10-01T11:07:21.291Z",
+   "success_condition": "same content_slug as the unfinished series",
+   "success_signal": "play_started",
+   "user_id": "U-03286"
+  }
+ ],
+ "learning": {
+  "actions": {},
+  "goal_results": [
+   {
+    "attribution": "n/a",
+    "goal_id": "G07",
+    "instance_id": "GI-292d8f359469",
+    "result": "failed"
+   }
+  ],
+  "messages": {},
+  "notes": [],
+  "pages": {
+   "published": 0,
+   "shown_personalised": 0
+  }
+ },
+ "audit": []
+}

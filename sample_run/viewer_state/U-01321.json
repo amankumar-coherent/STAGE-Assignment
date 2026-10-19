@@ -1,0 +1,341 @@
+{
+ "viewer_id": "U-01321",
+ "arm": "holdout",
+ "as_of": "2026-10-01T18:31:25.944Z",
+ "facts": {
+  "user_id": "U-01321",
+  "as_of": "2026-10-01T18:31:25.944Z",
+  "profile_present": true,
+  "history_start": "2026-08-31T18:31:55.380Z",
+  "history_covers_lifetime": true,
+  "events_seen": 36,
+  "facts": {
+   "dialect": {
+    "name": "dialect",
+    "value": null,
+    "source": "unknown",
+    "source_ref": null,
+    "source_time": null,
+    "freshness": "unknown",
+    "age_s": null,
+    "rule": "trigger carries no valid app_dialect (raw=None); the page the app will request is unknown, so no alternative is substituted",
+    "conflicts": [
+     {
+      "value": "d6",
+      "source": "profile",
+      "source_ref": "profile:U-01321@2026-09-29T16:59:48.981Z",
+      "resolution": "not used: cannot confirm it is the current app setting"
+     },
+     {
+      "value": "d5",
+      "source": "app_setting_earlier",
+      "source_ref": "event:f5deeb3f-44b6-4e97-b170-1ab2a4f0b907",
+      "resolution": "not used: cannot confirm it is the current app setting"
+     }
+    ],
+    "supported": false
+   },
+   "ever_paid": {
+    "name": "ever_paid",
+    "value": true,
+    "source": "event",
+    "source_ref": "event:0d862cee-b32f-420b-b56c-df4851537946",
+    "source_time": "2026-09-29T16:59:48.981Z",
+    "freshness": "aging",
+    "age_s": 178297.0,
+    "rule": "any paid purchase/renewal event or a paid status on any profile row",
+    "conflicts": [],
+    "supported": true
+   },
+   "history_covers_lifetime": {
+    "name": "history_covers_lifetime",
+    "value": true,
+    "source": "derived",
+    "source_ref": "event:d1236666-a8ef-4473-a53f-5539b689a2c7",
+    "source_time": "2026-09-19T18:55:34.361Z",
+    "freshness": "unknown",
+    "age_s": null,
+    "rule": "signup_at >= first observable event (2026-08-31T18:31:55.380Z); 'never did X' claims need full coverage",
+    "conflicts": [],
+    "supported": true
+   },
+   "last_app_open_before_trigger": {
+    "name": "last_app_open_before_trigger",
+    "value": "2026-10-01T13:34:37.727Z",
+    "source": "event",
+    "source_ref": "event:f5deeb3f-44b6-4e97-b170-1ab2a4f0b907",
+    "source_time": "2026-10-01T13:34:37.727Z",
+    "freshness": "fresh",
+    "age_s": 17808.2,
+    "rule": "latest app_open in another session, ordered by server-anchored occurrence time",
+    "conflicts": [],
+    "supported": true
+   },
+   "profile_present": {
+    "name": "profile_present",
+    "value": true,
+    "source": "profile",
+    "source_ref": "profile:U-01321@2026-09-29T16:59:48.981Z",
+    "source_time": "2026-09-29T16:59:48.981Z",
+    "freshness": "aging",
+    "age_s": 178297.0,
+    "rule": "newest updated_at among snapshot rows",
+    "conflicts": [],
+    "supported": true
+   },
+   "push_consent": {
+    "name": "push_consent",
+    "value": true,
+    "source": "profile",
+    "source_ref": "profile:U-01321@2026-09-29T16:59:48.981Z",
+    "source_time": "2026-09-29T16:59:48.981Z",
+    "freshness": "aging",
+    "age_s": 178297.0,
+    "rule": "newest profile row notifications_opt_in",
+    "conflicts": [],
+    "supported": true
+   },
+   "signup_at": {
+    "name": "signup_at",
+    "value": "2026-09-19T18:55:34.361Z",
+    "source": "event",
+    "source_ref": "event:d1236666-a8ef-4473-a53f-5539b689a2c7",
+    "source_time": "2026-09-19T18:55:34.361Z",
+    "freshness": "stale",
+    "age_s": 1035351.6,
+    "rule": "signup_completed event > profile.signup_at",
+    "conflicts": [],
+    "supported": true
+   },
+   "subscription_status": {
+    "name": "subscription_status",
+    "value": "active",
+    "source": "profile",
+    "source_ref": "profile:U-01321@2026-09-29T16:59:48.981Z",
+    "source_time": "2026-09-29T16:59:48.981Z",
+    "freshness": "aging",
+    "age_s": 178297.0,
+    "rule": "newest profile row (no newer subscription event)",
+    "conflicts": [],
+    "supported": true
+   },
+   "whatsapp_consent": {
+    "name": "whatsapp_consent",
+    "value": false,
+    "source": "profile",
+    "source_ref": "profile:U-01321@2026-09-29T16:59:48.981Z",
+    "source_time": "2026-09-29T16:59:48.981Z",
+    "freshness": "aging",
+    "age_s": 178297.0,
+    "rule": "newest profile row whatsapp_opt_in",
+    "conflicts": [],
+    "supported": true
+   }
+  },
+  "watch": {
+   "plays": 6,
+   "completions": 2,
+   "watched_slugs": [
+    "gubava-gihaya-d5",
+    "haya-kani-d5",
+    "jamo-hasa-d5",
+    "nechu-guchu-d5",
+    "rigu-d5"
+   ],
+   "top_genres": [
+    "Devotional",
+    "Romance",
+    "Comedy",
+    "Crime",
+    "Drama"
+   ],
+   "play_days_recent": [
+    "2026-09-20",
+    "2026-09-23",
+    "2026-09-26",
+    "2026-09-29"
+   ],
+   "series": [
+    {
+     "slug": "jamo-hasa-d5",
+     "furthest": [
+      1,
+      1
+     ],
+     "last_episode": [
+      1,
+      33
+     ],
+     "last_play": "2026-09-19T18:58:29.238Z"
+    },
+    {
+     "slug": "haya-kani-d5",
+     "furthest": [
+      1,
+      1
+     ],
+     "last_episode": [
+      1,
+      1
+     ],
+     "last_play": "2026-09-20T10:43:17.556Z"
+    },
+    {
+     "slug": "gubava-gihaya-d5",
+     "furthest": [
+      1,
+      1
+     ],
+     "last_episode": [
+      1,
+      29
+     ],
+     "last_play": "2026-09-26T11:53:57.081Z"
+    },
+    {
+     "slug": "rigu-d5",
+     "furthest": [
+      1,
+      1
+     ],
+     "last_episode": [
+      1,
+      1
+     ],
+     "last_play": "2026-09-29T17:52:04.235Z"
+    },
+    {
+     "slug": "nechu-guchu-d5",
+     "furthest": [
+      1,
+      1
+     ],
+     "last_episode": [
+      1,
+      54
+     ],
+     "last_play": "2026-09-29T18:22:38.365Z"
+    }
+   ]
+  },
+  "learning": {
+   "actions": {},
+   "goal_results": [
+    {
+     "attribution": "n/a",
+     "goal_id": "G07",
+     "instance_id": "GI-94bb8c32d3cd",
+     "result": "failed"
+    }
+   ],
+   "messages": {},
+   "notes": [],
+   "pages": {
+    "published": 0,
+    "shown_personalised": 0
+   }
+  }
+ },
+ "goals": [
+  {
+   "instance_id": "GI-94bb8c32d3cd",
+   "user_id": "U-01321",
+   "goal_id": "G07",
+   "rule_version": "G07-r1",
+   "status": "open",
+   "started_at": "2026-10-01T13:34:37.727Z",
+   "deadline": "2026-10-04T13:34:37.727Z",
+   "success_event": "play_started",
+   "success_condition": "same content_slug as the unfinished series",
+   "decision_id": "D-ec967fc70f54",
+   "arm": "holdout",
+   "eligibility": {
+    "context": {
+     "furthest": [
+      1,
+      1
+     ],
+     "series_slug": "gubava-gihaya-d5"
+    },
+    "evidence": [
+     "goal_rule:G07-r1",
+     "event:3f6f543a-f3d5-4ab0-9c09-085c47312322",
+     "event:933343da-b1a5-4309-ab5b-12e62b32b336",
+     "event:fd84cb47-9324-439c-8273-6dc19690cc18"
+    ],
+    "reason": "series gubava-gihaya-d5 reached S1E1 of S1E29, idle 5.1 days"
+   },
+   "closed_at": null,
+   "close_reason": null,
+   "outcome": null,
+   "history": [
+    {
+     "at": "2026-10-01T13:34:37.727Z",
+     "change": "opened",
+     "reason": "series gubava-gihaya-d5 reached S1E1 of S1E29, idle 5.1 days"
+    }
+   ]
+  }
+ ],
+ "decisions": [
+  {
+   "decision_id": "D-ec967fc70f54",
+   "trigger": "f5deeb3f-44b6-4e97-b170-1ab2a4f0b907",
+   "deliver_at": "2026-10-01T13:34:37.727Z",
+   "status": "HOLDOUT",
+   "action": "NONE",
+   "goal": "G07",
+   "reason": "holdout arm: no agent action of any kind (goal tracked only so outcomes can be compared with the agent arm)"
+  }
+ ],
+ "actions": [],
+ "outcomes": [
+  {
+   "arm": "holdout",
+   "attribution": "n/a",
+   "deadline": "2026-10-04T13:34:37.727Z",
+   "decision_id": "D-ec967fc70f54",
+   "evidence": [],
+   "exposures_before_success": [],
+   "exposures_window": [],
+   "final": true,
+   "goal_id": "G07",
+   "goal_instance_id": "GI-94bb8c32d3cd",
+   "goal_status_in_replay": "open",
+   "judged_at": "2026-10-15T17:58:40.000Z",
+   "observed_until": "2026-10-15T17:58:40.000Z",
+   "reason": "no qualifying play_started between 2026-10-01T13:34:37.727Z and 2026-10-04T13:34:37.727Z",
+   "result": "failed",
+   "rule_history": [
+    {
+     "at": "2026-10-01T13:34:37.727Z",
+     "change": "opened",
+     "reason": "series gubava-gihaya-d5 reached S1E1 of S1E29, idle 5.1 days"
+    }
+   ],
+   "rule_version": "G07-r1",
+   "started_at": "2026-10-01T13:34:37.727Z",
+   "success_condition": "same content_slug as the unfinished series",
+   "success_signal": "play_started",
+   "user_id": "U-01321"
+  }
+ ],
+ "learning": {
+  "actions": {},
+  "goal_results": [
+   {
+    "attribution": "n/a",
+    "goal_id": "G07",
+    "instance_id": "GI-94bb8c32d3cd",
+    "result": "failed"
+   }
+  ],
+  "messages": {},
+  "notes": [],
+  "pages": {
+   "published": 0,
+   "shown_personalised": 0
+  }
+ },
+ "audit": []
+}
